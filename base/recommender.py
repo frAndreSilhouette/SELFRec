@@ -33,8 +33,9 @@ class Recommender:
         for k in config_items:
             self.model_log.add(f"{k}={str(config_items[k])}")
 
-    def print_model_info(self):
+    def print_model_info(self, loss_func): # 【这里修改】增加了loss_func参数
         print('Model:', self.model_name)
+        print('Loss Function:', loss_func) # 【这里修改】打印损失函数
         print('Training Set:', abspath(self.config['training.set']))
         print('Test Set:', abspath(self.config['test.set']))
         print('Embedding Dimension:', self.emb_size)
@@ -52,7 +53,7 @@ class Recommender:
     def build(self):
         pass
 
-    def train(self):
+    def train(self, loss_func): # 【这里修改】train方法增加了loss_func参数
         pass
 
     def predict(self, u):
@@ -71,13 +72,14 @@ class Recommender:
         pass
 
     def execute(self):
-        self.initializing_log()
-        self.print_model_info()
-        print('Initializing and building model...')
-        self.build()
-        print('Training Model...')
-        self.train()
-        print('Testing...')
-        rec_list = self.test()
-        print('Evaluating...')
-        self.evaluate(rec_list)
+        for loss_func in [0]:
+            self.initializing_log()
+            self.print_model_info(loss_func) # 【这里修改】添加损失函数信息
+            print('Initializing and building model...')
+            self.build()
+            print('Training Model...')
+            self.train(loss_func) # 【这里修改】train方法增加了loss_func参数
+            print('Testing...')
+            rec_list = self.test()
+            print('Evaluating...')
+            self.evaluate(rec_list)

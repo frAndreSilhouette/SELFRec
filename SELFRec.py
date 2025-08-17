@@ -22,4 +22,4 @@ class SELFRec(object):
         import_str = f"from model.{self.config['model']['type']}.{self.config['model']['name']} import {self.config['model']['name']}"
         exec(import_str)
         recommender = f"{self.config['model']['name']}(self.config,self.training_data,self.test_data,**self.kwargs)"
-        eval(recommender).execute()
+        eval(recommender).execute() # 调用recommender.py中的基类 Recommender.execute()

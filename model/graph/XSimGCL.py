@@ -22,15 +22,15 @@ class XSimGCL(GraphRecommender):
 
         # self.data是从父类GraphRecommender继承的，又是从Interaction来的
 
-    def train(self):
+    def train(self, loss_func): # 【这里修改】train方法增加了loss_func参数
         model = self.model.cuda()
         optimizer = torch.optim.Adam(model.parameters(), lr=self.lRate)
         for epoch in range(self.maxEpoch):
             for n, batch in enumerate(next_batch_pairwise(self.data, self.batch_size)):
-                user_idx, pos_idx, neg_idx = batch
+                user_idx, pos_idx, neg_idx, itts = batch # 【这里修改】batch返回值多了itts
                 rec_user_emb, rec_item_emb, cl_user_emb, cl_item_emb  = model(True)
                 user_emb, pos_item_emb, neg_item_emb = rec_user_emb[user_idx], rec_item_emb[pos_idx], rec_item_emb[neg_idx]
-                rec_loss = bpr_loss(user_emb, pos_item_emb, neg_item_emb)
+                rec_loss = bpr_loss(user_emb, pos_item_emb, neg_item_emb, itts, loss_func) # 【这里修改】BPR损失传入新参数itts, loss_func
                 cl_loss = self.cl_rate * self.cal_cl_loss([user_idx,pos_idx],rec_user_emb,cl_user_emb,rec_item_emb,cl_item_emb)
                 batch_loss =  rec_loss + l2_reg_loss(self.reg, user_emb, pos_item_emb) + cl_loss
                 # Backward and optimize

@@ -16,6 +16,7 @@ def next_batch_pairwise(data,batch_size,n_negs=1):
             batch_end = data_size
         users = [training_data[idx][0] for idx in range(ptr, batch_end)]
         items = [training_data[idx][1] for idx in range(ptr, batch_end)]
+        itts = [training_data[idx][2] for idx in range(ptr, batch_end)] # itt是距离上次购买的天数(int)
         ptr = batch_end
         u_idx, i_idx, j_idx = [], [], []
         item_list = list(data.item.keys()) # item_list是一个列表，包含了所有的item id
@@ -29,10 +30,9 @@ def next_batch_pairwise(data,batch_size,n_negs=1):
                 j_idx.append(data.item[neg_item])
         # print(f'[DEBUG] next_batch_pairwise: u_idx:{len(u_idx)}, i_idx:{len(i_idx)}, j_idx:{len(j_idx)}')
         # print(f'[DEBUG] PREVIEW: u_idx:{u_idx[0]}, i_idx:{i_idx[0]}, j_idx:{j_idx[0]}')
-        yield u_idx, i_idx, j_idx
+        yield u_idx, i_idx, j_idx, itts
         # 返回的u_idx和i_idx实际上就是training_data的batch_size那么多行，j_idx是抽的别的没买过的负样本
 
-        # 下一步任务，txt多增加一列表示interval，上面的函数多return i_interval
 
 
 def next_batch_pointwise(data,batch_size):

@@ -1,2000 +1,4000 @@
-733 407 1
-258 274 1
-13 336 1
-934 234 1
-587 155 1
-704 10 1
-638 477 1
-47 79 1
-724 47 1
-224 62 1
-915 493 1
-421 341 1
-755 304 1
-288 163 1
-396 237 1
-978 21 1
-954 411 1
-118 273 1
-3 433 1
-960 366 1
-3 202 1
-665 116 1
-688 286 1
-157 44 1
-158 479 1
-951 164 1
-471 183 1
-806 482 1
-836 337 1
-400 15 1
-905 417 1
-737 477 1
-160 203 1
-303 97 1
-870 494 1
-206 167 1
-455 113 1
-533 334 1
-102 332 1
-952 196 1
-846 273 1
-343 387 1
-918 91 1
-363 366 1
-179 206 1
-711 45 1
-272 280 1
-923 397 1
-363 208 1
-402 84 1
-883 374 1
-14 464 1
-741 3 1
-954 403 1
-47 262 1
-475 456 1
-709 268 1
-15 420 1
-441 215 1
-911 2 1
-747 66 1
-204 63 1
-411 69 1
-859 480 1
-542 129 1
-168 446 1
-597 384 1
-521 431 1
-300 130 1
-976 83 1
-911 356 1
-692 138 1
-259 90 1
-344 454 1
-897 380 1
-910 338 1
-151 24 1
-779 100 1
-506 323 1
-155 52 1
-746 32 1
-906 136 1
-315 298 1
-280 280 1
-86 419 1
-904 428 1
-979 428 1
-897 196 1
-9 294 1
-9 155 1
-711 425 1
-947 109 1
-302 275 1
-821 434 1
-817 236 1
-392 493 1
-512 170 1
-634 470 1
-447 137 1
-94 411 1
-217 275 1
-126 478 1
-188 83 1
-278 212 1
-562 104 1
-147 166 1
-936 466 1
-817 465 1
-282 487 1
-661 433 1
-820 372 1
-582 406 1
-559 258 1
-736 415 1
-56 56 1
-805 463 1
-355 357 1
-16 3 1
-452 243 1
-943 193 1
-371 353 1
-182 84 1
-722 483 1
-62 4 1
-414 469 1
-499 143 1
-919 293 1
-151 275 1
-47 260 1
-698 151 1
-265 400 1
-798 391 1
-263 464 1
-302 275 1
-976 381 1
-274 320 1
-820 117 1
-189 395 1
-475 305 1
-903 245 1
-188 83 1
-942 120 1
-46 180 1
-139 94 1
-12 281 1
-886 409 1
-313 335 1
-96 214 1
-581 212 1
-748 57 1
-582 290 1
-713 77 1
-75 253 1
-50 237 1
-122 242 1
-566 55 1
-60 433 1
-965 479 1
-442 107 1
-699 482 1
-655 199 1
-622 236 1
-712 385 1
-260 203 1
-222 497 1
-547 441 1
-904 483 1
-784 414 1
-343 491 1
-563 229 1
-609 487 1
-587 155 1
-772 486 1
-400 470 1
-845 5 1
-52 142 1
-145 194 1
-243 65 1
-61 209 1
-943 78 1
-773 312 1
-82 227 1
-554 480 1
-870 494 1
-493 367 1
-801 182 1
-670 45 1
-383 369 1
-101 379 1
-803 199 1
-903 291 1
-250 191 1
-222 497 1
-530 435 1
-817 386 1
-977 386 1
-836 60 1
-738 409 1
-211 290 1
-58 232 1
-623 178 1
-1000 58 1
-915 441 1
-783 354 1
-466 460 1
-31 201 1
-533 460 1
-845 281 1
-856 385 1
-942 478 1
-306 194 1
-716 151 1
-696 93 1
-707 499 1
-353 432 1
-672 334 1
-396 477 1
-729 168 1
-250 466 1
-899 259 1
-704 400 1
-307 445 1
-505 342 1
-14 233 1
-129 367 1
-142 87 1
-158 479 1
-936 466 1
-834 147 1
-657 484 1
-693 484 1
-377 147 1
-184 409 1
-274 190 1
-191 295 1
-893 493 1
-556 474 1
-192 61 1
-623 90 1
-490 185 1
-904 483 1
-686 162 1
-108 422 1
-996 460 1
-647 306 1
-967 403 1
-73 19 1
-8 26 1
-592 305 1
-344 454 1
-321 292 1
-201 448 1
-771 273 1
-233 485 1
-383 369 1
-161 108 1
-375 342 1
-817 265 1
-303 496 1
-55 105 1
-813 226 1
-979 185 1
-48 474 1
-428 431 1
-375 330 1
-916 118 1
-413 245 1
-94 465 1
-613 46 1
-703 381 1
-257 92 1
-792 58 1
-186 97 1
-248 246 1
-416 368 1
-315 298 1
-80 292 1
-766 57 1
-313 335 1
-267 487 1
-824 452 1
-898 289 1
-390 135 1
-614 29 1
-706 24 1
-23 483 1
-606 220 1
-717 159 1
-239 258 1
-16 189 1
-662 424 1
-267 487 1
-849 6 1
-805 463 1
-773 312 1
-607 207 1
-68 25 1
-861 457 1
-433 138 1
-629 419 1
-313 7 1
-55 421 1
-816 48 1
-996 18 1
-491 274 1
-333 450 1
-853 285 1
-26 305 1
-744 324 1
-26 356 1
-163 425 1
-251 3 1
-16 155 1
-436 14 1
-190 390 1
-716 494 1
-555 166 1
-897 53 1
-371 186 1
-430 344 1
-722 461 1
-311 496 1
-768 238 1
-188 465 1
-180 159 1
-806 482 1
-969 468 1
-998 491 1
-985 94 1
-640 407 1
-475 454 1
-703 302 1
-205 23 1
-280 229 1
-157 73 1
-68 31 1
-809 224 1
-114 64 1
-804 8 1
-74 278 1
-791 483 1
-974 43 1
-812 118 1
-831 276 1
-235 439 1
-677 131 1
-939 344 1
-56 56 1
-630 38 1
-875 325 1
-69 432 1
-351 210 1
-617 95 1
-572 348 1
-235 377 1
-716 494 1
-694 319 1
-909 69 1
-610 119 1
-510 211 1
-416 469 1
-56 56 1
-339 439 1
-449 462 1
-37 440 1
-188 36 1
-188 36 1
-51 33 1
-447 137 1
-932 251 1
-304 198 1
-739 7 1
-432 161 1
-983 280 1
-954 407 1
-824 202 1
-627 358 1
-218 195 1
-52 142 1
-332 209 1
-77 170 1
-567 178 1
-261 95 1
-916 401 1
-938 128 1
-731 385 1
-542 129 1
-921 89 1
-742 160 1
-581 160 1
-233 416 1
-260 203 1
-764 220 1
-576 166 1
-542 129 1
-378 136 1
-824 202 1
-226 337 1
-768 238 1
-335 319 1
-596 203 1
-114 173 1
-869 343 1
-620 395 1
-429 173 1
-116 437 1
-323 419 1
-336 455 1
-122 137 1
-857 376 1
-262 237 1
-713 459 1
-784 378 1
-783 162 1
-728 101 1
-396 477 1
-59 177 1
-186 198 1
-232 54 1
-250 191 1
-581 160 1
-686 162 1
-98 308 1
-247 47 1
-888 302 1
-876 3 1
-224 62 1
-686 162 1
-7 249 1
-222 403 1
-521 45 1
-574 344 1
-322 412 1
-308 321 1
-103 182 1
-321 131 1
-939 68 1
-363 366 1
-928 144 1
-968 100 1
-714 317 1
-875 325 1
-573 487 1
-394 202 1
-377 167 1
-572 285 1
-59 177 1
-543 31 1
-963 157 1
-505 52 1
-428 389 1
-692 218 1
-603 195 1
-692 138 1
-699 91 1
-651 290 1
-779 464 1
-690 65 1
-919 7 1
-803 199 1
-831 363 1
-791 317 1
-491 176 1
-121 46 1
-177 143 1
-930 421 1
-150 446 1
-825 312 1
-33 225 1
-125 335 1
-752 491 1
-998 489 1
-90 68 1
-260 193 1
-199 292 1
-960 366 1
-810 477 1
-235 377 1
-520 180 1
-547 377 1
-141 471 1
-613 277 1
-825 152 1
-807 144 1
-648 205 1
-573 66 1
-580 183 1
-796 389 1
-707 499 1
-486 354 1
-188 36 1
-903 468 1
-664 65 1
-942 85 1
-664 479 1
-1 458 1
-290 23 1
-161 484 1
-580 441 1
-528 474 1
-990 409 1
-582 297 1
-497 401 1
-980 185 1
-947 384 1
-158 266 1
-119 295 1
-61 38 1
-165 439 1
-986 145 1
-103 264 1
-677 131 1
-836 143 1
-160 203 1
-712 349 1
-886 141 1
-275 370 1
-167 471 1
-649 456 1
-815 312 1
-52 202 1
-146 478 1
-227 335 1
-322 349 1
-131 19 1
-955 286 1
-671 352 1
-759 442 1
-827 33 1
-852 286 1
-807 17 1
-219 315 1
-803 405 1
-825 152 1
-2 148 1
-219 466 1
-85 342 1
-983 277 1
-227 158 1
-191 219 1
-735 302 1
-225 437 1
-835 175 1
-384 442 1
-54 342 1
-339 435 1
-676 350 1
-268 135 1
-564 4 1
-473 185 1
-461 28 1
-564 282 1
-616 331 1
-247 40 1
-410 350 1
-432 161 1
-739 454 1
-302 275 1
-962 61 1
-83 383 1
-10 202 1
-518 65 1
-886 241 1
-30 135 1
-237 489 1
-819 208 1
-651 172 1
-973 138 1
-736 415 1
-361 41 1
-247 330 1
-845 5 1
-712 478 1
-942 120 1
-269 68 1
-34 237 1
-722 483 1
-791 192 1
-749 252 1
-942 86 1
-69 281 1
-727 52 1
-48 183 1
-505 486 1
-449 132 1
-2 313 1
-84 411 1
-193 100 1
-75 402 1
-987 391 1
-414 469 1
-468 492 1
-174 78 1
-156 216 1
-541 264 1
-528 474 1
-717 316 1
-537 392 1
-688 286 1
-535 240 1
-649 456 1
-563 256 1
-285 179 1
-869 434 1
-597 32 1
-569 414 1
-451 234 1
-804 8 1
-567 114 1
-888 47 1
-552 195 1
-592 286 1
-570 265 1
-850 75 1
-481 22 1
-94 411 1
-912 490 1
-472 250 1
-515 263 1
-223 231 1
-81 284 1
-343 310 1
-573 66 1
-704 360 1
-373 16 1
-656 355 1
-677 329 1
-47 164 1
-482 86 1
-774 467 1
-386 485 1
-933 32 1
-596 246 1
-220 220 1
-592 286 1
-762 186 1
-59 194 1
-182 144 1
-117 37 1
-309 398 1
-134 461 1
-704 317 1
-820 372 1
-135 67 1
-33 450 1
-565 75 1
-61 6 1
-681 151 1
-203 194 1
-182 283 1
-392 472 1
-287 379 1
-142 277 1
-319 162 1
-987 440 1
-571 315 1
-371 353 1
-475 454 1
-184 409 1
-894 203 1
-945 470 1
-260 186 1
-391 364 1
-696 264 1
-570 405 1
-598 101 1
-254 432 1
-84 411 1
-246 224 1
-630 38 1
-361 424 1
-203 194 1
-778 453 1
-629 70 1
-688 383 1
-618 318 1
-854 428 1
-791 192 1
-813 461 1
-182 258 1
-161 172 1
-353 66 1
-140 123 1
-896 276 1
-663 310 1
-153 7 1
-231 126 1
-496 439 1
-584 482 1
-711 337 1
-666 125 1
-547 331 1
-347 379 1
-650 107 1
-921 89 1
-560 199 1
-107 264 1
-161 484 1
-898 289 1
-741 3 1
-766 57 1
-475 340 1
-436 177 1
-182 87 1
-949 430 1
-830 46 1
-985 465 1
-414 469 1
-134 125 1
-592 287 1
-49 170 1
-83 383 1
-518 414 1
-222 354 1
-189 92 1
-306 272 1
-632 475 1
-894 203 1
-432 401 1
-332 439 1
-814 70 1
-662 73 1
-285 143 1
-304 110 1
-439 494 1
-371 199 1
-914 90 1
-59 187 1
-75 200 1
-851 447 1
-82 89 1
-352 482 1
-690 409 1
-661 329 1
-46 363 1
-631 316 1
-266 226 1
-940 371 1
-456 237 1
-792 288 1
-444 456 1
-181 465 1
-770 425 1
-430 250 1
-456 59 1
-603 265 1
-978 21 1
-283 35 1
-95 470 1
-890 104 1
-886 241 1
-592 309 1
-570 405 1
-407 324 1
-61 47 1
-124 392 1
-504 64 1
-59 177 1
-317 110 1
-504 64 1
-493 297 1
-465 433 1
-919 297 1
-518 147 1
-46 399 1
-88 302 1
-919 7 1
-785 167 1
-111 243 1
-707 499 1
-293 190 1
-879 212 1
-702 157 1
-977 136 1
-261 131 1
-433 316 1
-401 95 1
-486 104 1
-71 367 1
-76 241 1
-713 459 1
-107 41 1
-649 179 1
-151 24 1
-227 99 1
-945 470 1
-322 402 1
-491 274 1
-551 315 1
-172 75 1
-636 190 1
-810 477 1
-945 123 1
-788 471 1
-565 75 1
-209 354 1
-235 377 1
-983 280 1
-816 175 1
-120 46 1
-569 294 1
-650 55 1
-216 89 1
-200 62 1
-142 277 1
-30 218 1
-766 57 1
-416 469 1
-510 100 1
-346 109 1
-380 412 1
-711 73 1
-718 425 1
-942 365 1
-51 365 1
-324 427 1
-255 211 1
-412 301 1
-963 71 1
-905 417 1
-51 33 1
-81 284 1
-592 286 1
-219 443 1
-312 396 1
-964 199 1
-307 477 1
-499 143 1
-246 224 1
-336 175 1
-807 17 1
-667 279 1
-62 156 1
-824 319 1
-775 227 1
-319 444 1
-130 433 1
-408 463 1
-943 419 1
-947 384 1
-442 359 1
-102 332 1
-759 442 1
-57 140 1
-368 178 1
-592 7 1
-269 68 1
-282 487 1
-791 192 1
-979 272 1
-696 93 1
-533 460 1
-967 169 1
-555 258 1
-440 131 1
-737 192 1
-55 5 1
-131 321 1
-607 207 1
-140 215 1
-491 176 1
-735 225 1
-416 286 1
-94 411 1
-695 381 1
-278 202 1
-686 165 1
-293 55 1
-84 374 1
-942 365 1
-731 385 1
-807 17 1
-805 64 1
-933 269 1
-91 492 1
-987 250 1
-782 323 1
-716 500 1
-84 374 1
-914 15 1
-243 65 1
-981 87 1
-344 454 1
-407 82 1
-555 258 1
-283 170 1
-7 247 1
-627 358 1
-671 285 1
-849 379 1
-101 379 1
-603 281 1
-919 81 1
-651 405 1
-456 350 1
-825 152 1
-399 125 1
-638 178 1
-996 390 1
-261 95 1
-948 73 1
-581 175 1
-343 28 1
-773 312 1
-103 237 1
-973 138 1
-594 134 1
-99 278 1
-954 411 1
-302 93 1
-368 178 1
-259 90 1
-981 87 1
-655 123 1
-192 61 1
-865 67 1
-836 44 1
-255 211 1
-943 78 1
-118 24 1
-592 73 1
-258 274 1
-307 477 1
-740 246 1
-740 387 1
-510 100 1
-670 45 1
-933 32 1
-647 268 1
-967 169 1
-825 160 1
-142 250 1
-122 2 1
-987 440 1
-378 479 1
-430 344 1
-823 261 1
-51 461 1
-200 281 1
-275 68 1
-835 18 1
-845 5 1
-6 30 1
-97 490 1
-315 298 1
-871 263 1
-869 148 1
-977 136 1
-971 264 1
-860 231 1
-117 37 1
-239 19 1
-283 54 1
-789 235 1
-518 65 1
-575 340 1
-481 204 1
-789 235 1
-186 198 1
-681 351 1
-950 480 1
-151 131 1
-954 182 1
-162 441 1
-718 6 1
-176 304 1
-378 374 1
-230 68 1
-966 288 1
-964 199 1
-95 470 1
-158 266 1
-376 137 1
-924 470 1
-73 415 1
-738 495 1
-280 229 1
-1000 364 1
-987 391 1
-26 305 1
-619 155 1
-258 274 1
-471 276 1
-993 465 1
-391 204 1
-886 312 1
-877 249 1
-336 191 1
-122 137 1
-99 264 1
-16 329 1
-710 305 1
-231 67 1
-49 170 1
-403 236 1
-52 385 1
-68 244 1
-610 132 1
-454 386 1
-85 110 1
-162 441 1
-606 138 1
-15 78 1
-407 351 1
-226 103 1
-787 37 1
-385 350 1
-690 65 1
-835 79 1
-603 281 1
-653 392 1
-638 178 1
-603 374 1
-754 322 1
-996 460 1
-779 385 1
-813 432 1
-646 223 1
-629 466 1
-343 387 1
-961 376 1
-95 38 1
-735 225 1
-980 248 1
-38 13 1
-706 24 1
-699 423 1
-611 65 1
-825 123 1
-268 135 1
-730 459 1
-192 200 1
-803 127 1
-981 61 1
-886 241 1
-588 355 1
-47 262 1
-29 468 1
-446 20 1
-407 351 1
-527 464 1
-4 102 1
-730 459 1
-51 461 1
-172 75 1
-187 2 1
-741 3 1
-424 304 1
-519 196 1
-703 188 1
-535 240 1
-74 113 1
-657 484 1
-865 67 1
-869 343 1
-523 387 1
-596 147 1
-306 194 1
-386 86 1
-15 420 1
-385 350 1
-18 235 1
-739 375 1
-139 368 1
-729 254 1
-824 452 1
-9 453 1
-634 470 1
-848 121 1
-919 81 1
-780 484 1
-995 298 1
-194 368 1
-42 441 1
-690 409 1
-381 295 1
-269 83 1
-747 66 1
-706 457 1
-706 135 1
-536 315 1
-259 46 1
-995 452 1
-29 468 1
-649 456 1
-48 183 1
-572 348 1
-458 94 1
-869 343 1
-955 275 1
-626 207 1
-314 162 1
-237 342 1
-231 67 1
-292 33 1
-803 39 1
-510 184 1
-183 433 1
-837 60 1
-496 439 1
-454 386 1
-287 379 1
-668 240 1
-258 457 1
-130 481 1
-788 471 1
-674 308 1
-662 424 1
-976 422 1
-180 78 1
-550 8 1
-966 80 1
-651 87 1
-490 185 1
-879 212 1
-798 260 1
-85 342 1
-274 320 1
-43 461 1
-408 392 1
-14 233 1
-907 455 1
-217 275 1
-382 197 1
-674 308 1
-698 463 1
-1000 236 1
-749 15 1
-484 439 1
-845 5 1
-332 209 1
-891 188 1
-816 233 1
-835 79 1
-535 309 1
-985 94 1
-932 16 1
-155 291 1
-963 272 1
-108 141 1
-614 32 1
-131 357 1
-406 247 1
-313 335 1
-746 185 1
-548 451 1
-622 255 1
-456 237 1
-190 471 1
-818 232 1
-486 160 1
-83 383 1
-368 233 1
-962 61 1
-650 13 1
-353 68 1
-963 272 1
-396 444 1
-968 82 1
-871 263 1
-646 497 1
-440 131 1
-195 458 1
-855 331 1
-783 354 1
-584 70 1
-662 73 1
-516 224 1
-774 467 1
-158 178 1
-562 104 1
-286 490 1
-834 225 1
-893 471 1
-387 389 1
-452 243 1
-603 281 1
-907 189 1
-969 468 1
-827 70 1
-603 451 1
-743 397 1
-243 65 1
-966 245 1
-399 28 1
-714 317 1
-939 344 1
-101 18 1
-379 419 1
-200 162 1
-2 465 1
-343 28 1
-753 198 1
-202 2 1
-98 308 1
-81 164 1
-996 390 1
-696 256 1
-438 28 1
-95 38 1
-954 407 1
-434 443 1
-746 185 1
-932 16 1
-537 392 1
-16 378 1
-341 474 1
-869 148 1
-832 359 1
-837 442 1
-701 12 1
-321 131 1
-181 465 1
-703 334 1
-176 109 1
-248 173 1
-265 171 1
-89 162 1
-99 278 1
-803 67 1
-69 432 1
-192 200 1
-166 116 1
-191 45 1
-731 385 1
-257 92 1
-446 221 1
-283 170 1
-955 286 1
-871 477 1
-296 32 1
-51 283 1
-486 41 1
-610 119 1
-518 65 1
-235 474 1
-186 198 1
-521 466 1
-824 319 1
-212 125 1
-945 123 1
-381 171 1
-663 202 1
-458 94 1
-247 47 1
-715 466 1
-327 494 1
-976 422 1
-231 11 1
-68 25 1
-16 95 1
-548 372 1
-375 330 1
-542 211 1
-667 456 1
-951 164 1
-860 347 1
-336 5 1
-220 442 1
-379 133 1
-185 186 1
-241 76 1
-468 149 1
-676 26 1
-752 491 1
-879 111 1
-927 105 1
-740 307 1
-343 263 1
-570 405 1
-671 352 1
-647 441 1
-702 87 1
-269 68 1
-736 100 1
-664 479 1
-637 208 1
-602 39 1
-322 349 1
-15 420 1
-774 467 1
-626 276 1
-146 169 1
-585 231 1
-433 138 1
-928 144 1
-254 406 1
-896 276 1
-283 54 1
-480 2 1
-81 284 1
-174 16 1
-713 165 1
-825 160 1
-848 70 1
-307 445 1
-74 278 1
-541 120 1
-803 67 1
-966 80 1
-182 144 1
-480 2 1
-784 227 1
-933 269 1
-98 36 1
-643 96 1
-373 251 1
-160 31 1
-796 80 1
-192 195 1
-706 24 1
-49 151 1
-943 442 1
-878 401 1
-835 175 1
-875 103 1
-401 95 1
-138 223 1
-481 204 1
-572 471 1
-766 57 1
-581 160 1
-455 475 1
-1000 58 1
-806 180 1
-26 305 1
-361 41 1
-124 41 1
-825 160 1
-489 135 1
-840 38 1
-146 169 1
-231 126 1
-703 375 1
-225 405 1
-541 120 1
-677 30 1
-174 78 1
-469 190 1
-679 485 1
-484 393 1
-382 249 1
-881 269 1
-918 348 1
-718 149 1
-903 422 1
-585 263 1
-665 266 1
-840 38 1
-401 101 1
-169 327 1
-584 70 1
-570 468 1
-97 490 1
-54 342 1
-826 322 1
-784 227 1
-859 480 1
-574 313 1
-918 91 1
-459 100 1
-307 477 1
-836 347 1
-796 258 1
-530 435 1
-409 306 1
-771 395 1
-235 474 1
-835 175 1
-507 85 1
-879 212 1
-217 275 1
-933 498 1
-543 31 1
-928 259 1
-192 40 1
-999 473 1
-216 420 1
-858 246 1
-134 258 1
-284 361 1
-381 500 1
-940 122 1
-405 107 1
-377 167 1
-10 202 1
-896 276 1
-650 13 1
-266 137 1
-320 477 1
-852 114 1
-915 441 1
-68 159 1
-854 460 1
-174 78 1
-115 143 1
-378 479 1
-105 456 1
-942 26 1
-17 33 1
-116 437 1
-50 58 1
-320 288 1
-223 391 1
-225 368 1
-637 208 1
-713 459 1
-110 22 1
-436 301 1
-202 433 1
-309 398 1
-564 26 1
-624 365 1
-68 31 1
-224 340 1
-666 125 1
-735 232 1
-227 335 1
-603 265 1
-224 83 1
-607 231 1
-253 357 1
-813 252 1
-90 68 1
-15 257 1
-521 9 1
-33 225 1
-480 457 1
-919 7 1
-416 15 1
-509 426 1
-807 492 1
-970 236 1
-985 465 1
-864 124 1
-510 100 1
-406 247 1
-986 127 1
-703 334 1
-404 477 1
-671 109 1
-643 96 1
-441 215 1
-792 174 1
-65 13 1
-753 7 1
-216 420 1
-360 364 1
-57 140 1
-378 374 1
-657 358 1
-368 178 1
-462 225 1
-652 454 1
-986 145 1
-817 386 1
-633 413 1
-822 347 1
-232 430 1
-983 280 1
-709 268 1
-363 267 1
-227 99 1
-574 324 1
-115 72 1
-977 136 1
-555 421 1
-599 50 1
-424 262 1
-6 30 1
-191 219 1
-400 15 1
-683 308 1
-49 209 1
-729 44 1
-873 258 1
-592 221 1
-749 68 1
-449 428 1
-399 125 1
-143 482 1
-38 226 1
-542 256 1
-790 418 1
-636 376 1
-106 78 1
-675 24 1
-973 138 1
-322 498 1
-779 100 1
-224 83 1
-692 138 1
-879 380 1
-943 419 1
-1000 58 1
-419 406 1
-283 170 1
-556 32 1
-4 102 1
-278 202 1
-535 294 1
-589 10 1
-197 445 1
-2 28 1
-587 360 1
-850 75 1
-914 216 1
-274 190 1
-790 418 1
-333 369 1
-486 354 1
-275 358 1
-62 156 1
-568 180 1
-908 463 1
-787 37 1
-387 12 1
-582 290 1
-251 35 1
-869 148 1
-54 342 1
-899 457 1
-553 222 1
-130 41 1
-382 249 1
-468 149 1
-446 400 1
-304 110 1
-949 430 1
-445 195 1
-362 465 1
-942 85 1
-998 491 1
-798 77 1
-283 170 1
-628 35 1
-626 207 1
-714 317 1
-310 433 1
-976 83 1
-296 32 1
-811 64 1
-320 86 1
-911 2 1
-34 237 1
-552 195 1
-605 346 1
-151 275 1
-753 198 1
-370 496 1
-182 84 1
-585 350 1
-849 6 1
-827 56 1
-888 302 1
-240 52 1
-819 208 1
-454 117 1
-609 18 1
-404 321 1
-135 67 1
-447 222 1
-597 32 1
-707 289 1
-93 361 1
-964 43 1
-81 362 1
-236 90 1
-663 310 1
-103 205 1
-703 302 1
-680 276 1
-95 191 1
-232 430 1
-738 409 1
-396 63 1
-588 403 1
-795 201 1
-134 258 1
-688 383 1
-632 475 1
-469 190 1
-176 35 1
-592 287 1
-439 494 1
-433 350 1
-970 103 1
-58 232 1
-847 22 1
-481 22 1
-251 35 1
-133 434 1
-16 95 1
-724 46 1
-731 230 1
-418 76 1
-919 297 1
-325 454 1
-441 304 1
-868 485 1
-659 495 1
-943 78 1
-993 337 1
-260 125 1
-964 43 1
-346 109 1
-717 310 1
-233 496 1
-735 225 1
-49 17 1
-732 326 1
-564 4 1
-671 352 1
-377 398 1
-231 291 1
-349 276 1
-987 440 1
-588 403 1
-842 183 1
-442 452 1
-909 69 1
-286 434 1
-68 159 1
-489 84 1
-817 291 1
-878 401 1
-835 490 1
-134 125 1
-475 454 1
-289 1 1
-856 385 1
-89 363 1
-270 437 1
-317 210 1
-260 193 1
-445 55 1
-962 61 1
-614 32 1
-699 92 1
-262 169 1
-693 405 1
-994 494 1
-964 43 1
-719 392 1
-618 318 1
-424 262 1
-325 454 1
-26 355 1
-717 404 1
-248 246 1
-886 141 1
-182 163 1
-789 235 1
-515 263 1
-320 288 1
-824 452 1
-233 217 1
-322 349 1
-375 342 1
-260 125 1
-103 237 1
-273 345 1
-416 469 1
-486 160 1
-958 425 1
-609 487 1
-438 45 1
-721 354 1
-363 366 1
-240 359 1
-126 478 1
-877 282 1
-503 235 1
-260 125 1
-570 405 1
-278 212 1
-876 332 1
-247 330 1
-751 396 1
-280 280 1
-555 258 1
-869 434 1
-486 160 1
-208 487 1
-182 176 1
-75 200 1
-974 43 1
-481 204 1
-125 254 1
-842 183 1
-980 185 1
-832 359 1
-563 226 1
-228 351 1
-586 21 1
-670 45 1
-545 121 1
-790 217 1
-798 373 1
-703 188 1
-200 281 1
-131 357 1
-171 251 1
-12 281 1
-200 17 1
-158 178 1
-427 177 1
-47 79 1
-801 182 1
-383 352 1
-259 90 1
-94 411 1
-951 164 1
-49 209 1
-902 40 1
-729 254 1
-770 393 1
-771 395 1
-192 200 1
-981 61 1
-258 274 1
-530 444 1
-380 412 1
-75 402 1
-192 456 1
-964 213 1
-902 23 1
-801 260 1
-349 276 1
-716 500 1
-829 354 1
-781 135 1
-919 293 1
-920 244 1
-740 387 1
-164 199 1
-966 116 1
-293 395 1
-322 402 1
-380 289 1
-910 317 1
-617 95 1
-389 249 1
-173 198 1
-739 14 1
-837 265 1
-574 344 1
-323 419 1
-832 218 1
-408 293 1
-743 339 1
-327 494 1
-324 427 1
-261 95 1
-580 79 1
-361 397 1
-14 233 1
-795 201 1
-403 236 1
-241 460 1
-394 202 1
-391 20 1
-563 256 1
-191 164 1
-47 164 1
-188 421 1
-68 216 1
-518 65 1
-580 49 1
-288 48 1
-659 459 1
-125 254 1
-253 357 1
-735 418 1
-716 151 1
-457 418 1
-369 230 1
-865 349 1
-242 122 1
-316 394 1
-870 494 1
-7 145 1
-385 312 1
-510 184 1
-342 462 1
-76 241 1
-236 452 1
-569 294 1
-696 256 1
-703 375 1
-528 474 1
-945 123 1
-598 101 1
-345 451 1
-946 363 1
-8 26 1
-611 64 1
-718 183 1
-486 104 1
-493 297 1
-998 420 1
-885 240 1
-381 171 1
-227 158 1
-234 221 1
-405 24 1
-952 196 1
-662 338 1
-891 142 1
-295 491 1
-149 108 1
-816 48 1
-236 90 1
-373 492 1
-43 461 1
-58 188 1
-55 337 1
-836 143 1
-119 295 1
-624 365 1
-557 231 1
-284 361 1
-533 460 1
-841 76 1
-361 397 1
-125 23 1
-542 350 1
-149 108 1
-373 437 1
-353 432 1
-678 485 1
-943 78 1
-399 125 1
-616 331 1
-92 249 1
-430 250 1
-385 312 1
-794 198 1
-122 137 1
-685 200 1
-871 153 1
-919 293 1
-718 6 1
-191 164 1
-367 228 1
-633 174 1
-879 380 1
-308 336 1
-681 351 1
-439 483 1
-521 402 1
-916 401 1
-73 18 1
-729 44 1
-706 457 1
-688 445 1
-321 131 1
-233 427 1
-592 309 1
-836 337 1
-603 134 1
-722 483 1
-19 16 1
-464 68 1
-989 221 1
-993 431 1
-849 379 1
-449 132 1
-42 197 1
-416 442 1
-46 180 1
-648 205 1
-533 460 1
-164 199 1
-97 196 1
-537 392 1
-924 395 1
-857 376 1
-302 284 1
-828 229 1
-969 468 1
-855 188 1
-735 302 1
-108 404 1
-226 103 1
-602 39 1
-289 1 1
-396 237 1
-939 190 1
-14 233 1
-513 137 1
-102 8 1
-908 463 1
-266 137 1
-735 232 1
-92 249 1
-304 198 1
-188 374 1
-313 396 1
-660 10 1
-495 142 1
-584 482 1
-396 312 1
-698 71 1
-852 286 1
-119 212 1
-850 75 1
-739 7 1
-611 276 1
-396 237 1
-751 396 1
-837 265 1
-23 275 1
-192 195 1
-225 474 1
-167 471 1
-740 246 1
-3 202 1
-989 380 1
-361 41 1
-720 69 1
-49 403 1
-567 149 1
-212 125 1
-635 199 1
-69 311 1
-764 220 1
-842 183 1
-413 245 1
-449 462 1
-635 172 1
-490 185 1
-657 71 1
-726 381 1
-111 243 1
-55 236 1
-408 271 1
-931 18 1
-372 418 1
-171 251 1
-722 98 1
-167 267 1
-228 464 1
-344 262 1
-699 423 1
-219 466 1
-94 411 1
-52 168 1
-353 66 1
-739 264 1
-668 83 1
-883 374 1
-699 91 1
-718 149 1
-314 162 1
-489 84 1
-139 368 1
-946 363 1
-57 140 1
-713 165 1
-381 336 1
-56 56 1
-436 14 1
-145 194 1
-519 196 1
-589 10 1
-191 45 1
-746 305 1
-873 258 1
-900 178 1
-954 403 1
-145 309 1
-802 488 1
-465 98 1
-235 70 1
-574 174 1
-650 380 1
-897 196 1
-131 64 1
-378 136 1
-722 402 1
-836 44 1
-603 195 1
-803 199 1
-78 76 1
-130 41 1
-50 58 1
-919 81 1
-985 452 1
-21 463 1
-990 316 1
-648 205 1
-426 350 1
-1 364 1
-679 485 1
-766 494 1
-722 98 1
-809 224 1
-803 131 1
-481 22 1
+user7PXAP itemuaFxY 1 1
+userlRldH item64Mnl 7 1
+user5FxiH iteme5OvS 17 1
+useriCq0M itemvjUdv 17 1
+usernfs1b itemcVs96 9 1
+userm4mHu itemV1Vwk 30 1
+userNuBW9 itemxbm5F 12 1
+userwXmpL itemAj7Pj 28 1
+userRGYXR itemqth87 11 1
+user7oJ9D itemxbm5F 12 1
+userIYes5 item4YMYG 24 1
+userCIwg7 itemup8oB 17 1
+userHL2kL itemqth87 4 1
+userXPmRz itemY6045 7 1
+userlRldH itemrT9kO 22 1
+userfl0kv item80q9y 14 1
+userafRuQ itemiXwHJ 25 1
+user73wIM itemvHkzH 22 1
+userU8XiP itemFEgKI 1 1
+user5YzJs itemdC6Wf 1 1
+user4FmZm itemlHCkK 10 1
+userTyJoH itemUOpVk 10 1
+usera7eUd itemqD4yX 6 1
+userafRuQ itemFEgKI 3 1
+userKFtUF itemjeN5W 5 1
+uservcNUX itemVda4U 24 1
+userhxp30 itemXxPjl 19 1
+userkfbeV itemg6NgV 23 1
+userOmWEg itemnO4tX 1 1
+user4FmZm item64Mnl 29 1
+userE8IrH item0QA86 5 1
+userjnRT1 itemmMX2p 24 1
+userbhMwq itemMzrpc 14 1
+userXPmRz itemWngsI 10 1
+userTyJoH itemlAKEf 5 1
+usera7eUd itemUOpVk 30 1
+userjnRT1 itemUFxkv 14 1
+userwXazR itemSW5s8 7 1
+user5YzJs itemgoCpP 25 1
+userfJqUh itembHmsT 12 1
+userU5xwu itemXxPjl 23 1
+userXPmRz itemehZbz 30 1
+userjOfN6 itemMNxUT 15 1
+userrvaBl itemEQ5kD 18 1
+userfJqUh itemZCI04 16 1
+userwXmpL itemXLYXV 20 1
+userts7VL item9lgJn 3 1
+userRGYXR item0QA86 15 1
+userTyJoH item0MxmA 18 1
+user7igOt itemuaFxY 4 1
+userU8XiP itemlepVl 11 1
+userE8IrH itemcWumf 3 1
+usergnJHC items32yz 9 1
+userOLph1 itemKe2Er 5 1
+useryDDtx itemx52zm 6 1
+userwzRLZ itemUiRdE 1 1
+userOmWEg itemGgwft 16 1
+usera7eUd itemUiRdE 29 1
+userhuvtK itemv7Clw 26 1
+userEiWs5 itemZIbqG 3 1
+userE8IrH itemxvrbY 9 1
+userEiWs5 itemvpxYm 14 1
+userts7VL itemSW5s8 2 1
+userwXazR itemlHCkK 12 1
+uservcNUX itemlHCkK 17 1
+userGadv3 itemy6Af3 29 1
+useriqm2l itemUyXau 2 1
+userfIZMV itema506d 25 1
+user6btfJ itemsF3jV 12 1
+userwXazR itemUo6cI 8 1
+userrvaBl itemcWumf 8 1
+useriL4c2 itemBmrIx 13 1
+userYKjNX itemTuHK9 8 1
+userwzRLZ itemx52zm 7 1
+user7igOt itemAzjPR 26 1
+userOBLWP itemllUul 4 1
+userjnRT1 itemKe2Er 4 1
+userboi7r itemTAGOA 11 1
+user9tzLJ itemDF5f3 6 1
+userzioQY itembHmsT 26 1
+userRwvwk itemUyXau 1 1
+user2Vxqb itemPOi9Y 12 1
+userLBXk0 itemJaOdU 6 1
+useriLMjp itemIBbVf 21 1
+userE8IrH itemcVs96 30 1
+userh6Cos itemTuHK9 26 1
+userwXmpL itemgRlgs 6 1
+userpbY1g itemehZbz 28 1
+userRGYXR item03CQ6 13 1
+userTyJoH itemRNQTR 25 1
+userOLph1 itemlN5jA 27 1
+userEAbmM itemwBj8x 6 1
+userHL2kL itemqF1uc 7 1
+userYcsX6 itemSrPKx 14 1
+user2RzBb itemv7Clw 17 1
+user71qa3 item0MxmA 20 1
+userAZO9y itemFzVAJ 17 1
+userwC8yX itemYp8lv 22 1
+userm4mHu itemEwdGW 10 1
+userfIZMV itemUFxkv 7 1
+user1eta7 items32yz 11 1
+userYkF7h itemZCI04 16 1
+userIqRCa itemQkv6a 25 1
+userE8IrH itemAj7Pj 4 1
+userIYes5 itemdC6Wf 8 1
+userfl0kv itemZCI04 27 1
+userbfNOX itemABTMM 23 1
+userU5xwu itemHrihE 2 1
+uservcNUX itemdqVVX 27 1
+userLS2Nz itemlAKEf 1 1
+userbfNOX itemuaFxY 22 1
+uservcNUX itemjmSae 17 1
+userU5xwu itemf6vR5 8 1
+user7igOt item7gr06 30 1
+userboi7r itemnO4tX 21 1
+user3niUH itemd9ChJ 11 1
+userYKjNX item1PK0V 4 1
+userNuBW9 itemSW5s8 1 1
+userIYes5 itemva2ph 29 1
+userU5xwu itemrT9kO 17 1
+userrvaBl itemdC6Wf 13 1
+userh6Cos itemDYrOS 11 1
+userTyJoH itemGgwft 14 1
+userIYes5 itemUo6cI 1 1
+usernfs1b itemdoXAn 27 1
+userhxp30 itemHrihE 5 1
+useriL4c2 itemwAkpa 12 1
+userOmWEg itemFEgKI 8 1
+userQrGSE itemiCowm 17 1
+userjnRT1 itemh9nHh 25 1
+userhuvtK itemMzrpc 11 1
+userhn3H7 itemcAUzH 10 1
+userU8XiP itemf6vR5 17 1
+user7igOt itemRNQTR 12 1
+userTyJoH itemDF5f3 30 1
+user7oJ9D item4YMYG 15 1
+userrvaBl itemySRfm 20 1
+userwzRLZ itemllUul 10 1
+user2Vxqb itemTuHK9 17 1
+userrvaBl itemFjQ4M 6 1
+userkfbeV itema506d 28 1
+userm4mHu itemxbm5F 16 1
+useriqm2l itemjeN5W 9 1
+userOmWEg item0MxmA 17 1
+userNuBW9 itemcvY2p 26 1
+userRGYXR itemvn3OC 27 1
+usera7eUd itemO64Fe 27 1
+userOLph1 itemySRfm 3 1
+userXPmRz itemVARpF 26 1
+usernfs1b itemFoRzs 25 1
+user9xbHl item31doJ 27 1
+userafRuQ itemaPbf4 29 1
+userIYes5 itemsaQmG 12 1
+userRwvwk item2FMEC 11 1
+uservIgrQ itemsB45O 12 1
+userEiWs5 itemQkv6a 14 1
+useraAGtk itemRMr3n 29 1
+usera7eUd itemmt9Zs 1 1
+userfJqUh itemgRlgs 21 1
+userpbY1g itemlN5jA 15 1
+uservVAs9 itemMNxUT 20 1
+userOLph1 item6hTeJ 17 1
+userTbHVD itemhOGIE 17 1
+user9tzLJ itemXLYXV 10 1
+userNuBW9 item7gr06 28 1
+useryKPmt itemvn3OC 28 1
+userLBXk0 itemr7q87 15 1
+userOPEPI itemDYrOS 17 1
+userzioQY itemIBbVf 12 1
+userQrGSE itemxwCH9 11 1
+userafRuQ item31doJ 27 1
+userIqRCa itemrT9kO 6 1
+userjnRT1 itemlAKEf 19 1
+user9tzLJ item84cQ6 19 1
+userU5xwu itemyo43o 22 1
+userYkF7h item80q9y 30 1
+userYkF7h itemoSaYE 22 1
+user4FmZm itemva2ph 23 1
+user7oJ9D itemFjQ4M 13 1
+userjFzvH item31doJ 16 1
+userOLph1 itemaTHnd 27 1
+useriL4c2 itemsB45O 25 1
+uservVAs9 itemqppyW 5 1
+useriL4c2 itemGAqYy 2 1
+user3dYr4 itemxbm5F 26 1
+userIYes5 itemKckEp 13 1
+useriLMjp itemUFxkv 26 1
+userEiWs5 itemsB45O 9 1
+userEsCm8 itemmt9Zs 6 1
+userm4mHu item618n3 16 1
+uservcNUX itemfL8PL 26 1
+useriL4c2 itemRNQTR 19 1
+userwzRLZ itemva2ph 2 1
+userLBXk0 itemFoRzs 4 1
+useriCq0M itemOCA2H 13 1
+usera7eUd itemSrPKx 20 1
+userIqRCa itemjIyZN 10 1
+useraAGtk itemUo6cI 2 1
+userBpH3N itemVda4U 24 1
+useryKPmt itemcWumf 13 1
+useraAGtk itemUiRdE 17 1
+userwXazR itemf6vR5 1 1
+userQrGSE itemjeN5W 14 1
+userh6Cos itemcAUzH 22 1
+userxGXFq itemVda4U 5 1
+userhxp30 itemxbm5F 29 1
+userxGXFq itemEwdGW 15 1
+userYkF7h itemehZbz 28 1
+usergnJHC itemKckEp 18 1
+userts7VL item0rrNz 5 1
+userhuvtK itemGgwft 17 1
+userU8XiP itemEQ5kD 3 1
+userEAbmM itemoSaYE 16 1
+userTyJoH itemVARpF 22 1
+userVvdgt itemy6Af3 25 1
+userfz4zC item4p3W3 11 1
+userHL2kL itemehZbz 20 1
+userYkF7h itempGfZ6 12 1
+user3dYr4 item4p3W3 6 1
+userafRuQ itemFEgKI 14 1
+userIqRCa itemVda4U 18 1
+userwzRLZ itemH8gzP 25 1
+usergnJHC itemvpxYm 9 1
+userOLph1 itemUyXau 8 1
+userRGYXR item64Mnl 21 1
+userTbHVD itemsB45O 22 1
+userzioQY itemg6NgV 21 1
+userxGXFq itemoSaYE 7 1
+userAZO9y itemABTMM 3 1
+userjFzvH item9lgJn 8 1
+userGadv3 itemJaOdU 10 1
+userOLph1 itemuaFxY 7 1
+userVvdgt itemr1zoc 4 1
+userOLph1 itemPOi9Y 6 1
+userh6Cos itemlN5jA 12 1
+userAZO9y itemw0Hbk 6 1
+userxGXFq itemBmrIx 19 1
+userOBLWP itemFzVAJ 30 1
+userKFtUF itemjIyZN 16 1
+user9xbHl itemqD4yX 27 1
+userYkF7h itemvjUdv 10 1
+userrvaBl itemUOpVk 29 1
+user9tzLJ itemmbGoj 26 1
+useryDDtx itemrDLmp 20 1
+userNL6ye itemFzVAJ 10 1
+userzioQY itemwBj8x 25 1
+useraAGtk itemnO4tX 16 1
+userLBXk0 item80q9y 6 1
+userXIciZ itemuaFxY 12 1
+userNL6ye itemEZob3 15 1
+userlRldH itemMzrpc 19 1
+userjFzvH itemrDLmp 6 1
+userNL6ye itemUo6cI 4 1
+userfz4zC itemoSaYE 21 1
+userOBLWP itemEQ5kD 10 1
+userhxp30 itemMNxUT 11 1
+userfIZMV itemd7GN3 5 1
+userOLph1 itemDF5f3 9 1
+userKFtUF itemaPbf4 27 1
+useriL4c2 itemXLYXV 2 1
+userOmWEg itemxwCH9 3 1
+useryKPmt itemllUul 7 1
+userxGXFq itemMzrpc 12 1
+user9tzLJ itemCmV8W 12 1
+user9tzLJ itemTuHK9 30 1
+usernfs1b itemBmrIx 1 1
+userEAbmM itemr1zoc 1 1
+userU8XiP itemh9nHh 14 1
+uservIgrQ item0QA86 9 1
+userNuBW9 itemqD4yX 4 1
+usergnJHC itemYp8lv 22 1
+userYcsX6 item0QA86 26 1
+userjnRT1 itemZIbqG 6 1
+useriLMjp itempGfZ6 29 1
+userTHymG item9DjWX 23 1
+userEsCm8 itemh9nHh 30 1
+userbfNOX itemrDLmp 4 1
+userIqRCa itemzexIV 26 1
+userwXazR itemxvrbY 27 1
+userOPEPI item0QA86 22 1
+userOPEPI itemMpeEL 1 1
+userxGXFq itemKHT0l 12 1
+userm4mHu itemAlGQe 11 1
+user7igOt itemMpeEL 1 1
+userOBLWP itemCmV8W 15 1
+userjFzvH itemySRfm 18 1
+useriqm2l itemmt9Zs 7 1
+user73wIM itemr7q87 3 1
+userKWMYJ item9muy9 6 1
+userGadv3 item03CQ6 21 1
+uservcNUX itemVARpF 10 1
+user71qa3 itemMNxUT 29 1
+userXPmRz itemlAKEf 29 1
+userYKjNX itemfL8PL 20 1
+userts7VL itemcVs96 22 1
+userwXazR itemmMX2p 9 1
+userRwvwk itemqth87 13 1
+user4FmZm itemEwdGW 11 1
+userGadv3 itemQkv6a 28 1
+userLS2Nz itemqppyW 5 1
+user3niUH itemZCI04 11 1
+userwzRLZ item6hTeJ 14 1
+userTbHVD item84cQ6 2 1
+user6btfJ itemdqVVX 18 1
+userLS2Nz itembuWyf 17 1
+usernfs1b itemPOi9Y 13 1
+userpKjBY itemdC6Wf 2 1
+userRqCeX itemSeyqb 3 1
+userfIZMV itemwAkpa 28 1
+userTbHVD itemZCI04 12 1
+useraUavY itemOCA2H 12 1
+userTbHVD itemup8oB 10 1
+userhn3H7 itemTuHK9 28 1
+user73wIM itemvjUdv 27 1
+userEiWs5 itemCVpf3 26 1
+userRGYXR itemaPbf4 23 1
+userVvdgt item1PK0V 27 1
+userjnRT1 itemCVpf3 30 1
+userpbY1g itemKHT0l 27 1
+userts7VL itemPzRe5 21 1
+userfJqUh item0rrNz 28 1
+userE8IrH itemRMr3n 13 1
+userU5xwu itemRMr3n 13 1
+userpbY1g itemlN5jA 25 1
+userpbY1g itemwinns 5 1
+userhn3H7 itemWeaex 25 1
+userXIciZ itemy6Af3 13 1
+userafRuQ item4YMYG 10 1
+userhuvtK itemUiRdE 16 1
+user5YzJs itemwAkpa 15 1
+userwzRLZ itemcWumf 18 1
+userLBXk0 itemsF3jV 4 1
+userHL2kL itemf6vR5 14 1
+uservcNUX item9M3lc 29 1
+usergnJHC itemFjQ4M 2 1
+userOBLWP itemN8AZu 14 1
+userCIwg7 itemoSaYE 6 1
+user7oJ9D itemMNxUT 9 1
+userhxp30 itemRNQTR 29 1
+usera7eUd item64Mnl 11 1
+userHL2kL itemd9ChJ 3 1
+userEsCm8 item03CQ6 9 1
+usera7eUd itemQJNS2 23 1
+userfJqUh itemd9ChJ 30 1
+user9tzLJ itemDAINx 7 1
+uservzAWa itemsF3jV 3 1
+userCIwg7 itemSW5s8 12 1
+userpbY1g itemyWo9i 19 1
+userEiWs5 itemAlGQe 25 1
+userGadv3 itemBmrIx 17 1
+userIYes5 itemv7Clw 30 1
+userRqCeX itemySRfm 10 1
+useruR6i7 itemVHyMp 25 1
+userwzRLZ itembHmsT 13 1
+userOmWEg iteme1aEV 28 1
+user73wIM itemuaFxY 22 1
+userLS2Nz itemxCvQp 3 1
+useryKPmt item4YMYG 30 1
+useriL4c2 item03CQ6 17 1
+userTbHVD itemx52zm 26 1
+userYKjNX itemTAGOA 17 1
+userfz4zC itemvjUdv 13 1
+userOBLWP itemKe2Er 9 1
+useraUavY item9M3lc 12 1
+userfIZMV itemQStwf 4 1
+userKFtUF itemcVs96 19 1
+userbfNOX itemwBj8x 6 1
+user3dYr4 item7gr06 25 1
+userkfbeV itemSnsYW 27 1
+userwC8yX itemJaOdU 16 1
+uservIgrQ itemMNxUT 17 1
+userNL6ye itemw0Hbk 6 1
+userfIZMV itemFsCNW 6 1
+userAzNXt itemdC6Wf 15 1
+useraUavY itemqth87 30 1
+userxGXFq itemf6vR5 12 1
+userRwvwk item6hTeJ 2 1
+userjFzvH itemcVs96 29 1
+userEAbmM itemqD4yX 26 1
+userYKjNX itemUyXau 13 1
+userQrGSE itemDYrOS 1 1
+userjFzvH itembHmsT 25 1
+user2RzBb itemEB2ZL 9 1
+userU8XiP itemzexIV 29 1
+userm4mHu itemlHCkK 6 1
+userbhMwq itemDF5f3 10 1
+useriLMjp itemBkBCG 14 1
+userQrGSE itemZCI04 7 1
+user4FmZm itemKe2Er 13 1
+userLS2Nz itemd9ChJ 8 1
+usernfs1b itemYp8lv 21 1
+user2RzBb itemwrPNe 5 1
+useriL4c2 itemlN5jA 15 1
+userjnRT1 itemPOi9Y 2 1
+userm4mHu itemmMX2p 16 1
+userEiWs5 itemd9ChJ 19 1
+user5FxiH item64Mnl 15 1
+useriL4c2 iteme5OvS 2 1
+userzioQY itemaTHnd 26 1
+userYkF7h itemSW5s8 3 1
+usernfs1b itemEB2ZL 28 1
+user5YzJs itemRKTJC 20 1
+userEiWs5 itemDF5f3 15 1
+userXIciZ itemmt9Zs 13 1
+userbfNOX itemzexIV 13 1
+userNuBW9 itemSEVUh 2 1
+usermobRV itemABTMM 15 1
+userNL6ye itemVda4U 20 1
+userNL6ye itemlAKEf 7 1
+userKWMYJ itemmbGoj 4 1
+userjFzvH itemSrPKx 24 1
+useriLMjp itemGAqYy 7 1
+user7PXAP itemZIbqG 13 1
+userHL2kL itemva2ph 28 1
+user73wIM itemRNQTR 17 1
+userjOfN6 itemoSaYE 2 1
+useriCq0M item4p3W3 9 1
+userYcsX6 itemWUHgc 17 1
+user1eta7 item0QA86 27 1
+userfJqUh itemr1zoc 21 1
+userpbY1g item80q9y 26 1
+userBpH3N itemlAKEf 19 1
+userVvdgt itemlAKEf 21 1
+userpbY1g item9M3lc 10 1
+useriLMjp itemkHjKP 3 1
+userpbY1g itemgEevH 3 1
+user4FmZm itemCVpf3 15 1
+userkfbeV itemUFxkv 19 1
+userxGXFq itemlHCkK 16 1
+userEsCm8 itemDfuZl 14 1
+user7igOt itemBmrIx 16 1
+useriLMjp itemlAKEf 13 1
+userOmWEg itemtXKxm 15 1
+userjnRT1 item4p3W3 10 1
+userXIciZ itemiXwHJ 15 1
+useriL4c2 itemTuHK9 10 1
+userwC8yX itemVHyMp 14 1
+userrvaBl itemQJNS2 23 1
+usergnJHC itemWngsI 28 1
+userOLph1 item96Uu6 19 1
+userwC8yX itemaPbf4 2 1
+userm4mHu itemRKTJC 5 1
+uservVAs9 itemKHT0l 9 1
+userXPmRz itembuWyf 15 1
+userVvdgt itemxwCH9 15 1
+userhxp30 itemwBj8x 28 1
+useriLMjp itembHmsT 29 1
+useryDDtx itemqppyW 19 1
+userwXazR itemsB45O 15 1
+uservIgrQ itemkHjKP 16 1
+user5YzJs itemzexIV 24 1
+userfJqUh itemvHkzH 13 1
+userTbHVD itemwAkpa 24 1
+user9xbHl itemBuZOt 20 1
+user71qa3 item0amMQ 3 1
+userfJqUh item9muy9 11 1
+userwC8yX itemGAqYy 23 1
+userRGYXR itemIrWce 19 1
+userjOfN6 itemdoXAn 30 1
+userafRuQ itemxvrbY 15 1
+user1eta7 itemiXwHJ 30 1
+useryKPmt itemV1Vwk 14 1
+user7oJ9D itemjeN5W 16 1
+userRqCeX itemeROTS 30 1
+userh6Cos itemWeaex 19 1
+usera7eUd itemcvY2p 2 1
+userNL6ye itemy6Af3 29 1
+user3niUH itemvHkzH 17 1
+userjnRT1 itembHmsT 21 1
+uservcNUX item96Uu6 28 1
+userXPmRz itemUiRdE 21 1
+userVvdgt itemUOpVk 3 1
+userafRuQ itemABTMM 27 1
+useraUavY itemllUul 5 1
+uservzAWa item7gr06 28 1
+userOBLWP itemdqVVX 24 1
+userTbHVD itemRMr3n 11 1
+userh6Cos itemGAqYy 29 1
+userwXmpL iteme1aEV 29 1
+userwC8yX itemy6Af3 16 1
+userkfbeV itemtXKxm 19 1
+user71qa3 itemY6045 5 1
+userOmWEg itemmt9Zs 22 1
+userU5xwu itemDAINx 22 1
+userYkF7h itemYOYte 10 1
+userwXmpL itemGAqYy 22 1
+uservIgrQ itemv7Clw 5 1
+useraAGtk item2FMEC 17 1
+userYkF7h itemr1zoc 15 1
+userwXmpL itemPzRe5 1 1
+userE8IrH itemzfaal 13 1
+userYKjNX itemDfuZl 29 1
+userwXmpL itemcvY2p 7 1
+uservVAs9 itemh9nHh 19 1
+userRqCeX items32yz 29 1
+usernfs1b itemHrihE 29 1
+useryKPmt itemr7q87 27 1
+userjOfN6 itemdkR3x 26 1
+userQrGSE itemakzor 4 1
+userk6Mri itemYOYte 19 1
+user71qa3 itemYp8lv 23 1
+userfJqUh itemXLYXV 24 1
+userOLph1 itemSrPKx 3 1
+userhuvtK itemFjQ4M 12 1
+userNuBW9 itemSEVUh 25 1
+userTbHVD itemQStwf 28 1
+userhxp30 iteme1aEV 15 1
+userfz4zC itemTuHK9 11 1
+userVvdgt itemDAINx 21 1
+userRGYXR itemWeaex 19 1
+userNL6ye itemY6045 27 1
+user5FxiH itemlHCkK 8 1
+userwXmpL item0amMQ 15 1
+userAZO9y itemcWumf 9 1
+userbfNOX itemVARpF 28 1
+userTHymG item6hTeJ 9 1
+userYcsX6 itemAj7Pj 12 1
+user5FxiH itemYp8lv 29 1
+userbfNOX itemUOpVk 23 1
+userTHymG itemtXKxm 6 1
+uservIgrQ itemSeyqb 18 1
+userE8IrH itemehZbz 9 1
+useraUavY itemmbGoj 1 1
+userLS2Nz itemySRfm 15 1
+userYkF7h itemehZbz 13 1
+userfIZMV itemehZbz 16 1
+userAZO9y itemBuZOt 9 1
+userRwvwk itemEwdGW 27 1
+userwC8yX itemY6045 12 1
+user3dYr4 items32yz 21 1
+useryKPmt itemgEevH 24 1
+user9tzLJ item4YMYG 27 1
+useriL4c2 itemEB2ZL 6 1
+userEiWs5 itemCmV8W 24 1
+useryKPmt itemRMr3n 19 1
+useryDDtx itemVda4U 27 1
+userHL2kL itemjmSae 25 1
+userjOfN6 itemJaOdU 22 1
+userEiWs5 itemr1zoc 30 1
+userHL2kL itemw0Hbk 13 1
+user5YzJs itemLPkI9 17 1
+user71qa3 item0MxmA 14 1
+userts7VL itemhOGIE 3 1
+userfJqUh itemnO4tX 19 1
+userjOfN6 item23scr 8 1
+user1eta7 itemYp8lv 27 1
+user2RzBb itemO64Fe 24 1
+userpbY1g itemwAkpa 29 1
+userhuvtK itemdC6Wf 30 1
+useriqm2l itemUOpVk 24 1
+user4FmZm itemBuZOt 4 1
+userTHymG iteme5OvS 5 1
+useriL4c2 itemrT9kO 29 1
+userzioQY item0rrNz 3 1
+userjOfN6 itemUyXau 16 1
+userbhMwq itemJaOdU 1 1
+user7igOt itemgEevH 29 1
+userTbHVD itemVZJC8 24 1
+userYKjNX itemTuHK9 13 1
+userYKjNX itemhOGIE 27 1
+userTyJoH item9lgJn 29 1
+userTbHVD item7XnWI 8 1
+userOmWEg itemSEVUh 17 1
+useraAGtk itemFsCNW 26 1
+userm4mHu itemySRfm 21 1
+userxGXFq itemyWo9i 5 1
+userHL2kL item4p3W3 16 1
+userhn3H7 itemxwCH9 4 1
+userNL6ye itemgEevH 15 1
+userboi7r itemeROTS 4 1
+userRqCeX itemaTHnd 3 1
+userVvdgt items32yz 30 1
+user1eta7 item03CQ6 13 1
+userU5xwu itemiXwHJ 14 1
+user73wIM iteme5OvS 20 1
+userjnRT1 itemaTHnd 27 1
+userAzNXt item6TcLl 16 1
+userU5xwu itemdqVVX 15 1
+userEAbmM itemFoRzs 27 1
+user73wIM itemeROTS 7 1
+user7PXAP item6TcLl 22 1
+userjOfN6 item64Mnl 17 1
+userKWMYJ itemx52zm 7 1
+userTyJoH itemkHjKP 13 1
+user6btfJ itemUyXau 4 1
+userGadv3 itemSW5s8 16 1
+uservVAs9 item4FB6e 20 1
+user4FmZm itemMNxUT 17 1
+user9tzLJ itemx52zm 26 1
+userpbY1g itemYp8lv 19 1
+useriL4c2 item9lgJn 28 1
+userE8IrH iteme1aEV 27 1
+userfJqUh itemsF3jV 23 1
+userEAbmM item52xJ8 3 1
+user1eta7 itemeROTS 30 1
+userGadv3 itemUOpVk 20 1
+userboi7r itemH8gzP 15 1
+user73wIM item2FMEC 13 1
+usergnJHC itemvn3OC 22 1
+userNL6ye itemlepVl 5 1
+userpbY1g itemjIyZN 22 1
+userIqRCa itemwinns 13 1
+userAZO9y itemUFxkv 9 1
+user1eta7 itemV1Vwk 8 1
+userBpH3N itemBkBCG 17 1
+uservcNUX itemf6vR5 19 1
+user7igOt itemIrWce 29 1
+userjFzvH itemwBj8x 7 1
+user3niUH item9DjWX 12 1
+user6btfJ item80q9y 10 1
+userIYes5 itemDfuZl 29 1
+userNuBW9 item52xJ8 25 1
+userfJqUh itemYp8lv 25 1
+userKFtUF itemd7GN3 1 1
+userNL6ye itemr1zoc 17 1
+userVvdgt itemTAGOA 2 1
+user3dYr4 itemMpeEL 13 1
+userTbHVD itemH8gzP 25 1
+user5YzJs itemlN5jA 4 1
+userEiWs5 itempGfZ6 14 1
+userEiWs5 itemzexIV 23 1
+userrvaBl itemRNQTR 28 1
+userbhMwq itemCVpf3 14 1
+useriCq0M itemSnsYW 8 1
+user6btfJ itemwAkpa 24 1
+userEiWs5 itemFjQ4M 27 1
+userxrwAf itemMzrpc 22 1
+userhxp30 itemvpxYm 1 1
+userRGYXR item0VuxA 15 1
+userjFzvH iteme5OvS 23 1
+useriLMjp itemllUul 29 1
+user7oJ9D itemqF1uc 29 1
+userpbY1g itemEB2ZL 14 1
+useraUavY itemsaQmG 5 1
+userVvdgt itemWngsI 20 1
+user9xbHl itemRKTJC 7 1
+userKWMYJ item80q9y 8 1
+user7PXAP itemkHjKP 15 1
+userYkF7h itemDF5f3 26 1
+usermobRV itemx52zm 15 1
+userXPmRz itemKHT0l 4 1
+userEiWs5 itemUFxkv 15 1
+userOLph1 itemaTHnd 28 1
+userOBLWP itemN8AZu 29 1
+userzioQY itemyWo9i 13 1
+userIYes5 item64Mnl 24 1
+userKFtUF itemFsCNW 21 1
+userboi7r itemEZob3 17 1
+userwXazR itemEwdGW 20 1
+useriCq0M itemXxPjl 26 1
+userOBLWP itemrT9kO 28 1
+userfz4zC itemqD4yX 6 1
+userRGYXR itemva2ph 30 1
+userYcsX6 item0QA86 15 1
+userEiWs5 itemCmV8W 21 1
+userfl0kv itemPOi9Y 5 1
+userxrwAf itemUo6cI 15 1
+userjFzvH itemmt9Zs 30 1
+userlRldH itemKe2Er 27 1
+userAZO9y itemBuZOt 27 1
+user3niUH itemzexIV 10 1
+userXIciZ itemIBbVf 22 1
+user5YzJs itemABTMM 21 1
+userTbHVD itemEZob3 22 1
+userhxp30 itemzfaal 7 1
+userk6Mri item178I3 22 1
+userE8IrH itemBmrIx 21 1
+useryKPmt itemrT9kO 24 1
+user7igOt itemEzeNr 19 1
+userXPmRz itemva2ph 21 1
+user4FmZm item4p3W3 12 1
+userAZO9y itemWeaex 8 1
+userYcsX6 itemCVpf3 13 1
+userlRldH itemZIbqG 11 1
+userBpH3N itemdkR3x 12 1
+userfIZMV itempLAQY 24 1
+userxGXFq itemlN5jA 4 1
+user9tzLJ itemWngsI 24 1
+userTyJoH itemVHyMp 6 1
+userIYes5 item0QA86 23 1
+userwXmpL itemKckEp 4 1
+user5FxiH itemfL8PL 15 1
+userHL2kL itempLAQY 22 1
+userm4mHu itemUyXau 22 1
+userAzNXt itemdkR3x 25 1
+userYKjNX item618n3 14 1
+userwzRLZ itemFEgKI 23 1
+userrvaBl item23scr 23 1
+userhn3H7 itemVZJC8 6 1
+useryKPmt itemV1Vwk 23 1
+userjFzvH itemuz9u2 8 1
+userNuBW9 itemuaFxY 25 1
+userfl0kv itemmMX2p 13 1
+userk6Mri itemLDh7R 26 1
+userLS2Nz itemPOi9Y 19 1
+user5FxiH itemQJNS2 7 1
+useryKPmt itemLDh7R 7 1
+userts7VL itemHrihE 2 1
+uservcNUX item52xJ8 4 1
+userjOfN6 item4YMYG 16 1
+user3dYr4 itemVZJC8 11 1
+userhxp30 itemLDh7R 25 1
+userxGXFq item31doJ 21 1
+userYcsX6 itemFzVAJ 19 1
+userXIciZ item84cQ6 21 1
+uservVAs9 itemmMX2p 13 1
+userbhMwq itemUiRdE 3 1
+useriqm2l itemEwdGW 23 1
+useraAGtk itemZCI04 13 1
+userYKjNX itemxwCH9 14 1
+userkfbeV itemHrihE 26 1
+uservVAs9 itemmbGoj 20 1
+user7igOt itemOCA2H 14 1
+userKWMYJ itemQStwf 22 1
+user71qa3 itemVZJC8 7 1
+userCIwg7 itemjIyZN 13 1
+user73wIM itemTuHK9 12 1
+userk6Mri itemh9nHh 27 1
+usermobRV itemRMr3n 29 1
+user7oJ9D itemMNxUT 3 1
+userkfbeV itemdC6Wf 24 1
+useriCq0M itemjeN5W 9 1
+userfl0kv itemy6Af3 26 1
+userIYes5 itemqD4yX 18 1
+userRGYXR itemdjMTE 13 1
+useruR6i7 itemva2ph 30 1
+userLBXk0 itemuz9u2 21 1
+userzioQY itemoSaYE 1 1
+user5YzJs item9lgJn 10 1
+user9tzLJ itemeROTS 24 1
+user7PXAP itemBkBCG 5 1
+usermobRV itemHrihE 1 1
+user6btfJ itemqppyW 21 1
+user2RzBb itemFEgKI 6 1
+userxGXFq itemDfuZl 3 1
+userBpH3N itemO64Fe 28 1
+userzioQY itemFzVAJ 19 1
+userIYes5 item4p3W3 23 1
+userrvaBl itemWUHgc 6 1
+userU5xwu itema506d 4 1
+user3niUH itemAj7Pj 25 1
+userm4mHu itemDF5f3 2 1
+userIYes5 itemN8AZu 25 1
+userXIciZ itemJaOdU 26 1
+userOmWEg itemEwdGW 15 1
+user9tzLJ itemmbGoj 27 1
+useriL4c2 itemY6045 28 1
+userXPmRz itemPOi9Y 19 1
+userOBLWP itemv7Clw 16 1
+userNL6ye itemYgdNj 23 1
+user1eta7 itemZIbqG 1 1
+user4FmZm itemxwCH9 17 1
+userjOfN6 itemjmSae 10 1
+useruR6i7 itemWeaex 19 1
+userU5xwu item52xJ8 24 1
+useriLMjp itemFsCNW 26 1
+userzioQY item9DjWX 27 1
+uservIgrQ itemLPkI9 16 1
+userOmWEg item9lgJn 13 1
+uservcNUX itemSEVUh 22 1
+userhxp30 itemkHjKP 14 1
+user1eta7 itemN8AZu 24 1
+useriL4c2 items32yz 9 1
+userNL6ye itemcvY2p 22 1
+userRqCeX itemdC6Wf 12 1
+userfJqUh itemlAKEf 3 1
+user1eta7 itemr1zoc 3 1
+user2Vxqb itemaTHnd 21 1
+user7oJ9D itemlepVl 18 1
+useriqm2l itemlN5jA 29 1
+userhxp30 itemTuHK9 24 1
+user7oJ9D itemlepVl 13 1
+useriLMjp item31doJ 21 1
+userHL2kL itemEZob3 6 1
+userjOfN6 itemIBbVf 21 1
+userafRuQ itemvn3OC 23 1
+userm4mHu itemehZbz 26 1
+usera7eUd item178I3 3 1
+userAZO9y item84cQ6 20 1
+userwC8yX iteme5OvS 1 1
+userfIZMV itemsaQmG 14 1
+user3dYr4 itemEB2ZL 5 1
+userOmWEg itemEwdGW 8 1
+userwzRLZ itemy6Af3 10 1
+user5YzJs itemeROTS 6 1
+usermobRV itemABTMM 4 1
+userbfNOX itemwBj8x 29 1
+user1eta7 itemY6045 7 1
+userNuBW9 itempGfZ6 20 1
+userzioQY itemakzor 8 1
+useriLMjp itemgEevH 24 1
+usermobRV itemPn5yf 3 1
+userAzNXt itemmMX2p 20 1
+userwXazR itemYp8lv 10 1
+userlRldH itemLPkI9 3 1
+userbfNOX itemRKTJC 6 1
+userjnRT1 itemdC6Wf 17 1
+user5YzJs itemxCvQp 5 1
+userYKjNX itemMNxUT 5 1
+usergnJHC item0amMQ 4 1
+user6btfJ itemFjQ4M 17 1
+userEAbmM itemYgdNj 28 1
+userE8IrH itemvQ7sQ 29 1
+useriqm2l item6hTeJ 10 1
+userYkF7h itemlHCkK 28 1
+usernfs1b itemxCvQp 21 1
+userEAbmM itemlepVl 14 1
+uservVAs9 item7XnWI 29 1
+userEAbmM itemeROTS 23 1
+useryDDtx itemgRlgs 10 1
+userfl0kv itemWUHgc 25 1
+userLBXk0 itemzexIV 8 1
+userXIciZ itemVda4U 14 1
+userEiWs5 itemKckEp 13 1
+userQrGSE itemuNHoh 12 1
+userfz4zC itemSrPKx 29 1
+uservcNUX itemr1zoc 25 1
+user9xbHl itemoSaYE 15 1
+uservcNUX itemLPkI9 3 1
+userwzRLZ itemakzor 11 1
+userjnRT1 itemyWo9i 25 1
+userafRuQ itemQkv6a 23 1
+userTbHVD itemFzVAJ 2 1
+userBpH3N itemAj7Pj 12 1
+useriCq0M item03CQ6 15 1
+userk6Mri itemwrPNe 25 1
+user9tzLJ itemcvY2p 1 1
+usergnJHC itemqppyW 25 1
+user9xbHl itemDYrOS 18 1
+userk6Mri itemIBbVf 27 1
+userpKjBY item64Mnl 12 1
+userfIZMV item7gr06 17 1
+userpKjBY itemqth87 30 1
+uservIgrQ itemmMX2p 12 1
+userLS2Nz itemkHjKP 28 1
+userOPEPI itemakzor 18 1
+userTHymG itemMpeEL 2 1
+userrvaBl itemgRlgs 8 1
+userfJqUh item80q9y 22 1
+userOLph1 itemLDh7R 30 1
+user1eta7 itemmMX2p 14 1
+userBpH3N itemd7GN3 8 1
+useraUavY itemqF1uc 12 1
+userBpH3N itemdoXAn 21 1
+useriCq0M itemYp8lv 19 1
+userOLph1 itemxwCH9 23 1
+user9xbHl itemvQ7sQ 1 1
+user9tzLJ itemaPbf4 18 1
+userKWMYJ item7XnWI 8 1
+userVvdgt itemCVpf3 21 1
+userxGXFq itemKckEp 28 1
+usergnJHC itemsB45O 29 1
+userOBLWP itemlN5jA 7 1
+userzioQY itemdjMTE 23 1
+user73wIM itemqth87 25 1
+userkfbeV itemllAnb 13 1
+userKFtUF itemVZJC8 11 1
+userKFtUF itemxwCH9 5 1
+userwXazR itemlepVl 18 1
+userTyJoH items32yz 15 1
+useraUavY itemwrPNe 27 1
+user3dYr4 item0QA86 13 1
+userU5xwu item0rrNz 9 1
+userYKjNX item6TcLl 8 1
+userYcsX6 itemXLYXV 28 1
+userVvdgt itemqth87 30 1
+userNuBW9 itemMNxUT 6 1
+userU5xwu itemH8gzP 29 1
+user7PXAP itemRKTJC 8 1
+userLBXk0 itemYgdNj 18 1
+userts7VL itemGgwft 3 1
+userhxp30 itemnO4tX 19 1
+user73wIM itempGfZ6 4 1
+userfJqUh item4FB6e 17 1
+userIqRCa itemlHCkK 25 1
+user73wIM itemehZbz 26 1
+userwXmpL itemMpeEL 18 1
+userU5xwu itemSEVUh 10 1
+userfz4zC item618n3 14 1
+userRqCeX itemRNQTR 13 1
+user71qa3 itemfL8PL 22 1
+useriCq0M itemGgwft 9 1
+userYcsX6 itemjeN5W 14 1
+userGadv3 itemvn3OC 6 1
+userIqRCa itemAzjPR 16 1
+userfJqUh itemDF5f3 11 1
+userjFzvH itemAj7Pj 14 1
+user5YzJs itemFoRzs 10 1
+userlRldH itemRNQTR 7 1
+useriL4c2 itemwrPNe 13 1
+userKWMYJ item0QA86 9 1
+userGadv3 itemup8oB 21 1
+user7igOt itemeROTS 19 1
+userKWMYJ itemVHyMp 29 1
+user9tzLJ itemqppyW 7 1
+uservcNUX itemRNQTR 17 1
+userLS2Nz itemGAqYy 12 1
+user9xbHl itemUo6cI 7 1
+userAZO9y itemY6045 15 1
+user2Vxqb itemwinns 26 1
+usera7eUd itemmbGoj 12 1
+usermobRV itemEQ5kD 19 1
+useriqm2l itemYOYte 17 1
+userafRuQ itemvn3OC 29 1
+user2RzBb itemVda4U 27 1
+useriL4c2 itemqF1uc 23 1
+userm4mHu itemMNxUT 21 1
+userKFtUF item23scr 7 1
+userzioQY itemFzVAJ 24 1
+userYKjNX itemrT9kO 19 1
+useryDDtx itemup8oB 18 1
+userAZO9y itemd7GN3 16 1
+userwzRLZ itemdoXAn 15 1
+userwC8yX itemnvCLA 19 1
+user2RzBb itemsaQmG 4 1
+user3dYr4 itemEQ5kD 5 1
+userTyJoH item9muy9 27 1
+userTbHVD item31doJ 1 1
+usermobRV itemCVpf3 26 1
+userjOfN6 itemcWumf 29 1
+userAzNXt itemWUHgc 23 1
+userfz4zC itemlN5jA 2 1
+usernfs1b item0amMQ 19 1
+userOmWEg itemjmSae 9 1
+userAzNXt iteme1aEV 26 1
+userhuvtK itemUOpVk 18 1
+userwXazR item80q9y 2 1
+userOmWEg item4YMYG 19 1
+userU8XiP itemKe2Er 12 1
+userEiWs5 itemO64Fe 26 1
+userYcsX6 itemyo43o 1 1
+userbfNOX itemqth87 5 1
+userLS2Nz itemHrihE 21 1
+userbhMwq itemV1Vwk 27 1
+userTbHVD itemRMr3n 3 1
+userhuvtK itemuz9u2 15 1
+useriqm2l itemjIyZN 8 1
+userxGXFq itemTuHK9 5 1
+usergnJHC itemLDh7R 10 1
+userfIZMV itemjIyZN 19 1
+userjFzvH itemgEevH 11 1
+userm4mHu itemrDLmp 28 1
+userrvaBl itemwBj8x 13 1
+userU8XiP itemDfuZl 2 1
+userOBLWP itemllAnb 1 1
+user3niUH item9lgJn 20 1
+user1eta7 itemsB45O 14 1
+userbhMwq itemUOpVk 15 1
+userU5xwu itemup8oB 5 1
+userm4mHu itemsF3jV 20 1
+user1eta7 itemUyXau 21 1
+user9tzLJ itemMpeEL 1 1
+userKFtUF itemx52zm 24 1
+userE8IrH itemcAUzH 25 1
+userts7VL itemEB2ZL 3 1
+userpKjBY itemjIyZN 8 1
+user2Vxqb itemnO4tX 10 1
+userU5xwu itemrDLmp 3 1
+usernfs1b itemoSaYE 19 1
+user2RzBb item7gr06 20 1
+user2Vxqb itemdoXAn 19 1
+userfIZMV itemxvrbY 10 1
+userOBLWP itemg6NgV 4 1
+usernfs1b item9muy9 24 1
+userTyJoH itemQJNS2 19 1
+userhn3H7 item9M3lc 27 1
+usergnJHC itemSnsYW 29 1
+userU8XiP itemBkBCG 26 1
+userfl0kv itemPzRe5 15 1
+userEsCm8 itemxCvQp 29 1
+useriLMjp item03CQ6 23 1
+useraUavY itemjmSae 8 1
+useraAGtk itemlN5jA 12 1
+userk6Mri itemDF5f3 5 1
+userwC8yX itemAj7Pj 9 1
+useruR6i7 item84cQ6 16 1
+userU5xwu itemvHkzH 12 1
+userEiWs5 itemVHyMp 23 1
+userNuBW9 itemoSaYE 21 1
+userhxp30 itemYOYte 25 1
+userTbHVD itemDF5f3 14 1
+usernfs1b itemXLYXV 4 1
+userbfNOX itemSeyqb 10 1
+userOBLWP itemvn3OC 19 1
+user4FmZm itemOCA2H 8 1
+userIYes5 itemQStwf 19 1
+useryKPmt itemFjQ4M 14 1
+userwXmpL item7gr06 27 1
+userfIZMV itemEZob3 3 1
+userfJqUh itemFEgKI 21 1
+userk6Mri itemZIbqG 25 1
+userhxp30 itemRNQTR 6 1
+uservVAs9 itemgoCpP 16 1
+userNL6ye itemSW5s8 17 1
+userjOfN6 itemguPDr 4 1
+userpKjBY itemjIyZN 3 1
+useraUavY itemqth87 27 1
+userOBLWP itemlN5jA 17 1
+userjnRT1 itemCmV8W 14 1
+userh6Cos itemxbm5F 8 1
+userts7VL itemZCI04 10 1
+userBpH3N itemaTHnd 17 1
+userxGXFq itemSrPKx 11 1
+user73wIM item4YMYG 13 1
+userpbY1g itemxbm5F 21 1
+useriL4c2 itemFjQ4M 30 1
+userhxp30 itemBuZOt 8 1
+userAZO9y item80q9y 4 1
+userwXmpL itemdoXAn 13 1
+uservzAWa item162CY 16 1
+userKFtUF itemCVpf3 11 1
+useraAGtk itemvn3OC 6 1
+useriLMjp itemup8oB 15 1
+user9tzLJ itemYgdNj 25 1
+userfJqUh itemdC6Wf 23 1
+userpbY1g itemguPDr 14 1
+uservIgrQ itemcVs96 15 1
+userYkF7h itemw0Hbk 16 1
+userkfbeV itemXxPjl 4 1
+userE8IrH itemhOGIE 19 1
+userGadv3 item6TcLl 9 1
+userrvaBl itemRMr3n 29 1
+userhn3H7 itemAj7Pj 14 1
+user7oJ9D itemakzor 26 1
+user3dYr4 itemsF3jV 14 1
+useraUavY itemqth87 20 1
+userNL6ye itemjIyZN 24 1
+userfIZMV itemgEevH 6 1
+user4FmZm itemMzrpc 11 1
+userU5xwu itemvQ7sQ 5 1
+useraAGtk itemr7q87 4 1
+userHL2kL itemxwCH9 12 1
+user1eta7 itemKckEp 18 1
+userOmWEg itemJaOdU 2 1
+userNuBW9 itemkHjKP 12 1
+userxrwAf item6hTeJ 20 1
+userh6Cos item1PK0V 19 1
+user73wIM itemxbm5F 8 1
+userNuBW9 item9M3lc 25 1
+usernfs1b itemfL8PL 14 1
+userXPmRz itempLAQY 18 1
+usergnJHC itemjIyZN 21 1
+useryDDtx itemWngsI 20 1
+userjOfN6 itemSeyqb 18 1
+user4FmZm itemHrihE 12 1
+userYcsX6 itemcVs96 8 1
+userU5xwu itemlN5jA 4 1
+userLS2Nz iteme1aEV 30 1
+userxGXFq itemEzeNr 7 1
+userxGXFq itemiCowm 27 1
+userE8IrH itemDfuZl 7 1
+user5FxiH itemllUul 17 1
+user6btfJ itemTAGOA 1 1
+user9tzLJ item84cQ6 19 1
+userIYes5 item6hTeJ 3 1
+user1eta7 item9M3lc 10 1
+useriCq0M itemIrWce 19 1
+userYkF7h itemMNxUT 26 1
+userwzRLZ item52xJ8 26 1
+userEiWs5 item0VuxA 5 1
+userjFzvH itemXLYXV 12 1
+userkfbeV itemXLYXV 8 1
+userlRldH itemTAGOA 3 1
+userVvdgt itemlAKEf 21 1
+userKFtUF itemYp8lv 15 1
+usera7eUd itemzexIV 4 1
+userHL2kL itemx52zm 22 1
+userafRuQ item178I3 9 1
+usernfs1b itemQJNS2 9 1
+userKWMYJ itemH8gzP 14 1
+userafRuQ itemJaOdU 9 1
+userhn3H7 itemTAGOA 27 1
+userhxp30 itemYOYte 9 1
+userEAbmM item31doJ 14 1
+userfl0kv itemTuHK9 6 1
+userboi7r itemMpeEL 18 1
+userjnRT1 itemPOi9Y 8 1
+userU5xwu itemrT9kO 28 1
+user9tzLJ itemXxPjl 11 1
+userOmWEg item9M3lc 5 1
+userU5xwu itemGgwft 7 1
+user2Vxqb itemBuZOt 12 1
+userXIciZ itemwinns 27 1
+userlRldH itemAzjPR 18 1
+userNuBW9 item6TcLl 25 1
+user3dYr4 itemmbGoj 1 1
+user73wIM itemOCA2H 10 1
+userXIciZ itemw0Hbk 4 1
+userpKjBY itemrDLmp 22 1
+userm4mHu itemcAUzH 8 1
+userhn3H7 itemzexIV 27 1
+user3dYr4 itemqD4yX 9 1
+uservcNUX itemLDh7R 12 1
+userKWMYJ item7gr06 6 1
+uservIgrQ itemSW5s8 28 1
+user6btfJ itemehZbz 25 1
+userU5xwu itemtXKxm 12 1
+userOBLWP itemKe2Er 6 1
+user71qa3 itemDF5f3 7 1
+userwC8yX itemjIyZN 15 1
+usera7eUd itemvQ7sQ 4 1
+userKFtUF itemMzrpc 2 1
+userrvaBl itemVHyMp 27 1
+user73wIM itemjmSae 14 1
+usergnJHC itempLAQY 1 1
+userAZO9y itemhOGIE 13 1
+useryKPmt itemrT9kO 1 1
+userTbHVD itemDfuZl 23 1
+useryDDtx item618n3 12 1
+userU5xwu itempGfZ6 11 1
+user9xbHl item618n3 23 1
+userRwvwk itemWeaex 30 1
+useraUavY item0QA86 23 1
+userhn3H7 itemWUHgc 26 1
+user5FxiH item4FB6e 8 1
+userKWMYJ item162CY 8 1
+user71qa3 itemwBj8x 2 1
+user2Vxqb itempLAQY 23 1
+userhn3H7 item7XnWI 23 1
+userYkF7h itemwBj8x 26 1
+userafRuQ item6hTeJ 25 1
+userVvdgt itemvQ7sQ 6 1
+userbfNOX item1PK0V 1 1
+userhxp30 itemUOpVk 30 1
+userKWMYJ itemlN5jA 22 1
+userU8XiP itemEZob3 16 1
+user7igOt itemSeyqb 16 1
+userxGXFq itemehZbz 24 1
+userNL6ye itemvjUdv 3 1
+userEAbmM itemZIbqG 19 1
+user2RzBb itemrDLmp 12 1
+user7oJ9D itemGgwft 21 1
+userGadv3 itemdqVVX 8 1
+useriLMjp itemySRfm 28 1
+userGadv3 itemaTHnd 11 1
+usernfs1b itemKckEp 24 1
+useruR6i7 itemehZbz 21 1
+userjOfN6 itemCmV8W 23 1
+userxGXFq itemqth87 8 1
+userU8XiP itemxwCH9 20 1
+userwXazR itemTuHK9 11 1
+userlRldH itemrT9kO 13 1
+user3niUH itemr1zoc 12 1
+userOLph1 itemN8AZu 4 1
+userTyJoH itemjIyZN 18 1
+userHL2kL itemHrihE 24 1
+userhn3H7 itemwBj8x 5 1
+useruR6i7 itembHmsT 24 1
+userYkF7h itemdoXAn 29 1
+userNL6ye itemRy5SF 20 1
+userBpH3N itemFjQ4M 4 1
+user7oJ9D itemySRfm 4 1
+useruR6i7 item9DjWX 5 1
+useriLMjp item64Mnl 4 1
+user1eta7 itemjIyZN 21 1
+uservcNUX item618n3 25 1
+userhxp30 itemguPDr 9 1
+userOBLWP itema506d 26 1
+user1eta7 itemDYrOS 27 1
+userBpH3N item9M3lc 2 1
+useriCq0M itemcAUzH 10 1
+userbfNOX itemYp8lv 1 1
+userQrGSE itemEwdGW 12 1
+user9tzLJ itemN8AZu 9 1
+userKWMYJ itemy6Af3 22 1
+uservVAs9 itemguPDr 1 1
+userXPmRz itemGgwft 13 1
+userRqCeX item23scr 20 1
+userAzNXt itemBmrIx 18 1
+userBpH3N itemwinns 4 1
+userTbHVD itemaTHnd 30 1
+userIYes5 itemlepVl 9 1
+userkfbeV item64Mnl 7 1
+user73wIM items32yz 5 1
+user73wIM itemeROTS 21 1
+userKWMYJ itemsaQmG 15 1
+userAzNXt itemIBbVf 15 1
+userQrGSE itemup8oB 16 1
+userU5xwu itempLAQY 7 1
+user7PXAP item0QA86 17 1
+userfJqUh itemmbGoj 9 1
+userTHymG item23scr 13 1
+userLBXk0 itemdC6Wf 25 1
+userRqCeX itemcAUzH 6 1
+usergnJHC itemf6vR5 10 1
+userOPEPI itemFoRzs 28 1
+user3dYr4 itemVARpF 19 1
+userEsCm8 item9muy9 25 1
+uservVAs9 item618n3 17 1
+user73wIM itemEzeNr 19 1
+userRqCeX itemTAGOA 10 1
+userOmWEg itemYp8lv 12 1
+uservVAs9 itemZIbqG 26 1
+user3niUH itemFoRzs 19 1
+userGadv3 itemMNxUT 24 1
+userXPmRz itemSEVUh 23 1
+userjFzvH itemhOGIE 27 1
+userNL6ye item4p3W3 12 1
+user9xbHl itemOCA2H 21 1
+user1eta7 itemr1zoc 12 1
+user2Vxqb itemEZob3 10 1
+user2Vxqb itemaPbf4 27 1
+userYcsX6 itemDYrOS 24 1
+user3niUH itemRy5SF 22 1
+userU5xwu itemWUHgc 5 1
+userafRuQ itemLPkI9 25 1
+useriL4c2 itempLAQY 24 1
+useraAGtk itemvQ7sQ 25 1
+user2Vxqb itemMpeEL 5 1
+userzioQY itemWUHgc 12 1
+usergnJHC itemva2ph 4 1
+userIYes5 itemySRfm 4 1
+userOLph1 itemjeN5W 15 1
+userOPEPI itemSrPKx 30 1
+userm4mHu itemSeyqb 5 1
+user5YzJs itemN8AZu 25 1
+userOmWEg itemgEevH 27 1
+user6btfJ itemcAUzH 3 1
+useriCq0M itemxwCH9 16 1
+userts7VL itemDF5f3 19 1
+user4FmZm itemuaFxY 28 1
+userU8XiP itemPOi9Y 10 1
+userts7VL itemFjQ4M 12 1
+userLS2Nz itemh9nHh 2 1
+userCIwg7 itemKckEp 5 1
+usera7eUd itemqth87 7 1
+userOLph1 itembuWyf 5 1
+userpbY1g itemXLYXV 26 1
+useriCq0M itemTuHK9 24 1
+userU8XiP itemEwdGW 25 1
+userEAbmM item80q9y 25 1
+userXIciZ itemwBj8x 20 1
+userjOfN6 itemSnsYW 3 1
+userhxp30 itemuz9u2 26 1
+userYKjNX itemGAqYy 17 1
+user6btfJ itemSnsYW 26 1
+userVvdgt item2FMEC 20 1
+userbhMwq item4YMYG 6 1
+user2Vxqb itemdqVVX 21 1
+userfl0kv itemwinns 6 1
+usermobRV itemSW5s8 6 1
+useriCq0M itemRy5SF 15 1
+userfz4zC itemQStwf 18 1
+userAZO9y itemSW5s8 19 1
+userjFzvH itemIBbVf 15 1
+userGadv3 itemjmSae 14 1
+userYcsX6 itemdkR3x 22 1
+useriCq0M itemmbGoj 29 1
+useraUavY itemJaOdU 24 1
+userpbY1g item84cQ6 19 1
+user2RzBb itemqth87 25 1
+userAZO9y itemDAINx 29 1
+userRqCeX itemsF3jV 21 1
+userpKjBY itemWngsI 6 1
+user7oJ9D itemiXwHJ 17 1
+uservVAs9 itemVHyMp 12 1
+userBpH3N itemehZbz 16 1
+user6btfJ item178I3 14 1
+userU5xwu itemFsCNW 28 1
+userbhMwq itemEQ5kD 19 1
+useryDDtx itemEB2ZL 9 1
+userBpH3N itemEzeNr 21 1
+userAZO9y itemBkBCG 27 1
+userYKjNX itemmMX2p 7 1
+userGadv3 itemxwCH9 13 1
+user3dYr4 itemzfaal 11 1
+userxrwAf itemSEVUh 30 1
+userU5xwu itemeROTS 14 1
+userXPmRz itemzfaal 4 1
+uservzAWa itemFEgKI 22 1
+userQrGSE itemdqVVX 9 1
+userHL2kL itemd9ChJ 20 1
+uservzAWa itemCVpf3 21 1
+userboi7r itemIBbVf 15 1
+userU5xwu item2FMEC 14 1
+userpKjBY itemUOpVk 8 1
+user2Vxqb item618n3 7 1
+userU8XiP itemnvCLA 13 1
+userhuvtK itemQJNS2 18 1
+userTyJoH itemDYrOS 26 1
+userQrGSE itemoSaYE 23 1
+userbfNOX itemzfaal 15 1
+user7PXAP itemKckEp 30 1
+userNL6ye itemKckEp 26 1
+userIqRCa itemWngsI 22 1
+userLBXk0 itemTAGOA 30 1
+user7PXAP itemEB2ZL 17 1
+userjFzvH itemKe2Er 5 1
+userXIciZ itemTuHK9 27 1
+userfJqUh itemVHyMp 26 1
+useriCq0M itemlepVl 25 1
+userNL6ye itemllAnb 6 1
+userCIwg7 itemsaQmG 4 1
+userTbHVD itemuNHoh 20 1
+user7igOt itemySRfm 18 1
+user5YzJs item4p3W3 10 1
+userk6Mri itemDF5f3 1 1
+userYkF7h itemOCA2H 15 1
+useryKPmt itemFEgKI 15 1
+userNuBW9 itemwAkpa 20 1
+uservIgrQ itemsaQmG 18 1
+user9xbHl itemlHCkK 15 1
+userAzNXt itemPn5yf 6 1
+user2Vxqb itemdkR3x 30 1
+useriqm2l itemSW5s8 12 1
+userKWMYJ itemqF1uc 26 1
+usera7eUd item0amMQ 6 1
+userXIciZ itemgRlgs 10 1
+user4FmZm itemlepVl 11 1
+userfz4zC itemgEevH 17 1
+usera7eUd item64Mnl 3 1
+userjnRT1 itemdoXAn 2 1
+user9tzLJ item6TcLl 26 1
+userEiWs5 itemgoCpP 15 1
+usergnJHC itemXLYXV 11 1
+userE8IrH itempGfZ6 30 1
+userzioQY itemdC6Wf 16 1
+userjOfN6 itemFoRzs 5 1
+userxGXFq itemf6vR5 11 1
+usergnJHC itemwrPNe 27 1
+userfIZMV itemxCvQp 28 1
+userU5xwu item4FB6e 7 1
+userfl0kv itemLPkI9 29 1
+usera7eUd item6hTeJ 7 1
+userOPEPI itemSW5s8 21 1
+userfIZMV itemEZob3 24 1
+useryDDtx item0rrNz 10 1
+user71qa3 itemDAINx 1 1
+userpbY1g itemEZob3 10 1
+userwXazR item64Mnl 13 1
+useriCq0M item9lgJn 6 1
+userRqCeX itemxvrbY 12 1
+userfJqUh itemSrPKx 24 1
+user73wIM itemqD4yX 4 1
+useriL4c2 itemXxPjl 25 1
+user9tzLJ itemaTHnd 29 1
+userjOfN6 itemd7GN3 6 1
+userXIciZ item0QA86 19 1
+userOPEPI itemSW5s8 20 1
+userOLph1 itemABTMM 29 1
+userAZO9y itemUOpVk 27 1
+userCIwg7 itemRKTJC 28 1
+userxrwAf itemRNQTR 17 1
+userAzNXt itemY6045 14 1
+userOPEPI itemllUul 24 1
+user7oJ9D itemdqVVX 10 1
+userEsCm8 itemmbGoj 29 1
+user9xbHl item23scr 19 1
+useryDDtx itemuaFxY 11 1
+usergnJHC itemTuHK9 6 1
+useriLMjp itema506d 12 1
+useriLMjp item618n3 21 1
+userjFzvH itemr7q87 3 1
+uservcNUX itemAlGQe 30 1
+userts7VL item80q9y 13 1
+uservzAWa itemUyXau 5 1
+user7PXAP item4FB6e 19 1
+userwXazR itemQJNS2 22 1
+userXIciZ itemqD4yX 23 1
+userbfNOX itemVARpF 30 1
+userRqCeX item0MxmA 29 1
+userwXmpL itemY6045 18 1
+userU5xwu itemKckEp 28 1
+userGadv3 itemFjQ4M 30 1
+userYkF7h itemrT9kO 6 1
+useryKPmt item618n3 20 1
+user4FmZm itemqppyW 21 1
+userhxp30 item0rrNz 27 1
+userEiWs5 item23scr 13 1
+userYcsX6 iteme1aEV 23 1
+userYKjNX item31doJ 13 1
+user5FxiH itemuaFxY 24 1
+userpbY1g itemexwfY 20 1
+userfIZMV itemllAnb 13 1
+userAZO9y iteme5OvS 6 1
+userk6Mri itemBkBCG 1 1
+userEsCm8 item0amMQ 11 1
+userlRldH itemd9ChJ 8 1
+user7oJ9D itemlN5jA 23 1
+userm4mHu itemexwfY 6 1
+userjFzvH itemw0Hbk 10 1
+userzioQY itemQJNS2 4 1
+userU5xwu itemIrWce 20 1
+userYKjNX itemxCvQp 26 1
+userboi7r itemqppyW 16 1
+userwXmpL itemXLYXV 12 1
+userAzNXt itemvHkzH 14 1
+user9tzLJ itemEZob3 4 1
+useryDDtx item4YMYG 26 1
+user71qa3 itemBkBCG 1 1
+userjFzvH item6hTeJ 18 1
+userwXazR itemAj7Pj 6 1
+userOPEPI itemyWo9i 12 1
+usergnJHC itemfL8PL 27 1
+user1eta7 itemdjMTE 6 1
+userfl0kv itemPn5yf 29 1
+userYcsX6 itemUFxkv 10 1
+userwXmpL itemyWo9i 10 1
+userYkF7h itemkHjKP 9 1
+userfz4zC itemZCI04 2 1
+userYKjNX itemSW5s8 3 1
+useriqm2l itemEzeNr 17 1
+userkfbeV itemRNQTR 8 1
+user3dYr4 itemcWumf 5 1
+userTbHVD itemeROTS 3 1
+userYkF7h itemiCowm 17 1
+userYKjNX itemcWumf 26 1
+userVvdgt itemH8gzP 13 1
+userfJqUh itemPzRe5 4 1
+userAZO9y itemUiRdE 1 1
+uservzAWa itemEB2ZL 12 1
+userhn3H7 itemlHCkK 21 1
+userzioQY item0amMQ 18 1
+userBpH3N item9lgJn 13 1
+userRqCeX itemYp8lv 25 1
+useruR6i7 itemfL8PL 8 1
+userE8IrH items32yz 5 1
+userfz4zC itemwBj8x 24 1
+userkfbeV item618n3 6 1
+userTHymG itemBuZOt 22 1
+userHL2kL itemSEVUh 15 1
+userYcsX6 itemhOGIE 2 1
+userrvaBl itemCmV8W 4 1
+userIYes5 itemSEVUh 3 1
+usernfs1b itemva2ph 23 1
+user3dYr4 item4p3W3 24 1
+userfJqUh itemvHkzH 9 1
+useriqm2l itemYgdNj 12 1
+userIqRCa itemVda4U 8 1
+userNuBW9 itemjeN5W 6 1
+userKFtUF itemO64Fe 24 1
+userh6Cos itemqth87 18 1
+userU8XiP itemehZbz 4 1
+userpbY1g itemDfuZl 6 1
+userOLph1 itemFsCNW 25 1
+user7PXAP itemcWumf 2 1
+useriL4c2 itemaTHnd 3 1
+user2Vxqb itemDfuZl 28 1
+userwzRLZ itembHmsT 18 1
+userEsCm8 itemUyXau 21 1
+userfJqUh itemlAKEf 19 1
+userTyJoH itemsB45O 13 1
+useryKPmt itemuz9u2 9 1
+uservzAWa itemJaOdU 20 1
+useriL4c2 item4p3W3 5 1
+userzioQY itemBkBCG 13 1
+useraUavY itemKHT0l 18 1
+user7oJ9D itemeROTS 10 1
+userVvdgt itemPOi9Y 27 1
+userU5xwu item0amMQ 16 1
+userYkF7h itemup8oB 28 1
+user2RzBb itemDYrOS 13 1
+userEsCm8 itemva2ph 26 1
+userRwvwk itemUiRdE 2 1
+userjOfN6 itemCVpf3 25 1
+userEiWs5 itemcvY2p 24 1
+userwXmpL item618n3 2 1
+userk6Mri itemexwfY 30 1
+userjnRT1 itemyo43o 7 1
+userwXazR itemUFxkv 11 1
+userfz4zC itemEZob3 9 1
+userRGYXR itemAj7Pj 12 1
+userlRldH itemYOYte 28 1
+userVvdgt itemBuZOt 2 1
+userOBLWP itemnvCLA 12 1
+userEsCm8 itemvn3OC 8 1
+useriCq0M itemva2ph 25 1
+user71qa3 itemGAqYy 13 1
+userLBXk0 item7XnWI 6 1
+userhn3H7 itemEB2ZL 13 1
+user1eta7 itemEB2ZL 14 1
+userYcsX6 itemAj7Pj 8 1
+user6btfJ itemXxPjl 11 1
+userAzNXt itemuaFxY 25 1
+userNL6ye itemdoXAn 30 1
+userafRuQ itemkHjKP 29 1
+userYKjNX itemY6045 3 1
+userfl0kv itemPOi9Y 30 1
+userKFtUF itemqF1uc 18 1
+user1eta7 itemgRlgs 2 1
+userfIZMV itemh9nHh 16 1
+userhxp30 itemgoCpP 9 1
+userLBXk0 items32yz 22 1
+userfIZMV itemd7GN3 7 1
+user5FxiH itemVda4U 24 1
+userxrwAf itemxwCH9 28 1
+userAZO9y iteme1aEV 6 1
+userCIwg7 item7gr06 19 1
+userIYes5 itemDAINx 12 1
+user9xbHl itemN8AZu 15 1
+userBpH3N itemtXKxm 6 1
+user7igOt itemFoRzs 22 1
+uservzAWa itemgoCpP 7 1
+userTHymG itemVARpF 16 1
+userNL6ye itemf6vR5 12 1
+user2RzBb itemv7Clw 23 1
+user3dYr4 itemGgwft 9 1
+uservIgrQ itemvQ7sQ 7 1
+user9xbHl itemHrihE 18 1
+userjOfN6 itemWeaex 14 1
+uservVAs9 itemWeaex 1 1
+user73wIM itemUFxkv 6 1
+userRGYXR itemwBj8x 2 1
+userafRuQ item0QA86 7 1
+userjFzvH itemr1zoc 21 1
+userbfNOX itemsB45O 17 1
+useruR6i7 itemnO4tX 13 1
+userafRuQ itemmMX2p 27 1
+userwC8yX item0amMQ 10 1
+userLBXk0 itemPzRe5 5 1
+userboi7r itemuz9u2 25 1
+userwXmpL item23scr 27 1
+userAZO9y item4YMYG 26 1
+userwC8yX itemy6Af3 1 1
+user5YzJs item0rrNz 2 1
+userHL2kL itemvQ7sQ 19 1
+userxGXFq itemAj7Pj 1 1
+user2Vxqb itemqppyW 2 1
+userAZO9y iteme5OvS 24 1
+userEAbmM itemh9nHh 29 1
+userts7VL itemUiRdE 13 1
+userfJqUh itemAj7Pj 6 1
+user7igOt itemGAqYy 11 1
+userh6Cos items32yz 13 1
+userhxp30 itemKckEp 17 1
+userEiWs5 itemFzVAJ 23 1
+user9tzLJ itemUOpVk 15 1
+userVvdgt itemJyBn3 11 1
+userxrwAf itemmbGoj 17 1
+userRwvwk itemABTMM 18 1
+userh6Cos item23scr 7 1
+user6btfJ item96Uu6 22 1
+usermobRV itemrT9kO 26 1
+userYkF7h itemN8AZu 9 1
+uservIgrQ itemQStwf 5 1
+userCIwg7 item4FB6e 2 1
+uservcNUX itemakzor 16 1
+userIqRCa item6TcLl 12 1
+userpKjBY itemakzor 27 1
+usera7eUd itemKe2Er 15 1
+uservIgrQ itemY6045 28 1
+user5FxiH itemIrWce 2 1
+userQrGSE items32yz 17 1
+userYKjNX itemcVs96 19 1
+userxrwAf item2FMEC 2 1
+userHL2kL itemllUul 9 1
+userYcsX6 itemx52zm 13 1
+userhuvtK itemIrWce 24 1
+userXPmRz itemwinns 9 1
+userboi7r itemKHT0l 14 1
+userEAbmM itemiCowm 10 1
+user9xbHl item9M3lc 28 1
+userEiWs5 itemXxPjl 2 1
+userOBLWP itemRKTJC 21 1
+userGadv3 itemN8AZu 20 1
+userKWMYJ itemkHjKP 8 1
+userNuBW9 itemLPkI9 11 1
+user3dYr4 itemYgdNj 20 1
+useriL4c2 item9DjWX 3 1
+userbhMwq itemwBj8x 11 1
+user9xbHl itemYgdNj 28 1
+userLBXk0 itemPzRe5 28 1
+userYkF7h itemXLYXV 28 1
+userbhMwq itembHmsT 13 1
+userTbHVD itemexwfY 26 1
+userjOfN6 itemy6Af3 26 1
+userfl0kv itemSEVUh 8 1
+userRqCeX itemvQ7sQ 19 1
+useriCq0M itemEZob3 13 1
+userBpH3N itemABTMM 4 1
+userwzRLZ itemoSaYE 3 1
+userQrGSE itemdC6Wf 17 1
+uservzAWa itemFsCNW 6 1
+userOmWEg itemcvY2p 1 1
+userwXmpL itemXLYXV 16 1
+userE8IrH itemnO4tX 22 1
+userAzNXt itemMpeEL 26 1
+useriqm2l itemhOGIE 14 1
+userbhMwq itemSeyqb 27 1
+userRwvwk itemEB2ZL 16 1
+user7oJ9D itemHrihE 29 1
+useraUavY itemuNHoh 10 1
+userfl0kv itemyo43o 14 1
+userboi7r item31doJ 9 1
+userRwvwk itemEwdGW 18 1
+userRGYXR itemUOpVk 20 1
+user3niUH itempLAQY 6 1
+userfl0kv itemyo43o 16 1
+userwXazR itemVHyMp 18 1
+userh6Cos itemnO4tX 20 1
+userpKjBY item52xJ8 18 1
+user1eta7 itemqth87 22 1
+userYkF7h itemgEevH 23 1
+userafRuQ itemd9ChJ 30 1
+useraAGtk itemDF5f3 30 1
+useraAGtk itemr7q87 23 1
+useryKPmt itemup8oB 25 1
+userwXmpL itemdqVVX 2 1
+user73wIM itemY6045 15 1
+userYKjNX itemMpeEL 13 1
+user7PXAP itemlHCkK 5 1
+userLBXk0 itemFzVAJ 6 1
+userjnRT1 itemw0Hbk 11 1
+userpKjBY itemY6045 18 1
+userxGXFq item7gr06 20 1
+useriL4c2 itemEQ5kD 27 1
+usera7eUd itemABTMM 25 1
+userk6Mri itemCmV8W 23 1
+userE8IrH itemr1zoc 27 1
+userYcsX6 itemwinns 12 1
+user2RzBb itemf6vR5 19 1
+userQrGSE itemqD4yX 16 1
+user7PXAP itemTuHK9 30 1
+userTHymG itemexwfY 22 1
+userxrwAf item0rrNz 12 1
+userNL6ye itemGAqYy 12 1
+usermobRV itemyo43o 8 1
+userRwvwk item6hTeJ 21 1
+userYkF7h item1PK0V 29 1
+userXPmRz itemcWumf 22 1
+user9xbHl itemgoCpP 10 1
+useriqm2l itemSnsYW 12 1
+userIqRCa itemBmrIx 1 1
+userAZO9y itemcAUzH 14 1
+userOBLWP itemfL8PL 6 1
+userLBXk0 itemLPkI9 22 1
+userU5xwu itemEQ5kD 1 1
+userjFzvH item0rrNz 2 1
+userOBLWP itemdkR3x 14 1
+userhn3H7 itemDYrOS 2 1
+userm4mHu itemxbm5F 10 1
+userRwvwk itemzfaal 29 1
+user1eta7 itemvjUdv 10 1
+userm4mHu itemh9nHh 29 1
+userKFtUF item64Mnl 10 1
+userYcsX6 itemjmSae 10 1
+userwC8yX itemDfuZl 7 1
+userh6Cos itemZIbqG 10 1
+userYkF7h itemSnsYW 16 1
+userjFzvH itemGgwft 22 1
+userhxp30 itemSnsYW 9 1
+userOBLWP itemDYrOS 18 1
+userhxp30 itemsaQmG 21 1
+userU5xwu itemjeN5W 19 1
+useriL4c2 itemEZob3 25 1
+userXPmRz itemcVs96 9 1
+userxGXFq itemGgwft 28 1
+userfJqUh itemeROTS 28 1
+userLS2Nz item1PK0V 9 1
+uservcNUX itemvn3OC 2 1
+uservcNUX itemXxPjl 10 1
+uservcNUX itemsaQmG 21 1
+useryDDtx itemY6045 29 1
+userpbY1g itemxbm5F 6 1
+user3dYr4 item2FMEC 18 1
+user6btfJ itemdjMTE 30 1
+userpKjBY itemAj7Pj 21 1
+userkfbeV itemKckEp 26 1
+useriCq0M itemeROTS 21 1
+userBpH3N itemVZJC8 1 1
+user5YzJs itemCVpf3 30 1
+userIYes5 itemxvrbY 2 1
+userwzRLZ itemtXKxm 6 1
+user4FmZm itemPzRe5 15 1
+user4FmZm itemRNQTR 12 1
+user7igOt itemYp8lv 9 1
+userIqRCa itemeROTS 16 1
+userYcsX6 itemup8oB 27 1
+userOmWEg itemuNHoh 24 1
+useraUavY itemWeaex 6 1
+userXIciZ item96Uu6 25 1
+userYcsX6 itemPzRe5 30 1
+userIqRCa itemdkR3x 2 1
+userNuBW9 itemLPkI9 12 1
+userGadv3 itemIrWce 1 1
+userRwvwk itembuWyf 25 1
+userYcsX6 item6hTeJ 24 1
+user1eta7 itemwBj8x 15 1
+useraUavY item2FMEC 9 1
+useryKPmt item162CY 28 1
+userlRldH item6TcLl 29 1
+uservIgrQ itemjeN5W 4 1
+userkfbeV itemnvCLA 20 1
+userfz4zC itemr1zoc 4 1
+user9xbHl itemnO4tX 6 1
+user3niUH itemwinns 4 1
+userwXmpL itemexwfY 20 1
+userbfNOX itemrT9kO 5 1
+user9xbHl itemvQ7sQ 24 1
+userbhMwq itemYgdNj 2 1
+userU8XiP itemYp8lv 4 1
+userOmWEg itemiXwHJ 28 1
+userNL6ye itembuWyf 20 1
+user6btfJ itemUiRdE 19 1
+userts7VL itemMpeEL 3 1
+userxGXFq itemKHT0l 20 1
+userKWMYJ item7XnWI 25 1
+userYkF7h itemxwCH9 11 1
+userxGXFq itemgEevH 21 1
+user6btfJ itemBkBCG 30 1
+userfl0kv itemKckEp 10 1
+user7oJ9D itemuNHoh 30 1
+userafRuQ itemEwdGW 27 1
+userOBLWP item4FB6e 27 1
+userlRldH itemr1zoc 23 1
+userRwvwk itemXxPjl 11 1
+user5FxiH item618n3 6 1
+userrvaBl itemSW5s8 18 1
+usergnJHC itemmt9Zs 20 1
+useraAGtk itemdkR3x 18 1
+userwC8yX itembuWyf 11 1
+uservcNUX itemWngsI 2 1
+userwXazR itemWUHgc 16 1
+userGadv3 itemqppyW 14 1
+useraAGtk item7gr06 16 1
+userpKjBY itemgRlgs 22 1
+userAzNXt itemdC6Wf 16 1
+userU5xwu itemZCI04 6 1
+uservcNUX itemmbGoj 9 1
+user1eta7 item03CQ6 28 1
+userpbY1g itemdoXAn 30 1
+useriLMjp itema506d 3 1
+userKWMYJ itemRKTJC 11 1
+useraAGtk itemEZob3 13 1
+userIYes5 itemjmSae 14 1
+useriL4c2 itemQStwf 27 1
+user3niUH itemx52zm 27 1
+userRqCeX itemqth87 11 1
+user6btfJ itemEQ5kD 12 1
+userh6Cos item0MxmA 6 1
+usera7eUd itemyo43o 22 1
+user3niUH itemUyXau 21 1
+usera7eUd item9lgJn 3 1
+useryKPmt item7gr06 30 1
+userQrGSE itemcvY2p 11 1
+userboi7r itemVARpF 30 1
+uservVAs9 itemkHjKP 2 1
+userNuBW9 itemyo43o 9 1
+userbfNOX itemPOi9Y 16 1
+uservzAWa itemqth87 6 1
+userxrwAf itemw0Hbk 7 1
+userIYes5 itemllUul 27 1
+userEAbmM itemH8gzP 7 1
+useryKPmt itemaTHnd 20 1
+userEiWs5 itemKHT0l 3 1
+userNL6ye itemRNQTR 8 1
+useraAGtk itemFzVAJ 20 1
+usera7eUd itemw0Hbk 27 1
+user3dYr4 itemllAnb 29 1
+userhxp30 itembuWyf 13 1
+userAzNXt itemakzor 7 1
+userU5xwu itemsaQmG 23 1
+userAZO9y itemxwCH9 15 1
+user3dYr4 itemSEVUh 30 1
+userTHymG itemh9nHh 1 1
+userxGXFq itemQkv6a 29 1
+useruR6i7 itemlHCkK 6 1
+userYkF7h itemqF1uc 13 1
+userU5xwu itemuz9u2 15 1
+userTyJoH itemmMX2p 23 1
+userEiWs5 itemvQ7sQ 25 1
+user2Vxqb item1PK0V 1 1
+userbfNOX itema506d 9 1
+usermobRV itemg6NgV 24 1
+uservcNUX item64Mnl 7 1
+user4FmZm itemRKTJC 17 1
+userLBXk0 itemAzjPR 13 1
+userk6Mri itemJaOdU 30 1
+userAzNXt itemVHyMp 8 1
+userRGYXR itemXxPjl 1 1
+userbfNOX item03CQ6 6 1
+user6btfJ itemEZob3 27 1
+userwXazR item2FMEC 6 1
+userOmWEg itemsaQmG 26 1
+userm4mHu itemVHyMp 16 1
+userYcsX6 itemsB45O 15 1
+userpbY1g itemIBbVf 11 1
+uservIgrQ itemZIbqG 19 1
+user5YzJs itempGfZ6 26 1
+userfJqUh itemWUHgc 11 1
+userYcsX6 itemfL8PL 2 1
+userhn3H7 itemEzeNr 7 1
+userbfNOX itemFEgKI 24 1
+userwXmpL itemH8gzP 14 1
+user5FxiH itemAlGQe 22 1
+userRqCeX itemyWo9i 18 1
+userE8IrH itemKckEp 24 1
+useriLMjp item0QA86 8 1
+userOLph1 itemvn3OC 8 1
+userh6Cos item23scr 26 1
+user7PXAP itemEQ5kD 12 1
+userxrwAf itemYp8lv 3 1
+usermobRV itemPn5yf 17 1
+useryKPmt itembHmsT 22 1
+userEsCm8 itemRNQTR 14 1
+userwC8yX itemJyBn3 14 1
+usera7eUd itemjeN5W 22 1
+userfz4zC itemAlGQe 30 1
+user7oJ9D itemup8oB 29 1
+userk6Mri itemsaQmG 2 1
+userjFzvH itemHrihE 21 1
+user2RzBb itemllUul 29 1
+userwXmpL itemehZbz 15 1
+userCIwg7 itemexwfY 25 1
+user7igOt itemvQ7sQ 10 1
+uservVAs9 itemUiRdE 4 1
+useryKPmt itemy6Af3 17 1
+user2RzBb itemuz9u2 28 1
+user4FmZm itemv7Clw 25 1
+userGadv3 itemOCA2H 3 1
+userk6Mri itemDfuZl 10 1
+userkfbeV itemEwdGW 27 1
+user2Vxqb itema506d 23 1
+userTbHVD item23scr 11 1
+userh6Cos itemwinns 10 1
+uservIgrQ itemRMr3n 2 1
+useriLMjp itemV1Vwk 6 1
+usergnJHC itemdkR3x 26 1
+userk6Mri itemAj7Pj 9 1
+userRwvwk item2FMEC 30 1
+userEiWs5 itemSeyqb 4 1
+user7oJ9D itemH8gzP 24 1
+userGadv3 itemFoRzs 20 1
+userboi7r itemUiRdE 9 1
+userjFzvH itemhOGIE 3 1
+userXIciZ itemwinns 13 1
+userwC8yX item9lgJn 13 1
+user7igOt itemdkR3x 12 1
+userQrGSE item1PK0V 2 1
+userXIciZ itemnO4tX 22 1
+user73wIM itemRMr3n 17 1
+user1eta7 item162CY 21 1
+userjFzvH itemBmrIx 21 1
+userOLph1 itemwAkpa 25 1
+userfIZMV itemRNQTR 26 1
+user9tzLJ itemBuZOt 12 1
+userNuBW9 itemSEVUh 2 1
+userYcsX6 itemBmrIx 11 1
+userU8XiP itemAzjPR 24 1
+userfIZMV itemcVs96 25 1
+userm4mHu itemlN5jA 13 1
+userNL6ye items32yz 23 1
+userboi7r itemr7q87 9 1
+userIYes5 itemyo43o 8 1
+userQrGSE itemY6045 19 1
+usergnJHC item2FMEC 17 1
+userwC8yX itemLPkI9 7 1
+user1eta7 itemvjUdv 1 1
+userfl0kv itemxvrbY 11 1
+userts7VL itemmt9Zs 1 1
+userk6Mri itemwAkpa 26 1
+userTyJoH itemEQ5kD 8 1
+userOmWEg itemjIyZN 22 1
+userwzRLZ itemjmSae 2 1
+useriL4c2 itemvn3OC 3 1
+userEAbmM itemCmV8W 3 1
+userVvdgt itemBmrIx 17 1
+userm4mHu itemCVpf3 13 1
+userQrGSE item0amMQ 7 1
+userHL2kL itemYgdNj 5 1
+userOBLWP itemmt9Zs 3 1
+user73wIM itemFoRzs 3 1
+user71qa3 itemg6NgV 8 1
+userhn3H7 itemva2ph 22 1
+userU8XiP itemVARpF 16 1
+userfz4zC itemZIbqG 26 1
+useraUavY item6TcLl 11 1
+userLBXk0 itemPzRe5 7 1
+useriqm2l itemWeaex 14 1
+userBpH3N itemFjQ4M 14 1
+userTyJoH item52xJ8 25 1
+user7oJ9D itemva2ph 22 1
+userTyJoH itemN8AZu 14 1
+userOLph1 itemdC6Wf 18 1
+userXPmRz items32yz 25 1
+userTHymG itemZIbqG 12 1
+userjFzvH itemnO4tX 5 1
+usermobRV itemMNxUT 11 1
+uservIgrQ itemehZbz 1 1
+user5YzJs itemDfuZl 13 1
+useriqm2l itemsaQmG 21 1
+userhxp30 itemRy5SF 30 1
+userTbHVD itemOCA2H 23 1
+userkfbeV itemva2ph 16 1
+useruR6i7 itemSrPKx 15 1
+userwC8yX itemRy5SF 16 1
+user4FmZm itemMNxUT 27 1
+userYKjNX iteme5OvS 20 1
+userU8XiP itemDAINx 30 1
+userwC8yX iteme1aEV 16 1
+userIqRCa itemqth87 4 1
+userTHymG items32yz 7 1
+userfz4zC itemLDh7R 29 1
+userbfNOX itemAj7Pj 7 1
+userOLph1 itemDF5f3 1 1
+userKWMYJ item31doJ 19 1
+userAzNXt itemcWumf 16 1
+userOPEPI itemzexIV 16 1
+userIqRCa itemFjQ4M 9 1
+userk6Mri itemABTMM 2 1
+user71qa3 itemDF5f3 1 1
+userIqRCa itemh9nHh 14 1
+userxGXFq itemAlGQe 8 1
+usergnJHC itemguPDr 1 1
+userTyJoH item0rrNz 17 1
+userk6Mri itemaTHnd 16 1
+user3dYr4 itemWUHgc 8 1
+userfz4zC itemdkR3x 22 1
+userIYes5 itemnO4tX 12 1
+userXPmRz itemIrWce 30 1
+userfJqUh item52xJ8 28 1
+userlRldH itemRMr3n 15 1
+user5YzJs itemuz9u2 12 1
+userkfbeV itempLAQY 7 1
+uservzAWa itemexwfY 4 1
+user7PXAP itemuz9u2 16 1
+useryDDtx item03CQ6 12 1
+userOLph1 itemXLYXV 19 1
+userNuBW9 itemmbGoj 22 1
+userrvaBl item4YMYG 29 1
+uservVAs9 itemxvrbY 25 1
+userOmWEg itemAlGQe 5 1
+userh6Cos itemexwfY 23 1
+user73wIM itemDYrOS 24 1
+useriqm2l itemGAqYy 19 1
+useryKPmt itemZCI04 11 1
+user7oJ9D itemJyBn3 19 1
+userkfbeV itemAzjPR 14 1
+userTyJoH itemBmrIx 27 1
+userh6Cos items32yz 3 1
+userRwvwk itemzexIV 4 1
+userQrGSE itemqD4yX 3 1
+userjOfN6 itemyo43o 4 1
+user73wIM itemsB45O 3 1
+uservIgrQ itemd9ChJ 5 1
+userKFtUF itemYp8lv 19 1
+user2RzBb itemQJNS2 20 1
+user6btfJ itemkHjKP 22 1
+useryKPmt itemQJNS2 6 1
+userzioQY item178I3 17 1
+userhn3H7 item64Mnl 18 1
+user7oJ9D itemSW5s8 18 1
+userKFtUF itemGAqYy 11 1
+userxrwAf itemSEVUh 12 1
+userfl0kv item84cQ6 23 1
+userfz4zC itemrDLmp 25 1
+user2RzBb item52xJ8 5 1
+userE8IrH itemDfuZl 10 1
+userEiWs5 itemr1zoc 13 1
+userOPEPI itemhOGIE 14 1
+useriqm2l itemSW5s8 2 1
+userKWMYJ itemPzRe5 18 1
+userYcsX6 item23scr 21 1
+usergnJHC itempGfZ6 25 1
+userYKjNX itemMNxUT 28 1
+userAZO9y itemMNxUT 5 1
+user5YzJs item162CY 25 1
+userfl0kv item0rrNz 11 1
+userIqRCa item4p3W3 7 1
+userEsCm8 itemsB45O 25 1
+useriL4c2 item0QA86 23 1
+userYkF7h itemzfaal 17 1
+userAZO9y itemxCvQp 12 1
+userEAbmM itempLAQY 6 1
+uservVAs9 itemUiRdE 13 1
+userOLph1 itemySRfm 20 1
+usernfs1b itemxCvQp 29 1
+userwC8yX itemJaOdU 14 1
+userwzRLZ itemzexIV 8 1
+useryDDtx itemoSaYE 14 1
+userE8IrH item178I3 20 1
+user7PXAP itemJyBn3 21 1
+user4FmZm itemEQ5kD 26 1
+userOLph1 itemKe2Er 8 1
+userOPEPI item0VuxA 19 1
+user71qa3 itemIrWce 17 1
+userboi7r itemuz9u2 5 1
+userpbY1g itema506d 1 1
+userafRuQ itemeROTS 10 1
+userk6Mri itemgoCpP 12 1
+userfz4zC itemuaFxY 11 1
+user5YzJs itemaTHnd 10 1
+userKWMYJ itemZCI04 9 1
+userAZO9y itemgEevH 10 1
+userGadv3 itemnO4tX 17 1
+useriCq0M itemdqVVX 18 1
+userAZO9y itemUiRdE 6 1
+userboi7r itemDfuZl 23 1
+user4FmZm itemexwfY 8 1
+userNL6ye itemZCI04 9 1
+useryDDtx itemPzRe5 25 1
+userzioQY item7XnWI 11 1
+useraUavY itemV1Vwk 20 1
+useriL4c2 itemRy5SF 16 1
+usernfs1b itemIBbVf 27 1
+userwXazR itemcWumf 18 1
+userQrGSE item84cQ6 2 1
+user4FmZm item6hTeJ 21 1
+userfIZMV itemWUHgc 8 1
+userRwvwk itemdkR3x 9 1
+userwC8yX itemrDLmp 3 1
+userxrwAf itemyWo9i 17 1
+userjnRT1 itemgoCpP 14 1
+userjFzvH itemIrWce 18 1
+user73wIM itemO64Fe 2 1
+user7PXAP itemx52zm 4 1
+userlRldH itemjmSae 3 1
+user9xbHl itemup8oB 19 1
+user73wIM item9lgJn 3 1
+userlRldH itemV1Vwk 29 1
+usera7eUd itemx52zm 11 1
+userTbHVD itemuaFxY 21 1
+user4FmZm itemEB2ZL 22 1
+user73wIM itemcvY2p 29 1
+userfIZMV itemSEVUh 23 1
+useriqm2l itemgRlgs 26 1
+userTyJoH itemUyXau 24 1
+userboi7r itempGfZ6 9 1
+user73wIM itempGfZ6 25 1
+userjnRT1 item23scr 21 1
+userOmWEg item7XnWI 11 1
+userOLph1 itemQkv6a 3 1
+user73wIM itemBmrIx 11 1
+uservcNUX item96Uu6 7 1
+userYkF7h itemY6045 23 1
+usera7eUd itemABTMM 24 1
+user6btfJ itemEB2ZL 25 1
+userU5xwu item2FMEC 28 1
+userYcsX6 itemDF5f3 24 1
+useryDDtx item03CQ6 19 1
+useryDDtx itemBmrIx 12 1
+userNL6ye itemva2ph 12 1
+uservVAs9 itemEB2ZL 18 1
+useraAGtk itemDYrOS 2 1
+userNL6ye items32yz 21 1
+userwzRLZ itemcVs96 27 1
+userGadv3 itemoSaYE 23 1
+userGadv3 item7XnWI 18 1
+useraUavY itemWngsI 3 1
+userOBLWP itemDF5f3 22 1
+user4FmZm itemakzor 17 1
+userNL6ye itemwrPNe 24 1
+useryKPmt itemnO4tX 1 1
+userjFzvH itemSnsYW 25 1
+userTbHVD item2FMEC 18 1
+userHL2kL item6hTeJ 17 1
+useriL4c2 itemZCI04 18 1
+user7igOt item162CY 11 1
+userTyJoH itemqD4yX 8 1
+useriLMjp itemRy5SF 23 1
+user7oJ9D itemSnsYW 27 1
+userU5xwu item6hTeJ 26 1
+user7PXAP items32yz 28 1
+user73wIM itemRNQTR 7 1
+userxGXFq item0rrNz 19 1
+userXPmRz itemRy5SF 24 1
+userVvdgt itemd7GN3 28 1
+useriLMjp itemSrPKx 10 1
+userwXazR itemiXwHJ 27 1
+user2RzBb itemFEgKI 11 1
+userRGYXR itemuz9u2 20 1
+user6btfJ itemwBj8x 1 1
+user71qa3 itemlepVl 11 1
+userYKjNX iteme5OvS 15 1
+user3dYr4 itemdjMTE 3 1
+user7igOt itemeROTS 28 1
+useraAGtk item31doJ 2 1
+userrvaBl itemCVpf3 23 1
+uservVAs9 itembHmsT 13 1
+userRGYXR item9DjWX 13 1
+userh6Cos itemdoXAn 20 1
+user1eta7 item64Mnl 29 1
+user4FmZm item23scr 10 1
+user71qa3 itemKHT0l 27 1
+userU8XiP itemO64Fe 18 1
+userjOfN6 itemdkR3x 6 1
+userk6Mri itemQJNS2 8 1
+userU8XiP itemdoXAn 26 1
+userjFzvH itemxvrbY 6 1
+userfIZMV itemEB2ZL 13 1
+userXPmRz itemwBj8x 30 1
+useraAGtk itemVARpF 18 1
+useriqm2l itemEQ5kD 17 1
+useriCq0M itemBmrIx 8 1
+userxGXFq itemBkBCG 22 1
+user7oJ9D itemlHCkK 9 1
+userLS2Nz itemr7q87 18 1
+usergnJHC itemdqVVX 1 1
+userjFzvH itemgRlgs 30 1
+userjnRT1 itemcvY2p 1 1
+userOLph1 itemDF5f3 24 1
+userhn3H7 itembHmsT 26 1
+useryDDtx itemZCI04 7 1
+userXPmRz itemg6NgV 28 1
+userfIZMV itemaTHnd 10 1
+uservcNUX itemgEevH 4 1
+useriLMjp itemtXKxm 2 1
+userwC8yX itemO64Fe 5 1
+uservVAs9 itemEB2ZL 25 1
+userAzNXt itemkHjKP 10 1
+userhuvtK itemlAKEf 23 1
+userrvaBl itemVARpF 25 1
+userIYes5 itemOCA2H 18 1
+userts7VL itemsaQmG 11 1
+userIYes5 itemsaQmG 29 1
+userKWMYJ item84cQ6 12 1
+userLBXk0 itemiCowm 2 1
+uservIgrQ itemwAkpa 30 1
+user4FmZm itemf6vR5 25 1
+userwzRLZ itemguPDr 1 1
+userYKjNX itemsaQmG 28 1
+userOmWEg itemvn3OC 5 1
+userfl0kv itemjeN5W 28 1
+user9xbHl itemSW5s8 2 1
+userNL6ye itemr7q87 1 1
+userEAbmM itemqppyW 15 1
+userfIZMV itemH8gzP 19 1
+userIqRCa itemJyBn3 7 1
+userlRldH itemEQ5kD 18 1
+userXIciZ itemfL8PL 8 1
+userCIwg7 itemoSaYE 12 1
+user7PXAP item7XnWI 23 1
+usergnJHC itemsB45O 21 1
+useraUavY itemCmV8W 7 1
+userTHymG itemEzeNr 1 1
+useraAGtk itemFoRzs 25 1
+user9xbHl itemyWo9i 7 1
+userTyJoH itemrDLmp 11 1
+uservcNUX itemexwfY 22 1
+userOLph1 itemQJNS2 20 1
+userCIwg7 itemWUHgc 20 1
+userRGYXR itemZIbqG 20 1
+user9xbHl itemWeaex 18 1
+userfz4zC itemFsCNW 29 1
+userXPmRz itemkHjKP 12 1
+userIYes5 itemEwdGW 9 1
+userGadv3 itemVARpF 2 1
+userYKjNX itemDF5f3 8 1
+userIYes5 item2FMEC 9 1
+userfz4zC itemlN5jA 4 1
+userxGXFq itemdjMTE 28 1
+useraAGtk itemzexIV 6 1
+userCIwg7 itemd7GN3 13 1
+userGadv3 itemwrPNe 21 1
+userYkF7h itemDAINx 27 1
+user4FmZm itemXxPjl 24 1
+userwzRLZ itemvjUdv 1 1
+userjOfN6 itemVARpF 10 1
+userzioQY itemUyXau 5 1
+userm4mHu itemwBj8x 7 1
+useryDDtx itemllUul 19 1
+userkfbeV itemsaQmG 17 1
+userNuBW9 itemaTHnd 27 1
+userU5xwu itemlepVl 12 1
+userxGXFq itemDfuZl 27 1
+user4FmZm itemWeaex 28 1
+user7igOt itemDF5f3 15 1
+userts7VL itemeROTS 30 1
+userTyJoH itemiCowm 4 1
+useryKPmt itemRy5SF 7 1
+userlRldH itemMpeEL 12 1
+useriLMjp itemIrWce 10 1
+useryKPmt itemakzor 13 1
+useraUavY itemRMr3n 1 1
+userU8XiP item4p3W3 18 1
+userrvaBl itemTuHK9 5 1
+userYKjNX itemaPbf4 5 1
+userE8IrH itemgRlgs 4 1
+user2Vxqb itemdoXAn 15 1
+user1eta7 itemaTHnd 1 1
+userOBLWP itemO64Fe 7 1
+userYcsX6 item0QA86 5 1
+userfIZMV itemEZob3 16 1
+userQrGSE itemDfuZl 19 1
+userIqRCa itemguPDr 11 1
+userhn3H7 itemUo6cI 25 1
+userfJqUh itemDfuZl 24 1
+userU5xwu itemVZJC8 7 1
+uservVAs9 itemVARpF 29 1
+userxGXFq itemUOpVk 8 1
+userNuBW9 itempGfZ6 15 1
+userQrGSE itemPzRe5 21 1
+userNL6ye itemWUHgc 22 1
+userXPmRz itemtXKxm 29 1
+userE8IrH itemqF1uc 25 1
+user5FxiH itemRMr3n 17 1
+userRwvwk itemMNxUT 10 1
+userQrGSE itemwAkpa 23 1
+user2Vxqb itemMzrpc 5 1
+useryDDtx itemzexIV 30 1
+uservIgrQ itemqth87 14 1
+userhn3H7 itemakzor 2 1
+userkfbeV itemBkBCG 18 1
+useriLMjp itemSeyqb 5 1
+useryKPmt itemPn5yf 2 1
+useruR6i7 item618n3 12 1
+usermobRV itemHrihE 15 1
+userYkF7h itemxvrbY 9 1
+userhuvtK itemiXwHJ 29 1
+userTbHVD item4YMYG 12 1
+useraAGtk itemwAkpa 30 1
+userbhMwq itemKHT0l 11 1
+useriCq0M item4FB6e 18 1
+useryKPmt itemvHkzH 3 1
+userEAbmM item84cQ6 10 1
+userk6Mri itemgRlgs 13 1
+userwC8yX item0rrNz 3 1
+userkfbeV itemllUul 3 1
+useraUavY itemO64Fe 29 1
+userfIZMV itemwAkpa 22 1
+uservzAWa itemFEgKI 29 1
+user7oJ9D itemup8oB 7 1
+userjFzvH itemO64Fe 24 1
+userRGYXR itemEQ5kD 2 1
+userXIciZ item1PK0V 18 1
+userwC8yX item162CY 18 1
+useriLMjp itemiXwHJ 7 1
+userTbHVD itemwinns 25 1
+useruR6i7 itemxbm5F 8 1
+user7PXAP itemCmV8W 13 1
+user71qa3 item84cQ6 20 1
+useriL4c2 itemY6045 10 1
+user71qa3 itemUOpVk 19 1
+userjnRT1 itemEQ5kD 12 1
+userOLph1 itemr1zoc 24 1
+useriLMjp itemZIbqG 13 1
+userOBLWP itemYp8lv 5 1
+userLBXk0 itemy6Af3 14 1
+userOPEPI itemVARpF 8 1
+userBpH3N itemLPkI9 12 1
+userjOfN6 itemwinns 13 1
+userTHymG itemGAqYy 22 1
+user5FxiH itemQJNS2 4 1
+userxGXFq itemrT9kO 9 1
+userlRldH itemEzeNr 16 1
+userwC8yX itemFzVAJ 11 1
+usergnJHC itemup8oB 12 1
+useriL4c2 itemup8oB 3 1
+user71qa3 itemaPbf4 26 1
+uservVAs9 itemy6Af3 14 1
+userbhMwq items32yz 1 1
+userTbHVD itemMzrpc 24 1
+userYkF7h itemEzeNr 26 1
+uservVAs9 itemd9ChJ 20 1
+userOLph1 itembHmsT 21 1
+useryKPmt itemlN5jA 21 1
+userBpH3N itemEwdGW 13 1
+useruR6i7 itemABTMM 11 1
+userh6Cos itemnvCLA 26 1
+userxGXFq itemRMr3n 9 1
+useraAGtk itembuWyf 8 1
+userzioQY item23scr 4 1
+user5FxiH itemUFxkv 22 1
+user3dYr4 itemhOGIE 1 1
+usera7eUd itemdqVVX 11 1
+userRGYXR itemO64Fe 28 1
+userIYes5 itemPn5yf 17 1
+userRqCeX itemBmrIx 21 1
+user5FxiH itemOCA2H 8 1
+userQrGSE itemMNxUT 13 1
+userTHymG itemRNQTR 26 1
+userKWMYJ itemtXKxm 3 1
+usera7eUd itemwrPNe 19 1
+useryDDtx itemUo6cI 19 1
+userIYes5 itempLAQY 17 1
+userbhMwq itemVHyMp 14 1
+userLBXk0 item162CY 16 1
+useraUavY item6TcLl 1 1
+user4FmZm itemyo43o 25 1
+userjFzvH itemSnsYW 9 1
+uservIgrQ itemlN5jA 4 1
+user71qa3 itemgoCpP 14 1
+userRGYXR itemIBbVf 2 1
+userhuvtK item9DjWX 14 1
+uservcNUX itemEwdGW 12 1
+userGadv3 itemvHkzH 28 1
+userAzNXt itemUo6cI 23 1
+user5YzJs itemcVs96 12 1
+useraUavY itempGfZ6 28 1
+uservVAs9 itemlHCkK 10 1
+userXPmRz itemHrihE 21 1
+user7oJ9D itemH8gzP 16 1
+userAzNXt itemUo6cI 17 1
+useryDDtx itemiCowm 23 1
+user1eta7 itemV1Vwk 10 1
+userOPEPI item4YMYG 10 1
+userTyJoH itemtXKxm 7 1
+userxGXFq item9lgJn 22 1
+user4FmZm itemnO4tX 29 1
+userXIciZ item0VuxA 12 1
+userwXazR item0amMQ 29 1
+user3dYr4 itemAlGQe 5 1
+user3niUH itemRy5SF 6 1
+userjnRT1 itembHmsT 16 1
+userEsCm8 itemSW5s8 19 1
+userjFzvH item4FB6e 4 1
+userh6Cos itemABTMM 30 1
+userKWMYJ itemPzRe5 4 1
+user3dYr4 itemdjMTE 28 1
+userfl0kv itemVda4U 12 1
+userTyJoH itemMzrpc 15 1
+userCIwg7 item23scr 9 1
+userm4mHu itempLAQY 25 1
+userCIwg7 itemRNQTR 5 1
+user6btfJ itemUo6cI 18 1
+userhxp30 itemcVs96 5 1
+userbfNOX item6hTeJ 11 1
+userYcsX6 itemZIbqG 28 1
+userts7VL itemd7GN3 28 1
+userBpH3N itemiXwHJ 18 1
+userxGXFq itemmMX2p 3 1
+user2Vxqb itemwinns 24 1
+userU8XiP item9muy9 25 1
+user71qa3 itemr1zoc 15 1
+userLS2Nz itemeROTS 9 1
+userRwvwk itemFoRzs 26 1
+userzioQY itemN8AZu 17 1
+userfz4zC itemh9nHh 8 1
+userwXmpL itemUOpVk 15 1
+userbhMwq itemUFxkv 25 1
+userm4mHu itemDF5f3 6 1
+userTHymG itemFEgKI 20 1
+user9tzLJ itemDfuZl 19 1
+userpKjBY itemsaQmG 25 1
+userKWMYJ itemAj7Pj 24 1
+userXIciZ itemrT9kO 19 1
+userafRuQ itemyo43o 3 1
+userIYes5 itemUo6cI 2 1
+userpKjBY itemWeaex 17 1
+userwXmpL itemyWo9i 18 1
+uservVAs9 itemqppyW 5 1
+user5FxiH item6TcLl 12 1
+userLBXk0 itemPn5yf 29 1
+user5YzJs itemLDh7R 10 1
+userTyJoH itemwAkpa 19 1
+user6btfJ itemXLYXV 7 1
+user5FxiH itemxwCH9 14 1
+userfIZMV itemqD4yX 5 1
+user73wIM itemrT9kO 23 1
+usergnJHC item0amMQ 1 1
+userCIwg7 itemMzrpc 29 1
+userk6Mri itemuaFxY 11 1
+useriLMjp itemXLYXV 12 1
+userCIwg7 itemakzor 23 1
+user2Vxqb itemFoRzs 28 1
+userjnRT1 itemxbm5F 5 1
+userboi7r itemSW5s8 22 1
+userYcsX6 itemvn3OC 10 1
+userjOfN6 itemEZob3 23 1
+userEiWs5 itemVZJC8 27 1
+userpbY1g itemWUHgc 4 1
+userbfNOX itemSeyqb 21 1
+user3niUH itemxvrbY 19 1
+uservcNUX itemlHCkK 5 1
+userboi7r itemmMX2p 17 1
+userk6Mri itemdjMTE 23 1
+user6btfJ itemGgwft 17 1
+userQrGSE item9M3lc 8 1
+userTbHVD itemvHkzH 4 1
+user6btfJ itemguPDr 25 1
+userOLph1 itemMpeEL 21 1
+userjnRT1 itemXLYXV 14 1
+userKWMYJ item162CY 23 1
+userU5xwu itemMNxUT 18 1
+userAZO9y itemTAGOA 12 1
+userKWMYJ itemr7q87 19 1
+userboi7r itemwAkpa 18 1
+usergnJHC itemN8AZu 19 1
+userfz4zC itemUFxkv 7 1
+user7oJ9D itemLDh7R 11 1
+user2RzBb itemmMX2p 29 1
+userE8IrH item9lgJn 16 1
+userLBXk0 itemqD4yX 29 1
+userwC8yX itemjIyZN 21 1
+userh6Cos itemWngsI 2 1
+userLS2Nz item0rrNz 23 1
+uservIgrQ itemEzeNr 23 1
+uservIgrQ item52xJ8 25 1
+userpbY1g itemYgdNj 26 1
+userafRuQ itemMpeEL 3 1
+userfz4zC itemgoCpP 27 1
+uservcNUX itemexwfY 23 1
+userE8IrH item52xJ8 22 1
+userXPmRz itemEzeNr 27 1
+userRqCeX iteme5OvS 7 1
+userbfNOX itemPn5yf 7 1
+userwC8yX itemYp8lv 7 1
+user4FmZm itemO64Fe 20 1
+userOBLWP item9DjWX 18 1
+userlRldH itemAlGQe 25 1
+userVvdgt itemFoRzs 10 1
+userhn3H7 itemdkR3x 2 1
+userXPmRz itemTAGOA 18 1
+userwXazR itemPOi9Y 8 1
+useryDDtx itemMNxUT 9 1
+user9xbHl itemTuHK9 18 1
+userLS2Nz itemQStwf 8 1
+userNuBW9 itemZIbqG 27 1
+userTbHVD itemqD4yX 15 1
+userNL6ye item64Mnl 30 1
+userBpH3N itemjIyZN 11 1
+userXIciZ item0rrNz 27 1
+userafRuQ itemllUul 30 1
+uservIgrQ itemYp8lv 14 1
+useraAGtk itemfL8PL 5 1
+userNL6ye itemllAnb 2 1
+userHL2kL itemehZbz 7 1
+userOPEPI item0rrNz 19 1
+userwC8yX itemxCvQp 3 1
+userhuvtK itemVda4U 30 1
+userhn3H7 itemMpeEL 15 1
+user9xbHl itemcvY2p 23 1
+userfz4zC itemehZbz 3 1
+userOBLWP item0QA86 28 1
+user3niUH itemFjQ4M 2 1
+userYkF7h itemUOpVk 4 1
+user3dYr4 itemdoXAn 6 1
+userhxp30 itemY6045 1 1
+userIqRCa itembuWyf 23 1
+userEAbmM itemwAkpa 26 1
+userjnRT1 item1PK0V 26 1
+user7PXAP itemUOpVk 25 1
+userOLph1 itemXxPjl 20 1
+user6btfJ itemFoRzs 5 1
+userXIciZ itembuWyf 9 1
+userpKjBY itemqppyW 26 1
+useriCq0M itemakzor 28 1
+uservzAWa item6TcLl 23 1
+user7oJ9D itemiXwHJ 27 1
+userVvdgt itemvQ7sQ 22 1
+userwXmpL itemFoRzs 27 1
+useryDDtx item7gr06 25 1
+user7oJ9D itemwrPNe 22 1
+user71qa3 itemuaFxY 20 1
+userboi7r itemPzRe5 11 1
+userIqRCa itemr7q87 22 1
+userOBLWP itemoSaYE 1 1
+userts7VL itemKHT0l 21 1
+uservcNUX itemoSaYE 30 1
+uservzAWa item03CQ6 4 1
+userlRldH itemv7Clw 26 1
+userjFzvH itemvn3OC 15 1
+userYKjNX itemwinns 6 1
+userOmWEg itemvpxYm 7 1
+user71qa3 itemmbGoj 19 1
+userGadv3 itemwrPNe 29 1
+userEAbmM itemQkv6a 12 1
+userAZO9y itemuz9u2 2 1
+userNuBW9 itemdkR3x 14 1
+userm4mHu itemFEgKI 28 1
+userk6Mri itemllAnb 16 1
+user2RzBb itemxCvQp 30 1
+userNuBW9 itemfL8PL 1 1
+userIqRCa itemxwCH9 4 1
+user7igOt itemUyXau 16 1
+userjnRT1 itemjIyZN 6 1
+userwXmpL itemwBj8x 4 1
+userVvdgt item6hTeJ 20 1
+userIYes5 itemKckEp 13 1
+user73wIM itemGgwft 24 1
+userwXmpL itemllAnb 23 1
+user5FxiH itemSnsYW 17 1
+usergnJHC item618n3 18 1
+userTHymG itema506d 6 1
+userU5xwu itemiCowm 27 1
+userHL2kL itemQkv6a 2 1
+userLS2Nz itemjeN5W 18 1
+userwXazR item31doJ 22 1
+user9xbHl itemgEevH 13 1
+userBpH3N itembuWyf 13 1
+userOLph1 itemzexIV 13 1
+userRGYXR itemqF1uc 25 1
+userpbY1g itemQJNS2 2 1
+userU8XiP itempGfZ6 30 1
+userk6Mri itemUOpVk 27 1
+useriLMjp itembHmsT 22 1
+userEiWs5 itemlN5jA 28 1
+userjFzvH itemd7GN3 19 1
+userKWMYJ itemjIyZN 18 1
+useriqm2l itemvpxYm 23 1
+userxrwAf itemWeaex 11 1
+user6btfJ itemwinns 1 1
+userU8XiP item0QA86 7 1
+userAZO9y item96Uu6 4 1
+user2RzBb itemPzRe5 6 1
+userpKjBY item162CY 29 1
+userfl0kv itemFsCNW 20 1
+userjOfN6 item31doJ 2 1
+userXPmRz itemXxPjl 26 1
+user2Vxqb itemvpxYm 21 1
+uservcNUX item9M3lc 13 1
+userLS2Nz itemH8gzP 16 1
+userTyJoH itemeROTS 12 1
+userboi7r itemRNQTR 2 1
+userU8XiP item1PK0V 28 1
+userm4mHu itemcVs96 1 1
+user6btfJ item0QA86 16 1
+userOmWEg itemllAnb 12 1
+userXPmRz itemJyBn3 2 1
+userjOfN6 itemZIbqG 3 1
+useraUavY itemwrPNe 30 1
+userxGXFq item31doJ 4 1
+userpbY1g itemcAUzH 23 1
+user3dYr4 itemvn3OC 18 1
+userOLph1 itemAlGQe 16 1
+userXIciZ itemzexIV 9 1
+userYkF7h itemuNHoh 22 1
+userIYes5 itemlHCkK 17 1
+userLBXk0 itemFzVAJ 8 1
+userBpH3N itemx52zm 19 1
+userXPmRz itemiCowm 15 1
+userKWMYJ itemSeyqb 10 1
+userjFzvH item84cQ6 29 1
+userhn3H7 itemLDh7R 22 1
+useriLMjp itemLPkI9 6 1
+uservVAs9 itempGfZ6 21 1
+userfl0kv itemEZob3 5 1
+userYcsX6 itemLPkI9 24 1
+userOPEPI itemvn3OC 28 1
+userbhMwq item9muy9 20 1
+user73wIM itemxvrbY 13 1
+useryKPmt itemRy5SF 24 1
+userfz4zC itemdjMTE 21 1
+useriL4c2 itemLPkI9 5 1
+userfJqUh itemlN5jA 28 1
+user5FxiH itemJaOdU 5 1
+userwXmpL item03CQ6 15 1
+userlRldH itemVHyMp 17 1
+userOBLWP itemg6NgV 11 1
+userTyJoH itemPzRe5 3 1
+userXPmRz itemN8AZu 25 1
+useriLMjp itemqF1uc 27 1
+userNL6ye itemDfuZl 5 1
+userfIZMV itemRNQTR 15 1
+userfIZMV itemdqVVX 14 1
+useriLMjp itemyWo9i 12 1
+userRGYXR itemySRfm 12 1
+useriCq0M itemjIyZN 3 1
+userjnRT1 itemRKTJC 3 1
+user5FxiH itemAlGQe 21 1
+userfJqUh itemQStwf 30 1
+userNuBW9 itemwAkpa 23 1
+userfl0kv itemjeN5W 23 1
+userfJqUh iteme5OvS 4 1
+user73wIM itemfL8PL 23 1
+user9xbHl itemdqVVX 9 1
+user7oJ9D itemIrWce 6 1
+uservcNUX item0QA86 16 1
+userYcsX6 itemFjQ4M 4 1
+userk6Mri itemd9ChJ 12 1
+uservIgrQ itemwinns 26 1
+user1eta7 itemEZob3 4 1
+userRqCeX itemEwdGW 2 1
+userk6Mri itemQJNS2 2 1
+userCIwg7 itemdkR3x 18 1
+userIYes5 item0QA86 17 1
+userbfNOX itemiCowm 21 1
+userlRldH itemQkv6a 18 1
+userh6Cos itemY6045 8 1
+user4FmZm itemcvY2p 13 1
+userIqRCa itemDfuZl 4 1
+userfz4zC itemmMX2p 11 1
+userhuvtK itemHrihE 6 1
+userwXmpL itemxCvQp 30 1
+userwXmpL itemFEgKI 1 1
+user5YzJs item9DjWX 11 1
+userhuvtK itemvjUdv 13 1
+userjnRT1 itemJaOdU 14 1
+user4FmZm iteme1aEV 18 1
+user3dYr4 itemqth87 27 1
+userhuvtK items32yz 2 1
+useriL4c2 itemSrPKx 13 1
+userhuvtK itemcWumf 14 1
+userwXazR item9muy9 24 1
+userOPEPI itemGAqYy 9 1
+user3niUH itemwinns 1 1
+userRGYXR itemSeyqb 6 1
+user3niUH itemXLYXV 25 1
+userpbY1g item0QA86 19 1
+userhuvtK itemXLYXV 9 1
+uservIgrQ itemjIyZN 23 1
+user7PXAP itemQStwf 8 1
+userpbY1g itemEZob3 8 1
+uservcNUX itemDfuZl 5 1
+userwC8yX item4FB6e 9 1
+userNL6ye itemQStwf 4 1
+userYcsX6 itemBkBCG 4 1
+userRGYXR itemx52zm 22 1
+userGadv3 itemnvCLA 28 1
+userAzNXt itemQStwf 16 1
+userxGXFq item162CY 12 1
+userwC8yX itemehZbz 19 1
+userafRuQ itemqth87 5 1
+uservVAs9 itemexwfY 9 1
+user9tzLJ item0amMQ 14 1
+useraAGtk itemmMX2p 20 1
+useriCq0M itemuNHoh 13 1
+userU5xwu itemqth87 16 1
+userAzNXt item178I3 3 1
+useruR6i7 itemSnsYW 11 1
+user3dYr4 itemzfaal 20 1
+userfIZMV itemBmrIx 29 1
+useriL4c2 itemmMX2p 12 1
+userOBLWP itemd7GN3 9 1
+user3dYr4 itemYp8lv 20 1
+userRwvwk itemyo43o 6 1
+userNL6ye itemTuHK9 19 1
+uservVAs9 itembHmsT 20 1
+user2RzBb itemllAnb 15 1
+userboi7r itemvQ7sQ 27 1
+userwzRLZ itemHrihE 16 1
+userHL2kL itemsaQmG 18 1
+userIqRCa itemXLYXV 30 1
+userEiWs5 itemQStwf 27 1
+userKFtUF itemmbGoj 29 1
+user9tzLJ itemqppyW 14 1
+useriCq0M itemoSaYE 9 1
+userRGYXR item4YMYG 1 1
+userXIciZ item162CY 28 1
+usernfs1b itemcAUzH 29 1
+userkfbeV itemtXKxm 8 1
+userkfbeV itemOCA2H 26 1
+user1eta7 itembuWyf 27 1
+userjFzvH itemOCA2H 30 1
+usermobRV item0rrNz 21 1
+usermobRV itemGAqYy 18 1
+useriL4c2 itemN8AZu 6 1
+userpbY1g itemIrWce 29 1
+userRwvwk itemakzor 5 1
+userBpH3N itemqppyW 15 1
+userEAbmM iteme5OvS 2 1
+userrvaBl itemIBbVf 24 1
+uservVAs9 itemxCvQp 11 1
+userxrwAf itemyo43o 5 1
+user4FmZm itemva2ph 30 1
+useryKPmt itemwBj8x 7 1
+userhxp30 item96Uu6 19 1
+userAZO9y itemuaFxY 1 1
+userkfbeV itemVHyMp 20 1
+userGadv3 itemjIyZN 1 1
+usera7eUd itemRNQTR 10 1
+userlRldH item162CY 18 1
+userIqRCa itemVHyMp 28 1
+userHL2kL itemw0Hbk 30 1
+userOmWEg itemaPbf4 29 1
+userAZO9y itemv7Clw 9 1
+uservzAWa itemYOYte 17 1
+userjFzvH item03CQ6 23 1
+userOmWEg itemMNxUT 16 1
+user7oJ9D itemUOpVk 28 1
+userhxp30 itemr7q87 27 1
+userjnRT1 item0MxmA 2 1
+user2RzBb item9DjWX 16 1
+userU8XiP itemsB45O 19 1
+uservzAWa itemMNxUT 2 1
+userEsCm8 item96Uu6 6 1
+userVvdgt itemDAINx 2 1
+userE8IrH itempGfZ6 22 1
+uservVAs9 itemvpxYm 6 1
+userxrwAf iteme5OvS 6 1
+userwC8yX iteme1aEV 7 1
+userafRuQ itemDfuZl 29 1
+uservVAs9 itemYgdNj 9 1
+userKWMYJ itemkHjKP 6 1
+userRwvwk item0rrNz 20 1
+userwXmpL itemxwCH9 30 1
+userbfNOX itemQkv6a 6 1
+userKFtUF itemx52zm 24 1
+userjOfN6 itemguPDr 5 1
+useryKPmt itemcvY2p 27 1
+userQrGSE itemyo43o 11 1
+userrvaBl iteme1aEV 25 1
+userwC8yX itemcAUzH 4 1
+userIYes5 itemJyBn3 25 1
+usergnJHC itemiXwHJ 3 1
+userboi7r itemSrPKx 5 1
+userk6Mri itemllAnb 6 1
+userRqCeX itemY6045 16 1
+userE8IrH itemUOpVk 22 1
+user7PXAP itemeROTS 1 1
+userTHymG itemTuHK9 28 1
+userHL2kL itemaTHnd 7 1
+userfIZMV itemBmrIx 29 1
+user2RzBb itemWUHgc 25 1
+userOBLWP itemAzjPR 21 1
+userlRldH itemOCA2H 30 1
+userRwvwk itemuz9u2 21 1
+userOPEPI itemVARpF 3 1
+userlRldH itemTAGOA 30 1
+usera7eUd itemd9ChJ 26 1
+usergnJHC item9DjWX 10 1
+userwXmpL itemUFxkv 26 1
+user5FxiH itemllAnb 14 1
+useriqm2l itemf6vR5 22 1
+userYcsX6 itemJyBn3 27 1
+userrvaBl itemN8AZu 8 1
+userkfbeV itemrT9kO 23 1
+usera7eUd itemZIbqG 10 1
+userhuvtK itemWUHgc 24 1
+user9xbHl itemBkBCG 23 1
+userTbHVD itemYgdNj 5 1
+useruR6i7 itemlN5jA 22 1
+user7PXAP items32yz 24 1
+userYKjNX itembHmsT 17 1
+usergnJHC itemjmSae 27 1
+userNuBW9 itemd9ChJ 11 1
+user71qa3 item9DjWX 21 1
+userfl0kv itemxwCH9 19 1
+userboi7r itemzexIV 4 1
+user1eta7 itemH8gzP 5 1
+user9xbHl item0QA86 10 1
+userjnRT1 itemw0Hbk 11 1
+userfJqUh itemuNHoh 2 1
+userE8IrH item0QA86 19 1
+userOBLWP itemakzor 18 1
+userhxp30 itemDAINx 2 1
+userwzRLZ itemjmSae 17 1
+userwzRLZ itemXLYXV 1 1
+usergnJHC itemEzeNr 15 1
+usermobRV itemEQ5kD 5 1
+userU5xwu itemuz9u2 4 1
+userAzNXt itemcVs96 2 1
+usergnJHC itemWeaex 17 1
+uservVAs9 itemVda4U 29 1
+userm4mHu itemUFxkv 2 1
+userboi7r itemy6Af3 7 1
+userBpH3N itemWngsI 12 1
+userxrwAf itemzexIV 21 1
+userkfbeV itemakzor 24 1
+userpKjBY itemABTMM 22 1
+userwzRLZ itemlHCkK 18 1
+user7igOt itemuNHoh 20 1
+userNL6ye iteme5OvS 9 1
+user4FmZm itemv7Clw 25 1
+uservIgrQ itemy6Af3 14 1
+userLS2Nz itemcAUzH 24 1
+userOBLWP itemH8gzP 29 1
+userAZO9y itemexwfY 15 1
+userpbY1g itemySRfm 20 1
+userTyJoH item23scr 21 1
+userRqCeX itemzfaal 12 1
+userOPEPI itemTuHK9 1 1
+useriCq0M item6hTeJ 5 1
+userOmWEg itemTAGOA 10 1
+userhxp30 itemvjUdv 3 1
+userkfbeV itemZIbqG 28 1
+userwC8yX itemXLYXV 7 1
+usergnJHC itemGgwft 13 1
+userTyJoH itemFsCNW 20 1
+userh6Cos itemRy5SF 2 1
+userAzNXt itemEwdGW 14 1
+user7oJ9D item178I3 26 1
+userTHymG itemiXwHJ 19 1
+userQrGSE itemwrPNe 2 1
+userTyJoH item0amMQ 29 1
+user3dYr4 itemgRlgs 15 1
+userh6Cos itemzfaal 5 1
+user7PXAP item7XnWI 4 1
+userOBLWP itemKckEp 28 1
+userts7VL itemjIyZN 2 1
+user6btfJ itemGAqYy 2 1
+useriL4c2 itemKckEp 30 1
+userEsCm8 itemcvY2p 30 1
+userKWMYJ itemwBj8x 23 1
+userfJqUh itemmt9Zs 16 1
+userAZO9y itemZIbqG 28 1
+userEiWs5 itemvjUdv 21 1
+userbfNOX itemcAUzH 28 1
+userRwvwk itemOCA2H 24 1
+userOBLWP itemEzeNr 17 1
+userfJqUh item96Uu6 13 1
+userboi7r itemiXwHJ 18 1
+userxGXFq itemO64Fe 2 1
+userGadv3 item0amMQ 15 1
+userbfNOX itemIBbVf 16 1
+userXIciZ itemmbGoj 13 1
+uservcNUX itemdqVVX 30 1
+useruR6i7 itemRNQTR 1 1
+userjOfN6 itemJyBn3 24 1
+userAZO9y itemsaQmG 13 1
+userOBLWP itemmt9Zs 12 1
+userXIciZ itempGfZ6 8 1
+userOLph1 item0amMQ 16 1
+userRGYXR itemdC6Wf 8 1
+userLBXk0 itemup8oB 1 1
+userRwvwk itemVda4U 14 1
+userm4mHu itemmbGoj 17 1
+user4FmZm itemyWo9i 4 1
+useruR6i7 itemxCvQp 21 1
+userTbHVD itemXLYXV 24 1
+userXIciZ itemQStwf 14 1
+useriqm2l itemBmrIx 26 1
+userfz4zC itemnvCLA 15 1
+userU5xwu itemQStwf 6 1
+userxGXFq itemKe2Er 24 1
+userNL6ye itemdkR3x 24 1
+userTbHVD itemMpeEL 17 1
+usermobRV itemcvY2p 3 1
+userQrGSE itemMzrpc 19 1
+user1eta7 itemVZJC8 27 1
+userjFzvH item4YMYG 3 1
+userRqCeX itemdkR3x 14 1
+userLS2Nz itemcvY2p 6 1
+userboi7r itemSnsYW 12 1
+userTbHVD itemkHjKP 19 1
+userh6Cos itemqD4yX 3 1
+userjnRT1 itemHrihE 29 1
+userHL2kL itemxwCH9 28 1
+user7PXAP item2FMEC 21 1
+userzioQY itemVZJC8 3 1
+userKFtUF itemLPkI9 19 1
+useriqm2l itemjmSae 10 1
+userE8IrH itemnvCLA 3 1
+userTbHVD itemqF1uc 22 1
+userpKjBY items32yz 12 1
+userRqCeX itemXxPjl 30 1
+userU8XiP itemiCowm 4 1
+userNuBW9 itemkHjKP 3 1
+userfz4zC itemQJNS2 12 1
+userTbHVD item2FMEC 1 1
+userxGXFq itemcvY2p 29 1
+userh6Cos item84cQ6 27 1
+userIqRCa itemcWumf 30 1
+uservzAWa itemJyBn3 15 1
+userTbHVD itemllUul 6 1
+user9xbHl itemlAKEf 6 1
+user6btfJ itemRNQTR 3 1
+userIYes5 itemGgwft 6 1
+user6btfJ itemehZbz 2 1
+userOmWEg itemxCvQp 1 1
+userAZO9y itemDYrOS 22 1
+userKFtUF itemhOGIE 21 1
+usermobRV itemFEgKI 20 1
+userjFzvH itemIBbVf 4 1
+userrvaBl itemr7q87 4 1
+userh6Cos itemfL8PL 27 1
+userOPEPI itemehZbz 28 1
+userzioQY itemUo6cI 19 1
+userjFzvH itemgRlgs 1 1
+userCIwg7 itemdqVVX 1 1
+user9xbHl item31doJ 10 1
+user3dYr4 item31doJ 9 1
+userAZO9y itemaPbf4 26 1
+user7igOt itemeROTS 26 1
+userafRuQ itemV1Vwk 17 1
+usermobRV itemjeN5W 22 1
+userrvaBl itemxbm5F 9 1
+userlRldH item31doJ 6 1
+userhuvtK itemTuHK9 26 1
+uservcNUX itemYgdNj 12 1
+usera7eUd itemuaFxY 18 1
+user3niUH itemhOGIE 3 1
+userpKjBY itemWeaex 21 1
+userxGXFq item7XnWI 23 1
+userfJqUh itemoSaYE 17 1
+useryKPmt itemr7q87 12 1
+userRwvwk item23scr 24 1
+userpbY1g itemehZbz 22 1
+user3niUH itemvQ7sQ 20 1
+userOBLWP itemmbGoj 9 1
+userEsCm8 itemOCA2H 13 1
+userKFtUF itemgoCpP 23 1
+userQrGSE itemiCowm 2 1
+userVvdgt itemYgdNj 27 1
+userKFtUF itemexwfY 11 1
+user4FmZm itemTAGOA 2 1
+userlRldH itemvpxYm 14 1
+userNuBW9 itemdjMTE 4 1
+userwzRLZ itemxvrbY 7 1
+user9xbHl itemqppyW 22 1
+uservcNUX itemvHkzH 29 1
+userh6Cos itemKe2Er 8 1
+usernfs1b itemaTHnd 21 1
+userwC8yX item80q9y 26 1
+usernfs1b itempGfZ6 28 1
+useriL4c2 itemjmSae 28 1
+userbhMwq itemUFxkv 19 1
+userVvdgt itemwrPNe 30 1
+user73wIM item9M3lc 18 1
+userOLph1 itemRy5SF 13 1
+userwXmpL itemDYrOS 8 1
+usera7eUd itemJaOdU 6 1
+userfJqUh itemxbm5F 5 1
+userGadv3 itemY6045 21 1
+userKFtUF itemOCA2H 11 1
+userkfbeV itemWUHgc 17 1
+user7oJ9D itemiCowm 9 1
+user9xbHl itemy6Af3 13 1
+userRGYXR itemrDLmp 25 1
+uservzAWa itemvn3OC 11 1
+userAzNXt itemVda4U 28 1
+userafRuQ itemyo43o 14 1
+userIqRCa itemva2ph 6 1
+user7oJ9D item23scr 19 1
+useraAGtk item52xJ8 24 1
+user4FmZm itemsF3jV 13 1
+userRGYXR itemjmSae 13 1
+user7PXAP item9DjWX 10 1
+user3dYr4 itemlN5jA 10 1
+useraUavY itemxwCH9 6 1
+userVvdgt itemUFxkv 26 1
+userwXmpL itemLDh7R 27 1
+userhxp30 itemEQ5kD 3 1
+user5FxiH itemyWo9i 20 1
+userOLph1 itemEQ5kD 28 1
+userxGXFq item64Mnl 25 1
+userBpH3N itemH8gzP 10 1
+userk6Mri itemUo6cI 25 1
+userGadv3 itemoSaYE 24 1
+user3dYr4 itemGgwft 11 1
+user7igOt itemcVs96 29 1
+userjnRT1 itemuaFxY 13 1
+user9tzLJ item0rrNz 28 1
+user2Vxqb itemlHCkK 19 1
+uservIgrQ itemxvrbY 30 1
+userlRldH itemoSaYE 12 1
+userwC8yX itemup8oB 23 1
+uservVAs9 item23scr 7 1
+useriL4c2 itemKHT0l 15 1
+userwXazR itemexwfY 29 1
+user3niUH item23scr 25 1
+userAzNXt itemIBbVf 19 1
+uservzAWa itemIBbVf 2 1
+userKWMYJ item178I3 14 1
+userkfbeV itemaPbf4 6 1
+uservcNUX itemnO4tX 29 1
+userwXmpL itemr7q87 11 1
+user1eta7 itemRKTJC 21 1
+userzioQY itemdjMTE 3 1
+userlRldH itemH8gzP 22 1
+userboi7r iteme5OvS 29 1
+userboi7r item0rrNz 13 1
+usernfs1b itemDAINx 16 1
+userLS2Nz itemvn3OC 8 1
+useriCq0M itemv7Clw 26 1
+userbfNOX itemFjQ4M 14 1
+user2RzBb itemsB45O 7 1
+user2RzBb itemEB2ZL 14 1
+userNL6ye item162CY 24 1
+userfJqUh itemdkR3x 17 1
+usera7eUd itemRMr3n 3 1
+userOPEPI itemehZbz 26 1
+userHL2kL itemr7q87 21 1
+userKWMYJ itemSeyqb 28 1
+uservcNUX itemEQ5kD 7 1
+userkfbeV itema506d 19 1
+user3niUH itemrT9kO 1 1
+userm4mHu itemvHkzH 25 1
+userOLph1 itemgEevH 14 1
+userKWMYJ itemLDh7R 22 1
+useryKPmt itemva2ph 11 1
+useryKPmt itemvn3OC 7 1
+userlRldH itemqth87 13 1
+userTHymG itemKHT0l 4 1
+user7oJ9D itemw0Hbk 29 1
+userjOfN6 itemgRlgs 18 1
+userbhMwq itemjmSae 22 1
+userRqCeX itempGfZ6 4 1
+userh6Cos itemgEevH 24 1
+userjnRT1 itemQkv6a 19 1
+user9xbHl itemup8oB 8 1
+userLBXk0 itemsaQmG 29 1
+useriCq0M itemcVs96 24 1
+userAZO9y itemYp8lv 23 1
+userjFzvH item84cQ6 15 1
+userhuvtK itemup8oB 18 1
+useriqm2l itemZCI04 28 1
+userEsCm8 itemDAINx 20 1
+userfJqUh itemllUul 7 1
+uservIgrQ itemzexIV 4 1
+usernfs1b itemmMX2p 13 1
+userjOfN6 item7gr06 14 1
+userafRuQ itemDfuZl 22 1
+useriCq0M itemBuZOt 3 1
+user2Vxqb itemiXwHJ 28 1
+userOBLWP itemwBj8x 26 1
+usernfs1b itempGfZ6 24 1
+user2Vxqb itemcVs96 21 1
+userTbHVD itemjeN5W 1 1
+user2Vxqb itemgRlgs 6 1
+userxrwAf itemSnsYW 13 1
+user3niUH item64Mnl 25 1
+userYKjNX itemwBj8x 18 1
+userOLph1 itemXLYXV 21 1
+userlRldH itemguPDr 15 1
+userKFtUF item9lgJn 14 1
+userAZO9y itemUFxkv 22 1
+userTbHVD itemexwfY 23 1
+userQrGSE item0QA86 12 1
+userwXazR itemyWo9i 2 1
+user5YzJs itemFsCNW 5 1
+userkfbeV itemdkR3x 28 1
+userboi7r itemgoCpP 2 1
+userEsCm8 itembHmsT 13 1
+userYkF7h itemMpeEL 16 1
+userTbHVD itemoSaYE 5 1
+userwC8yX itemlAKEf 24 1
+userkfbeV itemwAkpa 27 1
+userTbHVD itemxbm5F 21 1
+userwC8yX itemTAGOA 22 1
+userVvdgt itemUyXau 9 1
+userQrGSE itemakzor 28 1
+user4FmZm itemy6Af3 13 1
+userbhMwq itemw0Hbk 1 1
+usera7eUd itemwinns 20 1
+userwXmpL itemUFxkv 6 1
+userh6Cos itemBmrIx 19 1
+userpbY1g itemDYrOS 23 1
+userTHymG itemAj7Pj 7 1
+userIYes5 item52xJ8 8 1
+user6btfJ itemtXKxm 1 1
+userbhMwq itemvpxYm 8 1
+userEiWs5 itemWUHgc 13 1
+useriLMjp iteme5OvS 8 1
+userTbHVD itemup8oB 10 1
+userNuBW9 item80q9y 14 1
+userEiWs5 itemoSaYE 3 1
+userm4mHu itemVda4U 11 1
+userbhMwq itemuNHoh 18 1
+userTHymG itemEQ5kD 12 1
+userXIciZ itemdoXAn 8 1
+userwzRLZ itemUo6cI 9 1
+userNL6ye itemdkR3x 29 1
+userRGYXR itemuNHoh 4 1
+userpbY1g itemIBbVf 4 1
+user3niUH itemdoXAn 9 1
+useryDDtx itemMpeEL 8 1
+userfl0kv itemVZJC8 23 1
+userk6Mri itemhOGIE 3 1
+userfJqUh itembHmsT 7 1
+userYcsX6 itemlHCkK 9 1
+usernfs1b itemehZbz 8 1
+userfJqUh itemVZJC8 8 1
+user5FxiH itemOCA2H 26 1
+user7PXAP itemqD4yX 20 1
+userlRldH itemZIbqG 5 1
+user5YzJs itemDfuZl 23 1
+userRqCeX item0rrNz 30 1
+usergnJHC itemcWumf 29 1
+user1eta7 items32yz 15 1
+userfl0kv itemRy5SF 17 1
+userKWMYJ itemEZob3 4 1
+user9tzLJ itemO64Fe 4 1
+userKWMYJ itemKckEp 1 1
+userhxp30 itemVZJC8 1 1
+userOLph1 itemoSaYE 20 1
+userfl0kv item2FMEC 6 1
+userXIciZ item618n3 16 1
+useruR6i7 itemqF1uc 11 1
+userU5xwu itemBuZOt 9 1
+user7igOt item0rrNz 22 1
+userEiWs5 itemexwfY 23 1
+userbfNOX itemr1zoc 29 1
+user71qa3 itemqth87 1 1
+userboi7r itemsaQmG 12 1
+userbhMwq itemSrPKx 10 1
+uservIgrQ itemeROTS 19 1
+userAZO9y itemWngsI 7 1
+useraUavY itemBmrIx 17 1
+userhxp30 itemIrWce 18 1
+user7igOt itemsB45O 23 1
+userIqRCa itemv7Clw 4 1
+uservcNUX itemDAINx 13 1
+userU8XiP itemRy5SF 17 1
+userhxp30 item7gr06 21 1
+useraAGtk itemRMr3n 13 1
+userLS2Nz itemxwCH9 6 1
+useraUavY itemWngsI 25 1
+userYkF7h itemDYrOS 9 1
+userh6Cos itemehZbz 1 1
+user1eta7 itemmMX2p 3 1
+userxrwAf itemQJNS2 12 1
+user71qa3 itemd7GN3 3 1
+userIYes5 itemMzrpc 10 1
+userGadv3 itemDAINx 17 1
+user1eta7 itemnO4tX 27 1
+userboi7r itemSeyqb 20 1
+userHL2kL iteme1aEV 21 1
+user5YzJs itemBuZOt 30 1
+useruR6i7 item9lgJn 26 1
+userOLph1 itemKckEp 7 1
+userE8IrH itemxvrbY 7 1
+userAZO9y itemup8oB 22 1
+userOmWEg itemsF3jV 14 1
+user71qa3 item4YMYG 9 1
+userE8IrH itemHrihE 16 1
+useraAGtk itemBkBCG 26 1
+userfJqUh item162CY 10 1
+userRqCeX iteme1aEV 23 1
+userjOfN6 item6hTeJ 7 1
+userAzNXt itemvHkzH 15 1
+user3dYr4 itemxCvQp 29 1
+userOLph1 itemuNHoh 3 1
+useruR6i7 itemPn5yf 23 1
+useryDDtx itemFjQ4M 11 1
+userLBXk0 item4FB6e 22 1
+userxGXFq itemxCvQp 3 1
+userjnRT1 itemTAGOA 10 1
+userYKjNX itemcvY2p 7 1
+user6btfJ itemd7GN3 5 1
+userjnRT1 itemwinns 13 1
+userTHymG itemqD4yX 24 1
+userxGXFq itemBkBCG 10 1
+usermobRV itemwAkpa 10 1
+userXIciZ item9M3lc 16 1
+userpKjBY itembHmsT 14 1
+userhn3H7 itemjeN5W 3 1
+userboi7r itemEB2ZL 2 1
+userhn3H7 itemEzeNr 15 1
+useriLMjp item23scr 11 1
+usermobRV itemr1zoc 28 1
+userjnRT1 itemyo43o 16 1
+userafRuQ itemXxPjl 22 1
+user6btfJ itemTuHK9 8 1
+user5FxiH item0amMQ 25 1
+userCIwg7 itemh9nHh 24 1
+userbfNOX itemuaFxY 2 1
+userHL2kL item0VuxA 27 1
+userwXmpL itemeROTS 10 1
+useriLMjp itemcVs96 29 1
+userwXazR itemqth87 16 1
+userIYes5 itemUFxkv 30 1
+userXIciZ itemexwfY 20 1
+userafRuQ item2FMEC 15 1
+userjOfN6 itemHrihE 23 1
+user5YzJs itemYOYte 22 1
+userAZO9y itemDYrOS 17 1
+useraAGtk itemGgwft 9 1
+userRwvwk itemTAGOA 19 1
+userbhMwq itemUFxkv 1 1
+userwXazR item162CY 24 1
+userfz4zC itemfL8PL 20 1
+userOBLWP item4YMYG 26 1
+user9tzLJ item84cQ6 6 1
+userOBLWP itemQStwf 30 1
+user7oJ9D item9M3lc 15 1
+user2RzBb itemJyBn3 20 1
+user4FmZm itemVHyMp 20 1
+userfJqUh itemaPbf4 5 1
+userGadv3 itemr7q87 16 1
+useryKPmt itemRKTJC 5 1
+userboi7r itemdC6Wf 9 1
+userwC8yX itemABTMM 22 1
+userEsCm8 itemx52zm 1 1
+userwXmpL itemv7Clw 20 1
+userhxp30 itemDF5f3 23 1
+userpbY1g itemnO4tX 29 1
+userrvaBl itemAlGQe 21 1
+userLBXk0 item6TcLl 11 1
+usera7eUd itemWeaex 6 1
+userEiWs5 itemdjMTE 15 1
+userEiWs5 itemuNHoh 25 1
+uservcNUX itemlN5jA 6 1
+userXIciZ itemdjMTE 25 1
+userYKjNX itemRMr3n 21 1
+userQrGSE itemzexIV 25 1
+useriLMjp itemTAGOA 15 1
+userpbY1g itemYp8lv 21 1
+userYkF7h itemgEevH 17 1
+user7PXAP itemFsCNW 8 1
+user2RzBb itemsaQmG 27 1
+userkfbeV itemwrPNe 28 1
+userjOfN6 itemKe2Er 2 1
+userGadv3 itemSeyqb 27 1
+userfz4zC itemFzVAJ 17 1
+uservVAs9 itemsaQmG 18 1
+userkfbeV itemw0Hbk 19 1
+userAZO9y item52xJ8 29 1
+userOmWEg itemH8gzP 20 1
+usera7eUd itemsF3jV 18 1
+userYKjNX itemtXKxm 5 1
+userTHymG item9M3lc 16 1
+userRwvwk itemRKTJC 27 1
+userjnRT1 item9muy9 1 1
+userm4mHu itemOCA2H 5 1
+userRqCeX item0QA86 8 1
+userbhMwq itemBuZOt 11 1
+userjnRT1 items32yz 29 1
+usergnJHC itemcWumf 21 1
+userBpH3N itemRKTJC 26 1
+userkfbeV item23scr 28 1
+userYKjNX itemABTMM 1 1
+useryDDtx itemSnsYW 23 1
+uservzAWa itemlAKEf 30 1
+userjnRT1 itemwrPNe 29 1
+userlRldH itemgoCpP 6 1
+userOmWEg itemVHyMp 6 1
+userfl0kv itemzfaal 28 1
+userYcsX6 itemEB2ZL 14 1
+userTHymG itemAzjPR 24 1
+userk6Mri itemxbm5F 2 1
+userRwvwk itemRy5SF 16 1
+user7oJ9D itemiCowm 8 1
+userhuvtK itemkHjKP 25 1
+userRqCeX itemexwfY 16 1
+userXIciZ itemmt9Zs 26 1
+userNL6ye itemFzVAJ 17 1
+user7igOt itemRNQTR 1 1
+userfz4zC itemEQ5kD 1 1
+userm4mHu itemx52zm 15 1
+userfIZMV itemWngsI 12 1
+useriL4c2 itemN8AZu 27 1
+userrvaBl itemEQ5kD 6 1
+userfl0kv itemgRlgs 7 1
+usermobRV itemRy5SF 7 1
+userwC8yX itemVHyMp 25 1
+userIqRCa itemrT9kO 18 1
+userfJqUh itemvQ7sQ 5 1
+userwzRLZ item4YMYG 14 1
+userRqCeX itemxvrbY 22 1
+userlRldH itemjmSae 19 1
+userXPmRz iteme1aEV 13 1
+userTyJoH itemehZbz 8 1
+useriLMjp itemw0Hbk 14 1
+userYcsX6 itemf6vR5 5 1
+useraAGtk item7XnWI 22 1
+usernfs1b itemQStwf 9 1
+useriqm2l itemJaOdU 6 1
+uservzAWa item0VuxA 6 1
+usernfs1b item178I3 19 1
+userxrwAf itemQJNS2 3 1
+userYKjNX itemYOYte 27 1
+usera7eUd itemCVpf3 20 1
+userXIciZ item6TcLl 30 1
+userEsCm8 itemCmV8W 1 1
+userOPEPI itemv7Clw 26 1
+user73wIM itemBuZOt 20 1
+useriL4c2 item4YMYG 7 1
+userfIZMV itemdC6Wf 3 1
+userfJqUh itemYgdNj 23 1
+usermobRV itemDF5f3 5 1
+userwC8yX itemySRfm 2 1
+user2RzBb item84cQ6 11 1
+userIqRCa itemcVs96 5 1
+user9tzLJ itemXLYXV 12 1
+useriL4c2 itemllUul 30 1
+userh6Cos itemiXwHJ 14 1
+userIYes5 itemBkBCG 17 1
+useriLMjp itemcAUzH 30 1
+useriLMjp itemFoRzs 4 1
+userRqCeX itemDfuZl 4 1
+user2Vxqb itemeROTS 1 1
+userYKjNX itemEQ5kD 5 1
+user73wIM itemexwfY 10 1
+userm4mHu itemPOi9Y 27 1
+useriCq0M itemQkv6a 12 1
+usergnJHC itemDfuZl 12 1
+userbhMwq itemzfaal 2 1
+user3dYr4 itemr7q87 27 1
+userGadv3 itemxvrbY 20 1
+userRqCeX itemllAnb 7 1
+userzioQY item4YMYG 27 1
+user5FxiH itemh9nHh 7 1
+userbhMwq itemnvCLA 30 1
+userRqCeX itemuNHoh 5 1
+userfJqUh itemEzeNr 18 1
+userRGYXR item7gr06 14 1
+userts7VL itemxvrbY 12 1
+userNuBW9 itemzexIV 21 1
+userafRuQ itemO64Fe 25 1
+useruR6i7 itemdjMTE 8 1
+usera7eUd item80q9y 21 1
+userXIciZ itembHmsT 17 1
+user5FxiH itemRKTJC 11 1
+user5YzJs itemWeaex 27 1
+userkfbeV itemOCA2H 23 1
+useriCq0M itemiXwHJ 30 1
+user73wIM itemy6Af3 28 1
+userwC8yX itemDF5f3 3 1
+userEsCm8 itemMNxUT 12 1
+userjFzvH iteme1aEV 7 1
+user3niUH itemLPkI9 8 1
+useryDDtx item84cQ6 22 1
+userCIwg7 item0QA86 12 1
+user7PXAP itemvQ7sQ 10 1
+useriCq0M iteme5OvS 17 1
+userk6Mri itemqD4yX 20 1
+userAZO9y itemIBbVf 13 1
+userU5xwu itemuz9u2 25 1
+userk6Mri itemlAKEf 22 1
+userOmWEg itemqppyW 1 1
+userXIciZ itemyWo9i 11 1
+userlRldH itemQStwf 28 1
+userkfbeV itemqth87 30 1
+userNL6ye itemPzRe5 7 1
+user9tzLJ itemcAUzH 24 1
+userbfNOX itemQkv6a 12 1
+userrvaBl itemDAINx 11 1
+userEiWs5 itemlHCkK 27 1
+user6btfJ itemuNHoh 30 1
+userhuvtK itemguPDr 26 1
+userRqCeX itemlAKEf 15 1
+userrvaBl itemN8AZu 20 1
+user73wIM itemmbGoj 25 1
+userKWMYJ itemuaFxY 3 1
+userOPEPI itemlN5jA 29 1
+userTbHVD itemDF5f3 25 1
+user2RzBb itemf6vR5 8 1
+user6btfJ item9muy9 24 1
+user9xbHl itemdkR3x 30 1
+user2Vxqb itemgEevH 26 1
+userQrGSE itemqD4yX 2 1
+userjFzvH itemuaFxY 10 1
+userpbY1g itemnO4tX 27 1
+userKFtUF itemUiRdE 26 1
+uservVAs9 itemXxPjl 11 1
+useryKPmt itemJyBn3 20 1
+userKFtUF itemEzeNr 29 1
+user7oJ9D itempGfZ6 5 1
+userYKjNX itemaTHnd 18 1
+userIqRCa itemd7GN3 25 1
+useryKPmt itemjeN5W 2 1
+userTyJoH itemlHCkK 11 1
+userjFzvH itemABTMM 30 1
+uservcNUX itemsB45O 26 1
+userNL6ye itemMzrpc 3 1
+userGadv3 itemdkR3x 21 1
+userkfbeV itemaPbf4 12 1
+userk6Mri itemYOYte 2 1
+userOPEPI itemdkR3x 12 1
+userjOfN6 item80q9y 18 1
+userhuvtK itemtXKxm 6 1
+useraAGtk itemgoCpP 16 1
+userTbHVD itemEwdGW 27 1
+useraAGtk itemAlGQe 13 1
+userXIciZ itemf6vR5 17 1
+userafRuQ item4FB6e 27 1
+userXIciZ item9M3lc 22 1
+userTyJoH itemcVs96 30 1
+userXPmRz itemV1Vwk 15 1
+useraUavY itemnvCLA 7 1
+userxGXFq itemnO4tX 14 1
+user9xbHl itembuWyf 15 1
+useryDDtx itemnvCLA 15 1
+uservcNUX itemdkR3x 18 1
+userjFzvH itemEQ5kD 8 1
+userAzNXt iteme1aEV 4 1
+userpbY1g itemSnsYW 6 1
+userVvdgt itemBkBCG 7 1
+userafRuQ itemLPkI9 13 1
+userhxp30 item4p3W3 10 1
+userhuvtK itemDF5f3 26 1
+userzioQY itemEB2ZL 3 1
+userafRuQ itemFoRzs 28 1
+userOmWEg itemqF1uc 12 1
+userOLph1 itemiXwHJ 21 1
+userhxp30 itemy6Af3 25 1
+userfl0kv itemzfaal 21 1
+userwzRLZ itemxCvQp 22 1
+user2RzBb itemxvrbY 27 1
+usergnJHC itemZIbqG 6 1
+userwXmpL itemN8AZu 20 1
+userLBXk0 item7gr06 19 1
+userXIciZ itemh9nHh 17 1
+usergnJHC itemcvY2p 2 1
+userts7VL itemakzor 4 1
+user2RzBb itemCmV8W 3 1
+userm4mHu item4FB6e 27 1
+useraUavY iteme1aEV 11 1
+uservzAWa itemr7q87 3 1
+useriLMjp itemEwdGW 26 1
+userOBLWP itemlAKEf 19 1
+userjnRT1 itemSnsYW 13 1
+userzioQY item1PK0V 29 1
+userTyJoH itemva2ph 1 1
+user73wIM itemUyXau 6 1
+userTbHVD itemqth87 17 1
+usermobRV itemxwCH9 19 1
+userm4mHu itemnO4tX 26 1
+userm4mHu itempLAQY 23 1
+usermobRV itemkHjKP 17 1
+userRqCeX itemLDh7R 27 1
+userAzNXt itemWUHgc 15 1
+userNuBW9 itemlepVl 10 1
+userhn3H7 item80q9y 19 1
+userBpH3N items32yz 10 1
+useryDDtx itemqD4yX 24 1
+userlRldH item4p3W3 22 1
+usernfs1b itemPzRe5 6 1
+uservIgrQ itemxwCH9 19 1
+userRqCeX item9lgJn 20 1
+user1eta7 itemEB2ZL 13 1
+userwC8yX itemSeyqb 30 1
+usermobRV itemUFxkv 1 1
+user4FmZm itemwAkpa 28 1
+userkfbeV itemH8gzP 7 1
+userTHymG itemQJNS2 4 1
+uservIgrQ itemdqVVX 11 1
+userxrwAf itemEzeNr 28 1
+user7oJ9D item9M3lc 23 1
+usergnJHC itemd7GN3 7 1
+userKWMYJ itemEwdGW 17 1
+userLS2Nz itemakzor 7 1
+userjFzvH item31doJ 19 1
+userpKjBY itemd7GN3 15 1
+userQrGSE itemSnsYW 26 1
+userfIZMV itemjmSae 1 1
+userOPEPI itemY6045 25 1
+uservVAs9 itemQStwf 16 1
+usernfs1b itemd9ChJ 17 1
+userwzRLZ itemUyXau 18 1
+userHL2kL itemEB2ZL 30 1
+userRwvwk item618n3 11 1
+userRwvwk itemnvCLA 13 1
+userfz4zC item1PK0V 8 1
+uservVAs9 itemOCA2H 19 1
+user71qa3 itemg6NgV 2 1
+useraUavY itemJyBn3 5 1
+userfl0kv itemPzRe5 9 1
+userOPEPI itemWUHgc 8 1
+useryKPmt itemqF1uc 4 1
+user2RzBb itemaPbf4 29 1
+userYcsX6 item7gr06 20 1
+userIqRCa itemdC6Wf 28 1
+userwXmpL itemxvrbY 4 1
+useriLMjp itemVZJC8 5 1
+userYkF7h itemcvY2p 13 1
+userIqRCa itemcVs96 23 1
+userNL6ye items32yz 2 1
+userQrGSE itemRy5SF 15 1
+userhuvtK itemdqVVX 28 1
+userh6Cos itemFzVAJ 8 1
+userh6Cos item64Mnl 12 1
+useraAGtk itemySRfm 18 1
+uservVAs9 item0amMQ 21 1
+user3dYr4 itemdC6Wf 15 1
+userEiWs5 itemiXwHJ 4 1
+userOmWEg itemoSaYE 12 1
+userwC8yX itemOCA2H 24 1
+userOLph1 itemPOi9Y 26 1
+userjOfN6 itemvn3OC 8 1
+userXPmRz itemlHCkK 4 1
+userboi7r itemCmV8W 26 1
+userNuBW9 itemx52zm 21 1
+userTyJoH itemvpxYm 22 1
+userOLph1 item0amMQ 15 1
+userU8XiP itemehZbz 8 1
+user1eta7 itemUFxkv 10 1
+user73wIM itemrDLmp 23 1
+userfIZMV itemlHCkK 7 1
+user7oJ9D itemcAUzH 29 1
+userQrGSE itemN8AZu 11 1
+userEAbmM itemlHCkK 21 1
+useraAGtk itemhOGIE 5 1
+userjOfN6 itemjeN5W 23 1
+userwzRLZ itemcWumf 27 1
+userwXazR iteme1aEV 3 1
+uservcNUX itemr1zoc 9 1
+userbhMwq itempLAQY 5 1
+userwXazR itemLDh7R 3 1
+userboi7r itemMzrpc 13 1
+userjnRT1 itemaPbf4 23 1
+userkfbeV itemTAGOA 26 1
+userYKjNX itemllUul 19 1
+user7PXAP itemFsCNW 16 1
+userfz4zC item23scr 18 1
+uservIgrQ itemmMX2p 22 1
+userwXmpL itemWUHgc 8 1
+user7igOt itemRKTJC 30 1
+userzioQY itemnO4tX 6 1
+userboi7r itemJyBn3 5 1
+userRwvwk itemZIbqG 7 1
+userYkF7h itemWeaex 30 1
+userYkF7h itemdkR3x 5 1
+user9tzLJ itemxwCH9 27 1
+userjFzvH itemcvY2p 14 1
+userOPEPI item162CY 2 1
+userh6Cos itemDAINx 2 1
+useriLMjp itemexwfY 8 1
+usergnJHC itemUFxkv 10 1
+userkfbeV item2FMEC 9 1
+userk6Mri item162CY 28 1
+userhn3H7 itemYOYte 27 1
+userCIwg7 itemEB2ZL 1 1
+useriLMjp itemAlGQe 28 1
+usera7eUd itemr1zoc 9 1
+userzioQY itemBuZOt 19 1
+userOPEPI itemqppyW 8 1
+userRqCeX itemeROTS 30 1
+userNuBW9 itemmMX2p 29 1
+user1eta7 itemeROTS 29 1
+userwzRLZ itemdoXAn 24 1
+userjnRT1 itemRMr3n 7 1
+userEiWs5 itemaPbf4 28 1
+userRqCeX itemwAkpa 11 1
+userfIZMV itemSnsYW 2 1
+userxGXFq itemVZJC8 10 1
+userKFtUF item64Mnl 3 1
+user4FmZm itemSW5s8 23 1
+userjnRT1 item52xJ8 12 1
+useraAGtk itemN8AZu 4 1
+userNL6ye itemTAGOA 2 1
+usernfs1b itemwAkpa 11 1
+userboi7r itemfL8PL 14 1
+userIqRCa itemRKTJC 26 1
+user7oJ9D itemBmrIx 25 1
+userxGXFq iteme1aEV 19 1
+userCIwg7 itemwrPNe 19 1
+userhxp30 itemdqVVX 4 1
+userfz4zC itemzexIV 5 1
+userU5xwu itemWngsI 6 1
+usera7eUd itemw0Hbk 2 1
+userfl0kv item80q9y 25 1
+usera7eUd iteme1aEV 30 1
+userfIZMV item9DjWX 12 1
+userTyJoH itemfL8PL 15 1
+userNL6ye itemuaFxY 9 1
+userIqRCa itemr1zoc 30 1
+userwXazR item64Mnl 27 1
+userk6Mri item52xJ8 11 1
+userpKjBY itemjeN5W 10 1
+usergnJHC itemVHyMp 7 1
+userxGXFq itemOCA2H 29 1
+uservzAWa itemPOi9Y 22 1
+userYcsX6 itemmt9Zs 14 1
+userTbHVD itemQkv6a 20 1
+userOLph1 itemd9ChJ 29 1
+userbfNOX itemeROTS 27 1
+userbfNOX item0amMQ 28 1
+userkfbeV itemgoCpP 22 1
+userNL6ye itemBmrIx 28 1
+userjFzvH item0QA86 23 1
+user5FxiH itemw0Hbk 16 1
+userrvaBl itemva2ph 7 1
+userhn3H7 itemvHkzH 18 1
+userk6Mri itemUo6cI 15 1
+userU8XiP itemlHCkK 28 1
+usergnJHC item4YMYG 14 1
+userOPEPI itemWeaex 4 1
+userRwvwk itemQJNS2 29 1
+userafRuQ item52xJ8 28 1
+userEAbmM itemN8AZu 10 1
+userhn3H7 itembuWyf 28 1
+userAzNXt itemHrihE 19 1
+userOBLWP itemKe2Er 18 1
+userE8IrH itemlN5jA 27 1
+userEiWs5 item9muy9 11 1
+userLS2Nz itemPOi9Y 16 1
+userfl0kv itemgoCpP 24 1
+userIqRCa itemYgdNj 22 1
+userHL2kL item178I3 28 1
+userVvdgt itemXxPjl 4 1
+userjFzvH itemPn5yf 11 1
+userjOfN6 itemxCvQp 28 1
+userwXmpL itemFsCNW 17 1
+userwzRLZ itemUFxkv 5 1
+userbhMwq itemxbm5F 5 1
+userafRuQ itemKe2Er 30 1
+userRqCeX itemx52zm 7 1
+user1eta7 itemx52zm 13 1
+userjFzvH itemVARpF 23 1
+userboi7r itemVARpF 30 1
+userRqCeX itemtXKxm 19 1
+userIYes5 itemiXwHJ 15 1
+user6btfJ itemvpxYm 15 1
+userNuBW9 itemMNxUT 27 1
+user7igOt itemBkBCG 17 1
+userpbY1g itemr1zoc 15 1
+userTHymG itemXLYXV 14 1
+userVvdgt itemySRfm 25 1
+userRwvwk itemVHyMp 17 1
+userAzNXt item7gr06 14 1
+userjFzvH itemxbm5F 25 1
+user73wIM itempLAQY 24 1
+userfJqUh itemx52zm 8 1
+userkfbeV itemrDLmp 19 1
+user5YzJs itemWeaex 11 1
+user5YzJs itemDYrOS 23 1
+userU5xwu itemxbm5F 12 1
+userRqCeX item4FB6e 13 1
+usera7eUd itemQStwf 10 1
+user1eta7 item9DjWX 20 1
+userkfbeV itemQJNS2 16 1
+uservzAWa itemCmV8W 3 1
+userYKjNX itemAj7Pj 20 1
+userGadv3 item9M3lc 18 1
+userEiWs5 itemg6NgV 27 1
+useriLMjp itemAzjPR 12 1
+user7igOt itemHrihE 3 1
+usergnJHC itemwAkpa 2 1
+userlRldH itemSnsYW 19 1
+userRGYXR itemBmrIx 12 1
+userVvdgt itemdC6Wf 28 1
+userh6Cos itemkHjKP 17 1
+userh6Cos itemVZJC8 21 1
+usera7eUd itemlN5jA 23 1
+userEAbmM item2FMEC 29 1
+userafRuQ itemOCA2H 20 1
+useryKPmt itemAlGQe 15 1
+userwXmpL itemdqVVX 2 1
+userOPEPI itemQJNS2 28 1
+userafRuQ itemaTHnd 14 1
+userXPmRz itemQkv6a 21 1
+usergnJHC itemllAnb 16 1
+userGadv3 items32yz 5 1
+user6btfJ itemPn5yf 29 1
+userzioQY itemYOYte 5 1
+user7oJ9D itemVda4U 21 1
+userLBXk0 itemlepVl 3 1
+userOmWEg itemdkR3x 21 1
+userTHymG itemyWo9i 19 1
+userm4mHu itemvn3OC 12 1
+userwC8yX item178I3 20 1
+userpbY1g itemexwfY 10 1
+userTbHVD itemeROTS 10 1
+userEAbmM itemDfuZl 4 1
+userh6Cos itemrT9kO 28 1
+userKFtUF itemr1zoc 1 1
+userAzNXt itemJyBn3 25 1
+user7oJ9D itemdjMTE 24 1
+user6btfJ itemwrPNe 7 1
+userjnRT1 itemTuHK9 27 1
+userhuvtK itemrDLmp 10 1
+userNL6ye itemlN5jA 11 1
+user1eta7 itemmbGoj 23 1
+usernfs1b itemx52zm 12 1
+userEAbmM itemSnsYW 23 1
+user5FxiH itemf6vR5 3 1
+userwXazR itemVda4U 7 1
+user71qa3 item31doJ 9 1
+userpbY1g itemyo43o 4 1
+userIqRCa itemIBbVf 1 1
+userwXazR itemSEVUh 30 1
+userU5xwu itembuWyf 15 1
+userEAbmM itemQJNS2 14 1
+userHL2kL itemv7Clw 12 1
+user4FmZm itemtXKxm 7 1
+user3dYr4 itemWeaex 13 1
+usergnJHC item03CQ6 26 1
+user7igOt itemh9nHh 7 1
+userBpH3N itemr7q87 2 1
+user73wIM itemEB2ZL 11 1
+user9tzLJ itemgEevH 10 1
+userfJqUh itemvQ7sQ 10 1
+userBpH3N itemxCvQp 19 1
+uservIgrQ itemaTHnd 5 1
+userjFzvH itemvpxYm 7 1
+user2Vxqb itemUyXau 9 1
+userhuvtK itemBkBCG 5 1
+userk6Mri itemaPbf4 17 1
+user7PXAP itemnO4tX 19 1
+userHL2kL itemEB2ZL 10 1
+userOLph1 itemqD4yX 23 1
+userXIciZ itemIBbVf 5 1
+userhuvtK itemy6Af3 19 1
+userbhMwq itemRMr3n 7 1
+userKWMYJ itemZIbqG 22 1
+userrvaBl item4p3W3 5 1
+userwXazR itemakzor 21 1
+userTbHVD itemTAGOA 10 1
+user9xbHl itemSrPKx 3 1
+userOmWEg item9M3lc 7 1
+usermobRV item6hTeJ 24 1
+userHL2kL iteme5OvS 11 1
+userfz4zC itemUo6cI 10 1
+userlRldH itemy6Af3 11 1
+userRwvwk item4p3W3 1 1
+userQrGSE item0MxmA 13 1
+userhxp30 itemZCI04 27 1
+useriCq0M itemEwdGW 23 1
+user73wIM itemXxPjl 22 1
+userAzNXt itemvpxYm 5 1
+userfIZMV itemRMr3n 26 1
+userfz4zC itema506d 23 1
+user7oJ9D itemiCowm 23 1
+userE8IrH itemVda4U 14 1
+userts7VL itemup8oB 24 1
+userKFtUF itemMpeEL 9 1
+user2RzBb itemva2ph 29 1
+userHL2kL itemKckEp 10 1
+userfIZMV itemZCI04 20 1
+userQrGSE itemmbGoj 9 1
+user5FxiH itemg6NgV 22 1
+user9tzLJ itemcVs96 24 1
+userwXmpL itemCVpf3 19 1
+userBpH3N item0amMQ 19 1
+userjFzvH itemQkv6a 23 1
+userrvaBl itemYOYte 25 1
+userhuvtK itemY6045 17 1
+userXIciZ itemUFxkv 16 1
+user9xbHl itempLAQY 21 1
+user73wIM item0amMQ 15 1
+userXPmRz itemg6NgV 25 1
+userTbHVD itemmt9Zs 26 1
+useraUavY itemsF3jV 5 1
+userRqCeX itemJyBn3 8 1
+userAZO9y itemFoRzs 24 1
+userEiWs5 itemDYrOS 11 1
+user6btfJ item0VuxA 24 1
+uservVAs9 itemqF1uc 4 1
+userwXmpL itemZCI04 23 1
+user3niUH itemRNQTR 11 1
+user5FxiH itemva2ph 21 1
+userfJqUh itemnvCLA 22 1
+userbhMwq itemCVpf3 12 1
+userfz4zC iteme5OvS 16 1
+useryDDtx itemLPkI9 11 1
+user2Vxqb itemvn3OC 20 1
+userVvdgt itemySRfm 5 1
+uservcNUX itemyo43o 22 1
+useraUavY itemmbGoj 30 1
+userm4mHu itemehZbz 30 1
+userU5xwu itemg6NgV 16 1
+userIYes5 item0MxmA 8 1
+user2Vxqb itemxwCH9 18 1
+userTyJoH itemTuHK9 14 1
+userRGYXR itemBkBCG 9 1
+user71qa3 item7XnWI 21 1
+userrvaBl item31doJ 25 1
+userxrwAf item9DjWX 28 1
+useriLMjp itemJyBn3 15 1
+user4FmZm itemJyBn3 17 1
+useryKPmt itemnO4tX 26 1
+useriqm2l itemhOGIE 8 1
+userOPEPI itemSrPKx 17 1
+userwzRLZ itemZIbqG 6 1
+userfIZMV iteme5OvS 27 1
+useraUavY itemIrWce 14 1
+uservVAs9 itemeROTS 1 1
+userwXmpL itemFEgKI 25 1
+userE8IrH itemwinns 10 1
+userTbHVD itemiXwHJ 11 1
+userRqCeX itemfL8PL 15 1
+useraUavY itemV1Vwk 27 1
+userXIciZ iteme5OvS 23 1
+userRGYXR item0QA86 7 1
+userfz4zC itemEwdGW 18 1
+userTyJoH itemHrihE 16 1
+userGadv3 itemdoXAn 3 1
+uservzAWa itemaPbf4 30 1
+uservIgrQ itemuz9u2 14 1
+userbfNOX itemmMX2p 6 1
+userm4mHu itembuWyf 1 1
+userHL2kL itemnO4tX 4 1
+userts7VL itemZIbqG 8 1
+user7PXAP itemdC6Wf 17 1
+userCIwg7 itemVZJC8 17 1
+useriLMjp item0amMQ 21 1
+userlRldH itempGfZ6 4 1
+user7PXAP item6TcLl 18 1
+uservzAWa item0VuxA 2 1
+user7igOt itemWUHgc 18 1
+user71qa3 itemuaFxY 2 1
+useraAGtk itemRMr3n 21 1
+userEsCm8 itemlHCkK 15 1
+userhxp30 itemgRlgs 23 1
+userhuvtK itemtXKxm 7 1
+userHL2kL itemQStwf 30 1
+useruR6i7 itemWngsI 12 1
+userwC8yX itemFoRzs 2 1
+userjOfN6 itemQStwf 23 1
+user9tzLJ itemRy5SF 30 1
+user9tzLJ itemUo6cI 24 1
+user6btfJ item7gr06 4 1
+usergnJHC itemSeyqb 8 1
+userfl0kv itemEzeNr 22 1
+userRqCeX itemUyXau 18 1
+userYkF7h itembHmsT 30 1
+userm4mHu itemjeN5W 10 1
+userLBXk0 itembuWyf 2 1
+userfIZMV item84cQ6 1 1
+userVvdgt itemySRfm 11 1
+userXPmRz itemSrPKx 17 1
+useriCq0M item31doJ 25 1
+userYKjNX itemUo6cI 19 1
+userOLph1 itemBmrIx 11 1
+userIqRCa itemLPkI9 5 1
+usera7eUd itemVZJC8 17 1
+usernfs1b itemyo43o 23 1
+user7PXAP itemFzVAJ 5 1
+userRGYXR itemZCI04 17 1
+userzioQY itemSeyqb 10 1
+userYkF7h itembuWyf 21 1
+userIqRCa itemkHjKP 9 1
+userOBLWP itemsB45O 14 1
+userRGYXR itemeROTS 1 1
+useryDDtx itembHmsT 24 1
+user6btfJ itemwinns 2 1
+user9xbHl itemguPDr 2 1
+userxGXFq itemDYrOS 9 1
+userTHymG itemFzVAJ 13 1
+userOmWEg itemdkR3x 11 1
+user9tzLJ itemuz9u2 23 1
+useryDDtx itemvpxYm 11 1
+userh6Cos itemFoRzs 5 1
+uservcNUX itemd7GN3 21 1
+usermobRV itemGAqYy 29 1
+userEsCm8 itemRKTJC 12 1
+user2Vxqb item9M3lc 13 1
+userfl0kv itemwrPNe 14 1
+useraAGtk itemAlGQe 16 1
+user1eta7 itemrT9kO 27 1
+userpbY1g itemySRfm 23 1
+userXPmRz itemwinns 25 1
+userOLph1 itemmMX2p 10 1
+userYcsX6 itemeROTS 8 1
+userRqCeX itemuaFxY 14 1
+userKFtUF itemcvY2p 15 1
+userfIZMV itemABTMM 22 1
+useryKPmt itemcAUzH 19 1
+useriL4c2 itemSeyqb 1 1
+userzioQY itemlepVl 19 1
+user71qa3 itemQJNS2 16 1
+usermobRV itemaPbf4 18 1
+user2Vxqb itemh9nHh 22 1
+user71qa3 itemvHkzH 9 1
+user5YzJs itemXLYXV 20 1
+userE8IrH itemSEVUh 21 1
+user4FmZm itemaTHnd 11 1
+userRwvwk itemcWumf 15 1
+userEiWs5 item7gr06 26 1
+userjFzvH itemFjQ4M 30 1
+userEiWs5 itemw0Hbk 13 1
+userKFtUF itemd7GN3 20 1
+userEsCm8 itemAj7Pj 28 1
+usermobRV itemqth87 8 1
+userYkF7h itemmbGoj 22 1
+userTyJoH itemhOGIE 13 1
+userOPEPI itemuz9u2 5 1
+userIYes5 itemySRfm 28 1
+userYkF7h itemiCowm 11 1
+userEAbmM itemBkBCG 25 1
+userlRldH itemyWo9i 29 1
+userboi7r itemmMX2p 10 1
+user9xbHl itemaTHnd 3 1
+useryKPmt itemDAINx 15 1
+useruR6i7 itemPzRe5 25 1
+userafRuQ itemDYrOS 25 1
+userIYes5 itemRKTJC 16 1
+userOLph1 itemd7GN3 2 1
+useriCq0M itemH8gzP 1 1
+userzioQY itemY6045 10 1
+useriLMjp itemva2ph 14 1
+uservIgrQ itemQkv6a 21 1
+userQrGSE itemYOYte 15 1
+uservVAs9 itembHmsT 15 1
+useriLMjp itemqth87 12 1
+useryDDtx itemakzor 5 1
+user2Vxqb itemEQ5kD 24 1
+user7PXAP itemFEgKI 15 1
+userbfNOX itemvpxYm 16 1
+uservcNUX item03CQ6 30 1
+userwzRLZ itemzexIV 20 1
+userOPEPI item23scr 6 1
+userjOfN6 itembuWyf 12 1
+userOmWEg itempGfZ6 12 1
+userhuvtK itemtXKxm 15 1
+uservzAWa item7XnWI 20 1
+userU8XiP itemJaOdU 3 1
+user7PXAP itembuWyf 18 1
+userOPEPI itemEzeNr 25 1
+useraUavY itemeROTS 8 1
+userIYes5 itempLAQY 15 1
+userU8XiP itemlAKEf 17 1
+userh6Cos itemYgdNj 25 1
+userRwvwk itemCmV8W 1 1
+userhn3H7 itemllAnb 10 1
+useriLMjp itemvHkzH 25 1
+userNuBW9 itemABTMM 19 1
+userwzRLZ itemCmV8W 8 1
+userBpH3N item9M3lc 24 1
+userjFzvH itemSnsYW 19 1
+userjnRT1 itemhOGIE 6 1
+userVvdgt itemvHkzH 28 1
+userpbY1g itemtXKxm 18 1
+user1eta7 itemyWo9i 9 1
+userhn3H7 itemFsCNW 25 1
+userOPEPI item0MxmA 14 1
+useraAGtk item9M3lc 2 1
+useriLMjp itemAlGQe 22 1
+useraAGtk item4p3W3 26 1
+userbhMwq itemOCA2H 21 1
+userTyJoH itemiCowm 19 1
+userKWMYJ items32yz 21 1
+user73wIM itemgoCpP 5 1
+userhn3H7 itemsB45O 26 1
+uservIgrQ itema506d 10 1
+useryDDtx item4FB6e 24 1
+uservIgrQ item9DjWX 1 1
+userxGXFq itemDfuZl 26 1
+userOPEPI itemAj7Pj 22 1
+userIqRCa itemlHCkK 2 1
+userOBLWP item23scr 10 1
+userwXazR itemw0Hbk 29 1
+userU5xwu itemUyXau 18 1
+userYkF7h itemUiRdE 22 1
+userRGYXR item7gr06 26 1
+userXIciZ itemXLYXV 21 1
+user9tzLJ itemxvrbY 10 1
+userpbY1g itemCVpf3 16 1
+user3dYr4 itemxCvQp 12 1
+userU5xwu itemFoRzs 16 1
+userzioQY item52xJ8 6 1
+userjFzvH itema506d 18 1
+uservzAWa itemlHCkK 16 1
+userafRuQ item31doJ 8 1
+usera7eUd itemd7GN3 4 1
+user4FmZm itema506d 7 1
+userafRuQ itemMzrpc 10 1
+userfIZMV itemeROTS 22 1
+usernfs1b itemV1Vwk 5 1
+userEAbmM itemYgdNj 28 1
+userAzNXt item64Mnl 10 1
+uservVAs9 item162CY 11 1
+userEAbmM itemjIyZN 2 1
+userOLph1 itemmt9Zs 6 1
+userQrGSE itemFzVAJ 16 1
+usergnJHC itemyo43o 1 1
+user71qa3 item9M3lc 7 1
+userCIwg7 itemguPDr 21 1
+user5FxiH itemzfaal 20 1
+userVvdgt itemlAKEf 22 1
+userU5xwu itemhOGIE 13 1
+useriLMjp item03CQ6 22 1
+userKWMYJ itemw0Hbk 22 1
+user71qa3 item64Mnl 20 1
+userrvaBl itemuz9u2 20 1
+userYkF7h itemVHyMp 1 1
+userAzNXt itemhOGIE 19 1
+userafRuQ itemGAqYy 4 1
+userEiWs5 itemlHCkK 9 1
+userCIwg7 itemGgwft 25 1
+userbfNOX itemFzVAJ 2 1
+user7igOt item4p3W3 18 1
+userlRldH item4p3W3 6 1
+uservzAWa itemwBj8x 24 1
+user9xbHl item0amMQ 23 1
+userTyJoH itemwrPNe 26 1
+userxGXFq itemFsCNW 4 1
+userzioQY item1PK0V 29 1
+user9xbHl itemwinns 4 1
+userxrwAf itemUyXau 11 1
+useraAGtk itemvjUdv 6 1
+userTyJoH itemtXKxm 26 1
+user71qa3 itemsF3jV 8 1
+useryDDtx itemVda4U 10 1
+userGadv3 itemMzrpc 24 1
+userIYes5 itemVHyMp 29 1
+userEAbmM itemxbm5F 27 1
+userfl0kv itemFsCNW 26 1
+userlRldH itemwinns 11 1
+userpKjBY itemRKTJC 8 1
+userwXmpL itemDF5f3 6 1
+userOBLWP itemqF1uc 19 1
+userIYes5 item6hTeJ 2 1
+userU5xwu itemvn3OC 19 1
+user6btfJ itemUiRdE 23 1
+user3dYr4 itemQStwf 26 1
+userIqRCa itemEwdGW 19 1
+userfz4zC items32yz 10 1
+userlRldH itemEwdGW 19 1
+user4FmZm itemFsCNW 18 1
+useriL4c2 itemmbGoj 4 1
+user7oJ9D itemRy5SF 5 1
+userTbHVD itemRNQTR 14 1
+userwC8yX itemV1Vwk 14 1
+userOLph1 itemd7GN3 14 1
+userTHymG itemdoXAn 23 1
+useriL4c2 item96Uu6 15 1
+user4FmZm itemV1Vwk 7 1
+userhuvtK itemuz9u2 17 1
+userEAbmM itemXLYXV 15 1
+userLBXk0 itemKe2Er 4 1
+usergnJHC itemABTMM 12 1
+userE8IrH itemaTHnd 24 1
+useryKPmt itemPOi9Y 29 1
+usernfs1b itemYOYte 11 1
+user7oJ9D itemAj7Pj 18 1
+userzioQY itemgoCpP 12 1
+userm4mHu item7XnWI 29 1
+userTbHVD itemQJNS2 3 1
+user3dYr4 itemjmSae 29 1
+userpKjBY itemUiRdE 2 1
+uservzAWa itemV1Vwk 8 1
+usergnJHC itemvjUdv 13 1
+userOLph1 itemMzrpc 21 1
+userRqCeX itemdjMTE 17 1
+userVvdgt itemY6045 3 1
+usergnJHC itemMpeEL 28 1
+userKWMYJ itemO64Fe 20 1
+userHL2kL itemFjQ4M 4 1
+userRwvwk itemxwCH9 20 1
+userXPmRz itemguPDr 23 1
+userGadv3 itemQStwf 10 1
+user3dYr4 itemx52zm 5 1
+userwzRLZ item4YMYG 12 1
+user5YzJs item4YMYG 27 1
+useryKPmt item9muy9 7 1
+userOBLWP itemwinns 26 1
+userrvaBl itemSrPKx 3 1
+userQrGSE itemRy5SF 4 1
+userfl0kv itemSW5s8 18 1
+userEAbmM itemEZob3 23 1
+userfz4zC item4FB6e 22 1
+uservzAWa iteme1aEV 9 1
+userAzNXt itemGgwft 19 1
+user6btfJ item31doJ 1 1
+userOmWEg item31doJ 9 1
+userVvdgt itemKe2Er 14 1
+user9tzLJ itemVda4U 23 1

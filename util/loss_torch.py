@@ -3,8 +3,12 @@ import torch.nn.functional as F
 import torch.nn as nn
 
 
-def bpr_loss(user_emb, pos_item_emb, neg_item_emb):
-    pos_score = torch.mul(user_emb, pos_item_emb).sum(dim=1)
+def bpr_loss(user_emb, pos_item_emb, neg_item_emb, itts=None, loss_func=0):
+    if loss_func == 0:
+        pos_score = torch.mul(user_emb, pos_item_emb).sum(dim=1)
+    
+    else:
+        print('[ERROR] bpr_loss: loss_func is not defined.')
     neg_score = torch.mul(user_emb, neg_item_emb).sum(dim=1)
     loss = -torch.log(10e-6 + torch.sigmoid(pos_score - neg_score))
     return torch.mean(loss)

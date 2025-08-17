@@ -15,8 +15,8 @@ class GraphRecommender(Recommender):
         self.topN = [int(num) for num in self.ranking]
         self.max_N = max(self.topN)
 
-    def print_model_info(self):
-        super(GraphRecommender, self).print_model_info()
+    def print_model_info(self, loss_func): # 【这里修改】增加了loss_func参数
+        super(GraphRecommender, self).print_model_info(loss_func)
         # print dataset statistics
         print(f'Training Set Size: (user number: {self.data.training_size()[0]}, '
               f'item number: {self.data.training_size()[1]}, '
@@ -29,7 +29,7 @@ class GraphRecommender(Recommender):
     def build(self):
         pass
 
-    def train(self):
+    def train(self, loss_func): # 【这里修改】train方法增加了loss_func参数
         pass
 
     def predict(self, u):
