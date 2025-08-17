@@ -1,9 +1,11 @@
 from random import shuffle,randint,choice,sample
 import numpy as np
-
+import pandas as pd
 
 def next_batch_pairwise(data,batch_size,n_negs=1):
     training_data = data.training_data
+    # training_data实际上就是txt文件直接读取的结果，包含复购，所以
+    # print(f"[DEBUG] training_data:{pd.DataFrame(training_data).shape}")
     shuffle(training_data)
     ptr = 0
     data_size = len(training_data)
@@ -16,16 +18,21 @@ def next_batch_pairwise(data,batch_size,n_negs=1):
         items = [training_data[idx][1] for idx in range(ptr, batch_end)]
         ptr = batch_end
         u_idx, i_idx, j_idx = [], [], []
-        item_list = list(data.item.keys())
-        for i, user in enumerate(users):
+        item_list = list(data.item.keys()) # item_list是一个列表，包含了所有的item id
+        for i, user in enumerate(users): #遍历当前batch的所有user
             i_idx.append(data.item[items[i]])
             u_idx.append(data.user[user])
             for m in range(n_negs):
                 neg_item = choice(item_list)
-                while neg_item in data.training_set_u[user]:
+                while neg_item in data.training_set_u[user]: # 检查neg_item是否在data.training_set_u[user]这个字典的键中（即是否购买过）
                     neg_item = choice(item_list)
                 j_idx.append(data.item[neg_item])
+        # print(f'[DEBUG] next_batch_pairwise: u_idx:{len(u_idx)}, i_idx:{len(i_idx)}, j_idx:{len(j_idx)}')
+        # print(f'[DEBUG] PREVIEW: u_idx:{u_idx[0]}, i_idx:{i_idx[0]}, j_idx:{j_idx[0]}')
         yield u_idx, i_idx, j_idx
+        # 返回的u_idx和i_idx实际上就是training_data的batch_size那么多行，j_idx是抽的别的没买过的负样本
+
+        # 下一步任务，txt多增加一列表示interval，上面的函数多return i_interval
 
 
 def next_batch_pointwise(data,batch_size):

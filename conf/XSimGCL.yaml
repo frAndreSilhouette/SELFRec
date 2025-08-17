@@ -1,6 +1,9 @@
-training.set: ./dataset/yelp2018/train.txt
+# training.set: ./dataset/yelp2018/train.txt
 
-test.set: ./dataset/yelp2018/test.txt
+# test.set: ./dataset/yelp2018/test.txt
+training.set: ./dataset/mytest/train.txt
+
+test.set: ./dataset/mytest/test.txt
 
 model:
   name: XSimGCL

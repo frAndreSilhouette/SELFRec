@@ -1,0 +1,14 @@
+2025-08-17 16:47:20,146 - XSimGCL - INFO - ### model configuration ###
+2025-08-17 16:47:20,146 - XSimGCL - INFO - training.set=./dataset/mytest/train.txt
+2025-08-17 16:47:20,146 - XSimGCL - INFO - test.set=./dataset/mytest/test.txt
+2025-08-17 16:47:20,146 - XSimGCL - INFO - model={'name': 'XSimGCL', 'type': 'graph'}
+2025-08-17 16:47:20,146 - XSimGCL - INFO - item.ranking.topN=[10, 20]
+2025-08-17 16:47:20,146 - XSimGCL - INFO - embedding.size=64
+2025-08-17 16:47:20,146 - XSimGCL - INFO - max.epoch=20
+2025-08-17 16:47:20,146 - XSimGCL - INFO - batch.size=2048
+2025-08-17 16:47:20,146 - XSimGCL - INFO - learning.rate=0.001
+2025-08-17 16:47:20,146 - XSimGCL - INFO - reg.lambda=0.0001
+2025-08-17 16:47:20,146 - XSimGCL - INFO - XSimGCL={'n_layer': 2, 'l_star': 1, 'lambda': 0.2, 'eps': 0.2, 'tau': 0.15}
+2025-08-17 16:47:20,146 - XSimGCL - INFO - output=./results/
+2025-08-17 16:47:26,233 - XSimGCL - INFO - ###Evaluation Results###
+2025-08-17 16:47:26,234 - XSimGCL - INFO - ['Top 10\n', 'Hit Ratio:0.02219\n', 'Precision:0.00412\n', 'Recall:0.02347\n', 'NDCG:0.01101\n', 'Top 20\n', 'Hit Ratio:0.04223\n', 'Precision:0.00392\n', 'Recall:0.04195\n', 'NDCG:0.0166\n']

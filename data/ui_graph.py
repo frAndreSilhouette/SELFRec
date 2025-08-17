@@ -26,6 +26,13 @@ class Interaction(Data, Graph):
         self.norm_adj = self.normalize_graph_mat(self.ui_adj)
         self.interaction_mat = self.__create_sparse_interaction_matrix()
 
+    # 下面用到的（以及sampler.py用到的） self.training_data还是从Data父类来的，实际上就是Data.__init__传进来的training
+    # 就是读txt文件得到的表，例如
+    # [
+    #     ["u1", "i3", 1.0],
+    #     ["u2", "i7", 1.0],
+    #     ["u1", "i5", 1.0]
+    # ]
     def __generate_set(self):
         for user, item, rating in self.training_data:
             if user not in self.user:
@@ -38,6 +45,13 @@ class Interaction(Data, Graph):
                 self.id2item[item_id] = item
             self.training_set_u[user][item] = 1
             self.training_set_i[item][user] = 1
+
+            # 样例：
+            # self.training_set_u = {
+            #     "u1": {"i1": 1},
+            #     "u2": {"i1": 1, "i2": 1}
+            # }
+            # 哪怕training_data中有重复的user-item对，也只会存储一次，key对应的value为1        
 
         for user, item, rating in self.test_data:
             if user in self.user and item in self.item:

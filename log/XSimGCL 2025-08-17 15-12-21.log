@@ -1,0 +1,14 @@
+2025-08-17 15:12:23,276 - XSimGCL - INFO - ### model configuration ###
+2025-08-17 15:12:23,276 - XSimGCL - INFO - training.set=./dataset/yelp2018/train.txt
+2025-08-17 15:12:23,276 - XSimGCL - INFO - test.set=./dataset/yelp2018/test.txt
+2025-08-17 15:12:23,276 - XSimGCL - INFO - model={'name': 'XSimGCL', 'type': 'graph'}
+2025-08-17 15:12:23,276 - XSimGCL - INFO - item.ranking.topN=[10, 20]
+2025-08-17 15:12:23,276 - XSimGCL - INFO - embedding.size=64
+2025-08-17 15:12:23,276 - XSimGCL - INFO - max.epoch=20
+2025-08-17 15:12:23,276 - XSimGCL - INFO - batch.size=2048
+2025-08-17 15:12:23,276 - XSimGCL - INFO - learning.rate=0.001
+2025-08-17 15:12:23,276 - XSimGCL - INFO - reg.lambda=0.0001
+2025-08-17 15:12:23,276 - XSimGCL - INFO - XSimGCL={'n_layer': 2, 'l_star': 1, 'lambda': 0.2, 'eps': 0.2, 'tau': 0.15}
+2025-08-17 15:12:23,276 - XSimGCL - INFO - output=./results/
+2025-08-17 15:20:15,586 - XSimGCL - INFO - ###Evaluation Results###
+2025-08-17 15:20:15,586 - XSimGCL - INFO - ['Top 10\n', 'Hit Ratio:0.03759\n', 'Precision:0.03847\n', 'Recall:0.04302\n', 'NDCG:0.0491\n', 'Top 20\n', 'Hit Ratio:0.06399\n', 'Precision:0.03275\n', 'Recall:0.07252\n', 'NDCG:0.05974\n']

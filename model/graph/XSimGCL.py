@@ -20,6 +20,8 @@ class XSimGCL(GraphRecommender):
         self.layer_cl = int(config['l_star'])
         self.model = XSimGCL_Encoder(self.data, self.emb_size, self.eps, self.n_layers,self.layer_cl)
 
+        # self.data是从父类GraphRecommender继承的，又是从Interaction来的
+
     def train(self):
         model = self.model.cuda()
         optimizer = torch.optim.Adam(model.parameters(), lr=self.lRate)
