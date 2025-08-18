@@ -18,8 +18,10 @@ class SELFRec(object):
         print('Reading data and preprocessing...')
 
     def execute(self):
-        # import the model module
-        import_str = f"from model.{self.config['model']['type']}.{self.config['model']['name']} import {self.config['model']['name']}"
-        exec(import_str)
-        recommender = f"{self.config['model']['name']}(self.config,self.training_data,self.test_data,**self.kwargs)"
-        eval(recommender).execute() # 调用recommender.py中的基类 Recommender.execute()
+        for loss_func in range(0, 6):
+            # import the model module
+            import_str = f"from model.{self.config['model']['type']}.{self.config['model']['name']} import {self.config['model']['name']}"
+            exec(import_str)
+            recommender = f"{self.config['model']['name']}(self.config,self.training_data,self.test_data,**self.kwargs)"
+            eval(recommender).execute(loss_func) # 调用recommender.py中的基类 Recommender.execute()
+            print("\n\n\n\n\n\n\n")
