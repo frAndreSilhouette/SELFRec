@@ -85,6 +85,7 @@ class GraphRecommender(Recommender):
 
         performance = {k: float(v) for m in measure[1:] for k, v in [m.strip().split(':')]}
 
+        # 评价标准：某指标更高+1，更低-1，看分数是否>0
         if self.bestPerformance:
             count = sum(1 if self.bestPerformance[1][k] > performance[k] else -1 for k in performance)
             if count < 0:

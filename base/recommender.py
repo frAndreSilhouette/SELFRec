@@ -71,15 +71,14 @@ class Recommender:
     def evaluate(self, rec_list, loss_func):
         pass
 
-    def execute(self):
-        for loss_func in range(0, 6):
-            self.initializing_log()
-            self.print_model_info(loss_func) # 【这里修改】添加损失函数信息
-            print('Initializing and building model...')
-            self.build()
-            print('Training Model...')
-            self.train(loss_func) # 【这里修改】train方法增加了loss_func参数
-            print('Testing...')
-            rec_list = self.test()
-            print('Evaluating...')
-            self.evaluate(rec_list, loss_func)
+    def execute(self, loss_func):
+        self.initializing_log()
+        self.print_model_info(loss_func) # 【这里修改】添加损失函数信息
+        print('Initializing and building model...')
+        self.build()
+        print('Training Model...')
+        self.train(loss_func) # 【这里修改】train方法增加了loss_func参数
+        print('Testing...')
+        rec_list = self.test()
+        print('Evaluating...')
+        self.evaluate(rec_list, loss_func)

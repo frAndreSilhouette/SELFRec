@@ -15,12 +15,14 @@ def bpr_loss(user_emb, pos_item_emb, neg_item_emb, itts=None, loss_func=0):
     return torch.mean(loss)
 
 class QuantileBPRLoss(nn.Module):
-    def __init__(self, n_items):
+    def __init__(self, n_items, loss_func):
         super().__init__()
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.kappa_fixed = 1.0
         self.kappa = nn.Parameter(torch.ones(n_items, device=self.device))
         self.theta = nn.Parameter(torch.zeros(n_items, device=self.device))
+        self.loss_func = loss_func
+        print(f'[DEBUG] self.loss_func: {self.loss_func}')
     
     def calculate_cdf(self, item_ids, days, scales, shapes, all_items: bool = True) -> torch.Tensor:
         """
@@ -94,8 +96,7 @@ class QuantileBPRLoss(nn.Module):
         else:
             return icdf_vals
 
-
-    def forward(self, user_emb, pos_item_emb, neg_item_emb, pos_idx, neg_idx, itts, scales, shapes, loss_func):
+    def forward(self, user_emb, pos_item_emb, neg_item_emb, pos_idx, neg_idx, itts, scales, shapes):
         
         itts = torch.tensor(itts, dtype=torch.float32, device=self.device)
         pos_cdfs = self.calculate_cdf(pos_idx, itts, scales, shapes)
@@ -108,26 +109,26 @@ class QuantileBPRLoss(nn.Module):
         # print("itts device:", itts.device)
         # print("quantile_thresholds device:", quantile_thresholds.device)
 
-        if loss_func == 0:
+        if self.loss_func == 0:
             # 原版
             pos_scores = torch.sum(user_emb * pos_item_emb, dim=1)
-        elif loss_func == 1:
+        elif self.loss_func == 1:
             # kappa固定，分位数之差
             pos_weights = torch.sigmoid(self.kappa_fixed * (itts - quantile_thresholds))
             pos_scores = torch.sum(user_emb * pos_item_emb * pos_weights.unsqueeze(1), dim=1)
-        elif loss_func == 2:
+        elif self.loss_func == 2:
             # kappa可学习，分位数之差
             pos_weights = torch.sigmoid(pos_kappa * (itts - quantile_thresholds))
             pos_scores = torch.sum(user_emb * pos_item_emb * pos_weights.unsqueeze(1), dim=1)
-        elif loss_func == 3:
+        elif self.loss_func == 3:
             # kappa可学习，分位数之比
             pos_weights = torch.sigmoid(pos_kappa * (itts / (quantile_thresholds + 1e-6)))
             pos_scores = torch.sum(user_emb * pos_item_emb * pos_weights.unsqueeze(1), dim=1)
-        elif loss_func == 4:
+        elif self.loss_func == 4:
             # kappa可学习，cdf之差
             pos_weights = torch.sigmoid(pos_kappa * (pos_cdfs - pos_qs))
             pos_scores = torch.sum(user_emb * pos_item_emb * pos_weights.unsqueeze(1), dim=1)
-        elif loss_func == 5:
+        elif self.loss_func == 5:
             # kappa可学习，cdf之比
             pos_weights = torch.sigmoid(pos_kappa * (pos_cdfs / (pos_qs + 1e-6)))
             pos_scores = torch.sum(user_emb * pos_item_emb * pos_weights.unsqueeze(1), dim=1)

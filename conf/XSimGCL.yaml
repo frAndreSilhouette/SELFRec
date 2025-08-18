@@ -1,9 +1,9 @@
 # training.set: ./dataset/yelp2018/train.txt
 
 # test.set: ./dataset/yelp2018/test.txt
-training.set: ./dataset/mytest/train.txt
+training.set: ./dataset/campus_data/campus_15_train.txt
 
-test.set: ./dataset/mytest/test.txt
+test.set: ./dataset/campus_data/campus_15_test.txt
 
 model:
   name: XSimGCL
@@ -12,16 +12,16 @@ model:
 item.ranking.topN: [10,20]
 
 embedding.size: 64
-max.epoch: 20
-batch.size: 2048
+max.epoch: 50
+batch.size: 4096
 learning.rate: 0.001
 reg.lambda: 0.0001
 
 XSimGCL:
   n_layer: 2
   l_star: 1
-  lambda: 0.2
-  eps: 0.2
-  tau: 0.15
+  lambda: 0.05
+  eps: 0.1
+  tau: 0.1
 
 output: ./results/
