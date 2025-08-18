@@ -19,7 +19,8 @@ if __name__ == '__main__':
     print('   SELFRec: A library for self-supervised recommendation.   ')
     print_models("Available Models", models)
 
-    model = input('Please enter the model you want to run:')
+    # model = input('Please enter the model you want to run:')
+    model = 'XSimGCL'
 
     s = time.time()
     all_models = sum(models.values(), [])

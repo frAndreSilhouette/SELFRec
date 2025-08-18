@@ -68,11 +68,11 @@ class Recommender:
     def load(self):
         pass
 
-    def evaluate(self, rec_list):
+    def evaluate(self, rec_list, loss_func):
         pass
 
     def execute(self):
-        for loss_func in [0]:
+        for loss_func in range(0, 6):
             self.initializing_log()
             self.print_model_info(loss_func) # 【这里修改】添加损失函数信息
             print('Initializing and building model...')
@@ -82,4 +82,4 @@ class Recommender:
             print('Testing...')
             rec_list = self.test()
             print('Evaluating...')
-            self.evaluate(rec_list)
+            self.evaluate(rec_list, loss_func)

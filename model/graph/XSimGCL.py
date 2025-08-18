@@ -5,6 +5,8 @@ from base.graph_recommender import GraphRecommender
 from util.sampler import next_batch_pairwise
 from base.torch_interface import TorchGraphInterface
 from util.loss_torch import bpr_loss, l2_reg_loss, InfoNCE
+from util.loss_torch import QuantileBPRLoss
+from tqdm import tqdm
 
 # Paper: XSimGCL - Towards Extremely Simple Graph Contrastive Learning for Recommendation
 
@@ -26,11 +28,16 @@ class XSimGCL(GraphRecommender):
         model = self.model.cuda()
         optimizer = torch.optim.Adam(model.parameters(), lr=self.lRate)
         for epoch in range(self.maxEpoch):
-            for n, batch in enumerate(next_batch_pairwise(self.data, self.batch_size)):
-                user_idx, pos_idx, neg_idx, itts = batch # 【这里修改】batch返回值多了itts
+            # for n, batch in enumerate(next_batch_pairwise(self.data, self.batch_size)):
+            for n, batch in enumerate(tqdm(next_batch_pairwise(self.data, self.batch_size), desc=f"Loss {loss_func} - Epoch {epoch+1}", total=len(self.data.training_data) // self.batch_size)):
+                user_idx, pos_idx, neg_idx, itts, scales, shapes = batch # 【这里修改】batch返回值多了itts, scales, shapes
                 rec_user_emb, rec_item_emb, cl_user_emb, cl_item_emb  = model(True)
                 user_emb, pos_item_emb, neg_item_emb = rec_user_emb[user_idx], rec_item_emb[pos_idx], rec_item_emb[neg_idx]
-                rec_loss = bpr_loss(user_emb, pos_item_emb, neg_item_emb, itts, loss_func) # 【这里修改】BPR损失传入新参数itts, loss_func
+                # rec_loss = bpr_loss(user_emb, pos_item_emb, neg_item_emb, itts, loss_func) # 【这里修改】BPR损失传入新参数itts, loss_func
+
+                quantile_bpr_loss = QuantileBPRLoss(self.data.item_num)
+                rec_loss = quantile_bpr_loss(user_emb, pos_item_emb, neg_item_emb, pos_idx, neg_idx, itts, scales, shapes, loss_func)
+
                 cl_loss = self.cl_rate * self.cal_cl_loss([user_idx,pos_idx],rec_user_emb,cl_user_emb,rec_item_emb,cl_item_emb)
                 batch_loss =  rec_loss + l2_reg_loss(self.reg, user_emb, pos_item_emb) + cl_loss
                 # Backward and optimize

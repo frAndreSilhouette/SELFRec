@@ -40,9 +40,11 @@ class FileIO(object):
                     items = split(' ', line.strip())
                     user_id = items[0]
                     item_id = items[1]
-                    itt = items[2] # itt是距离上次购买的天数(int)
-                    weight = items[3]
-                    data.append([user_id, item_id, itt, float(weight)])
+                    itt = int(items[2]) # itt是距离上次购买的天数(int)
+                    scale = float(items[3])
+                    shape = float(items[4])
+                    weight = float(items[5])
+                    data.append([user_id, item_id, itt, scale, shape, weight])
                     # ===========================
 
         if rec_type == 'sequential':

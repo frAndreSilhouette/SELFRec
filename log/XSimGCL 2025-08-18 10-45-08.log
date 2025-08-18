@@ -1,0 +1,26 @@
+2025-08-18 10:45:09,188 - XSimGCL - INFO - ### model configuration ###
+2025-08-18 10:45:09,188 - XSimGCL - INFO - training.set=./dataset/mytest/train.txt
+2025-08-18 10:45:09,188 - XSimGCL - INFO - test.set=./dataset/mytest/test.txt
+2025-08-18 10:45:09,188 - XSimGCL - INFO - model={'name': 'XSimGCL', 'type': 'graph'}
+2025-08-18 10:45:09,188 - XSimGCL - INFO - item.ranking.topN=[10, 20]
+2025-08-18 10:45:09,188 - XSimGCL - INFO - embedding.size=64
+2025-08-18 10:45:09,188 - XSimGCL - INFO - max.epoch=20
+2025-08-18 10:45:09,188 - XSimGCL - INFO - batch.size=2048
+2025-08-18 10:45:09,188 - XSimGCL - INFO - learning.rate=0.001
+2025-08-18 10:45:09,188 - XSimGCL - INFO - reg.lambda=0.0001
+2025-08-18 10:45:09,188 - XSimGCL - INFO - XSimGCL={'n_layer': 2, 'l_star': 1, 'lambda': 0.2, 'eps': 0.2, 'tau': 0.15}
+2025-08-18 10:45:09,188 - XSimGCL - INFO - output=./results/
+2025-08-18 10:45:53,641 - XSimGCL - INFO - ###Evaluation Results###
+2025-08-18 10:45:53,641 - XSimGCL - INFO - ['Top 10\n', 'Hit Ratio:0.0053\n', 'Precision:0.021\n', 'Recall:0.00545\n', 'NDCG:0.02109\n', 'Top 20\n', 'Hit Ratio:0.01053\n', 'Precision:0.02085\n', 'Recall:0.01059\n', 'NDCG:0.02097\n']
+2025-08-18 10:45:53,642 - XSimGCL - INFO - ### model configuration ###
+2025-08-18 10:45:53,642 - XSimGCL - INFO - training.set=./dataset/mytest/train.txt
+2025-08-18 10:45:53,642 - XSimGCL - INFO - test.set=./dataset/mytest/test.txt
+2025-08-18 10:45:53,642 - XSimGCL - INFO - model={'name': 'XSimGCL', 'type': 'graph'}
+2025-08-18 10:45:53,642 - XSimGCL - INFO - item.ranking.topN=[10, 20]
+2025-08-18 10:45:53,642 - XSimGCL - INFO - embedding.size=64
+2025-08-18 10:45:53,642 - XSimGCL - INFO - max.epoch=20
+2025-08-18 10:45:53,642 - XSimGCL - INFO - batch.size=2048
+2025-08-18 10:45:53,642 - XSimGCL - INFO - learning.rate=0.001
+2025-08-18 10:45:53,642 - XSimGCL - INFO - reg.lambda=0.0001
+2025-08-18 10:45:53,642 - XSimGCL - INFO - XSimGCL={'n_layer': 2, 'l_star': 1, 'lambda': 0.2, 'eps': 0.2, 'tau': 0.15}
+2025-08-18 10:45:53,642 - XSimGCL - INFO - output=./results/

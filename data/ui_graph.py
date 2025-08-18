@@ -34,7 +34,7 @@ class Interaction(Data, Graph):
     #     ["u1", "i5", 1.0]
     # ]
     def __generate_set(self):
-        for user, item, itt, rating in self.training_data: # 【这里修改】training_data现在包含了itt信息
+        for user, item, itt, scale, shape, rating in self.training_data: # 【这里修改】training_data现在包含了itt和分布信息
             if user not in self.user:
                 user_id = len(self.user)
                 self.user[user] = user_id
@@ -42,7 +42,7 @@ class Interaction(Data, Graph):
             if item not in self.item:
                 item_id = len(self.item)
                 self.item[item] = item_id
-                self.id2item[item_id] = item
+                self.id2item[item_id] = item # item是原来的字符串，item_id是对应的从0开始数字id
             self.training_set_u[user][item] = 1
             self.training_set_i[item][user] = 1
 
@@ -53,7 +53,7 @@ class Interaction(Data, Graph):
             # }
             # 哪怕training_data中有重复的user-item对，也只会存储一次，key对应的value为1        
 
-        for user, item, itt, rating in self.test_data: # 【这里修改】training_data现在包含了itt信息
+        for user, item, itt, scale, shape, rating in self.test_data: # 【这里修改】training_data现在包含了itt和分布信息
             if user in self.user and item in self.item:
                 self.test_set[user][item] = 1
                 self.test_set_item.add(item)

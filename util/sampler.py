@@ -17,6 +17,8 @@ def next_batch_pairwise(data,batch_size,n_negs=1):
         users = [training_data[idx][0] for idx in range(ptr, batch_end)]
         items = [training_data[idx][1] for idx in range(ptr, batch_end)]
         itts = [training_data[idx][2] for idx in range(ptr, batch_end)] # itt是距离上次购买的天数(int)
+        scales = [training_data[idx][3] for idx in range(ptr, batch_end)] # scale是购买过的正样本的weibull分布的scale参数
+        shapes = [training_data[idx][4] for idx in range(ptr, batch_end)] # shape是购买过的正样本的weibull分布的shape参数
         ptr = batch_end
         u_idx, i_idx, j_idx = [], [], []
         item_list = list(data.item.keys()) # item_list是一个列表，包含了所有的item id
@@ -30,7 +32,7 @@ def next_batch_pairwise(data,batch_size,n_negs=1):
                 j_idx.append(data.item[neg_item])
         # print(f'[DEBUG] next_batch_pairwise: u_idx:{len(u_idx)}, i_idx:{len(i_idx)}, j_idx:{len(j_idx)}')
         # print(f'[DEBUG] PREVIEW: u_idx:{u_idx[0]}, i_idx:{i_idx[0]}, j_idx:{j_idx[0]}')
-        yield u_idx, i_idx, j_idx, itts
+        yield u_idx, i_idx, j_idx, itts, scales, shapes
         # 返回的u_idx和i_idx实际上就是training_data的batch_size那么多行，j_idx是抽的别的没买过的负样本
 
 
