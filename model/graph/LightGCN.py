@@ -4,6 +4,7 @@ from base.graph_recommender import GraphRecommender
 from util.sampler import next_batch_pairwise
 from base.torch_interface import TorchGraphInterface
 from util.loss_torch import bpr_loss,l2_reg_loss
+from util.loss_torch import QuantileBPRLoss
 # paper: LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation. SIGIR'20
 
 
@@ -14,15 +15,18 @@ class LightGCN(GraphRecommender):
         self.n_layers = int(args['n_layer'])
         self.model = LGCN_Encoder(self.data, self.emb_size, self.n_layers)
 
-    def train(self):
+    def train(self, loss_func): # 【这里修改】train方法增加了loss_func参数
         model = self.model.cuda()
-        optimizer = torch.optim.Adam(model.parameters(), lr=self.lRate)
+        quantile_bpr_loss = QuantileBPRLoss(self.data.item_num, loss_func).cuda()
+        optimizer = torch.optim.Adam(list(model.parameters()) + list(quantile_bpr_loss.parameters()), lr=self.lRate) # 【这里修改】增加可学习参数
         for epoch in range(self.maxEpoch):
             for n, batch in enumerate(next_batch_pairwise(self.data, self.batch_size)):
-                user_idx, pos_idx, neg_idx = batch
+                user_idx, pos_idx, neg_idx, itts, scales, shapes = batch # 【这里修改】batch返回值多了itts, scales, shapes
                 rec_user_emb, rec_item_emb = model()
                 user_emb, pos_item_emb, neg_item_emb = rec_user_emb[user_idx], rec_item_emb[pos_idx], rec_item_emb[neg_idx]
-                batch_loss = bpr_loss(user_emb, pos_item_emb, neg_item_emb) + l2_reg_loss(self.reg, model.embedding_dict['user_emb'][user_idx],model.embedding_dict['item_emb'][pos_idx],model.embedding_dict['item_emb'][neg_idx])/self.batch_size
+                # batch_loss = bpr_loss(user_emb, pos_item_emb, neg_item_emb) + l2_reg_loss(self.reg, model.embedding_dict['user_emb'][user_idx],model.embedding_dict['item_emb'][pos_idx],model.embedding_dict['item_emb'][neg_idx])/self.batch_size
+                rec_loss = quantile_bpr_loss(user_emb, pos_item_emb, neg_item_emb, pos_idx, neg_idx, itts, scales, shapes)
+                batch_loss = rec_loss + l2_reg_loss(self.reg, model.embedding_dict['user_emb'][user_idx],model.embedding_dict['item_emb'][pos_idx],model.embedding_dict['item_emb'][neg_idx])/self.batch_size
                 # Backward and optimize
                 optimizer.zero_grad()
                 batch_loss.backward()

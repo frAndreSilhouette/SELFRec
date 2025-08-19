@@ -27,17 +27,14 @@ class XSimGCL(GraphRecommender):
     def train(self, loss_func): # 【这里修改】train方法增加了loss_func参数
         model = self.model.cuda()
         quantile_bpr_loss = QuantileBPRLoss(self.data.item_num, loss_func).cuda()
-        optimizer = torch.optim.Adam(list(model.parameters()) + list(quantile_bpr_loss.parameters()), lr=self.lRate)
+        optimizer = torch.optim.Adam(list(model.parameters()) + list(quantile_bpr_loss.parameters()), lr=self.lRate) # 【这里修改】增加可学习参数
         
         for epoch in range(self.maxEpoch):
             for n, batch in enumerate(next_batch_pairwise(self.data, self.batch_size)):
-            # for n, batch in enumerate(tqdm(next_batch_pairwise(self.data, self.batch_size), desc=f"Loss {loss_func} - Epoch {epoch+1}", total=len(self.data.training_data) // self.batch_size)):
                 user_idx, pos_idx, neg_idx, itts, scales, shapes = batch # 【这里修改】batch返回值多了itts, scales, shapes
                 rec_user_emb, rec_item_emb, cl_user_emb, cl_item_emb  = model(True)
                 user_emb, pos_item_emb, neg_item_emb = rec_user_emb[user_idx], rec_item_emb[pos_idx], rec_item_emb[neg_idx]
-                # rec_loss = bpr_loss(user_emb, pos_item_emb, neg_item_emb, itts, loss_func) # 【这里修改】BPR损失传入新参数itts, loss_func
-
-                
+                # rec_loss = bpr_loss(user_emb, pos_item_emb, neg_item_emb)    
                 rec_loss = quantile_bpr_loss(user_emb, pos_item_emb, neg_item_emb, pos_idx, neg_idx, itts, scales, shapes)
 
                 cl_loss = self.cl_rate * self.cal_cl_loss([user_idx,pos_idx],rec_user_emb,cl_user_emb,rec_item_emb,cl_item_emb)

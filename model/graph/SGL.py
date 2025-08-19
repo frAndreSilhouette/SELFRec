@@ -5,6 +5,7 @@ from base.graph_recommender import GraphRecommender
 from util.sampler import next_batch_pairwise
 from base.torch_interface import TorchGraphInterface
 from util.loss_torch import bpr_loss, l2_reg_loss, InfoNCE
+from util.loss_torch import QuantileBPRLoss
 from data.augmentor import GraphAugmentor
 
 # Paper: self-supervised graph learning for recommendation. SIGIR'21
@@ -21,17 +22,20 @@ class SGL(GraphRecommender):
         temp = float(args['temp'])
         self.model = SGL_Encoder(self.data, self.emb_size, drop_rate, n_layers, temp, aug_type)
 
-    def train(self):
+    def train(self, loss_func): # 【这里修改】train方法增加了loss_func参数
         model = self.model.cuda()
-        optimizer = torch.optim.Adam(model.parameters(), lr=self.lRate)
+        quantile_bpr_loss = QuantileBPRLoss(self.data.item_num, loss_func).cuda()
+        optimizer = torch.optim.Adam(list(model.parameters()) + list(quantile_bpr_loss.parameters()), lr=self.lRate) # 【这里修改】增加可学习参数
+
         for epoch in range(self.maxEpoch):
             dropped_adj1 = model.graph_reconstruction()
             dropped_adj2 = model.graph_reconstruction()
             for n, batch in enumerate(next_batch_pairwise(self.data, self.batch_size)):
-                user_idx, pos_idx, neg_idx = batch
+                user_idx, pos_idx, neg_idx, itts, scales, shapes = batch # 【这里修改】batch返回值多了itts, scales, shapes
                 rec_user_emb, rec_item_emb = model()
                 user_emb, pos_item_emb, neg_item_emb = rec_user_emb[user_idx], rec_item_emb[pos_idx], rec_item_emb[neg_idx]
-                rec_loss = bpr_loss(user_emb, pos_item_emb, neg_item_emb)
+                # rec_loss = bpr_loss(user_emb, pos_item_emb, neg_item_emb)
+                rec_loss = quantile_bpr_loss(user_emb, pos_item_emb, neg_item_emb, pos_idx, neg_idx, itts, scales, shapes)
                 cl_loss = self.cl_rate * model.cal_cl_loss([user_idx,pos_idx],dropped_adj1,dropped_adj2)
                 batch_loss =  rec_loss + l2_reg_loss(self.reg, user_emb, pos_item_emb,neg_item_emb) + cl_loss
                 # Backward and optimize

@@ -1,6 +1,6 @@
-training.set: ./dataset/iFashion/train.txt
+training.set: ./dataset/campus_data/campus_15_train.txt
 
-test.set: ./dataset/iFashion/test.txt
+test.set: ./dataset/campus_data/campus_15_test.txt
 
 model:
   name: SGL
@@ -21,4 +21,4 @@ SGL:
   aug_type: 1
   temp: 0.2
 
-output: ./results/
+output: ./results/SGL/campus_15/

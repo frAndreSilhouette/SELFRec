@@ -1,6 +1,6 @@
-training.set: ./dataset/yelp2018/train.txt
+training.set: ./dataset/campus_data/campus_10_train.txt
 
-test.set: ./dataset/yelp2018/test.txt
+test.set: ./dataset/campus_data/campus_10_test.txt
 
 model:
   name: LightGCN
@@ -17,4 +17,4 @@ reg.lambda: 0.0001
 LightGCN:
   n_layer: 2
 
-output: ./results/
+output: ./results/LightGCN/campus_10/

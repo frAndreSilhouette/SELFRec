@@ -1,9 +1,6 @@
-# training.set: ./dataset/yelp2018/train.txt
+training.set: ./dataset/campus_data/campus_143_train.txt
 
-# test.set: ./dataset/yelp2018/test.txt
-training.set: ./dataset/campus_data/campus_15_train.txt
-
-test.set: ./dataset/campus_data/campus_15_test.txt
+test.set: ./dataset/campus_data/campus_143_test.txt
 
 model:
   name: XSimGCL
@@ -24,4 +21,4 @@ XSimGCL:
   eps: 0.1
   tau: 0.1
 
-output: ./results/
+output: ./results/XSimGCL/campus_143/

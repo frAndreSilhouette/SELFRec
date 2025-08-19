@@ -5,6 +5,7 @@ from base.graph_recommender import GraphRecommender
 from util.sampler import next_batch_pairwise
 from base.torch_interface import TorchGraphInterface
 from util.loss_torch import bpr_loss, l2_reg_loss, InfoNCE
+from util.loss_torch import QuantileBPRLoss
 import faiss
 # paper: Improving Graph Collaborative Filtering with Neighborhood-enriched Contrastive Learning. WWW'22
 
@@ -82,18 +83,22 @@ class NCL(GraphRecommender):
         ssl_loss = self.ssl_reg * (ssl_loss_user + self.alpha * ssl_loss_item)
         return ssl_loss
 
-    def train(self):
+    def train(self, loss_func): # 【这里修改】train方法增加了loss_func参数
         model = self.model.cuda()
-        optimizer = torch.optim.Adam(model.parameters(), lr=self.lRate)
+        quantile_bpr_loss = QuantileBPRLoss(self.data.item_num, loss_func).cuda()
+        optimizer = torch.optim.Adam(list(model.parameters()) + list(quantile_bpr_loss.parameters()), lr=self.lRate) # 【这里修改】增加可学习参数
+
         for epoch in range(self.maxEpoch):
             if epoch >= 20:
                 self.e_step()
             for n, batch in enumerate(next_batch_pairwise(self.data, self.batch_size)):
-                user_idx, pos_idx, neg_idx = batch
+                user_idx, pos_idx, neg_idx, itts, scales, shapes = batch # 【这里修改】batch返回值多了itts, scales, shapes
                 model.train()
                 rec_user_emb, rec_item_emb, emb_list  = model()
                 user_emb, pos_item_emb, neg_item_emb = rec_user_emb[user_idx], rec_item_emb[pos_idx], rec_item_emb[neg_idx]
-                rec_loss = bpr_loss(user_emb, pos_item_emb, neg_item_emb)
+                # rec_loss = bpr_loss(user_emb, pos_item_emb, neg_item_emb)
+
+                rec_loss = quantile_bpr_loss(user_emb, pos_item_emb, neg_item_emb, pos_idx, neg_idx, itts, scales, shapes)
                 initial_emb = emb_list[0]
                 context_emb = emb_list[self.hyper_layers*2]
                 ssl_loss = self.ssl_layer_loss(context_emb,initial_emb,user_idx,pos_idx)
