@@ -5045,3 +5045,311 @@ training: 245 batch 100 batch_loss: 0.006465418729931116
 training: 246 batch 100 batch_loss: 0.006998961791396141
 Evaluating the model...
 Progress: [                                                  ]0%Progress: [++++++++                                          ]16%Progress: [++++++++++++++++                                  ]32%Progress: [+++++++++++++++++++++++++                         ]50%Progress: [+++++++++++++++++++++++++++++++++                 ]66%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-20 Item Recommendation)
+*Current Performance*
+Epoch: 246, Hit Ratio: 0.05112, Precision: 0.01705, Recall: 0.05909, NDCG: 0.04492
+*Best Performance*
+Epoch: 61, Hit Ratio: 0.0556, Precision: 0.01855, Recall: 0.0678, NDCG: 0.04937
+--------------------------------------------------------------------------------
+training: 247 batch 100 batch_loss: 0.008631312288343906
+training: 248 batch 100 batch_loss: 0.007873298600316048
+training: 249 batch 100 batch_loss: 0.004724445287138224
+training: 250 batch 100 batch_loss: 0.007448446936905384
+training: 251 batch 100 batch_loss: 0.009673369117081165
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++                                          ]16%Progress: [++++++++++++++++                                  ]32%Progress: [+++++++++++++++++++++++++                         ]50%Progress: [+++++++++++++++++++++++++++++++++                 ]66%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-20 Item Recommendation)
+*Current Performance*
+Epoch: 251, Hit Ratio: 0.05157, Precision: 0.0172, Recall: 0.0593, NDCG: 0.04513
+*Best Performance*
+Epoch: 61, Hit Ratio: 0.0556, Precision: 0.01855, Recall: 0.0678, NDCG: 0.04937
+--------------------------------------------------------------------------------
+training: 252 batch 100 batch_loss: 0.0031214982736855745
+training: 253 batch 100 batch_loss: 0.004870899487286806
+training: 254 batch 100 batch_loss: 0.005628590937703848
+training: 255 batch 100 batch_loss: 0.00568367401137948
+training: 256 batch 100 batch_loss: 0.006854963954538107
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++                                          ]16%Progress: [++++++++++++++++                                  ]32%Progress: [+++++++++++++++++++++++++                         ]50%Progress: [+++++++++++++++++++++++++++++++++                 ]66%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-20 Item Recommendation)
+*Current Performance*
+Epoch: 256, Hit Ratio: 0.05187, Precision: 0.0173, Recall: 0.05952, NDCG: 0.04501
+*Best Performance*
+Epoch: 61, Hit Ratio: 0.0556, Precision: 0.01855, Recall: 0.0678, NDCG: 0.04937
+--------------------------------------------------------------------------------
+training: 257 batch 100 batch_loss: 0.01226640585809946
+training: 258 batch 100 batch_loss: 0.006982759106904268
+training: 259 batch 100 batch_loss: 0.007383339107036591
+training: 260 batch 100 batch_loss: 0.006146971136331558
+training: 261 batch 100 batch_loss: 0.0038421121425926685
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++                                          ]16%Progress: [++++++++++++++++                                  ]32%Progress: [+++++++++++++++++++++++++                         ]50%Progress: [+++++++++++++++++++++++++++++++++                 ]66%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-20 Item Recommendation)
+*Current Performance*
+Epoch: 261, Hit Ratio: 0.05162, Precision: 0.01722, Recall: 0.05911, NDCG: 0.04486
+*Best Performance*
+Epoch: 61, Hit Ratio: 0.0556, Precision: 0.01855, Recall: 0.0678, NDCG: 0.04937
+--------------------------------------------------------------------------------
+training: 262 batch 100 batch_loss: 0.005824613384902477
+training: 263 batch 100 batch_loss: 0.0069520422257483006
+training: 264 batch 100 batch_loss: 0.007884242571890354
+training: 265 batch 100 batch_loss: 0.008480018004775047
+training: 266 batch 100 batch_loss: 0.005858445540070534
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++                                          ]16%Progress: [++++++++++++++++                                  ]32%Progress: [+++++++++++++++++++++++++                         ]50%Progress: [+++++++++++++++++++++++++++++++++                 ]66%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-20 Item Recommendation)
+*Current Performance*
+Epoch: 266, Hit Ratio: 0.05209, Precision: 0.01738, Recall: 0.05951, NDCG: 0.04479
+*Best Performance*
+Epoch: 61, Hit Ratio: 0.0556, Precision: 0.01855, Recall: 0.0678, NDCG: 0.04937
+--------------------------------------------------------------------------------
+training: 267 batch 100 batch_loss: 0.006580053362995386
+training: 268 batch 100 batch_loss: 0.005628224462270737
+training: 269 batch 100 batch_loss: 0.006098500452935696
+training: 270 batch 100 batch_loss: 0.005904005840420723
+training: 271 batch 100 batch_loss: 0.0054936716333031654
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++                                          ]16%Progress: [++++++++++++++++                                  ]32%Progress: [+++++++++++++++++++++++++                         ]50%Progress: [+++++++++++++++++++++++++++++++++                 ]66%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-20 Item Recommendation)
+*Current Performance*
+Epoch: 271, Hit Ratio: 0.05184, Precision: 0.0173, Recall: 0.0594, NDCG: 0.04471
+*Best Performance*
+Epoch: 61, Hit Ratio: 0.0556, Precision: 0.01855, Recall: 0.0678, NDCG: 0.04937
+--------------------------------------------------------------------------------
+training: 272 batch 100 batch_loss: 0.005661127157509327
+training: 273 batch 100 batch_loss: 0.003527021734043956
+training: 274 batch 100 batch_loss: 0.005834123585373163
+training: 275 batch 100 batch_loss: 0.007882491685450077
+training: 276 batch 100 batch_loss: 0.004255043342709541
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++                                          ]16%Progress: [++++++++++++++++                                  ]32%Progress: [+++++++++++++++++++++++++                         ]50%Progress: [+++++++++++++++++++++++++++++++++                 ]66%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-20 Item Recommendation)
+*Current Performance*
+Epoch: 276, Hit Ratio: 0.05174, Precision: 0.01726, Recall: 0.0588, NDCG: 0.04466
+*Best Performance*
+Epoch: 61, Hit Ratio: 0.0556, Precision: 0.01855, Recall: 0.0678, NDCG: 0.04937
+--------------------------------------------------------------------------------
+training: 277 batch 100 batch_loss: 0.0044786809012293816
+training: 278 batch 100 batch_loss: 0.006137818098068237
+training: 279 batch 100 batch_loss: 0.005074282642453909
+training: 280 batch 100 batch_loss: 0.007608206011354923
+training: 281 batch 100 batch_loss: 0.005577164236456156
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++                                          ]16%Progress: [++++++++++++++++                                  ]32%Progress: [+++++++++++++++++++++++++                         ]50%Progress: [+++++++++++++++++++++++++++++++++                 ]66%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-20 Item Recommendation)
+*Current Performance*
+Epoch: 281, Hit Ratio: 0.05152, Precision: 0.01719, Recall: 0.05897, NDCG: 0.04445
+*Best Performance*
+Epoch: 61, Hit Ratio: 0.0556, Precision: 0.01855, Recall: 0.0678, NDCG: 0.04937
+--------------------------------------------------------------------------------
+training: 282 batch 100 batch_loss: 0.004466337617486715
+training: 283 batch 100 batch_loss: 0.006107447203248739
+training: 284 batch 100 batch_loss: 0.006406150292605162
+training: 285 batch 100 batch_loss: 0.007581242825835943
+training: 286 batch 100 batch_loss: 0.0034236686769872904
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++                                          ]16%Progress: [++++++++++++++++                                  ]32%Progress: [+++++++++++++++++++++++++                         ]50%Progress: [+++++++++++++++++++++++++++++++++                 ]66%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-20 Item Recommendation)
+*Current Performance*
+Epoch: 286, Hit Ratio: 0.05132, Precision: 0.01712, Recall: 0.05902, NDCG: 0.04414
+*Best Performance*
+Epoch: 61, Hit Ratio: 0.0556, Precision: 0.01855, Recall: 0.0678, NDCG: 0.04937
+--------------------------------------------------------------------------------
+training: 287 batch 100 batch_loss: 0.005340025760233402
+training: 288 batch 100 batch_loss: 0.005646912381052971
+training: 289 batch 100 batch_loss: 0.003733694786205888
+training: 290 batch 100 batch_loss: 0.006773167755454779
+training: 291 batch 100 batch_loss: 0.003456997685134411
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++                                          ]16%Progress: [++++++++++++++++                                  ]32%Progress: [+++++++++++++++++++++++++                         ]50%Progress: [+++++++++++++++++++++++++++++++++                 ]66%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-20 Item Recommendation)
+*Current Performance*
+Epoch: 291, Hit Ratio: 0.05107, Precision: 0.01704, Recall: 0.05892, NDCG: 0.04415
+*Best Performance*
+Epoch: 61, Hit Ratio: 0.0556, Precision: 0.01855, Recall: 0.0678, NDCG: 0.04937
+--------------------------------------------------------------------------------
+training: 292 batch 100 batch_loss: 0.007687837351113558
+training: 293 batch 100 batch_loss: 0.004087185021489859
+training: 294 batch 100 batch_loss: 0.003832420567050576
+training: 295 batch 100 batch_loss: 0.005752041470259428
+training: 296 batch 100 batch_loss: 0.005500047001987696
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++                                          ]16%Progress: [++++++++++++++++                                  ]32%Progress: [+++++++++++++++++++++++++                         ]50%Progress: [+++++++++++++++++++++++++++++++++                 ]66%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-20 Item Recommendation)
+*Current Performance*
+Epoch: 296, Hit Ratio: 0.05099, Precision: 0.01701, Recall: 0.05878, NDCG: 0.04415
+*Best Performance*
+Epoch: 61, Hit Ratio: 0.0556, Precision: 0.01855, Recall: 0.0678, NDCG: 0.04937
+--------------------------------------------------------------------------------
+training: 297 batch 100 batch_loss: 0.008598536252975464
+training: 298 batch 100 batch_loss: 0.004168259911239147
+training: 299 batch 100 batch_loss: 0.00583744328469038
+training: 300 batch 100 batch_loss: 0.004559969995170832
+training: 301 batch 100 batch_loss: 0.004213584586977959
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++                                          ]16%Progress: [++++++++++++++++                                  ]32%Progress: [+++++++++++++++++++++++++                         ]50%Progress: [+++++++++++++++++++++++++++++++++                 ]66%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-20 Item Recommendation)
+*Current Performance*
+Epoch: 301, Hit Ratio: 0.05104, Precision: 0.01703, Recall: 0.05866, NDCG: 0.04402
+*Best Performance*
+Epoch: 61, Hit Ratio: 0.0556, Precision: 0.01855, Recall: 0.0678, NDCG: 0.04937
+--------------------------------------------------------------------------------
+training: 302 batch 100 batch_loss: 0.006113256327807903
+training: 303 batch 100 batch_loss: 0.005796683020889759
+training: 304 batch 100 batch_loss: 0.003910718020051718
+training: 305 batch 100 batch_loss: 0.004857964813709259
+training: 306 batch 100 batch_loss: 0.003462868742644787
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++                                          ]16%Progress: [++++++++++++++++                                  ]32%Progress: [+++++++++++++++++++++++++                         ]50%Progress: [+++++++++++++++++++++++++++++++++                 ]66%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-20 Item Recommendation)
+*Current Performance*
+Epoch: 306, Hit Ratio: 0.05117, Precision: 0.01707, Recall: 0.05865, NDCG: 0.04403
+*Best Performance*
+Epoch: 61, Hit Ratio: 0.0556, Precision: 0.01855, Recall: 0.0678, NDCG: 0.04937
+--------------------------------------------------------------------------------
+training: 307 batch 100 batch_loss: 0.003926642704755068
+training: 308 batch 100 batch_loss: 0.0049798376858234406
+training: 309 batch 100 batch_loss: 0.0053621758706867695
+training: 310 batch 100 batch_loss: 0.0047467839904129505
+training: 311 batch 100 batch_loss: 0.0033904314041137695
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++                                          ]16%Progress: [++++++++++++++++                                  ]32%Progress: [+++++++++++++++++++++++++                         ]50%Progress: [+++++++++++++++++++++++++++++++++                 ]66%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-20 Item Recommendation)
+*Current Performance*
+Epoch: 311, Hit Ratio: 0.05129, Precision: 0.01711, Recall: 0.0591, NDCG: 0.0441
+*Best Performance*
+Epoch: 61, Hit Ratio: 0.0556, Precision: 0.01855, Recall: 0.0678, NDCG: 0.04937
+--------------------------------------------------------------------------------
+training: 312 batch 100 batch_loss: 0.005296117626130581
+training: 313 batch 100 batch_loss: 0.0048785461112856865
+training: 314 batch 100 batch_loss: 0.007759062573313713
+training: 315 batch 100 batch_loss: 0.004275304265320301
+training: 316 batch 100 batch_loss: 0.005991237238049507
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++                                          ]16%Progress: [++++++++++++++++                                  ]32%Progress: [+++++++++++++++++++++++++                         ]50%Progress: [+++++++++++++++++++++++++++++++++                 ]66%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-20 Item Recommendation)
+*Current Performance*
+Epoch: 316, Hit Ratio: 0.05107, Precision: 0.01704, Recall: 0.05829, NDCG: 0.04371
+*Best Performance*
+Epoch: 61, Hit Ratio: 0.0556, Precision: 0.01855, Recall: 0.0678, NDCG: 0.04937
+--------------------------------------------------------------------------------
+training: 317 batch 100 batch_loss: 0.006478209048509598
+training: 318 batch 100 batch_loss: 0.004193582106381655
+training: 319 batch 100 batch_loss: 0.005560895893722773
+training: 320 batch 100 batch_loss: 0.006440328899770975
+training: 321 batch 100 batch_loss: 0.0038594333454966545
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++                                          ]16%Progress: [++++++++++++++++                                  ]32%Progress: [+++++++++++++++++++++++++                         ]50%Progress: [+++++++++++++++++++++++++++++++++                 ]66%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-20 Item Recommendation)
+*Current Performance*
+Epoch: 321, Hit Ratio: 0.05052, Precision: 0.01685, Recall: 0.05758, NDCG: 0.04326
+*Best Performance*
+Epoch: 61, Hit Ratio: 0.0556, Precision: 0.01855, Recall: 0.0678, NDCG: 0.04937
+--------------------------------------------------------------------------------
+training: 322 batch 100 batch_loss: 0.0037758410908281803
+training: 323 batch 100 batch_loss: 0.004877316299825907
+training: 324 batch 100 batch_loss: 0.006308268290013075
+training: 325 batch 100 batch_loss: 0.003892218694090843
+training: 326 batch 100 batch_loss: 0.0036668204702436924
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++                                          ]16%Progress: [++++++++++++++++                                  ]32%Progress: [+++++++++++++++++++++++++                         ]50%Progress: [+++++++++++++++++++++++++++++++++                 ]66%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-20 Item Recommendation)
+*Current Performance*
+Epoch: 326, Hit Ratio: 0.05077, Precision: 0.01694, Recall: 0.05759, NDCG: 0.04331
+*Best Performance*
+Epoch: 61, Hit Ratio: 0.0556, Precision: 0.01855, Recall: 0.0678, NDCG: 0.04937
+--------------------------------------------------------------------------------
+training: 327 batch 100 batch_loss: 0.0024014292284846306
+training: 328 batch 100 batch_loss: 0.0032774426508694887
+training: 329 batch 100 batch_loss: 0.0037453719414770603
+training: 330 batch 100 batch_loss: 0.0039047510363161564
+training: 331 batch 100 batch_loss: 0.004136883653700352
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++                                          ]16%Progress: [++++++++++++++++                                  ]32%Progress: [+++++++++++++++++++++++++                         ]50%Progress: [+++++++++++++++++++++++++++++++++                 ]66%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-20 Item Recommendation)
+*Current Performance*
+Epoch: 331, Hit Ratio: 0.05069, Precision: 0.01691, Recall: 0.05715, NDCG: 0.04294
+*Best Performance*
+Epoch: 61, Hit Ratio: 0.0556, Precision: 0.01855, Recall: 0.0678, NDCG: 0.04937
+--------------------------------------------------------------------------------
+training: 332 batch 100 batch_loss: 0.0065081072971224785
+training: 333 batch 100 batch_loss: 0.0028391636442393064
+training: 334 batch 100 batch_loss: 0.005090720020234585
+training: 335 batch 100 batch_loss: 0.0030630393885076046
+training: 336 batch 100 batch_loss: 0.003532624104991555
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++                                          ]16%Progress: [++++++++++++++++                                  ]32%Progress: [+++++++++++++++++++++++++                         ]50%Progress: [+++++++++++++++++++++++++++++++++                 ]66%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-20 Item Recommendation)
+*Current Performance*
+Epoch: 336, Hit Ratio: 0.05047, Precision: 0.01684, Recall: 0.05698, NDCG: 0.04282
+*Best Performance*
+Epoch: 61, Hit Ratio: 0.0556, Precision: 0.01855, Recall: 0.0678, NDCG: 0.04937
+--------------------------------------------------------------------------------
+training: 337 batch 100 batch_loss: 0.0038624294102191925
+training: 338 batch 100 batch_loss: 0.004830829333513975
+training: 339 batch 100 batch_loss: 0.003911070059984922
+training: 340 batch 100 batch_loss: 0.005780210718512535
+training: 341 batch 100 batch_loss: 0.0062788501381874084
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++                                          ]16%Progress: [++++++++++++++++                                  ]32%Progress: [+++++++++++++++++++++++++                         ]50%Progress: [+++++++++++++++++++++++++++++++++                 ]66%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-20 Item Recommendation)
+*Current Performance*
+Epoch: 341, Hit Ratio: 0.05064, Precision: 0.0169, Recall: 0.05724, NDCG: 0.04306
+*Best Performance*
+Epoch: 61, Hit Ratio: 0.0556, Precision: 0.01855, Recall: 0.0678, NDCG: 0.04937
+--------------------------------------------------------------------------------
+training: 342 batch 100 batch_loss: 0.003205749439075589
+training: 343 batch 100 batch_loss: 0.007877579890191555
+training: 344 batch 100 batch_loss: 0.002527934266254306
+training: 345 batch 100 batch_loss: 0.0032768920063972473
+training: 346 batch 100 batch_loss: 0.003321259282529354
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++                                          ]16%Progress: [++++++++++++++++                                  ]32%Progress: [+++++++++++++++++++++++++                         ]50%Progress: [+++++++++++++++++++++++++++++++++                 ]66%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-20 Item Recommendation)
+*Current Performance*
+Epoch: 346, Hit Ratio: 0.05047, Precision: 0.01684, Recall: 0.05682, NDCG: 0.04274
+*Best Performance*
+Epoch: 61, Hit Ratio: 0.0556, Precision: 0.01855, Recall: 0.0678, NDCG: 0.04937
+--------------------------------------------------------------------------------
+training: 347 batch 100 batch_loss: 0.0048144725151360035
+training: 348 batch 100 batch_loss: 0.007045115809887648
+training: 349 batch 100 batch_loss: 0.0028911642730236053
+training: 350 batch 100 batch_loss: 0.0020876131020486355
+training: 351 batch 100 batch_loss: 0.008016664534807205
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++                                          ]16%Progress: [++++++++++++++++                                  ]32%Progress: [+++++++++++++++++++++++++                         ]50%Progress: [+++++++++++++++++++++++++++++++++                 ]66%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-20 Item Recommendation)
+*Current Performance*
+Epoch: 351, Hit Ratio: 0.05047, Precision: 0.01684, Recall: 0.05696, NDCG: 0.04269
+*Best Performance*
+Epoch: 61, Hit Ratio: 0.0556, Precision: 0.01855, Recall: 0.0678, NDCG: 0.04937
+--------------------------------------------------------------------------------
+training: 352 batch 100 batch_loss: 0.004616697318851948
+training: 353 batch 100 batch_loss: 0.0058168587274849415
+training: 354 batch 100 batch_loss: 0.004987412132322788
+training: 355 batch 100 batch_loss: 0.004129908047616482
+training: 356 batch 100 batch_loss: 0.005388020072132349
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++                                          ]16%Progress: [++++++++++++++++                                  ]32%Progress: [+++++++++++++++++++++++++                         ]50%Progress: [+++++++++++++++++++++++++++++++++                 ]66%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
