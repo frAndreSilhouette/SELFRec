@@ -116,5 +116,5 @@ for _, row in df.iterrows():
         print(line)
 
 # 仍然保存干净的 CSV
-df.to_csv("loss_comparison_summary.csv", index=False, encoding="utf-8-sig")
-print("\n结果已保存到 loss_comparison_summary.csv")
+df.to_csv("result_summary.csv", index=False, encoding="utf-8-sig")
+print("\n结果已保存到 result_comparison_summary.csv")

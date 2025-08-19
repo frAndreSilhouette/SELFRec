@@ -1,4 +1,5 @@
 dataset/campus_data/
-/results/
-/log/
+results/
+log/
 **/__pycache__/
+main.log

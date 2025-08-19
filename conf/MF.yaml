@@ -1,6 +1,6 @@
-training.set: ./dataset/campus_data/campus_15_train.txt
+training.set: ./dataset/campus_data/campus_10_train.txt
 
-test.set: ./dataset/campus_data/campus_15_test.txt
+test.set: ./dataset/campus_data/campus_10_test.txt
 
 model:
   name: MF
@@ -14,4 +14,4 @@ batch.size: 2048
 learning.rate: 0.001
 reg.lambda: 0.0001
 
-output: ./results/MF/campus_15/
+output: ./results/MF/campus_10/

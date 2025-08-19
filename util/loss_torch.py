@@ -29,15 +29,7 @@ class QuantileBPRLoss(nn.Module):
         根据给定的 scales 和 shapes（与 item_ids 对齐），计算 Weibull CDF
         """
         # 自动转 tensor
-        if not isinstance(item_ids, torch.Tensor):
-            item_ids = torch.tensor(item_ids, dtype=torch.long, device=self.device)
-        else:
-            item_ids = item_ids.to(self.device)
-
-        if not isinstance(days, torch.Tensor):
-            days = torch.tensor(days, dtype=torch.float32, device=self.device)
-        else:
-            days = days.to(self.device).float()
+        days = days.to(self.device).float()
 
         if not isinstance(scales, torch.Tensor):
             scales = torch.tensor(scales, dtype=torch.float32, device=self.device)
@@ -64,15 +56,7 @@ class QuantileBPRLoss(nn.Module):
         根据给定的 scales 和 shapes（与 item_ids 对齐），计算 Weibull 逆CDF
         """
         # 自动转 tensor
-        if not isinstance(item_ids, torch.Tensor):
-            item_ids = torch.tensor(item_ids, dtype=torch.long, device=self.device)
-        else:
-            item_ids = item_ids.to(self.device)
-
-        if not isinstance(cdf_values, torch.Tensor):
-            cdf_values = torch.tensor(cdf_values, dtype=torch.float32, device=self.device)
-        else:
-            cdf_values = cdf_values.to(self.device).float()
+        cdf_values = cdf_values.to(self.device).float()
 
         if not isinstance(scales, torch.Tensor):
             scales = torch.tensor(scales, dtype=torch.float32, device=self.device)
