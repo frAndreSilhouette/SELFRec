@@ -1,6 +1,6 @@
-training.set: ./dataset/campus_data/campus_10_train.txt
+training.set: ./dataset/campus_data/campus_143_train.txt
 
-test.set: ./dataset/campus_data/campus_10_test.txt
+test.set: ./dataset/campus_data/campus_143_test.txt
 
 model:
   name: MixGCF
@@ -19,4 +19,4 @@ MixGCF:
   n_layer: 3
   n_negs: 64
 
-output: ./results/MixGCF/campus_10/
+output: ./results/MixGCF/campus_143/
