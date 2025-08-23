@@ -12,7 +12,7 @@ from tqdm import tqdm
 
 
 class XSimGCL(GraphRecommender):
-    def __init__(self, conf, training_set, test_set):
+    def __init__(self, conf, training_set, test_set, loss_func=0): # 【这里修改】loss_func作为init的参数，而非train的参数
         super(XSimGCL, self).__init__(conf, training_set, test_set)
         config = self.config['XSimGCL']
         self.cl_rate = float(config['lambda'])
@@ -21,17 +21,20 @@ class XSimGCL(GraphRecommender):
         self.n_layers = int(config['n_layer'])
         self.layer_cl = int(config['l_star'])
         self.model = XSimGCL_Encoder(self.data, self.emb_size, self.eps, self.n_layers,self.layer_cl)
-
         # self.data是从父类GraphRecommender继承的，又是从Interaction来的
 
-    def train(self, loss_func): # 【这里修改】train方法增加了loss_func参数
+        self.quantile_bpr_loss = QuantileBPRLoss(self.data.item_num, loss_func) # 【这里修改】quantile_bpr_loss在init时定义
+
+    def train(self): # 【这里修改】train方法不再需要loss_func参数，换到init里面去了
         model = self.model.cuda()
-        quantile_bpr_loss = QuantileBPRLoss(self.data.item_num, loss_func).cuda()
+        quantile_bpr_loss = self.quantile_bpr_loss.cuda()
         optimizer = torch.optim.Adam(list(model.parameters()) + list(quantile_bpr_loss.parameters()), lr=self.lRate) # 【这里修改】增加可学习参数
         
         for epoch in range(self.maxEpoch):
             for n, batch in enumerate(next_batch_pairwise(self.data, self.batch_size)):
                 user_idx, pos_idx, neg_idx, itts, scales, shapes = batch # 【这里修改】batch返回值多了itts, scales, shapes
+                # 这六个东西全是list
+
                 rec_user_emb, rec_item_emb, cl_user_emb, cl_item_emb  = model(True)
                 user_emb, pos_item_emb, neg_item_emb = rec_user_emb[user_idx], rec_item_emb[pos_idx], rec_item_emb[neg_idx]
                 # rec_loss = bpr_loss(user_emb, pos_item_emb, neg_item_emb)    
@@ -48,7 +51,7 @@ class XSimGCL(GraphRecommender):
             with torch.no_grad():
                 self.user_emb, self.item_emb = self.model()
             self.fast_evaluation(epoch)
-        self.user_emb, self.item_emb = self.best_user_emb, self.best_item_emb
+        self.user_emb, self.item_emb = self.best_user_emb, self.best_item_emb # 保存的已经是最佳模型的embedding了吗？
 
     def cal_cl_loss(self, idx, user_view1,user_view2,item_view1,item_view2):
         u_idx = torch.unique(torch.Tensor(idx[0]).type(torch.long)).cuda()
@@ -64,6 +67,8 @@ class XSimGCL(GraphRecommender):
 
     def predict(self, u):
         u = self.data.get_user_id(u)
+        # 【等待修改】获取所有item的weight（未购买的weight咋算？全部置为0？反正考虑的是复购推荐）（需要额外补充当前时间距离上次购买itt，在生成train test数据集时做）
+        # 【等待修改】测试集1周，metric@3 5 10 20
         score = torch.matmul(self.user_emb[u], self.item_emb.transpose(0, 1))
         return score.cpu().numpy()
 

@@ -89,6 +89,7 @@ class Interaction(Data, Graph):
 
     def get_item_id(self, i):
         return self.item.get(i)
+    # 将原始的用户或物品 ID（通常是字符串）映射到内部索引（数字，从 0 开始）
 
     def training_size(self):
         return len(self.user), len(self.item), len(self.training_data)

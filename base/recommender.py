@@ -77,7 +77,7 @@ class Recommender:
         print('Initializing and building model...')
         self.build()
         print('Training Model...')
-        self.train(loss_func) # 【这里修改】train方法增加了loss_func参数
+        self.train() # 【这里修改】train方法不再需要loss_func参数，换到init里面去了
         print('Testing...')
         rec_list = self.test()
         print('Evaluating...')

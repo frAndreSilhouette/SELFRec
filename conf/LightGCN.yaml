@@ -1,6 +1,6 @@
-training.set: ./dataset/campus_data/campus_10_train.txt
+training.set: ./dataset/campus_data/campus_143_train.txt
 
-test.set: ./dataset/campus_data/campus_10_test.txt
+test.set: ./dataset/campus_data/campus_143_test.txt
 
 model:
   name: LightGCN
@@ -18,4 +18,4 @@ reg.lambda: 0.0001
 LightGCN:
   n_layer: 2
 
-output: ./results/LightGCN/campus_10/
+output: ./results/LightGCN/campus_143/

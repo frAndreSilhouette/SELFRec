@@ -76,7 +76,7 @@ class QuantileBPRLoss(nn.Module):
         else:
             return icdf_vals
 
-    def forward(self, user_emb, pos_item_emb, neg_item_emb, pos_idx, neg_idx, itts, scales, shapes):
+    def calculate_pos_weights(self, pos_idx, neg_idx, itts, scales, shapes):
         
         itts = torch.tensor(itts, dtype=torch.float32, device=self.device)
         pos_cdfs = self.calculate_cdf(pos_idx, itts, scales, shapes)
@@ -85,40 +85,82 @@ class QuantileBPRLoss(nn.Module):
         quantile_thresholds = self.calculate_inverse_cdf(pos_idx, pos_qs, scales, shapes)
         pos_kappa = self.kappa[pos_idx]
 
-        # print("pos_kappa device:", pos_kappa.device)
-        # print("itts device:", itts.device)
-        # print("quantile_thresholds device:", quantile_thresholds.device)
-
         if self.loss_func == 0:
             # 原版
-            pos_scores = torch.sum(user_emb * pos_item_emb, dim=1)
+            pos_weights = torch.ones_like(itts)
         elif self.loss_func == 1:
             # kappa固定，分位数之差
             pos_weights = torch.sigmoid(self.kappa_fixed * (itts - quantile_thresholds))
-            pos_scores = torch.sum(user_emb * pos_item_emb * pos_weights.unsqueeze(1), dim=1)
         elif self.loss_func == 2:
             # kappa可学习，分位数之差
             pos_weights = torch.sigmoid(pos_kappa * (itts - quantile_thresholds))
-            pos_scores = torch.sum(user_emb * pos_item_emb * pos_weights.unsqueeze(1), dim=1)
         elif self.loss_func == 3:
             # kappa可学习，分位数之比
             pos_weights = torch.sigmoid(pos_kappa * (itts / (quantile_thresholds + 1e-6)))
-            pos_scores = torch.sum(user_emb * pos_item_emb * pos_weights.unsqueeze(1), dim=1)
         elif self.loss_func == 4:
             # kappa可学习，cdf之差
             pos_weights = torch.sigmoid(pos_kappa * (pos_cdfs - pos_qs))
-            pos_scores = torch.sum(user_emb * pos_item_emb * pos_weights.unsqueeze(1), dim=1)
         elif self.loss_func == 5:
             # kappa可学习，cdf之比
             pos_weights = torch.sigmoid(pos_kappa * (pos_cdfs / (pos_qs + 1e-6)))
-            pos_scores = torch.sum(user_emb * pos_item_emb * pos_weights.unsqueeze(1), dim=1)
         else:
             print('[ERROR] bpr_loss: loss_func is not defined.')
+            return torch.ones_like(itts)
 
+        return pos_weights
+    def forward(self, user_emb, pos_item_emb, neg_item_emb, pos_idx, neg_idx, itts, scales, shapes):
+        
+        pos_weights = self.calculate_pos_weights(pos_idx, neg_idx, itts, scales, shapes)
+        pos_scores = torch.sum(user_emb * pos_item_emb * pos_weights.unsqueeze(1), dim=1)
         neg_scores = torch.sum(user_emb * neg_item_emb, dim=1)
         loss = -torch.log(10e-6 + torch.sigmoid(pos_scores - neg_scores))
 
         return torch.mean(loss)
+
+
+    # def forward(self, user_emb, pos_item_emb, neg_item_emb, pos_idx, neg_idx, itts, scales, shapes):
+        
+    #     itts = torch.tensor(itts, dtype=torch.float32, device=self.device)
+    #     pos_cdfs = self.calculate_cdf(pos_idx, itts, scales, shapes)
+    #     qs = torch.sigmoid(self.theta)
+    #     pos_qs = qs[pos_idx]
+    #     quantile_thresholds = self.calculate_inverse_cdf(pos_idx, pos_qs, scales, shapes)
+    #     pos_kappa = self.kappa[pos_idx]
+
+    #     # print("pos_kappa device:", pos_kappa.device)
+    #     # print("itts device:", itts.device)
+    #     # print("quantile_thresholds device:", quantile_thresholds.device)
+
+    #     if self.loss_func == 0:
+    #         # 原版
+    #         pos_scores = torch.sum(user_emb * pos_item_emb, dim=1)
+    #     elif self.loss_func == 1:
+    #         # kappa固定，分位数之差
+    #         pos_weights = torch.sigmoid(self.kappa_fixed * (itts - quantile_thresholds))
+    #         pos_scores = torch.sum(user_emb * pos_item_emb * pos_weights.unsqueeze(1), dim=1)
+    #     elif self.loss_func == 2:
+    #         # kappa可学习，分位数之差
+    #         pos_weights = torch.sigmoid(pos_kappa * (itts - quantile_thresholds))
+    #         pos_scores = torch.sum(user_emb * pos_item_emb * pos_weights.unsqueeze(1), dim=1)
+    #     elif self.loss_func == 3:
+    #         # kappa可学习，分位数之比
+    #         pos_weights = torch.sigmoid(pos_kappa * (itts / (quantile_thresholds + 1e-6)))
+    #         pos_scores = torch.sum(user_emb * pos_item_emb * pos_weights.unsqueeze(1), dim=1)
+    #     elif self.loss_func == 4:
+    #         # kappa可学习，cdf之差
+    #         pos_weights = torch.sigmoid(pos_kappa * (pos_cdfs - pos_qs))
+    #         pos_scores = torch.sum(user_emb * pos_item_emb * pos_weights.unsqueeze(1), dim=1)
+    #     elif self.loss_func == 5:
+    #         # kappa可学习，cdf之比
+    #         pos_weights = torch.sigmoid(pos_kappa * (pos_cdfs / (pos_qs + 1e-6)))
+    #         pos_scores = torch.sum(user_emb * pos_item_emb * pos_weights.unsqueeze(1), dim=1)
+    #     else:
+    #         print('[ERROR] bpr_loss: loss_func is not defined.')
+
+    #     neg_scores = torch.sum(user_emb * neg_item_emb, dim=1)
+    #     loss = -torch.log(10e-6 + torch.sigmoid(pos_scores - neg_scores))
+
+    #     return torch.mean(loss)
 
 def triplet_loss(user_emb, pos_item_emb, neg_item_emb):
     pos_score = ((user_emb-pos_item_emb)**2).sum(dim=1)

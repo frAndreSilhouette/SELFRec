@@ -46,8 +46,8 @@ class GraphRecommender(Recommender):
         for i, user in enumerate(self.data.test_set):
             candidates = self.predict(user)
             rated_list, _ = self.data.user_rated(user)
-            for item in rated_list:
-                candidates[self.data.item[item]] = -10e8
+            # for item in rated_list:
+            #     candidates[self.data.item[item]] = -10e8  # 将买过的商品打分设为很小，防止被推荐【我不要这个逻辑】
             ids, scores = find_k_largest(self.max_N, candidates)
             item_names = [self.data.id2item[iid] for iid in ids]
             rec_list[user] = list(zip(item_names, scores))
