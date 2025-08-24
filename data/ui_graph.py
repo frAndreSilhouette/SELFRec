@@ -19,6 +19,14 @@ class Interaction(Data, Graph):
         self.test_set = defaultdict(dict)
         self.test_set_item = set()
 
+        self.current_itt = defaultdict(dict)
+        # 用于保存每个用户-商品最近一次购买至今的日期差，直接从txt文件读取，用于预测时embedding加权
+        # 格式：{"u1": {"i1": 45}}"}
+
+        self.weibull_params = defaultdict(dict)
+        # 用于保存每个用户-商品对应的 weibull 参数，直接从txt文件读取，用于预测时embedding加权
+        # 格式：{"i1":{"scale": 1.0, "shape": 1.0}}
+        
         self.__generate_set()
         self.user_num = len(self.training_set_u)
         self.item_num = len(self.training_set_i)
@@ -26,15 +34,10 @@ class Interaction(Data, Graph):
         self.norm_adj = self.normalize_graph_mat(self.ui_adj)
         self.interaction_mat = self.__create_sparse_interaction_matrix()
 
-    # 下面用到的（以及sampler.py用到的） self.training_data还是从Data父类来的，实际上就是Data.__init__传进来的training
-    # 就是读txt文件得到的表，例如
-    # [
-    #     ["u1", "i3", 1.0],
-    #     ["u2", "i7", 1.0],
-    #     ["u1", "i5", 1.0]
-    # ]
+
+
     def __generate_set(self):
-        for user, item, itt, scale, shape, rating in self.training_data: # 【这里修改】training_data现在包含了itt和分布信息
+        for user, item, itt, scale, shape, rating, current_itt in self.training_data: # 【这里修改】training_data现在包含了itt和分布信息
             if user not in self.user:
                 user_id = len(self.user)
                 self.user[user] = user_id
@@ -43,8 +46,14 @@ class Interaction(Data, Graph):
                 item_id = len(self.item)
                 self.item[item] = item_id
                 self.id2item[item_id] = item # item是原来的字符串，item_id是对应的从0开始数字id
+                self.weibull_params[item]["scale"] = scale
+                self.weibull_params[item]["shape"] = shape
+            
             self.training_set_u[user][item] = 1
             self.training_set_i[item][user] = 1
+            
+            self.current_itt[user][item] = current_itt
+
 
             # 样例：
             # self.training_set_u = {
@@ -53,7 +62,7 @@ class Interaction(Data, Graph):
             # }
             # 哪怕training_data中有重复的user-item对，也只会存储一次，key对应的value为1        
 
-        for user, item, itt, scale, shape, rating in self.test_data: # 【这里修改】training_data现在包含了itt和分布信息
+        for user, item, itt, scale, shape, rating, current_itt in self.test_data: # 【这里修改】training_data现在包含了itt和分布信息
             if user in self.user and item in self.item:
                 self.test_set[user][item] = 1
                 self.test_set_item.add(item)

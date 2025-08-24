@@ -76,7 +76,7 @@ class QuantileBPRLoss(nn.Module):
         else:
             return icdf_vals
 
-    def calculate_pos_weights(self, pos_idx, neg_idx, itts, scales, shapes):
+    def calculate_pos_weights(self, pos_idx, itts, scales, shapes):
         
         itts = torch.tensor(itts, dtype=torch.float32, device=self.device)
         pos_cdfs = self.calculate_cdf(pos_idx, itts, scales, shapes)
@@ -110,7 +110,7 @@ class QuantileBPRLoss(nn.Module):
         return pos_weights
     def forward(self, user_emb, pos_item_emb, neg_item_emb, pos_idx, neg_idx, itts, scales, shapes):
         
-        pos_weights = self.calculate_pos_weights(pos_idx, neg_idx, itts, scales, shapes)
+        pos_weights = self.calculate_pos_weights(pos_idx, itts, scales, shapes) # 在cuda上
         pos_scores = torch.sum(user_emb * pos_item_emb * pos_weights.unsqueeze(1), dim=1)
         neg_scores = torch.sum(user_emb * neg_item_emb, dim=1)
         loss = -torch.log(10e-6 + torch.sigmoid(pos_scores - neg_scores))

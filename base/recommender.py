@@ -53,7 +53,7 @@ class Recommender:
     def build(self):
         pass
 
-    def train(self, loss_func): # 【这里修改】train方法增加了loss_func参数
+    def train(self): # 【这里修改】train方法不再需要loss_func参数
         pass
 
     def predict(self, u):

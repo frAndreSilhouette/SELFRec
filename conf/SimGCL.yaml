@@ -6,7 +6,7 @@ model:
   name: SimGCL
   type: graph
 
-item.ranking.topN: [10,20]
+item.ranking.topN: [3, 5, 10, 20]
 
 embedding.size: 64
 # max.epoch: 20

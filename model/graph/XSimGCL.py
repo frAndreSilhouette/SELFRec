@@ -66,12 +66,34 @@ class XSimGCL(GraphRecommender):
             self.best_user_emb, self.best_item_emb = self.model.forward()
 
     def predict(self, u):
-        u = self.data.get_user_id(u)
-        # 【等待修改】获取所有item的weight（未购买的weight咋算？全部置为0？反正考虑的是复购推荐）（需要额外补充当前时间距离上次购买itt，在生成train test数据集时做）
-        # 【等待修改】测试集1周，metric@3 5 10 20
-        score = torch.matmul(self.user_emb[u], self.item_emb.transpose(0, 1))
-        return score.cpu().numpy()
+        u_str = u
+        u_int = self.data.get_user_id(u_str)  # 将字符串的u转化为数字的u
 
+        # 用户购买过的物品
+        pos_item_strs = list(self.data.training_set_u[u_str].keys())
+        pos_item_ints = [self.data.item[i] for i in pos_item_strs]  # 内部item id list
+
+        # 获取对应的时间和Weibull参数
+        current_itts = [self.data.current_itt[u_str][i_str] for i_str in pos_item_strs]
+        scales = [self.data.weibull_params[i_str]["scale"] for i_str in pos_item_strs]
+        shapes = [self.data.weibull_params[i_str]["shape"] for i_str in pos_item_strs]
+
+        # 计算购买过物品的权重
+        pos_weights = self.quantile_bpr_loss.calculate_pos_weights(pos_item_ints, current_itts, scales, shapes)
+
+        # 生成全0 weights，然后把 pos_weights 按 idx 填入
+        weights = torch.zeros(self.data.item_num).to(self.quantile_bpr_loss.device)          # 默认全0
+        for idx, w in zip(pos_item_ints, pos_weights):
+            weights[idx] = w                              # 对应物品赋值
+
+        # 计算得分
+        score = torch.matmul(self.user_emb[u_int], self.item_emb.transpose(0, 1)) * weights
+        return score.detach().cpu().numpy()
+    
+    # def predict(self, u):
+    #     u = self.data.get_user_id(u)
+    #     score = torch.matmul(self.user_emb[u], self.item_emb.transpose(0, 1))
+    #     return score.cpu().numpy()
 
 class XSimGCL_Encoder(nn.Module):
     def __init__(self, data, emb_size, eps, n_layers, layer_cl):

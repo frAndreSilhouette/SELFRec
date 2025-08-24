@@ -11,7 +11,7 @@ from util.loss_torch import QuantileBPRLoss
 
 
 class SimGCL(GraphRecommender):
-    def __init__(self, conf, training_set, test_set):
+    def __init__(self, conf, training_set, test_set, loss_func=0): # 【这里修改】loss_func作为init的参数，而非train的参数
         super(SimGCL, self).__init__(conf, training_set, test_set)
         args = self.config['SimGCL']
         self.cl_rate = float(args['lambda'])
@@ -19,9 +19,11 @@ class SimGCL(GraphRecommender):
         self.n_layers = int(args['n_layer'])
         self.model = SimGCL_Encoder(self.data, self.emb_size, self.eps, self.n_layers)
 
-    def train(self, loss_func): # 【这里修改】train方法增加了loss_func参数
+        self.quantile_bpr_loss = QuantileBPRLoss(self.data.item_num, loss_func) # 【这里修改】quantile_bpr_loss在init时定义
+
+    def train(self): # 【这里修改】train方法不再需要loss_func参数，换到init里面去了
         model = self.model.cuda()
-        quantile_bpr_loss = QuantileBPRLoss(self.data.item_num, loss_func).cuda()
+        quantile_bpr_loss = self.quantile_bpr_loss.cuda()
         optimizer = torch.optim.Adam(list(model.parameters()) + list(quantile_bpr_loss.parameters()), lr=self.lRate) # 【这里修改】增加可学习参数
 
         for epoch in range(self.maxEpoch):
@@ -58,9 +60,34 @@ class SimGCL(GraphRecommender):
             self.best_user_emb, self.best_item_emb = self.model.forward()
 
     def predict(self, u):
-        u = self.data.get_user_id(u)
-        score = torch.matmul(self.user_emb[u], self.item_emb.transpose(0, 1))
-        return score.cpu().numpy()
+        u_str = u
+        u_int = self.data.get_user_id(u_str)  # 将字符串的u转化为数字的u
+
+        # 用户购买过的物品
+        pos_item_strs = list(self.data.training_set_u[u_str].keys())
+        pos_item_ints = [self.data.item[i] for i in pos_item_strs]  # 内部item id list
+
+        # 获取对应的时间和Weibull参数
+        current_itts = [self.data.current_itt[u_str][i_str] for i_str in pos_item_strs]
+        scales = [self.data.weibull_params[i_str]["scale"] for i_str in pos_item_strs]
+        shapes = [self.data.weibull_params[i_str]["shape"] for i_str in pos_item_strs]
+
+        # 计算购买过物品的权重
+        pos_weights = self.quantile_bpr_loss.calculate_pos_weights(pos_item_ints, current_itts, scales, shapes)
+
+        # 生成全0 weights，然后把 pos_weights 按 idx 填入
+        weights = torch.zeros(self.data.item_num).to(self.quantile_bpr_loss.device)          # 默认全0
+        for idx, w in zip(pos_item_ints, pos_weights):
+            weights[idx] = w                              # 对应物品赋值
+
+        # 计算得分
+        score = torch.matmul(self.user_emb[u_int], self.item_emb.transpose(0, 1)) * weights
+        return score.detach().cpu().numpy()
+
+    # def predict(self, u):
+    #     u = self.data.get_user_id(u)
+    #     score = torch.matmul(self.user_emb[u], self.item_emb.transpose(0, 1))
+    #     return score.cpu().numpy()
 
 
 class SimGCL_Encoder(nn.Module):

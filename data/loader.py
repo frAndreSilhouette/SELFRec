@@ -44,7 +44,8 @@ class FileIO(object):
                     scale = float(items[3])
                     shape = float(items[4])
                     weight = float(items[5])
-                    data.append([user_id, item_id, itt, scale, shape, weight])
+                    current_itt = int(items[6])
+                    data.append([user_id, item_id, itt, scale, shape, weight, current_itt])
                     # ===========================
 
         if rec_type == 'sequential':

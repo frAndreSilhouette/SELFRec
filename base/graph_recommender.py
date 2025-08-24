@@ -13,7 +13,7 @@ class GraphRecommender(Recommender):
         self.data = Interaction(conf, training_set, test_set)
         self.bestPerformance = []
         self.topN = [int(num) for num in self.ranking]
-        self.max_N = max(self.topN)
+        self.max_N = max(self.topN) # 选最优模型是按照最大的top N来看的
 
     def print_model_info(self, loss_func): # 【这里修改】增加了loss_func参数
         super(GraphRecommender, self).print_model_info(loss_func)
@@ -29,7 +29,7 @@ class GraphRecommender(Recommender):
     def build(self):
         pass
 
-    def train(self, loss_func): # 【这里修改】train方法增加了loss_func参数
+    def train(self): # 【这里修改】train方法不再需要loss_func参数
         pass
 
     def predict(self, u):

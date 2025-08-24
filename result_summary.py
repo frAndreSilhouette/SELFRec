@@ -2,7 +2,7 @@ import os
 import re
 import pandas as pd
 
-root_dir = "./results"
+root_dir = "./history_results/results4/"
 
 pattern_loss = re.compile(r"loss(\d+)")
 pattern_metric = re.compile(r"(.+?):([\d.]+)")
@@ -84,37 +84,37 @@ df = pd.DataFrame(results, columns=[
 df = df.sort_values(by=["Model", "Campus", "Loss"],
                     ascending=[True, True, True])
 
-# ====== 命令行美观打印 ======
-# 打印表头
-headers = ["Model", "Campus", "Loss", "TopK", "Metric",
-           "Baseline(loss0)", "Value", "AbsDiff", "RelDiff(%)"]
-
-col_widths = [max(len(str(x)) for x in [col] + df[col].astype(str).tolist())
-              for col in headers]
-
-header_line = "  ".join(h.ljust(w) for h, w in zip(headers, col_widths))
-print(header_line)
-print("-" * len(header_line))
-
-# 打印数据行
-for _, row in df.iterrows():
-    row_strs = [
-        str(row["Model"]).ljust(col_widths[0]),
-        str(row["Campus"]).ljust(col_widths[1]),
-        str(row["Loss"]).ljust(col_widths[2]),
-        str(row["TopK"]).ljust(col_widths[3]),
-        str(row["Metric"]).ljust(col_widths[4]),
-        f"{row['Baseline(loss0)']:.5f}".ljust(col_widths[5]),
-        f"{row['Value']:.5f}".ljust(col_widths[6]),
-        f"{row['AbsDiff']:.5f}".ljust(col_widths[7]),
-        f"{row['RelDiff(%)']:.2f}%".ljust(col_widths[8]),
-    ]
-    line = "  ".join(row_strs)
-    if row["RelDiff(%)"] > 0:  # 提升 → 红色
-        print(f"\033[91m{line}\033[0m")
-    else:
-        print(line)
-
 # 仍然保存干净的 CSV
-df.to_csv("result_summary.csv", index=False, encoding="utf-8-sig")
-print("\n结果已保存到 result_comparison_summary.csv")
+df.to_csv(f"{root_dir}result_summary.csv", index=False, encoding="utf-8-sig")
+print(f"结果已保存到 {root_dir}result_summary.csv")
+
+# # ====== 命令行美观打印 ======
+# # 打印表头
+# headers = ["Model", "Campus", "Loss", "TopK", "Metric",
+#            "Baseline(loss0)", "Value", "AbsDiff", "RelDiff(%)"]
+
+# col_widths = [max(len(str(x)) for x in [col] + df[col].astype(str).tolist())
+#               for col in headers]
+
+# header_line = "  ".join(h.ljust(w) for h, w in zip(headers, col_widths))
+# print(header_line)
+# print("-" * len(header_line))
+
+# # 打印数据行
+# for _, row in df.iterrows():
+#     row_strs = [
+#         str(row["Model"]).ljust(col_widths[0]),
+#         str(row["Campus"]).ljust(col_widths[1]),
+#         str(row["Loss"]).ljust(col_widths[2]),
+#         str(row["TopK"]).ljust(col_widths[3]),
+#         str(row["Metric"]).ljust(col_widths[4]),
+#         f"{row['Baseline(loss0)']:.5f}".ljust(col_widths[5]),
+#         f"{row['Value']:.5f}".ljust(col_widths[6]),
+#         f"{row['AbsDiff']:.5f}".ljust(col_widths[7]),
+#         f"{row['RelDiff(%)']:.2f}%".ljust(col_widths[8]),
+#     ]
+#     line = "  ".join(row_strs)
+#     if row["RelDiff(%)"] > 0:  # 提升 → 红色
+#         print(f"\033[91m{line}\033[0m")
+#     else:
+#         print(line)

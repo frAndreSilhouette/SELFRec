@@ -18,3 +18,14 @@ campus 15: train 534342 行, test 255291 行, test占比 32.37%
 campus 34: train 140086 行, test 78441 行, test占比 35.96%
 campus 143: train 79754 行, test 40298 行, test占比 33.54%
 campus 102: train 239870 行, test 123061 行, test占比 33.99%
+
+v4: 将最后一周当成test set，将bpr损失改在init中，只考虑campus143，预测embedding乘5种权重（新predict函数）
+campus 10: train 402244 行, test 16523 行
+campus 15: train 772578 行, test 30265 行
+campus 34: train 216942 行, test 5195 行
+campus 143: train 117392 行, test 4831 行
+campus 102: train 355634 行, test 14056 行
+
+v5: 将最后一周当成test set，将bpr损失改在init中，只考虑campus143，预测embedding不乘权重
+
+v6: 将最后一周当成test set，将bpr损失改在init中，只考虑campus15，预测embedding乘5种权重（新predict函数）（只是为了不让机器晚上闲着）
