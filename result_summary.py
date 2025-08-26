@@ -2,7 +2,8 @@ import os
 import re
 import pandas as pd
 
-root_dir = "./history_results/results4/"
+# root_dir = "./history_results/results4/"
+root_dir = "./results/"
 
 pattern_loss = re.compile(r"loss(\d+)")
 pattern_metric = re.compile(r"(.+?):([\d.]+)")

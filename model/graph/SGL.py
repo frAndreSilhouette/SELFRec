@@ -73,7 +73,9 @@ class SGL(GraphRecommender):
         pos_weights = self.quantile_bpr_loss.calculate_pos_weights(pos_item_ints, current_itts, scales, shapes)
 
         # 生成全0 weights，然后把 pos_weights 按 idx 填入
-        weights = torch.zeros(self.data.item_num).to(self.quantile_bpr_loss.device)          # 默认全0
+        # weights = torch.zeros(self.data.item_num).to(self.quantile_bpr_loss.device)          # 默认全0
+        val = 1e-6  # 人为指定一个很小的值
+        weights = torch.full((self.data.item_num,), val, device=self.quantile_bpr_loss.device)
         for idx, w in zip(pos_item_ints, pos_weights):
             weights[idx] = w                              # 对应物品赋值
 

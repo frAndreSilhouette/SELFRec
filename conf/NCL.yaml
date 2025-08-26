@@ -1,6 +1,6 @@
-training.set: ./dataset/campus_data/campus_15_train.txt
+training.set: ./dataset/campus_data/campus_143_train.txt
 
-test.set: ./dataset/campus_data/campus_15_test.txt
+test.set: ./dataset/campus_data/campus_143_test.txt
 
 model:
   name: NCL
@@ -25,4 +25,4 @@ NCL:
   # num_clusters: 2000
   num_clusters: 100
 
-output: ./results/NCL/campus_15/
+output: ./results/NCL/campus_143/
