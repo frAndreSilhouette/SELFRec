@@ -44,7 +44,7 @@ class FileIO(object):
                     scale = float(items[3])
                     shape = float(items[4])
                     weight = float(items[5])
-                    current_itt = int(items[6])
+                    current_itt = int(items[6]) # 最后一次购买到 time_threshold 的天数差
                     data.append([user_id, item_id, itt, scale, shape, weight, current_itt])
                     # ===========================
 
