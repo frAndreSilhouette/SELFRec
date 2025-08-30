@@ -17,23 +17,27 @@ def next_batch_pairwise(data,batch_size,n_negs=1):
         users = [training_data[idx][0] for idx in range(ptr, batch_end)]
         items = [training_data[idx][1] for idx in range(ptr, batch_end)]
         itts = [training_data[idx][2] for idx in range(ptr, batch_end)] # itt是距离上次购买的天数(int)
-        scales = [training_data[idx][3] for idx in range(ptr, batch_end)] # scale是购买过的正样本的weibull分布的scale参数
-        shapes = [training_data[idx][4] for idx in range(ptr, batch_end)] # shape是购买过的正样本的weibull分布的shape参数
+        pos_scales = [training_data[idx][3] for idx in range(ptr, batch_end)] # pos_scale是购买过的正样本的weibull分布的scale参数
+        pos_shapes = [training_data[idx][4] for idx in range(ptr, batch_end)] # pos_shape是购买过的正样本的weibull分布的shape参数
         ptr = batch_end
-        u_idx, i_idx, j_idx = [], [], []
+
+        user_idx, pos_idx, neg_idx = [], [], []
+        neg_scales, neg_shapes = [], []
+
         item_list = list(data.item.keys()) # item_list是一个列表，包含了所有的item id
         for i, user in enumerate(users): #遍历当前batch的所有user
-            i_idx.append(data.item[items[i]])
-            u_idx.append(data.user[user])
+            pos_idx.append(data.item[items[i]])
+            user_idx.append(data.user[user])
             for m in range(n_negs):
                 neg_item = choice(item_list)
                 while neg_item in data.training_set_u[user]: # 检查neg_item是否在data.training_set_u[user]这个字典的键中（即是否购买过）
                     neg_item = choice(item_list)
-                j_idx.append(data.item[neg_item])
-        # print(f'[DEBUG] next_batch_pairwise: u_idx:{len(u_idx)}, i_idx:{len(i_idx)}, j_idx:{len(j_idx)}')
-        # print(f'[DEBUG] PREVIEW: u_idx:{u_idx[0]}, i_idx:{i_idx[0]}, j_idx:{j_idx[0]}')
-        yield u_idx, i_idx, j_idx, itts, scales, shapes
-        # 返回的u_idx和i_idx实际上就是training_data的batch_size那么多行，j_idx是抽的别的没买过的负样本
+                neg_idx.append(data.item[neg_item])
+                neg_scales.append(data.weibull_params[neg_item]["scale"])
+                neg_shapes.append(data.weibull_params[neg_item]["shape"])
+
+        yield user_idx, pos_idx, neg_idx, itts, pos_scales, pos_shapes, neg_scales, neg_shapes
+        # 返回的user_idx和pos_idx实际上就是training_data的batch_size那么多行，neg_idx是抽的别的没买过的负样本
 
 
 
@@ -49,19 +53,19 @@ def next_batch_pointwise(data,batch_size):
         users = [training_data[idx][0] for idx in range(ptr, batch_end)]
         items = [training_data[idx][1] for idx in range(ptr, batch_end)]
         ptr = batch_end
-        u_idx, i_idx, y = [], [], []
+        user_idx, pos_idx, y = [], [], []
         for i, user in enumerate(users):
-            i_idx.append(data.item[items[i]])
-            u_idx.append(data.user[user])
+            pos_idx.append(data.item[items[i]])
+            user_idx.append(data.user[user])
             y.append(1)
             for instance in range(4):
                 item_j = randint(0, data.item_num - 1)
                 while data.id2item[item_j] in data.training_set_u[user]:
                     item_j = randint(0, data.item_num - 1)
-                u_idx.append(data.user[user])
-                i_idx.append(item_j)
+                user_idx.append(data.user[user])
+                pos_idx.append(item_j)
                 y.append(0)
-        yield u_idx, i_idx, y
+        yield user_idx, pos_idx, y
 
 # def next_batch_sequence(data, batch_size,n_negs=1):
 #     training_data = data.training_set

@@ -33,3 +33,5 @@ v6: 将最后一周当成test set，将bpr损失改在init中，只考虑campus1
 v7: 将最后一周当成test set，将bpr损失改在init中，预测embedding乘5种权重（新predict函数），负样本预测权重为1e-6（防止都为0）
 
 v8: 将最后一周当成test set，将bpr损失改在init中，预测embedding乘5种权重（新predict函数），负样本预测权重为0（和v4，v6同样的处理方式，只是将单校区改成了全校区）
+
+v9: 在v4/6/8的基础上，score在embedding内积的基础上，加入sigmoid(w_1 * scale + w_2 * shape + b)表示商品异质性，五个校区

@@ -19,6 +19,11 @@ class QuantileBPRLoss(nn.Module):
         self.theta = nn.Parameter(torch.zeros(n_items, device=self.device))
         self.loss_func = loss_func
         print(f'[DEBUG] self.loss_func: {self.loss_func}')
+
+        # 加入item异质性参数
+        self.w1 = nn.Parameter(torch.ones(1, device=self.device))
+        self.w2 = nn.Parameter(torch.ones(1, device=self.device))
+        self.bias = nn.Parameter(torch.zeros(1, device=self.device))
     
     def calculate_cdf(self, item_ids, days, scales, shapes, all_items: bool = True) -> torch.Tensor:
         """
@@ -45,7 +50,6 @@ class QuantileBPRLoss(nn.Module):
             return torch.where(mask, torch.full_like(cdf_vals, -1.0), cdf_vals)
         else:
             return cdf_vals
-
 
     def calculate_inverse_cdf(self, item_ids, cdf_values, scales, shapes, all_items: bool = True) -> torch.Tensor:
         """
@@ -108,11 +112,22 @@ class QuantileBPRLoss(nn.Module):
             return torch.ones_like(itts)
 
         return pos_weights
-    def forward(self, user_emb, pos_item_emb, neg_item_emb, pos_idx, neg_idx, itts, scales, shapes):
+    def forward(self, user_emb, pos_item_emb, neg_item_emb, pos_idx, neg_idx, itts, pos_scales, pos_shapes, neg_scales, neg_shapes):
         
-        pos_weights = self.calculate_pos_weights(pos_idx, itts, scales, shapes) # 在cuda上
+        # 转成tensor (float32)，并放到同一device
+        pos_scales = torch.tensor(pos_scales, dtype=torch.float32, device=self.device)
+        pos_shapes = torch.tensor(pos_shapes, dtype=torch.float32, device=self.device)
+        neg_scales = torch.tensor(neg_scales, dtype=torch.float32, device=self.device)
+        neg_shapes = torch.tensor(neg_shapes, dtype=torch.float32, device=self.device)
+
+        pos_weights = self.calculate_pos_weights(pos_idx, itts, pos_scales, pos_shapes) # 在cuda上
         pos_scores = torch.sum(user_emb * pos_item_emb * pos_weights.unsqueeze(1), dim=1)
         neg_scores = torch.sum(user_emb * neg_item_emb, dim=1)
+
+        if self.loss_func != 0: # 改进后的loss，score需要加上sigmoid(w_1 * scale + w_2 * shape + b)
+            pos_scores += torch.sigmoid(self.w1 * pos_scales + self.w2 * pos_shapes + self.bias)
+            neg_scores += torch.sigmoid(self.w1 * neg_scales + self.w2 * neg_shapes + self.bias)
+            
         loss = -torch.log(10e-6 + torch.sigmoid(pos_scores - neg_scores))
 
         return torch.mean(loss)

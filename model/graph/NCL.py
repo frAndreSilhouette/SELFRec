@@ -94,13 +94,13 @@ class NCL(GraphRecommender):
             if epoch >= 20:
                 self.e_step()
             for n, batch in enumerate(next_batch_pairwise(self.data, self.batch_size)):
-                user_idx, pos_idx, neg_idx, itts, scales, shapes = batch # 【这里修改】batch返回值多了itts, scales, shapes
+                user_idx, pos_idx, neg_idx, itts, pos_scales, pos_shapes, neg_scales, neg_shapes = batch # 【这里修改】batch返回值多了itts, scales, shapes
                 model.train()
                 rec_user_emb, rec_item_emb, emb_list  = model()
                 user_emb, pos_item_emb, neg_item_emb = rec_user_emb[user_idx], rec_item_emb[pos_idx], rec_item_emb[neg_idx]
                 # rec_loss = bpr_loss(user_emb, pos_item_emb, neg_item_emb)
 
-                rec_loss = quantile_bpr_loss(user_emb, pos_item_emb, neg_item_emb, pos_idx, neg_idx, itts, scales, shapes)
+                rec_loss = quantile_bpr_loss(user_emb, pos_item_emb, neg_item_emb, pos_idx, neg_idx, itts, pos_scales, pos_shapes, neg_scales, neg_shapes)
                 initial_emb = emb_list[0]
                 context_emb = emb_list[self.hyper_layers*2]
                 ssl_loss = self.ssl_layer_loss(context_emb,initial_emb,user_idx,pos_idx)
