@@ -6,6 +6,7 @@ from util.sampler import next_batch_pairwise
 from base.torch_interface import TorchGraphInterface
 from util.loss_torch import bpr_loss, l2_reg_loss, InfoNCE
 from util.loss_torch import QuantileBPRLoss
+import copy
 
 # Paper: Are graph augmentations necessary? simple graph contrastive learning for recommendation. SIGIR'22
 
@@ -44,7 +45,8 @@ class SimGCL(GraphRecommender):
             with torch.no_grad():
                 self.user_emb, self.item_emb = self.model()
             self.fast_evaluation(epoch)
-        self.user_emb, self.item_emb = self.best_user_emb, self.best_item_emb
+        self.user_emb, self.item_emb = self.best_user_emb, self.best_item_emb # 保存的已经是最佳模型的embedding
+        self.quantile_bpr_loss.load_state_dict(self.best_quantile_bpr_loss) # 【这里修改】恢复最优的quantile_bpr_loss参数
 
     def cal_cl_loss(self, idx):
         u_idx = torch.unique(torch.Tensor(idx[0]).type(torch.long)).cuda()
@@ -58,6 +60,7 @@ class SimGCL(GraphRecommender):
     def save(self):
         with torch.no_grad():
             self.best_user_emb, self.best_item_emb = self.model.forward()
+            self.best_quantile_bpr_loss = copy.deepcopy(self.quantile_bpr_loss.state_dict()) # 【这里修改】保存quantile_bpr_loss的最优参数
 
     def predict(self, u):
         u_str = u

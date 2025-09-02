@@ -40,7 +40,7 @@ if __name__ == '__main__':
     modified_models = ['NCL', 'SGL', 'SimGCL', 'XSimGCL']
     campus_ids = [10, 15, 34, 102, 143]
     # modified_models = ['XSimGCL']
-    # campus_ids = [143]
+    # campus_ids = [34]
 
     for campus_id in campus_ids:
         for model in modified_models:

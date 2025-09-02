@@ -124,10 +124,15 @@ class QuantileBPRLoss(nn.Module):
         pos_scores = torch.sum(user_emb * pos_item_emb * pos_weights.unsqueeze(1), dim=1)
         neg_scores = torch.sum(user_emb * neg_item_emb, dim=1)
 
-        if self.loss_func != 0: # 改进后的loss，score需要加上sigmoid(w_1 * scale + w_2 * shape + b)
-            pos_scores += torch.sigmoid(self.w1 * pos_scales + self.w2 * pos_shapes + self.bias)
-            neg_scores += torch.sigmoid(self.w1 * neg_scales + self.w2 * neg_shapes + self.bias)
-            
+        if self.loss_func != 0: # 改进后的loss，score需要加上scale和shape的信息
+            # # 【v9】score加上sigmoid(w_1 * scale + w_2 * shape + b)
+            # pos_scores += torch.sigmoid(self.w1 * pos_scales + self.w2 * pos_shapes + self.bias)
+            # neg_scores += torch.sigmoid(self.w1 * neg_scales + self.w2 * neg_shapes + self.bias)
+
+            # 【v10】score加上 w_1 * scale + w_2 * shape + b
+            pos_scores += self.w1 * pos_scales + self.w2 * pos_shapes + self.bias
+            neg_scores += self.w1 * neg_scales + self.w2 * neg_shapes + self.bias
+
         loss = -torch.log(10e-6 + torch.sigmoid(pos_scores - neg_scores))
 
         return torch.mean(loss)
