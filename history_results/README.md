@@ -32,8 +32,18 @@ v6: 将最后一周当成test set，将bpr损失改在init中，只考虑campus1
 
 v7: 将最后一周当成test set，将bpr损失改在init中，预测embedding乘5种权重（新predict函数），负样本预测权重为1e-6（防止都为0）
 
-v8: 将最后一周当成test set，将bpr损失改在init中，预测embedding乘5种权重（新predict函数），负样本预测权重为0（和v4，v6同样的处理方式，只是将单校区改成了全校区）
+**v8: 将最后一周当成test set，将bpr损失改在init中，预测embedding乘5种权重（新predict函数），负样本预测权重为0（和v4，v6同样的处理方式，只是将单校区改成了全校区）**
 
-v9: 在v4/6/8的基础上，score在embedding内积的基础上，加入sigmoid(w_1 * scale + w_2 * shape + b)表示商品异质性，五个校区
+**v9: 在v4/6/8的基础上，score在embedding内积的基础上，加入sigmoid(w_1 * scale + w_2 * shape + b)表示商品异质性，五个校区**
 
-v10：在v4/6/8的基础上，score在embedding内积的基础上，加入w_1 * scale + w_2 * shape + b表示商品异质性，五个校区；修复了没保存quantile_bpr_loss最优参数的bug
+v10：在v4/6/8的基础上，score在embedding内积的基础上，加入w_1 * scale + w_2 * shape + b表示商品异质性，五个校区；修复了没保存quantile_bpr_loss最优参数的bug（以下version均修复）
+
+**v11：在v9的基础上，商品异质性sigmoid(w_1 * scale + w_2 * shape + b)前面加入可学习权重参数self.hetero_weight**
+
+**v12: 在v9的基础上，商品异质性sigmoid(w_1 * scale + w_2 * shape + b)前面加入固定权重0.1**
+
+**v13: 不加商品一致性，和v8一样，只是修复了没保存quantile_bpr_loss最优参数的bug**
+
+**v14: 和v9一样，只是修复了没保存quantile_bpr_loss最优参数的bug**
+
+<!-- **v15: 在v9的基础上，商品异质性sigmoid(w_1 * scale + w_2 * shape + b)前面加入固定权重0.2** -->

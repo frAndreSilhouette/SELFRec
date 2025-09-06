@@ -56,7 +56,7 @@ class XSimGCL(GraphRecommender):
             # print(f"[DEBUG] epoch {epoch+1} self.quantile_bpr_loss parameters:", self.quantile_bpr_loss.w1, self.quantile_bpr_loss.w2, self.quantile_bpr_loss.bias)
         self.user_emb, self.item_emb = self.best_user_emb, self.best_item_emb # 保存的已经是最佳模型的embedding
         self.quantile_bpr_loss.load_state_dict(self.best_quantile_bpr_loss) # 【这里修改】恢复最优的quantile_bpr_loss参数
-
+        print(f"[DEBUG] self.quantile_bpr_loss parameters:", self.quantile_bpr_loss.w1, self.quantile_bpr_loss.w2, self.quantile_bpr_loss.bias, self.quantile_bpr_loss.hetero_weight)
     def cal_cl_loss(self, idx, user_view1,user_view2,item_view1,item_view2):
         u_idx = torch.unique(torch.Tensor(idx[0]).type(torch.long)).cuda()
         i_idx = torch.unique(torch.Tensor(idx[1]).type(torch.long)).cuda()

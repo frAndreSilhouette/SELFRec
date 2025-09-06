@@ -18,7 +18,8 @@ class SELFRec(object):
         print('Reading data and preprocessing...')
 
     def execute(self):
-        for loss_func in range(0, 6):
+        # for loss_func in range(0, 6):
+        for loss_func in [0, 3, 5]: # 其他几个loss function都不用管了
             # import the model module
             import_str = f"from model.{self.config['model']['type']}.{self.config['model']['name']} import {self.config['model']['name']}"
             exec(import_str)

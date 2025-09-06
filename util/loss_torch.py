@@ -24,6 +24,7 @@ class QuantileBPRLoss(nn.Module):
         self.w1 = nn.Parameter(torch.ones(1, device=self.device))
         self.w2 = nn.Parameter(torch.ones(1, device=self.device))
         self.bias = nn.Parameter(torch.zeros(1, device=self.device))
+        self.hetero_weight = nn.Parameter(torch.ones(1, device=self.device))
     
     def calculate_cdf(self, item_ids, days, scales, shapes, all_items: bool = True) -> torch.Tensor:
         """
@@ -125,14 +126,28 @@ class QuantileBPRLoss(nn.Module):
         neg_scores = torch.sum(user_emb * neg_item_emb, dim=1)
 
         if self.loss_func != 0: # 改进后的loss，score需要加上scale和shape的信息
-            # # 【v9】score加上sigmoid(w_1 * scale + w_2 * shape + b)
-            # pos_scores += torch.sigmoid(self.w1 * pos_scales + self.w2 * pos_shapes + self.bias)
-            # neg_scores += torch.sigmoid(self.w1 * neg_scales + self.w2 * neg_shapes + self.bias)
+            # # 【v8/v13】score不加东西
+            # pass
 
-            # 【v10】score加上 w_1 * scale + w_2 * shape + b
-            pos_scores += self.w1 * pos_scales + self.w2 * pos_shapes + self.bias
-            neg_scores += self.w1 * neg_scales + self.w2 * neg_shapes + self.bias
+            # 【v9/v14】score加上sigmoid(w_1 * scale + w_2 * shape + b)
+            pos_scores += torch.sigmoid(self.w1 * pos_scales + self.w2 * pos_shapes + self.bias)
+            neg_scores += torch.sigmoid(self.w1 * neg_scales + self.w2 * neg_shapes + self.bias)
 
+            # # 【v10】score加上 w_1 * scale + w_2 * shape + b
+            # pos_scores += self.w1 * pos_scales + self.w2 * pos_shapes + self.bias
+            # neg_scores += self.w1 * neg_scales + self.w2 * neg_shapes + self.bias
+            
+            # # 【v11】score加上hetero_weight * sigmoid(w_1 * scale + w_2 * shape + b), hetero_weight可学习
+            # pos_scores += self.hetero_weight * torch.sigmoid(self.w1 * pos_scales + self.w2 * pos_shapes + self.bias)
+            # neg_scores += self.hetero_weight * torch.sigmoid(self.w1 * neg_scales + self.w2 * neg_shapes + self.bias)
+
+            # # 【v12】score加上0.1 * sigmoid(w_1 * scale + w_2 * shape + b)
+            # pos_scores += 0.1 * torch.sigmoid(self.w1 * pos_scales + self.w2 * pos_shapes + self.bias)
+            # neg_scores += 0.1 * torch.sigmoid(self.w1 * neg_scales + self.w2 * neg_shapes + self.bias)
+            
+            # # 【v14】score加上0.2 * sigmoid(w_1 * scale + w_2 * shape + b)
+            # pos_scores += 0.2 * torch.sigmoid(self.w1 * pos_scales + self.w2 * pos_shapes + self.bias)
+            # neg_scores += 0.2 * torch.sigmoid(self.w1 * neg_scales + self.w2 * neg_shapes + self.bias)            
         loss = -torch.log(10e-6 + torch.sigmoid(pos_scores - neg_scores))
 
         return torch.mean(loss)

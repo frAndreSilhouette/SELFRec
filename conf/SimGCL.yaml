@@ -1,6 +1,6 @@
-training.set: ./dataset/campus_data/campus_143_train.txt
+training.set: ./dataset/campus_data/campus_10_train.txt
 
-test.set: ./dataset/campus_data/campus_143_test.txt
+test.set: ./dataset/campus_data/campus_10_test.txt
 
 model:
   name: SimGCL
@@ -20,4 +20,4 @@ SimGCL:
   lambda: 0.5
   eps: 0.1
 
-output: ./results/SimGCL/campus_143/
+output: ./results/SimGCL/campus_10/
