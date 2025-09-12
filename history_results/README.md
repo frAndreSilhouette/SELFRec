@@ -44,6 +44,6 @@ v10：在v4/6/8的基础上，score在embedding内积的基础上，加入w_1 * 
 
 **v13: 不加商品一致性，和v8一样，只是修复了没保存quantile_bpr_loss最优参数的bug**
 
-**v14: 和v9一样，只是修复了没保存quantile_bpr_loss最优参数的bug**
+<!-- **v14: 和v9一样，只是修复了没保存quantile_bpr_loss最优参数的bug** -->
 
 <!-- **v15: 在v9的基础上，商品异质性sigmoid(w_1 * scale + w_2 * shape + b)前面加入固定权重0.2** -->

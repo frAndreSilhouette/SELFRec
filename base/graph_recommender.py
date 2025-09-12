@@ -5,6 +5,7 @@ from time import strftime, localtime, time
 from data.loader import FileIO
 from os.path import abspath
 from util.evaluation import ranking_evaluation
+from datetime import datetime
 
 
 class GraphRecommender(Recommender):
@@ -13,7 +14,8 @@ class GraphRecommender(Recommender):
         self.data = Interaction(conf, training_set, test_set)
         self.bestPerformance = []
         self.topN = [int(num) for num in self.ranking]
-        self.max_N = max(self.topN) # 选最优模型是按照最大的top N来看的
+        # self.max_N = max(self.topN) # 选最优模型是按照最大的top N来看的
+        self.max_N = 10 # 选最优模型是按照top 10来看的
 
     def print_model_info(self, loss_func): # 【这里修改】增加了loss_func参数
         super(GraphRecommender, self).print_model_info(loss_func)
@@ -66,7 +68,8 @@ class GraphRecommender(Recommender):
             )
             line += '\n'
             self.recOutput.append(line)
-        current_time = strftime("%Y-%m-%d %H-%M-%S", localtime(time()))
+        # current_time = strftime("%Y-%m-%d %H-%M-%S", localtime(time()))
+        current_time = datetime.now().strftime("%Y-%m-%d %H-%M-%S-%f") # 精确到微秒
         out_dir = self.output
         # file_name = f"{self.config['model']['name']}_loss{loss_func}@{current_time}-top-{self.max_N}items.txt"
         # FileIO.write_file(out_dir, file_name, self.recOutput)

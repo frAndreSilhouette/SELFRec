@@ -1,6 +1,8 @@
 import os
 import re
 import pandas as pd
+from collections import defaultdict
+import numpy as np
 
 # root_dir = "./history_results/results7/"
 root_dir = "./results/"
@@ -39,7 +41,8 @@ for model in os.listdir(root_dir):
         if not os.path.isdir(campus_path):
             continue
 
-        loss_metrics = {}
+        # 改为支持同一 loss_id 多文件取均值
+        raw_loss_metrics = defaultdict(list)
         for fname in os.listdir(campus_path):
             if fname.endswith("-performance.txt"):
                 match = pattern_loss.search(fname)
@@ -47,8 +50,25 @@ for model in os.listdir(root_dir):
                     continue
                 loss_id = int(match.group(1))
                 filepath = os.path.join(campus_path, fname)
-                loss_metrics[loss_id] = parse_performance_file(filepath)
+                raw_loss_metrics[loss_id].append(parse_performance_file(filepath))
 
+        # 取均值
+        loss_metrics = {}
+        for loss_id, metrics_list in raw_loss_metrics.items():
+            merged = {}
+            for metrics in metrics_list:
+                for topk, vals in metrics.items():
+                    if topk not in merged:
+                        merged[topk] = defaultdict(list)
+                    for metric, v in vals.items():
+                        merged[topk][metric].append(v)
+            # 对每个 metric 取均值
+            loss_metrics[loss_id] = {
+                topk: {m: np.mean(vs) for m, vs in mdict.items()}
+                for topk, mdict in merged.items()
+            }
+
+        # 基于均值做比较
         for topk in next(iter(loss_metrics.values())).keys():
             baseline = loss_metrics.get(0, {}).get(topk, {})
             if not baseline:
@@ -75,47 +95,14 @@ for model in os.listdir(root_dir):
                             "RelDiff(%)": rel_diff
                         })
 
-
 df = pd.DataFrame(results, columns=[
     "Model", "Campus", "Loss", "TopK", "Metric",
     "Baseline(loss0)", "Value", "AbsDiff", "RelDiff(%)"
 ])
 
 # 排序
-df = df.sort_values(by=["Model", "Campus", "Loss"],
-                    ascending=[True, True, True])
+df = df.sort_values(by=["Model", "Campus", "Loss"], ascending=[True, True, True])
 
-# 仍然保存干净的 CSV
+# 保存 CSV
 df.to_csv(f"{root_dir}result_summary.csv", index=False, encoding="utf-8-sig")
 print(f"结果已保存到 {root_dir}result_summary.csv")
-
-# # ====== 命令行美观打印 ======
-# # 打印表头
-# headers = ["Model", "Campus", "Loss", "TopK", "Metric",
-#            "Baseline(loss0)", "Value", "AbsDiff", "RelDiff(%)"]
-
-# col_widths = [max(len(str(x)) for x in [col] + df[col].astype(str).tolist())
-#               for col in headers]
-
-# header_line = "  ".join(h.ljust(w) for h, w in zip(headers, col_widths))
-# print(header_line)
-# print("-" * len(header_line))
-
-# # 打印数据行
-# for _, row in df.iterrows():
-#     row_strs = [
-#         str(row["Model"]).ljust(col_widths[0]),
-#         str(row["Campus"]).ljust(col_widths[1]),
-#         str(row["Loss"]).ljust(col_widths[2]),
-#         str(row["TopK"]).ljust(col_widths[3]),
-#         str(row["Metric"]).ljust(col_widths[4]),
-#         f"{row['Baseline(loss0)']:.5f}".ljust(col_widths[5]),
-#         f"{row['Value']:.5f}".ljust(col_widths[6]),
-#         f"{row['AbsDiff']:.5f}".ljust(col_widths[7]),
-#         f"{row['RelDiff(%)']:.2f}%".ljust(col_widths[8]),
-#     ]
-#     line = "  ".join(row_strs)
-#     if row["RelDiff(%)"] > 0:  # 提升 → 红色
-#         print(f"\033[91m{line}\033[0m")
-#     else:
-#         print(line)

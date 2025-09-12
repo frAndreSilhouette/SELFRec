@@ -38,30 +38,28 @@ if __name__ == '__main__':
 
     # model = input('Please enter the model you want to run:')
     modified_models = ['NCL', 'SGL', 'SimGCL', 'XSimGCL']
-    campus_ids = [10, 15, 34, 102, 143]
+    # campus_ids = [10, 15, 34, 102, 143]
     # modified_models = ['XSimGCL']
-    # campus_ids = [34]
+    campus_ids = [143]
 
-    for campus_id in campus_ids:
-        for model in modified_models:
-            print('=' * 80)
-            print(f"Running {model} on campus {campus_id}...")
-            
-            yaml_path = f'./conf/{model}.yaml'
-            # 直接修改 yaml 文件内容
-            with open(yaml_path, 'r', encoding='utf-8') as f:
-                yaml_str = re.sub(r"campus_(\*|\d+)", f"campus_{campus_id}", f.read())
-            with open(yaml_path, 'w', encoding='utf-8') as f:
-                f.write(yaml_str)   
+    rep = 5
+    for _ in range(rep):
+        print(f"Repetition {_}")
+        for campus_id in campus_ids:
+            for model in modified_models:
+                print('=' * 80)
+                print(f"Running {model} on campus {campus_id}...") 
+                
+                yaml_path = f'./conf/{model}_{campus_id}.yaml'
 
-            s = time.time()
-            all_models = sum(models.values(), [])
-            if model in all_models:
-                conf = ModelConf(yaml_path)
-                rec = SELFRec(conf)
-                rec.execute()
-                e = time.time()
-                print(f"Running time: {e - s:.2f} s")
-            else:
-                print('Wrong model name!')
-                exit(-1)
+                s = time.time()
+                all_models = sum(models.values(), [])
+                if model in all_models:
+                    conf = ModelConf(yaml_path)
+                    rec = SELFRec(conf)
+                    rec.execute()
+                    e = time.time()
+                    print(f"Running time: {e - s:.2f} s")
+                else:
+                    print('Wrong model name!')
+                    exit(-1)
