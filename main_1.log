@@ -1,0 +1,2009 @@
+nohup: 忽略输入
+/mnt/workspace/SELFRec/base/torch_interface.py:13: UserWarning: torch.sparse.SparseTensor(indices, values, shape, *, device=) is deprecated.  Please use torch.sparse_coo_tensor(indices, values, shape, dtype=, device=). (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:644.)
+  return torch.sparse.FloatTensor(i, v, coo.shape)
+/root/miniconda3/envs/myenv_py39/lib/python3.9/site-packages/_distutils_hack/__init__.py:55: UserWarning: Reliance on distutils from stdlib is deprecated. Users must rely on setuptools to provide the distutils module. Avoid importing distutils or import setuptools first, and avoid setting SETUPTOOLS_USE_DISTUTILS=stdlib. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+================================================================================
+   SELFRec: A library for self-supervised recommendation.   
+================================================================================
+Available Models
+--------------------------------------------------------------------------------
+Graph-Based Baseline Models:
+   LightGCN   DirectAU   MF   UserKNN   ItemKNN
+--------------------------------------------------------------------------------
+Self-Supervised Graph-Based Models:
+   SGL   SimGCL   SEPT   MHCN   BUIR   SelfCF   SSL4Rec   XSimGCL   NCL   MixGCF
+--------------------------------------------------------------------------------
+Sequential Baseline Models:
+   SASRec
+--------------------------------------------------------------------------------
+Self-Supervised Sequential Models:
+   CL4SRec   BERT4Rec
+--------------------------------------------------------------------------------
+================================================================================
+Repetition 0: Running NCL on campus 10...
+Reading data and preprocessing...
+[DEBUG] self.loss_func: 0
+Model: NCL
+Loss Function: 0
+Training Set: /mnt/workspace/SELFRec/dataset/campus_data/campus_10_train.txt
+Test Set: /mnt/workspace/SELFRec/dataset/campus_data/campus_10_test.txt
+Embedding Dimension: 64
+Maximum Epoch: 100
+Learning Rate: 0.001
+Batch Size: 2048
+Regularization Parameter: 0.0001
+Specific parameters: n_layer:3  ssl_reg:1e-6  proto_reg:1e-7  tau:0.05  hyper_layers:1  alpha:1.5  num_clusters:100
+Training Set Size: (user number: 11767, item number: 2266, interaction number: 386207)
+Test Set Size: (user number: 4842, item number: 1714, interaction number: 32560)
+================================================================================
+Initializing and building model...
+Training Model...
+training: 1 batch 100 rec_loss: 0.6926071643829346 ssl_loss 0.0005084880976937711
+training: 2 batch 100 rec_loss: 0.6692638397216797 ssl_loss 0.0023636426776647568
+training: 3 batch 100 rec_loss: 0.42359697818756104 ssl_loss 0.014509647153317928
+training: 4 batch 100 rec_loss: 0.2738761305809021 ssl_loss 0.014785176143050194
+training: 5 batch 100 rec_loss: 0.2275974601507187 ssl_loss 0.01269605290144682
+training: 6 batch 100 rec_loss: 0.19070440530776978 ssl_loss 0.011082226410508156
+training: 7 batch 100 rec_loss: 0.16660621762275696 ssl_loss 0.009838311932981014
+training: 8 batch 100 rec_loss: 0.16034573316574097 ssl_loss 0.009024057537317276
+training: 9 batch 100 rec_loss: 0.12939094007015228 ssl_loss 0.008419427089393139
+training: 10 batch 100 rec_loss: 0.13080444931983948 ssl_loss 0.007797804661095142
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 10, Hit Ratio: 0.24277, Precision: 0.11442, Recall: 0.3044, NDCG: 0.26682
+*Best Performance*
+Epoch: 10, Hit Ratio: 0.24277, Precision: 0.11442, Recall: 0.3044, NDCG: 0.26682
+--------------------------------------------------------------------------------
+training: 11 batch 100 rec_loss: 0.13559794425964355 ssl_loss 0.007343771867454052
+training: 12 batch 100 rec_loss: 0.1059439480304718 ssl_loss 0.007045827340334654
+training: 13 batch 100 rec_loss: 0.10190226137638092 ssl_loss 0.0066497051157057285
+training: 14 batch 100 rec_loss: 0.10140334069728851 ssl_loss 0.00656127417460084
+training: 15 batch 100 rec_loss: 0.09900977462530136 ssl_loss 0.006229843944311142
+training: 16 batch 100 rec_loss: 0.09092089533805847 ssl_loss 0.006023614667356014
+training: 17 batch 100 rec_loss: 0.0963892862200737 ssl_loss 0.005844419822096825
+training: 18 batch 100 rec_loss: 0.07308274507522583 ssl_loss 0.005570441950112581
+training: 19 batch 100 rec_loss: 0.08716845512390137 ssl_loss 0.005328334867954254
+training: 20 batch 100 rec_loss: 0.0813140869140625 ssl_loss 0.005159927066415548
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 20, Hit Ratio: 0.27007, Precision: 0.12728, Recall: 0.33883, NDCG: 0.30151
+*Best Performance*
+Epoch: 20, Hit Ratio: 0.27007, Precision: 0.12728, Recall: 0.33883, NDCG: 0.30151
+--------------------------------------------------------------------------------
+training: 21 batch 100 rec_loss: 0.080863356590271 ssl_loss 0.005050002131611109 proto_loss 0.0015305530978366733
+training: 22 batch 100 rec_loss: 0.0785011351108551 ssl_loss 0.0049103377386927605 proto_loss 0.0015259309438988566
+training: 23 batch 100 rec_loss: 0.0619569830596447 ssl_loss 0.004738763440400362 proto_loss 0.0015272344462573528
+training: 24 batch 100 rec_loss: 0.06482446193695068 ssl_loss 0.004792788065969944 proto_loss 0.0015310910530388355
+training: 25 batch 100 rec_loss: 0.07113619148731232 ssl_loss 0.004468688275665045 proto_loss 0.0015362408012151718
+training: 26 batch 100 rec_loss: 0.06870439648628235 ssl_loss 0.004383576102554798 proto_loss 0.0015178447356447577
+training: 27 batch 100 rec_loss: 0.05852358788251877 ssl_loss 0.00417998805642128 proto_loss 0.0015247449046000838
+training: 28 batch 100 rec_loss: 0.06243424862623215 ssl_loss 0.0039781020022928715 proto_loss 0.0015110569074749947
+training: 29 batch 100 rec_loss: 0.06617141515016556 ssl_loss 0.004085737280547619 proto_loss 0.0015162433264777064
+training: 30 batch 100 rec_loss: 0.04816325008869171 ssl_loss 0.003941304516047239 proto_loss 0.0015221378998830914
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 30, Hit Ratio: 0.28628, Precision: 0.13492, Recall: 0.35955, NDCG: 0.32013
+*Best Performance*
+Epoch: 30, Hit Ratio: 0.28628, Precision: 0.13492, Recall: 0.35955, NDCG: 0.32013
+--------------------------------------------------------------------------------
+training: 31 batch 100 rec_loss: 0.061099741607904434 ssl_loss 0.0038901909720152617 proto_loss 0.0015232957666739821
+training: 32 batch 100 rec_loss: 0.05870318412780762 ssl_loss 0.0037612386513501406 proto_loss 0.0015189447440207005
+training: 33 batch 100 rec_loss: 0.05431731790304184 ssl_loss 0.0036349918227642775 proto_loss 0.001515868934802711
+training: 34 batch 100 rec_loss: 0.0597294345498085 ssl_loss 0.0036410577595233917 proto_loss 0.001522523001767695
+training: 35 batch 100 rec_loss: 0.04547625780105591 ssl_loss 0.0035098374355584383 proto_loss 0.0015238715568557382
+training: 36 batch 100 rec_loss: 0.05866723135113716 ssl_loss 0.003423214890062809 proto_loss 0.0015146746300160885
+training: 37 batch 100 rec_loss: 0.05433855950832367 ssl_loss 0.003306436585262418 proto_loss 0.0015370725886896253
+training: 38 batch 100 rec_loss: 0.053012050688266754 ssl_loss 0.0032522697001695633 proto_loss 0.0015338420635089278
+training: 39 batch 100 rec_loss: 0.04520254582166672 ssl_loss 0.0031899353489279747 proto_loss 0.0015264181420207024
+training: 40 batch 100 rec_loss: 0.042370960116386414 ssl_loss 0.003111892146989703 proto_loss 0.0015247411793097854
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 40, Hit Ratio: 0.29755, Precision: 0.14023, Recall: 0.37396, NDCG: 0.3329
+*Best Performance*
+Epoch: 40, Hit Ratio: 0.29755, Precision: 0.14023, Recall: 0.37396, NDCG: 0.3329
+--------------------------------------------------------------------------------
+training: 41 batch 100 rec_loss: 0.05371647700667381 ssl_loss 0.0030263764783740044 proto_loss 0.001524776336736977
+training: 42 batch 100 rec_loss: 0.046263255178928375 ssl_loss 0.0029396305326372385 proto_loss 0.0015358312521129847
+training: 43 batch 100 rec_loss: 0.042177945375442505 ssl_loss 0.003000263124704361 proto_loss 0.001541799632832408
+training: 44 batch 100 rec_loss: 0.04242011532187462 ssl_loss 0.0028632082976400852 proto_loss 0.0015299019869416952
+training: 45 batch 100 rec_loss: 0.03601207584142685 ssl_loss 0.002827818738296628 proto_loss 0.0015423818258568645
+training: 46 batch 100 rec_loss: 0.04247544705867767 ssl_loss 0.002729459898546338 proto_loss 0.0015176590532064438
+training: 47 batch 100 rec_loss: 0.03565886616706848 ssl_loss 0.002779402071610093 proto_loss 0.0015309903537854552
+training: 48 batch 100 rec_loss: 0.03563425689935684 ssl_loss 0.002795350970700383 proto_loss 0.001548189902678132
+training: 49 batch 100 rec_loss: 0.04589000344276428 ssl_loss 0.0026123933494091034 proto_loss 0.001532855094410479
+training: 50 batch 100 rec_loss: 0.04207105189561844 ssl_loss 0.0026255131233483553 proto_loss 0.0015329496236518025
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 50, Hit Ratio: 0.30557, Precision: 0.14401, Recall: 0.38644, NDCG: 0.34324
+*Best Performance*
+Epoch: 50, Hit Ratio: 0.30557, Precision: 0.14401, Recall: 0.38644, NDCG: 0.34324
+--------------------------------------------------------------------------------
+training: 51 batch 100 rec_loss: 0.03542444854974747 ssl_loss 0.002586357994005084 proto_loss 0.001533078495413065
+training: 52 batch 100 rec_loss: 0.03588388115167618 ssl_loss 0.0025547167751938105 proto_loss 0.0015525372000411153
+training: 53 batch 100 rec_loss: 0.03407159820199013 ssl_loss 0.002482816344127059 proto_loss 0.0015420346753671765
+training: 54 batch 100 rec_loss: 0.04108744114637375 ssl_loss 0.0024574571289122105 proto_loss 0.0015460689319297671
+training: 55 batch 100 rec_loss: 0.03006543591618538 ssl_loss 0.0024942371528595686 proto_loss 0.0015407234895974398
+training: 56 batch 100 rec_loss: 0.030651291832327843 ssl_loss 0.0024312487803399563 proto_loss 0.001552408211864531
+training: 57 batch 100 rec_loss: 0.038881830871105194 ssl_loss 0.002316751517355442 proto_loss 0.0015482066664844751
+training: 58 batch 100 rec_loss: 0.033550381660461426 ssl_loss 0.002326313406229019 proto_loss 0.001546697341836989
+training: 59 batch 100 rec_loss: 0.03377268463373184 ssl_loss 0.0022966298274695873 proto_loss 0.0015381758566945791
+training: 60 batch 100 rec_loss: 0.03674250841140747 ssl_loss 0.0022813358809798956 proto_loss 0.0015534877311438322
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 60, Hit Ratio: 0.31358, Precision: 0.14779, Recall: 0.39422, NDCG: 0.35231
+*Best Performance*
+Epoch: 60, Hit Ratio: 0.31358, Precision: 0.14779, Recall: 0.39422, NDCG: 0.35231
+--------------------------------------------------------------------------------
+training: 61 batch 100 rec_loss: 0.033924542367458344 ssl_loss 0.002252295846119523 proto_loss 0.0015486783813685179
+training: 62 batch 100 rec_loss: 0.030920974910259247 ssl_loss 0.002243592170998454 proto_loss 0.0015556152211502194
+training: 63 batch 100 rec_loss: 0.02278928831219673 ssl_loss 0.002170474035665393 proto_loss 0.0015613185241818428
+training: 64 batch 100 rec_loss: 0.0223936066031456 ssl_loss 0.002084126928821206 proto_loss 0.0015504701295867562
+training: 65 batch 100 rec_loss: 0.03172065317630768 ssl_loss 0.0020756979938596487 proto_loss 0.0015558492159470916
+training: 66 batch 100 rec_loss: 0.019128797575831413 ssl_loss 0.002058606594800949 proto_loss 0.0015660753706470132
+training: 67 batch 100 rec_loss: 0.03228797763586044 ssl_loss 0.0020110008772462606 proto_loss 0.00155408657155931
+training: 68 batch 100 rec_loss: 0.02126622386276722 ssl_loss 0.0019894877914339304 proto_loss 0.0015456542605534196
+training: 69 batch 100 rec_loss: 0.03750376030802727 ssl_loss 0.0020272608380764723 proto_loss 0.001559538533911109
+training: 70 batch 100 rec_loss: 0.022044267505407333 ssl_loss 0.0019773109816014767 proto_loss 0.001568882609717548
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 70, Hit Ratio: 0.32095, Precision: 0.15126, Recall: 0.40398, NDCG: 0.35961
+*Best Performance*
+Epoch: 70, Hit Ratio: 0.32095, Precision: 0.15126, Recall: 0.40398, NDCG: 0.35961
+--------------------------------------------------------------------------------
+training: 71 batch 100 rec_loss: 0.02524755895137787 ssl_loss 0.001995558151975274 proto_loss 0.001560669974423945
+training: 72 batch 100 rec_loss: 0.028386062011122704 ssl_loss 0.001887899823486805 proto_loss 0.0015679133357480168
+training: 73 batch 100 rec_loss: 0.024740835651755333 ssl_loss 0.0019465641817077994 proto_loss 0.001583289122208953
+training: 74 batch 100 rec_loss: 0.027041859924793243 ssl_loss 0.0018815939547494054 proto_loss 0.0015634143492206931
+training: 75 batch 100 rec_loss: 0.029031846672296524 ssl_loss 0.0019008842064067721 proto_loss 0.0015740027884021401
+training: 76 batch 100 rec_loss: 0.02202548086643219 ssl_loss 0.001811194233596325 proto_loss 0.001558486488647759
+training: 77 batch 100 rec_loss: 0.024041855707764626 ssl_loss 0.0018065650947391987 proto_loss 0.0015674730530008674
+training: 78 batch 100 rec_loss: 0.023164741694927216 ssl_loss 0.0017675638664513826 proto_loss 0.0015689581632614136
+training: 79 batch 100 rec_loss: 0.018996085971593857 ssl_loss 0.0018349784659221768 proto_loss 0.0015564793720841408
+training: 80 batch 100 rec_loss: 0.029899494722485542 ssl_loss 0.0017662501195445657 proto_loss 0.0015732105821371078
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 80, Hit Ratio: 0.32787, Precision: 0.15452, Recall: 0.41282, NDCG: 0.36603
+*Best Performance*
+Epoch: 80, Hit Ratio: 0.32787, Precision: 0.15452, Recall: 0.41282, NDCG: 0.36603
+--------------------------------------------------------------------------------
+training: 81 batch 100 rec_loss: 0.025315523147583008 ssl_loss 0.0017220869194716215 proto_loss 0.0015821742126718163
+training: 82 batch 100 rec_loss: 0.020014651119709015 ssl_loss 0.001688120304606855 proto_loss 0.0015807230956852436
+training: 83 batch 100 rec_loss: 0.018284521996974945 ssl_loss 0.0017263421323150396 proto_loss 0.0015726659912616014
+training: 84 batch 100 rec_loss: 0.022563530132174492 ssl_loss 0.0016392376273870468 proto_loss 0.001584920915775001
+training: 85 batch 100 rec_loss: 0.024425391107797623 ssl_loss 0.0016702077118679881 proto_loss 0.001570754568092525
+training: 86 batch 100 rec_loss: 0.021819856017827988 ssl_loss 0.0016901317285373807 proto_loss 0.0015847297618165612
+training: 87 batch 100 rec_loss: 0.020097218453884125 ssl_loss 0.0016241691773757339 proto_loss 0.0015857667895033956
+training: 88 batch 100 rec_loss: 0.014663171954452991 ssl_loss 0.0016163437394425273 proto_loss 0.001577908406034112
+training: 89 batch 100 rec_loss: 0.023921236395835876 ssl_loss 0.001602549571543932 proto_loss 0.0015766698634251952
+training: 90 batch 100 rec_loss: 0.017730310559272766 ssl_loss 0.0015590667026117444 proto_loss 0.0015708018327131867
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 90, Hit Ratio: 0.33313, Precision: 0.157, Recall: 0.41949, NDCG: 0.37178
+*Best Performance*
+Epoch: 90, Hit Ratio: 0.33313, Precision: 0.157, Recall: 0.41949, NDCG: 0.37178
+--------------------------------------------------------------------------------
+training: 91 batch 100 rec_loss: 0.017091434448957443 ssl_loss 0.0015556428115814924 proto_loss 0.001582302269525826
+training: 92 batch 100 rec_loss: 0.01891900785267353 ssl_loss 0.0015997475711628795 proto_loss 0.0015784240094944835
+training: 93 batch 100 rec_loss: 0.02631489932537079 ssl_loss 0.0015827924944460392 proto_loss 0.0015688545536249876
+training: 94 batch 100 rec_loss: 0.014766323380172253 ssl_loss 0.001577559276483953 proto_loss 0.0015971637330949306
+training: 95 batch 100 rec_loss: 0.01772565394639969 ssl_loss 0.0015359914395958185 proto_loss 0.0015830195043236017
+training: 96 batch 100 rec_loss: 0.02093690261244774 ssl_loss 0.0015251417644321918 proto_loss 0.0015830467455089092
+training: 97 batch 100 rec_loss: 0.015428285114467144 ssl_loss 0.0015354262432083488 proto_loss 0.0015833227662369609
+training: 98 batch 100 rec_loss: 0.01929377019405365 ssl_loss 0.0014953961363062263 proto_loss 0.0015904414467513561
+training: 99 batch 100 rec_loss: 0.016276855021715164 ssl_loss 0.00151896255556494 proto_loss 0.0015718890354037285
+training: 100 batch 100 rec_loss: 0.016945479437708855 ssl_loss 0.001454279525205493 proto_loss 0.0015781013062223792
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 100, Hit Ratio: 0.33716, Precision: 0.1589, Recall: 0.42363, NDCG: 0.37595
+*Best Performance*
+Epoch: 100, Hit Ratio: 0.33716, Precision: 0.1589, Recall: 0.42363, NDCG: 0.37595
+--------------------------------------------------------------------------------
+[DEBUG] self.quantile_bpr_loss parameters: Parameter containing:
+tensor([1.], device='cuda:0', requires_grad=True) Parameter containing:
+tensor([1.], device='cuda:0', requires_grad=True) Parameter containing:
+tensor([0.], device='cuda:0', requires_grad=True) Parameter containing:
+tensor([1.], device='cuda:0', requires_grad=True)
+Testing...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+Evaluating...
+The result of NCL:
+Top 3
+Hit Ratio:0.17261
+Precision:0.27117
+Recall:0.25607
+NDCG:0.34919
+Top 5
+Hit Ratio:0.23519
+Precision:0.22169
+Recall:0.32397
+NDCG:0.35446
+Top 10
+Hit Ratio:0.33716
+Precision:0.1589
+Recall:0.42363
+NDCG:0.37595
+Top 20
+Hit Ratio:0.33716
+Precision:0.07945
+Recall:0.42363
+NDCG:0.36676
+
+
+
+
+
+
+
+
+
+[DEBUG] self.loss_func: 3
+Model: NCL
+Loss Function: 3
+Training Set: /mnt/workspace/SELFRec/dataset/campus_data/campus_10_train.txt
+Test Set: /mnt/workspace/SELFRec/dataset/campus_data/campus_10_test.txt
+Embedding Dimension: 64
+Maximum Epoch: 100
+Learning Rate: 0.001
+Batch Size: 2048
+Regularization Parameter: 0.0001
+Specific parameters: n_layer:3  ssl_reg:1e-6  proto_reg:1e-7  tau:0.05  hyper_layers:1  alpha:1.5  num_clusters:100
+Training Set Size: (user number: 11767, item number: 2266, interaction number: 386207)
+Test Set Size: (user number: 4842, item number: 1714, interaction number: 32560)
+================================================================================
+Initializing and building model...
+Training Model...
+training: 1 batch 100 rec_loss: 0.6928530931472778 ssl_loss 0.0003694470215123147
+training: 2 batch 100 rec_loss: 0.6884301900863647 ssl_loss 0.000588023685850203
+training: 3 batch 100 rec_loss: 0.5770226716995239 ssl_loss 0.008062876760959625
+training: 4 batch 100 rec_loss: 0.3473881483078003 ssl_loss 0.013553068041801453
+training: 5 batch 100 rec_loss: 0.2582120895385742 ssl_loss 0.01209014281630516
+training: 6 batch 100 rec_loss: 0.2359464466571808 ssl_loss 0.010200374759733677
+training: 7 batch 100 rec_loss: 0.19621820747852325 ssl_loss 0.009067259728908539
+training: 8 batch 100 rec_loss: 0.1750459372997284 ssl_loss 0.00854554958641529
+training: 9 batch 100 rec_loss: 0.1796645075082779 ssl_loss 0.007928888313472271
+training: 10 batch 100 rec_loss: 0.1512576937675476 ssl_loss 0.00741339847445488
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 10, Hit Ratio: 0.24036, Precision: 0.11328, Recall: 0.30375, NDCG: 0.26794
+*Best Performance*
+Epoch: 10, Hit Ratio: 0.24036, Precision: 0.11328, Recall: 0.30375, NDCG: 0.26794
+--------------------------------------------------------------------------------
+training: 11 batch 100 rec_loss: 0.13482016324996948 ssl_loss 0.007067016325891018
+training: 12 batch 100 rec_loss: 0.13321344554424286 ssl_loss 0.006554088555276394
+training: 13 batch 100 rec_loss: 0.11685749888420105 ssl_loss 0.006404268555343151
+training: 14 batch 100 rec_loss: 0.1173059344291687 ssl_loss 0.006001316476613283
+training: 15 batch 100 rec_loss: 0.10378153622150421 ssl_loss 0.0058848122134804726
+training: 16 batch 100 rec_loss: 0.08907550573348999 ssl_loss 0.0055972314439713955
+training: 17 batch 100 rec_loss: 0.11197900027036667 ssl_loss 0.005348337814211845
+training: 18 batch 100 rec_loss: 0.08534885942935944 ssl_loss 0.0051903496496379375
+training: 19 batch 100 rec_loss: 0.09248926490545273 ssl_loss 0.005045298021286726
+training: 20 batch 100 rec_loss: 0.07920995354652405 ssl_loss 0.004773028194904327
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 20, Hit Ratio: 0.27125, Precision: 0.12784, Recall: 0.34171, NDCG: 0.30375
+*Best Performance*
+Epoch: 20, Hit Ratio: 0.27125, Precision: 0.12784, Recall: 0.34171, NDCG: 0.30375
+--------------------------------------------------------------------------------
+training: 21 batch 100 rec_loss: 0.09086702764034271 ssl_loss 0.0048178741708397865 proto_loss 0.0015240029897540808
+training: 22 batch 100 rec_loss: 0.07642418146133423 ssl_loss 0.004506255965679884 proto_loss 0.001510616042651236
+training: 23 batch 100 rec_loss: 0.07882603257894516 ssl_loss 0.004323703236877918 proto_loss 0.0015021890867501497
+training: 24 batch 100 rec_loss: 0.06751783192157745 ssl_loss 0.004265747033059597 proto_loss 0.0015102879842743278
+training: 25 batch 100 rec_loss: 0.07585455477237701 ssl_loss 0.004141778219491243 proto_loss 0.0015121178003028035
+training: 26 batch 100 rec_loss: 0.07125557959079742 ssl_loss 0.004119581542909145 proto_loss 0.0015070203226059675
+training: 27 batch 100 rec_loss: 0.06283175945281982 ssl_loss 0.003963609226047993 proto_loss 0.0015185109805315733
+training: 28 batch 100 rec_loss: 0.06337132304906845 ssl_loss 0.0038248670753091574 proto_loss 0.0015131599502637982
+training: 29 batch 100 rec_loss: 0.06342287361621857 ssl_loss 0.003785250475630164 proto_loss 0.0015153003623709083
+training: 30 batch 100 rec_loss: 0.05177362263202667 ssl_loss 0.0037538481410592794 proto_loss 0.0015262647066265345
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 30, Hit Ratio: 0.28593, Precision: 0.13476, Recall: 0.35981, NDCG: 0.32162
+*Best Performance*
+Epoch: 30, Hit Ratio: 0.28593, Precision: 0.13476, Recall: 0.35981, NDCG: 0.32162
+--------------------------------------------------------------------------------
+training: 31 batch 100 rec_loss: 0.06314623355865479 ssl_loss 0.003582707606256008 proto_loss 0.001516124582849443
+training: 32 batch 100 rec_loss: 0.05546381697058678 ssl_loss 0.00343416933901608 proto_loss 0.001520746503956616
+training: 33 batch 100 rec_loss: 0.05074530094861984 ssl_loss 0.0033679683692753315 proto_loss 0.0015053529059514403
+training: 34 batch 100 rec_loss: 0.057967476546764374 ssl_loss 0.003297665622085333 proto_loss 0.0015104166232049465
+training: 35 batch 100 rec_loss: 0.06039079651236534 ssl_loss 0.003131247591227293 proto_loss 0.0014922883128747344
+training: 36 batch 100 rec_loss: 0.046653591096401215 ssl_loss 0.00319374050013721 proto_loss 0.0015024080639705062
+training: 37 batch 100 rec_loss: 0.04882674664258957 ssl_loss 0.00321023678407073 proto_loss 0.0014985313173383474
+training: 38 batch 100 rec_loss: 0.042581602931022644 ssl_loss 0.003045459045097232 proto_loss 0.001511701731942594
+training: 39 batch 100 rec_loss: 0.04225357621908188 ssl_loss 0.0029762699268758297 proto_loss 0.0015196438180282712
+training: 40 batch 100 rec_loss: 0.05161840096116066 ssl_loss 0.00291436561383307 proto_loss 0.0015158463502302766
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 40, Hit Ratio: 0.29974, Precision: 0.14126, Recall: 0.37762, NDCG: 0.3362
+*Best Performance*
+Epoch: 40, Hit Ratio: 0.29974, Precision: 0.14126, Recall: 0.37762, NDCG: 0.3362
+--------------------------------------------------------------------------------
+training: 41 batch 100 rec_loss: 0.04262623190879822 ssl_loss 0.0028211951721459627 proto_loss 0.001504807616584003
+training: 42 batch 100 rec_loss: 0.04401601478457451 ssl_loss 0.0028290313202887774 proto_loss 0.0015117862494662404
+training: 43 batch 100 rec_loss: 0.0504135936498642 ssl_loss 0.002876033540815115 proto_loss 0.0015280978986993432
+training: 44 batch 100 rec_loss: 0.04735000059008598 ssl_loss 0.002695673843845725 proto_loss 0.001513159368187189
+training: 45 batch 100 rec_loss: 0.042569324374198914 ssl_loss 0.0026897690258920193 proto_loss 0.0015054813120514154
+training: 46 batch 100 rec_loss: 0.04379894584417343 ssl_loss 0.0025953694712370634 proto_loss 0.0014961884589865804
+training: 47 batch 100 rec_loss: 0.04752844199538231 ssl_loss 0.0025265130680054426 proto_loss 0.0015000586863607168
+training: 48 batch 100 rec_loss: 0.04257424175739288 ssl_loss 0.0024942695163190365 proto_loss 0.0015153981512412429
+training: 49 batch 100 rec_loss: 0.035081446170806885 ssl_loss 0.002518105087801814 proto_loss 0.0015053125098347664
+training: 50 batch 100 rec_loss: 0.037931010127067566 ssl_loss 0.002501529175788164 proto_loss 0.0015018463600426912
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 50, Hit Ratio: 0.30806, Precision: 0.14519, Recall: 0.38894, NDCG: 0.34613
+*Best Performance*
+Epoch: 50, Hit Ratio: 0.30806, Precision: 0.14519, Recall: 0.38894, NDCG: 0.34613
+--------------------------------------------------------------------------------
+training: 51 batch 100 rec_loss: 0.039168234914541245 ssl_loss 0.002483764663338661 proto_loss 0.0015002182917669415
+training: 52 batch 100 rec_loss: 0.04017840698361397 ssl_loss 0.002426611026749015 proto_loss 0.0014951854245737195
+training: 53 batch 100 rec_loss: 0.03576728329062462 ssl_loss 0.0023053816985338926 proto_loss 0.0015200707130134106
+training: 54 batch 100 rec_loss: 0.03808581084012985 ssl_loss 0.0023272563703358173 proto_loss 0.001519243000075221
+training: 55 batch 100 rec_loss: 0.04004817083477974 ssl_loss 0.002168869599699974 proto_loss 0.0015165196964517236
+training: 56 batch 100 rec_loss: 0.03335568308830261 ssl_loss 0.0022247747983783484 proto_loss 0.0015219430206343532
+training: 57 batch 100 rec_loss: 0.0333666168153286 ssl_loss 0.0021824531722813845 proto_loss 0.0015282273525372148
+training: 58 batch 100 rec_loss: 0.03553515672683716 ssl_loss 0.002152124186977744 proto_loss 0.0015156264416873455
+training: 59 batch 100 rec_loss: 0.03003777004778385 ssl_loss 0.0021524152252823114 proto_loss 0.0015125303762033582
+training: 60 batch 100 rec_loss: 0.02787884697318077 ssl_loss 0.002145905513316393 proto_loss 0.0015256432816386223
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 60, Hit Ratio: 0.31626, Precision: 0.14905, Recall: 0.4, NDCG: 0.35523
+*Best Performance*
+Epoch: 60, Hit Ratio: 0.31626, Precision: 0.14905, Recall: 0.4, NDCG: 0.35523
+--------------------------------------------------------------------------------
+training: 61 batch 100 rec_loss: 0.03044210746884346 ssl_loss 0.002068131696432829 proto_loss 0.0015183965442702174
+training: 62 batch 100 rec_loss: 0.028849828988313675 ssl_loss 0.0021029580384492874 proto_loss 0.0015208625700324774
+training: 63 batch 100 rec_loss: 0.0330914705991745 ssl_loss 0.002035020152106881 proto_loss 0.0015099004376679659
+training: 64 batch 100 rec_loss: 0.031476087868213654 ssl_loss 0.0018952380632981658 proto_loss 0.0015162323834374547
+training: 65 batch 100 rec_loss: 0.025804271921515465 ssl_loss 0.0019528078846633434 proto_loss 0.0015089798253029585
+training: 66 batch 100 rec_loss: 0.02919743023812771 ssl_loss 0.0018904416356235743 proto_loss 0.0015229990240186453
+training: 67 batch 100 rec_loss: 0.02717229723930359 ssl_loss 0.0018883142620325089 proto_loss 0.0015173389110714197
+training: 68 batch 100 rec_loss: 0.031614162027835846 ssl_loss 0.0019548863638192415 proto_loss 0.0015175024745985866
+training: 69 batch 100 rec_loss: 0.028934787958860397 ssl_loss 0.001832879614084959 proto_loss 0.0015132840489968657
+training: 70 batch 100 rec_loss: 0.02947910875082016 ssl_loss 0.0018344394629821181 proto_loss 0.0015045164618641138
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 70, Hit Ratio: 0.32419, Precision: 0.15279, Recall: 0.4095, NDCG: 0.36367
+*Best Performance*
+Epoch: 70, Hit Ratio: 0.32419, Precision: 0.15279, Recall: 0.4095, NDCG: 0.36367
+--------------------------------------------------------------------------------
+training: 71 batch 100 rec_loss: 0.02347307652235031 ssl_loss 0.0018465324537828565 proto_loss 0.0015253681922331452
+training: 72 batch 100 rec_loss: 0.024241313338279724 ssl_loss 0.0018463380401954055 proto_loss 0.0015097656287252903
+training: 73 batch 100 rec_loss: 0.025182761251926422 ssl_loss 0.0017689196392893791 proto_loss 0.0015273707685992122
+training: 74 batch 100 rec_loss: 0.023339562118053436 ssl_loss 0.001761114806868136 proto_loss 0.0015177398454397917
+training: 75 batch 100 rec_loss: 0.024570759385824203 ssl_loss 0.001733022858388722 proto_loss 0.0015304585685953498
+training: 76 batch 100 rec_loss: 0.021135926246643066 ssl_loss 0.0016863866476342082 proto_loss 0.0015350342728197575
+training: 77 batch 100 rec_loss: 0.02288404107093811 ssl_loss 0.001731131342239678 proto_loss 0.0015169231919571757
+training: 78 batch 100 rec_loss: 0.02387177385389805 ssl_loss 0.001634886022657156 proto_loss 0.0015228689881041646
+training: 79 batch 100 rec_loss: 0.023835238069295883 ssl_loss 0.001678193686529994 proto_loss 0.0015286288689821959
+training: 80 batch 100 rec_loss: 0.01948012411594391 ssl_loss 0.0016223364509642124 proto_loss 0.0015307291178032756
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 80, Hit Ratio: 0.3294, Precision: 0.15525, Recall: 0.41578, NDCG: 0.36946
+*Best Performance*
+Epoch: 80, Hit Ratio: 0.3294, Precision: 0.15525, Recall: 0.41578, NDCG: 0.36946
+--------------------------------------------------------------------------------
+training: 81 batch 100 rec_loss: 0.024340039119124413 ssl_loss 0.0016614560736343265 proto_loss 0.0015191753627732396
+training: 82 batch 100 rec_loss: 0.026013363152742386 ssl_loss 0.0016537461197003722 proto_loss 0.0015237382613122463
+training: 83 batch 100 rec_loss: 0.019776958972215652 ssl_loss 0.00160773447714746 proto_loss 0.0015423967270180583
+training: 84 batch 100 rec_loss: 0.02682623639702797 ssl_loss 0.0015696943737566471 proto_loss 0.0015381337143480778
+training: 85 batch 100 rec_loss: 0.01918431557714939 ssl_loss 0.0015715571353212 proto_loss 0.0015326373977586627
+training: 86 batch 100 rec_loss: 0.020611749961972237 ssl_loss 0.0015297154895961285 proto_loss 0.0015442990697920322
+training: 87 batch 100 rec_loss: 0.023614399135112762 ssl_loss 0.0015712029999122024 proto_loss 0.0015253393212333322
+training: 88 batch 100 rec_loss: 0.02116379886865616 ssl_loss 0.0015059440629556775 proto_loss 0.0015250534052029252
+training: 89 batch 100 rec_loss: 0.021776307374238968 ssl_loss 0.0014984572771936655 proto_loss 0.001533093978650868
+training: 90 batch 100 rec_loss: 0.025372900068759918 ssl_loss 0.0015249032294377685 proto_loss 0.0015310612507164478
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 90, Hit Ratio: 0.33379, Precision: 0.15731, Recall: 0.42098, NDCG: 0.37378
+*Best Performance*
+Epoch: 90, Hit Ratio: 0.33379, Precision: 0.15731, Recall: 0.42098, NDCG: 0.37378
+--------------------------------------------------------------------------------
+training: 91 batch 100 rec_loss: 0.024670857936143875 ssl_loss 0.0014496352523565292 proto_loss 0.0015311039751395583
+training: 92 batch 100 rec_loss: 0.01969105564057827 ssl_loss 0.001508648507297039 proto_loss 0.0015321640530601144
+training: 93 batch 100 rec_loss: 0.02130454033613205 ssl_loss 0.001494835945777595 proto_loss 0.0015308213187381625
+training: 94 batch 100 rec_loss: 0.01812542788684368 ssl_loss 0.0014614013489335775 proto_loss 0.0015317588113248348
+training: 95 batch 100 rec_loss: 0.014916423708200455 ssl_loss 0.00145675556268543 proto_loss 0.001537223462946713
+training: 96 batch 100 rec_loss: 0.02169586345553398 ssl_loss 0.0014278586022555828 proto_loss 0.0015340254176408052
+training: 97 batch 100 rec_loss: 0.02167198248207569 ssl_loss 0.0014385674148797989 proto_loss 0.0015436374815180898
+training: 98 batch 100 rec_loss: 0.02124343439936638 ssl_loss 0.001342767383903265 proto_loss 0.0015491865342482924
+training: 99 batch 100 rec_loss: 0.020109115168452263 ssl_loss 0.0014542118879035115 proto_loss 0.0015419156989082694
+training: 100 batch 100 rec_loss: 0.017515553161501884 ssl_loss 0.0013773648533970118 proto_loss 0.0015406280290335417
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 100, Hit Ratio: 0.33777, Precision: 0.15919, Recall: 0.42478, NDCG: 0.37732
+*Best Performance*
+Epoch: 100, Hit Ratio: 0.33777, Precision: 0.15919, Recall: 0.42478, NDCG: 0.37732
+--------------------------------------------------------------------------------
+[DEBUG] self.quantile_bpr_loss parameters: Parameter containing:
+tensor([1.], device='cuda:0', requires_grad=True) Parameter containing:
+tensor([1.], device='cuda:0', requires_grad=True) Parameter containing:
+tensor([0.], device='cuda:0', requires_grad=True) Parameter containing:
+tensor([1.], device='cuda:0', requires_grad=True)
+Testing...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+Evaluating...
+The result of NCL:
+Top 3
+Hit Ratio:0.17537
+Precision:0.27551
+Recall:0.25821
+NDCG:0.35263
+Top 5
+Hit Ratio:0.23589
+Precision:0.22235
+Recall:0.3253
+NDCG:0.35602
+Top 10
+Hit Ratio:0.33777
+Precision:0.15919
+Recall:0.42478
+NDCG:0.37732
+Top 20
+Hit Ratio:0.33777
+Precision:0.0796
+Recall:0.42478
+NDCG:0.36817
+
+
+
+
+
+
+
+
+
+Running time: 1567.13 s
+================================================================================
+Repetition 1: Running NCL on campus 10...
+Reading data and preprocessing...
+[DEBUG] self.loss_func: 0
+Model: NCL
+Loss Function: 0
+Training Set: /mnt/workspace/SELFRec/dataset/campus_data/campus_10_train.txt
+Test Set: /mnt/workspace/SELFRec/dataset/campus_data/campus_10_test.txt
+Embedding Dimension: 64
+Maximum Epoch: 100
+Learning Rate: 0.001
+Batch Size: 2048
+Regularization Parameter: 0.0001
+Specific parameters: n_layer:3  ssl_reg:1e-6  proto_reg:1e-7  tau:0.05  hyper_layers:1  alpha:1.5  num_clusters:100
+Training Set Size: (user number: 11767, item number: 2266, interaction number: 386207)
+Test Set Size: (user number: 4842, item number: 1714, interaction number: 32560)
+================================================================================
+Initializing and building model...
+Training Model...
+training: 1 batch 100 rec_loss: 0.6926628351211548 ssl_loss 0.00042783754179254174
+training: 2 batch 100 rec_loss: 0.6781204342842102 ssl_loss 0.0016172378091141582
+training: 3 batch 100 rec_loss: 0.4548819661140442 ssl_loss 0.013249702751636505
+training: 4 batch 100 rec_loss: 0.2850886583328247 ssl_loss 0.014680149033665657
+training: 5 batch 100 rec_loss: 0.24327844381332397 ssl_loss 0.012524210847914219
+training: 6 batch 100 rec_loss: 0.20462879538536072 ssl_loss 0.011118551716208458
+training: 7 batch 100 rec_loss: 0.17238259315490723 ssl_loss 0.009840397164225578
+training: 8 batch 100 rec_loss: 0.14618591964244843 ssl_loss 0.009059697389602661
+training: 9 batch 100 rec_loss: 0.15118873119354248 ssl_loss 0.008429432287812233
+training: 10 batch 100 rec_loss: 0.13513006269931793 ssl_loss 0.007680525537580252
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 10, Hit Ratio: 0.24351, Precision: 0.11477, Recall: 0.30486, NDCG: 0.26829
+*Best Performance*
+Epoch: 10, Hit Ratio: 0.24351, Precision: 0.11477, Recall: 0.30486, NDCG: 0.26829
+--------------------------------------------------------------------------------
+training: 11 batch 100 rec_loss: 0.12082751095294952 ssl_loss 0.007528624031692743
+training: 12 batch 100 rec_loss: 0.11047057807445526 ssl_loss 0.007095374632626772
+training: 13 batch 100 rec_loss: 0.10479430854320526 ssl_loss 0.006888558156788349
+training: 14 batch 100 rec_loss: 0.11666292697191238 ssl_loss 0.006533458828926086
+training: 15 batch 100 rec_loss: 0.09480728209018707 ssl_loss 0.00626627542078495
+training: 16 batch 100 rec_loss: 0.09759769588708878 ssl_loss 0.005779719911515713
+training: 17 batch 100 rec_loss: 0.10703893005847931 ssl_loss 0.005743705667555332
+training: 18 batch 100 rec_loss: 0.09068669378757477 ssl_loss 0.0056013986468315125
+training: 19 batch 100 rec_loss: 0.08006298542022705 ssl_loss 0.0052947900258004665
+training: 20 batch 100 rec_loss: 0.08778665959835052 ssl_loss 0.005073736887425184
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 20, Hit Ratio: 0.27169, Precision: 0.12805, Recall: 0.34062, NDCG: 0.30331
+*Best Performance*
+Epoch: 20, Hit Ratio: 0.27169, Precision: 0.12805, Recall: 0.34062, NDCG: 0.30331
+--------------------------------------------------------------------------------
+training: 21 batch 100 rec_loss: 0.08119352161884308 ssl_loss 0.004948695655912161 proto_loss 0.0015289582079276443
+training: 22 batch 100 rec_loss: 0.07879060506820679 ssl_loss 0.004803922027349472 proto_loss 0.001530313165858388
+training: 23 batch 100 rec_loss: 0.07109470665454865 ssl_loss 0.004613920114934444 proto_loss 0.001529122469946742
+training: 24 batch 100 rec_loss: 0.08184278011322021 ssl_loss 0.0045569222420454025 proto_loss 0.0015288664726540446
+training: 25 batch 100 rec_loss: 0.07174355536699295 ssl_loss 0.0043956805020570755 proto_loss 0.0015434356173500419
+training: 26 batch 100 rec_loss: 0.05990777909755707 ssl_loss 0.004293549805879593 proto_loss 0.0015224998351186514
+training: 27 batch 100 rec_loss: 0.062464870512485504 ssl_loss 0.0041791214607656 proto_loss 0.0015269132563844323
+training: 28 batch 100 rec_loss: 0.07093708217144012 ssl_loss 0.0040475851856172085 proto_loss 0.0015305372653529048
+training: 29 batch 100 rec_loss: 0.05617905780673027 ssl_loss 0.004005542024970055 proto_loss 0.0015236814506351948
+training: 30 batch 100 rec_loss: 0.05257308855652809 ssl_loss 0.003881238866597414 proto_loss 0.0015330665046349168
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 30, Hit Ratio: 0.28659, Precision: 0.13507, Recall: 0.35794, NDCG: 0.32136
+*Best Performance*
+Epoch: 30, Hit Ratio: 0.28659, Precision: 0.13507, Recall: 0.35794, NDCG: 0.32136
+--------------------------------------------------------------------------------
+training: 31 batch 100 rec_loss: 0.05093951150774956 ssl_loss 0.0037893697153776884 proto_loss 0.0015246174298226833
+training: 32 batch 100 rec_loss: 0.05566033720970154 ssl_loss 0.003663170151412487 proto_loss 0.001547485706396401
+training: 33 batch 100 rec_loss: 0.06459696590900421 ssl_loss 0.0036082095466554165 proto_loss 0.0015257648192346096
+training: 34 batch 100 rec_loss: 0.05394742637872696 ssl_loss 0.003527555614709854 proto_loss 0.001528449822217226
+training: 35 batch 100 rec_loss: 0.053675465285778046 ssl_loss 0.0033552944660186768 proto_loss 0.001525656902231276
+training: 36 batch 100 rec_loss: 0.05022478103637695 ssl_loss 0.003322405507788062 proto_loss 0.0015284112887457013
+training: 37 batch 100 rec_loss: 0.04275187849998474 ssl_loss 0.0032568161841481924 proto_loss 0.0015257345512509346
+training: 38 batch 100 rec_loss: 0.05729779601097107 ssl_loss 0.003260814119130373 proto_loss 0.0015405247686430812
+training: 39 batch 100 rec_loss: 0.05525975674390793 ssl_loss 0.0031720770057290792 proto_loss 0.0015396007802337408
+training: 40 batch 100 rec_loss: 0.04627426341176033 ssl_loss 0.0030946070328354836 proto_loss 0.0015377538511529565
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 40, Hit Ratio: 0.29838, Precision: 0.14062, Recall: 0.37344, NDCG: 0.33575
+*Best Performance*
+Epoch: 40, Hit Ratio: 0.29838, Precision: 0.14062, Recall: 0.37344, NDCG: 0.33575
+--------------------------------------------------------------------------------
+training: 41 batch 100 rec_loss: 0.04916100203990936 ssl_loss 0.0030193093698471785 proto_loss 0.0015450301580131054
+training: 42 batch 100 rec_loss: 0.046254225075244904 ssl_loss 0.0029976030346006155 proto_loss 0.001536613330245018
+training: 43 batch 100 rec_loss: 0.039262328296899796 ssl_loss 0.0030076864641159773 proto_loss 0.0015382291749119759
+training: 44 batch 100 rec_loss: 0.046323638409376144 ssl_loss 0.0028881654143333435 proto_loss 0.0015399846015498042
+training: 45 batch 100 rec_loss: 0.04377482831478119 ssl_loss 0.0028154223691672087 proto_loss 0.0015535223064944148
+training: 46 batch 100 rec_loss: 0.05062862113118172 ssl_loss 0.0026936724316328764 proto_loss 0.0015501693123951554
+training: 47 batch 100 rec_loss: 0.031441934406757355 ssl_loss 0.002796691842377186 proto_loss 0.001562281628139317
+training: 48 batch 100 rec_loss: 0.0314369760453701 ssl_loss 0.002773281652480364 proto_loss 0.0015534195117652416
+training: 49 batch 100 rec_loss: 0.03914174437522888 ssl_loss 0.0026222195010632277 proto_loss 0.0015437912661582232
+training: 50 batch 100 rec_loss: 0.03309793397784233 ssl_loss 0.002637709490954876 proto_loss 0.0015463873278349638
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 50, Hit Ratio: 0.30881, Precision: 0.14554, Recall: 0.3865, NDCG: 0.34634
+*Best Performance*
+Epoch: 50, Hit Ratio: 0.30881, Precision: 0.14554, Recall: 0.3865, NDCG: 0.34634
+--------------------------------------------------------------------------------
+training: 51 batch 100 rec_loss: 0.04163777828216553 ssl_loss 0.002482095966115594 proto_loss 0.001562521094456315
+training: 52 batch 100 rec_loss: 0.04457062482833862 ssl_loss 0.002452688990160823 proto_loss 0.0015554263954982162
+training: 53 batch 100 rec_loss: 0.033928047865629196 ssl_loss 0.0024474067613482475 proto_loss 0.0015412759967148304
+training: 54 batch 100 rec_loss: 0.035140763968229294 ssl_loss 0.0024385906290262938 proto_loss 0.001543271355330944
+training: 55 batch 100 rec_loss: 0.05044632777571678 ssl_loss 0.0024470549542456865 proto_loss 0.001556247822009027
+training: 56 batch 100 rec_loss: 0.04386381804943085 ssl_loss 0.0023199620191007853 proto_loss 0.0015452832449227571
+training: 57 batch 100 rec_loss: 0.031822022050619125 ssl_loss 0.0022981762886047363 proto_loss 0.0015487007331103086
+training: 58 batch 100 rec_loss: 0.03203018009662628 ssl_loss 0.0022168911527842283 proto_loss 0.0015531263779848814
+training: 59 batch 100 rec_loss: 0.03174225240945816 ssl_loss 0.0021850327029824257 proto_loss 0.0015464851167052984
+training: 60 batch 100 rec_loss: 0.03786333277821541 ssl_loss 0.002206698525696993 proto_loss 0.0015507356729358435
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 60, Hit Ratio: 0.31613, Precision: 0.14899, Recall: 0.39594, NDCG: 0.35412
+*Best Performance*
+Epoch: 60, Hit Ratio: 0.31613, Precision: 0.14899, Recall: 0.39594, NDCG: 0.35412
+--------------------------------------------------------------------------------
+training: 61 batch 100 rec_loss: 0.035206884145736694 ssl_loss 0.0022561801597476006 proto_loss 0.0015673984307795763
+training: 62 batch 100 rec_loss: 0.025509772822260857 ssl_loss 0.0021942269522696733 proto_loss 0.001562146469950676
+training: 63 batch 100 rec_loss: 0.028231941163539886 ssl_loss 0.002175603061914444 proto_loss 0.001559682423248887
+training: 64 batch 100 rec_loss: 0.02864452823996544 ssl_loss 0.0021650269627571106 proto_loss 0.0015552181284874678
+training: 65 batch 100 rec_loss: 0.03416362404823303 ssl_loss 0.0020541909616440535 proto_loss 0.0015579541213810444
+training: 66 batch 100 rec_loss: 0.027844179421663284 ssl_loss 0.0020543979480862617 proto_loss 0.001562714227475226
+training: 67 batch 100 rec_loss: 0.036091167479753494 ssl_loss 0.0019831405952572823 proto_loss 0.0015333584742620587
+training: 68 batch 100 rec_loss: 0.025258999317884445 ssl_loss 0.001974625512957573 proto_loss 0.0015579547034576535
+training: 69 batch 100 rec_loss: 0.02823076955974102 ssl_loss 0.0019731728825718164 proto_loss 0.0015561410691589117
+training: 70 batch 100 rec_loss: 0.029161036014556885 ssl_loss 0.0018827564781531692 proto_loss 0.0015777300577610731
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 70, Hit Ratio: 0.32309, Precision: 0.15227, Recall: 0.4061, NDCG: 0.36182
+*Best Performance*
+Epoch: 70, Hit Ratio: 0.32309, Precision: 0.15227, Recall: 0.4061, NDCG: 0.36182
+--------------------------------------------------------------------------------
+training: 71 batch 100 rec_loss: 0.03148840367794037 ssl_loss 0.001912101753987372 proto_loss 0.001555928378365934
+training: 72 batch 100 rec_loss: 0.027807191014289856 ssl_loss 0.0018989433301612735 proto_loss 0.001576231443323195
+training: 73 batch 100 rec_loss: 0.03191802650690079 ssl_loss 0.0018156098667532206 proto_loss 0.001570626045577228
+training: 74 batch 100 rec_loss: 0.02867237478494644 ssl_loss 0.0018360003596171737 proto_loss 0.0015793308848515153
+training: 75 batch 100 rec_loss: 0.02933800406754017 ssl_loss 0.0018061564769595861 proto_loss 0.001577454968355596
+training: 76 batch 100 rec_loss: 0.022995993494987488 ssl_loss 0.0017515744548290968 proto_loss 0.001586667844094336
+training: 77 batch 100 rec_loss: 0.025868382304906845 ssl_loss 0.0018879733979701996 proto_loss 0.0015972187975421548
+training: 78 batch 100 rec_loss: 0.02559245191514492 ssl_loss 0.0018526687053963542 proto_loss 0.0016102346125990152
+training: 79 batch 100 rec_loss: 0.03102276660501957 ssl_loss 0.0017297690501436591 proto_loss 0.0016028523677960038
+training: 80 batch 100 rec_loss: 0.02490365132689476 ssl_loss 0.0017616753466427326 proto_loss 0.0016037512104958296
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 80, Hit Ratio: 0.32875, Precision: 0.15494, Recall: 0.41327, NDCG: 0.36796
+*Best Performance*
+Epoch: 80, Hit Ratio: 0.32875, Precision: 0.15494, Recall: 0.41327, NDCG: 0.36796
+--------------------------------------------------------------------------------
+training: 81 batch 100 rec_loss: 0.026879210025072098 ssl_loss 0.001715733902528882 proto_loss 0.0016002502525225282
+training: 82 batch 100 rec_loss: 0.029629986733198166 ssl_loss 0.0017270371317863464 proto_loss 0.0015853721415624022
+training: 83 batch 100 rec_loss: 0.019144726917147636 ssl_loss 0.0016831926768645644 proto_loss 0.0015846425667405128
+training: 84 batch 100 rec_loss: 0.023455310612916946 ssl_loss 0.0016957923071458936 proto_loss 0.001580032636411488
+training: 85 batch 100 rec_loss: 0.032680969685316086 ssl_loss 0.0016879577888175845 proto_loss 0.0015954864211380482
+training: 86 batch 100 rec_loss: 0.015430093742907047 ssl_loss 0.001617250731214881 proto_loss 0.0015811504563316703
+training: 87 batch 100 rec_loss: 0.019324298948049545 ssl_loss 0.0015590382972732186 proto_loss 0.001575147034600377
+training: 88 batch 100 rec_loss: 0.01783810555934906 ssl_loss 0.0016315352404490113 proto_loss 0.0015725601697340608
+training: 89 batch 100 rec_loss: 0.01787859946489334 ssl_loss 0.0015577060403302312 proto_loss 0.0015681646764278412
+training: 90 batch 100 rec_loss: 0.025949254631996155 ssl_loss 0.0016065273666754365 proto_loss 0.0015857283724471927
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 90, Hit Ratio: 0.33339, Precision: 0.15713, Recall: 0.41793, NDCG: 0.37286
+*Best Performance*
+Epoch: 90, Hit Ratio: 0.33339, Precision: 0.15713, Recall: 0.41793, NDCG: 0.37286
+--------------------------------------------------------------------------------
+training: 91 batch 100 rec_loss: 0.017078518867492676 ssl_loss 0.0016148779541254044 proto_loss 0.0015905535547062755
+training: 92 batch 100 rec_loss: 0.02310032770037651 ssl_loss 0.001485595479607582 proto_loss 0.0016026371158659458
+training: 93 batch 100 rec_loss: 0.021329615265130997 ssl_loss 0.00154514005407691 proto_loss 0.0015992786502465606
+training: 94 batch 100 rec_loss: 0.02079080604016781 ssl_loss 0.0015872098738327622 proto_loss 0.0016095591709017754
+training: 95 batch 100 rec_loss: 0.020099295303225517 ssl_loss 0.0015467788325622678 proto_loss 0.0015852926298975945
+training: 96 batch 100 rec_loss: 0.014571361243724823 ssl_loss 0.0015366073930636048 proto_loss 0.0015756203792989254
+training: 97 batch 100 rec_loss: 0.021012328565120697 ssl_loss 0.0015294242184609175 proto_loss 0.0015916238771751523
+training: 98 batch 100 rec_loss: 0.017548847943544388 ssl_loss 0.001441720873117447 proto_loss 0.0015973678091540933
+training: 99 batch 100 rec_loss: 0.02561202645301819 ssl_loss 0.0014565344899892807 proto_loss 0.0016004700446501374
+training: 100 batch 100 rec_loss: 0.016020219773054123 ssl_loss 0.0014697341248393059 proto_loss 0.0015782166738063097
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 100, Hit Ratio: 0.33852, Precision: 0.15954, Recall: 0.42313, NDCG: 0.37774
+*Best Performance*
+Epoch: 100, Hit Ratio: 0.33852, Precision: 0.15954, Recall: 0.42313, NDCG: 0.37774
+--------------------------------------------------------------------------------
+[DEBUG] self.quantile_bpr_loss parameters: Parameter containing:
+tensor([1.], device='cuda:0', requires_grad=True) Parameter containing:
+tensor([1.], device='cuda:0', requires_grad=True) Parameter containing:
+tensor([0.], device='cuda:0', requires_grad=True) Parameter containing:
+tensor([1.], device='cuda:0', requires_grad=True)
+Testing...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+Evaluating...
+The result of NCL:
+Top 3
+Hit Ratio:0.17498
+Precision:0.27489
+Recall:0.25998
+NDCG:0.35259
+Top 5
+Hit Ratio:0.23633
+Precision:0.22276
+Recall:0.32593
+NDCG:0.35665
+Top 10
+Hit Ratio:0.33852
+Precision:0.15954
+Recall:0.42313
+NDCG:0.37774
+Top 20
+Hit Ratio:0.33852
+Precision:0.07977
+Recall:0.42313
+NDCG:0.3686
+
+
+
+
+
+
+
+
+
+[DEBUG] self.loss_func: 3
+Model: NCL
+Loss Function: 3
+Training Set: /mnt/workspace/SELFRec/dataset/campus_data/campus_10_train.txt
+Test Set: /mnt/workspace/SELFRec/dataset/campus_data/campus_10_test.txt
+Embedding Dimension: 64
+Maximum Epoch: 100
+Learning Rate: 0.001
+Batch Size: 2048
+Regularization Parameter: 0.0001
+Specific parameters: n_layer:3  ssl_reg:1e-6  proto_reg:1e-7  tau:0.05  hyper_layers:1  alpha:1.5  num_clusters:100
+Training Set Size: (user number: 11767, item number: 2266, interaction number: 386207)
+Test Set Size: (user number: 4842, item number: 1714, interaction number: 32560)
+================================================================================
+Initializing and building model...
+Training Model...
+training: 1 batch 100 rec_loss: 0.6928713917732239 ssl_loss 0.00032168018515221775
+training: 2 batch 100 rec_loss: 0.6863937377929688 ssl_loss 0.0007015068549662828
+training: 3 batch 100 rec_loss: 0.5540094375610352 ssl_loss 0.009246130473911762
+training: 4 batch 100 rec_loss: 0.3436366617679596 ssl_loss 0.013069591484963894
+training: 5 batch 100 rec_loss: 0.2583845257759094 ssl_loss 0.011419818736612797
+training: 6 batch 100 rec_loss: 0.23237760365009308 ssl_loss 0.009878796525299549
+training: 7 batch 100 rec_loss: 0.209400475025177 ssl_loss 0.009007499553263187
+training: 8 batch 100 rec_loss: 0.17414751648902893 ssl_loss 0.008268970996141434
+training: 9 batch 100 rec_loss: 0.1597510725259781 ssl_loss 0.007510548923164606
+training: 10 batch 100 rec_loss: 0.14590314030647278 ssl_loss 0.0073847537860274315
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 10, Hit Ratio: 0.24036, Precision: 0.11328, Recall: 0.30401, NDCG: 0.26897
+*Best Performance*
+Epoch: 10, Hit Ratio: 0.24036, Precision: 0.11328, Recall: 0.30401, NDCG: 0.26897
+--------------------------------------------------------------------------------
+training: 11 batch 100 rec_loss: 0.12705737352371216 ssl_loss 0.00690121715888381
+training: 12 batch 100 rec_loss: 0.12903906404972076 ssl_loss 0.006464401260018349
+training: 13 batch 100 rec_loss: 0.1345393806695938 ssl_loss 0.006291897967457771
+training: 14 batch 100 rec_loss: 0.10208868980407715 ssl_loss 0.005988348741084337
+training: 15 batch 100 rec_loss: 0.11023174226284027 ssl_loss 0.005706869065761566
+training: 16 batch 100 rec_loss: 0.10335945338010788 ssl_loss 0.00553165515884757
+training: 17 batch 100 rec_loss: 0.08876316994428635 ssl_loss 0.005425584968179464
+training: 18 batch 100 rec_loss: 0.09695832431316376 ssl_loss 0.005065267439931631
+training: 19 batch 100 rec_loss: 0.08548194169998169 ssl_loss 0.005017799790948629
+training: 20 batch 100 rec_loss: 0.09043857455253601 ssl_loss 0.0048695458099246025
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 20, Hit Ratio: 0.27046, Precision: 0.12747, Recall: 0.34025, NDCG: 0.30339
+*Best Performance*
+Epoch: 20, Hit Ratio: 0.27046, Precision: 0.12747, Recall: 0.34025, NDCG: 0.30339
+--------------------------------------------------------------------------------
+training: 21 batch 100 rec_loss: 0.07733436673879623 ssl_loss 0.004750444553792477 proto_loss 0.001508489134721458
+training: 22 batch 100 rec_loss: 0.06578052043914795 ssl_loss 0.004507204983383417 proto_loss 0.001502553466707468
+training: 23 batch 100 rec_loss: 0.07070234417915344 ssl_loss 0.004352096002548933 proto_loss 0.0014990689232945442
+training: 24 batch 100 rec_loss: 0.07112045586109161 ssl_loss 0.004160063806921244 proto_loss 0.0014986202586442232
+training: 25 batch 100 rec_loss: 0.06343700736761093 ssl_loss 0.004307893570512533 proto_loss 0.0015098793664947152
+training: 26 batch 100 rec_loss: 0.07466281950473785 ssl_loss 0.004089608788490295 proto_loss 0.0014947211602702737
+training: 27 batch 100 rec_loss: 0.07888257503509521 ssl_loss 0.0038694622926414013 proto_loss 0.0014956279192119837
+training: 28 batch 100 rec_loss: 0.06500697880983353 ssl_loss 0.0037592044100165367 proto_loss 0.001485340646468103
+training: 29 batch 100 rec_loss: 0.0633021742105484 ssl_loss 0.0038102834951132536 proto_loss 0.0014832884771749377
+training: 30 batch 100 rec_loss: 0.053866878151893616 ssl_loss 0.0035896971821784973 proto_loss 0.0015025690663605928
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 30, Hit Ratio: 0.28716, Precision: 0.13534, Recall: 0.36011, NDCG: 0.32166
+*Best Performance*
+Epoch: 30, Hit Ratio: 0.28716, Precision: 0.13534, Recall: 0.36011, NDCG: 0.32166
+--------------------------------------------------------------------------------
+training: 31 batch 100 rec_loss: 0.06300248205661774 ssl_loss 0.003518566256389022 proto_loss 0.0014962308341637254
+training: 32 batch 100 rec_loss: 0.05512889102101326 ssl_loss 0.003485440742224455 proto_loss 0.0015016861725598574
+training: 33 batch 100 rec_loss: 0.06682462990283966 ssl_loss 0.0033174704294651747 proto_loss 0.00149160239379853
+training: 34 batch 100 rec_loss: 0.053595393896102905 ssl_loss 0.003336218884214759 proto_loss 0.0015028977068141103
+training: 35 batch 100 rec_loss: 0.0625978335738182 ssl_loss 0.003282809630036354 proto_loss 0.0014997863909229636
+training: 36 batch 100 rec_loss: 0.051204863935709 ssl_loss 0.0031916045118123293 proto_loss 0.0014995484380051494
+training: 37 batch 100 rec_loss: 0.051512666046619415 ssl_loss 0.0030745805706828833 proto_loss 0.0015060536097735167
+training: 38 batch 100 rec_loss: 0.054538384079933167 ssl_loss 0.0029990202747285366 proto_loss 0.0014862882671877742
+training: 39 batch 100 rec_loss: 0.051105234771966934 ssl_loss 0.0029543207492679358 proto_loss 0.001496662269346416
+training: 40 batch 100 rec_loss: 0.048141829669475555 ssl_loss 0.002890303498134017 proto_loss 0.001492766779847443
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 40, Hit Ratio: 0.29794, Precision: 0.14042, Recall: 0.375, NDCG: 0.33514
+*Best Performance*
+Epoch: 40, Hit Ratio: 0.29794, Precision: 0.14042, Recall: 0.375, NDCG: 0.33514
+--------------------------------------------------------------------------------
+training: 41 batch 100 rec_loss: 0.04253511503338814 ssl_loss 0.0030145139899104834 proto_loss 0.0015004044398665428
+training: 42 batch 100 rec_loss: 0.046656496822834015 ssl_loss 0.0028421925380825996 proto_loss 0.0014936451334506273
+training: 43 batch 100 rec_loss: 0.03836552053689957 ssl_loss 0.002797489520162344 proto_loss 0.0015083113685250282
+training: 44 batch 100 rec_loss: 0.04092150181531906 ssl_loss 0.0025454212445765734 proto_loss 0.0015020299470052123
+training: 45 batch 100 rec_loss: 0.04094669967889786 ssl_loss 0.002759832888841629 proto_loss 0.0015194989973679185
+training: 46 batch 100 rec_loss: 0.047291893512010574 ssl_loss 0.002640568418428302 proto_loss 0.0015032171504572034
+training: 47 batch 100 rec_loss: 0.045174047350883484 ssl_loss 0.0026522697880864143 proto_loss 0.0015223489608615637
+training: 48 batch 100 rec_loss: 0.042827069759368896 ssl_loss 0.0026047993451356888 proto_loss 0.0015200104098767042
+training: 49 batch 100 rec_loss: 0.0470069982111454 ssl_loss 0.002444408368319273 proto_loss 0.0015157378511503339
+training: 50 batch 100 rec_loss: 0.03912213444709778 ssl_loss 0.0024959577713161707 proto_loss 0.0015003507724031806
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 50, Hit Ratio: 0.30824, Precision: 0.14527, Recall: 0.38728, NDCG: 0.34547
+*Best Performance*
+Epoch: 50, Hit Ratio: 0.30824, Precision: 0.14527, Recall: 0.38728, NDCG: 0.34547
+--------------------------------------------------------------------------------
+training: 51 batch 100 rec_loss: 0.0363612174987793 ssl_loss 0.002395653398707509 proto_loss 0.00150579703040421
+training: 52 batch 100 rec_loss: 0.03546438738703728 ssl_loss 0.0023739163298159838 proto_loss 0.0015074039110913873
+training: 53 batch 100 rec_loss: 0.03490597754716873 ssl_loss 0.0023362396750599146 proto_loss 0.001523044309578836
+training: 54 batch 100 rec_loss: 0.03728370741009712 ssl_loss 0.002207984682172537 proto_loss 0.001516366028226912
+training: 55 batch 100 rec_loss: 0.03986230865120888 ssl_loss 0.0022053716238588095 proto_loss 0.0014984746230766177
+training: 56 batch 100 rec_loss: 0.03482683375477791 ssl_loss 0.002196559216827154 proto_loss 0.0015076709678396583
+training: 57 batch 100 rec_loss: 0.03192085027694702 ssl_loss 0.0021774964407086372 proto_loss 0.001512759830802679
+training: 58 batch 100 rec_loss: 0.031500961631536484 ssl_loss 0.002190473023802042 proto_loss 0.0015087153296917677
+training: 59 batch 100 rec_loss: 0.035810939967632294 ssl_loss 0.002150297863408923 proto_loss 0.0015099580632522702
+training: 60 batch 100 rec_loss: 0.02861185185611248 ssl_loss 0.0021422349382191896 proto_loss 0.0015168959507718682
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 60, Hit Ratio: 0.31727, Precision: 0.14952, Recall: 0.3993, NDCG: 0.35519
+*Best Performance*
+Epoch: 60, Hit Ratio: 0.31727, Precision: 0.14952, Recall: 0.3993, NDCG: 0.35519
+--------------------------------------------------------------------------------
+training: 61 batch 100 rec_loss: 0.028037484735250473 ssl_loss 0.0020937821827828884 proto_loss 0.001503210747614503
+training: 62 batch 100 rec_loss: 0.03158928081393242 ssl_loss 0.0020475334022194147 proto_loss 0.0015157924499362707
+training: 63 batch 100 rec_loss: 0.030721234157681465 ssl_loss 0.0020084695424884558 proto_loss 0.001512794173322618
+training: 64 batch 100 rec_loss: 0.03212085738778114 ssl_loss 0.0019467733800411224 proto_loss 0.001528109423816204
+training: 65 batch 100 rec_loss: 0.03949013724923134 ssl_loss 0.001970966812223196 proto_loss 0.0015105681959539652
+training: 66 batch 100 rec_loss: 0.03770046681165695 ssl_loss 0.0018963912734761834 proto_loss 0.0015207439428195357
+training: 67 batch 100 rec_loss: 0.027187027037143707 ssl_loss 0.0019397763535380363 proto_loss 0.0015249872813001275
+training: 68 batch 100 rec_loss: 0.03179536759853363 ssl_loss 0.001939790090546012 proto_loss 0.0015380870318040252
+training: 69 batch 100 rec_loss: 0.029539987444877625 ssl_loss 0.001909819315187633 proto_loss 0.0015198537148535252
+training: 70 batch 100 rec_loss: 0.02173401229083538 ssl_loss 0.0018414012156426907 proto_loss 0.0015313763869926333
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 70, Hit Ratio: 0.32279, Precision: 0.15213, Recall: 0.40601, NDCG: 0.36108
+*Best Performance*
+Epoch: 70, Hit Ratio: 0.32279, Precision: 0.15213, Recall: 0.40601, NDCG: 0.36108
+--------------------------------------------------------------------------------
+training: 71 batch 100 rec_loss: 0.027902714908123016 ssl_loss 0.0018253937596455216 proto_loss 0.0015260695945471525
+training: 72 batch 100 rec_loss: 0.024259241297841072 ssl_loss 0.001815331052057445 proto_loss 0.0015192715218290687
+training: 73 batch 100 rec_loss: 0.026080526411533356 ssl_loss 0.0017969236942008138 proto_loss 0.001521498430520296
+training: 74 batch 100 rec_loss: 0.02199239656329155 ssl_loss 0.0017843010136857629 proto_loss 0.0015259053325280547
+training: 75 batch 100 rec_loss: 0.024631381034851074 ssl_loss 0.0017576484242454171 proto_loss 0.001544944359920919
+training: 76 batch 100 rec_loss: 0.027842111885547638 ssl_loss 0.0018132389523088932 proto_loss 0.0015264180256053805
+training: 77 batch 100 rec_loss: 0.027559269219636917 ssl_loss 0.00171074946410954 proto_loss 0.001523490296676755
+training: 78 batch 100 rec_loss: 0.023667186498641968 ssl_loss 0.0016977014020085335 proto_loss 0.001530434819869697
+training: 79 batch 100 rec_loss: 0.021143745630979538 ssl_loss 0.001663733390159905 proto_loss 0.0015288786962628365
+training: 80 batch 100 rec_loss: 0.023461071774363518 ssl_loss 0.0016955824103206396 proto_loss 0.001539114280603826
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 80, Hit Ratio: 0.3294, Precision: 0.15525, Recall: 0.4147, NDCG: 0.36717
+*Best Performance*
+Epoch: 80, Hit Ratio: 0.3294, Precision: 0.15525, Recall: 0.4147, NDCG: 0.36717
+--------------------------------------------------------------------------------
+training: 81 batch 100 rec_loss: 0.019593268632888794 ssl_loss 0.0016677917446941137 proto_loss 0.00153150234837085
+training: 82 batch 100 rec_loss: 0.022665809839963913 ssl_loss 0.0016553022433072329 proto_loss 0.0015240059001371264
+training: 83 batch 100 rec_loss: 0.01981806941330433 ssl_loss 0.0016245730221271515 proto_loss 0.0015302221290767193
+training: 84 batch 100 rec_loss: 0.02198093757033348 ssl_loss 0.0016171172028407454 proto_loss 0.001531939022243023
+training: 85 batch 100 rec_loss: 0.022674433887004852 ssl_loss 0.001581298653036356 proto_loss 0.0015400059055536985
+training: 86 batch 100 rec_loss: 0.02310316637158394 ssl_loss 0.0015922414604574442 proto_loss 0.0015378312673419714
+training: 87 batch 100 rec_loss: 0.018857594579458237 ssl_loss 0.001580266747623682 proto_loss 0.0015349674504250288
+training: 88 batch 100 rec_loss: 0.02164519391953945 ssl_loss 0.001557492301799357 proto_loss 0.0015339355450123549
+training: 89 batch 100 rec_loss: 0.02606343850493431 ssl_loss 0.001568397507071495 proto_loss 0.001526465406641364
+training: 90 batch 100 rec_loss: 0.02546149119734764 ssl_loss 0.0015756236389279366 proto_loss 0.0015325559070333838
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 90, Hit Ratio: 0.33466, Precision: 0.15772, Recall: 0.41908, NDCG: 0.37253
+*Best Performance*
+Epoch: 90, Hit Ratio: 0.33466, Precision: 0.15772, Recall: 0.41908, NDCG: 0.37253
+--------------------------------------------------------------------------------
+training: 91 batch 100 rec_loss: 0.015849804505705833 ssl_loss 0.0014941475819796324 proto_loss 0.001534904818981886
+training: 92 batch 100 rec_loss: 0.02392924204468727 ssl_loss 0.0014819027855992317 proto_loss 0.001538751064799726
+training: 93 batch 100 rec_loss: 0.02049390971660614 ssl_loss 0.001435449463315308 proto_loss 0.00156315672211349
+training: 94 batch 100 rec_loss: 0.01851840689778328 ssl_loss 0.001473055686801672 proto_loss 0.0015444486634805799
+training: 95 batch 100 rec_loss: 0.015366436913609505 ssl_loss 0.0014829267747700214 proto_loss 0.0015521945897489786
+training: 96 batch 100 rec_loss: 0.016726717352867126 ssl_loss 0.0014345106901600957 proto_loss 0.0015402967110276222
+training: 97 batch 100 rec_loss: 0.024005824699997902 ssl_loss 0.0014627535128965974 proto_loss 0.0015439463313668966
+training: 98 batch 100 rec_loss: 0.019829336553812027 ssl_loss 0.0014163098530843854 proto_loss 0.0015450401697307825
+training: 99 batch 100 rec_loss: 0.02277051843702793 ssl_loss 0.0014952522469684482 proto_loss 0.0015493142418563366
+training: 100 batch 100 rec_loss: 0.01753183826804161 ssl_loss 0.0013835366116836667 proto_loss 0.0015420126728713512
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 100, Hit Ratio: 0.33926, Precision: 0.15989, Recall: 0.42341, NDCG: 0.37696
+*Best Performance*
+Epoch: 100, Hit Ratio: 0.33926, Precision: 0.15989, Recall: 0.42341, NDCG: 0.37696
+--------------------------------------------------------------------------------
+[DEBUG] self.quantile_bpr_loss parameters: Parameter containing:
+tensor([1.], device='cuda:0', requires_grad=True) Parameter containing:
+tensor([1.], device='cuda:0', requires_grad=True) Parameter containing:
+tensor([0.], device='cuda:0', requires_grad=True) Parameter containing:
+tensor([1.], device='cuda:0', requires_grad=True)
+Testing...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+Evaluating...
+The result of NCL:
+Top 3
+Hit Ratio:0.17375
+Precision:0.27296
+Recall:0.25849
+NDCG:0.35055
+Top 5
+Hit Ratio:0.23755
+Precision:0.22392
+Recall:0.32828
+NDCG:0.357
+Top 10
+Hit Ratio:0.33926
+Precision:0.15989
+Recall:0.42341
+NDCG:0.37696
+Top 20
+Hit Ratio:0.33926
+Precision:0.07995
+Recall:0.42341
+NDCG:0.36766
+
+
+
+
+
+
+
+
+
+Running time: 1744.25 s
+================================================================================
+Repetition 2: Running NCL on campus 10...
+Reading data and preprocessing...
+[DEBUG] self.loss_func: 0
+Model: NCL
+Loss Function: 0
+Training Set: /mnt/workspace/SELFRec/dataset/campus_data/campus_10_train.txt
+Test Set: /mnt/workspace/SELFRec/dataset/campus_data/campus_10_test.txt
+Embedding Dimension: 64
+Maximum Epoch: 100
+Learning Rate: 0.001
+Batch Size: 2048
+Regularization Parameter: 0.0001
+Specific parameters: n_layer:3  ssl_reg:1e-6  proto_reg:1e-7  tau:0.05  hyper_layers:1  alpha:1.5  num_clusters:100
+Training Set Size: (user number: 11767, item number: 2266, interaction number: 386207)
+Test Set Size: (user number: 4842, item number: 1714, interaction number: 32560)
+================================================================================
+Initializing and building model...
+Training Model...
+training: 1 batch 100 rec_loss: 0.6925989389419556 ssl_loss 0.00046071529504843056
+training: 2 batch 100 rec_loss: 0.6689587831497192 ssl_loss 0.002505265176296234
+training: 3 batch 100 rec_loss: 0.424243688583374 ssl_loss 0.014381839893758297
+training: 4 batch 100 rec_loss: 0.2852124571800232 ssl_loss 0.014376198872923851
+training: 5 batch 100 rec_loss: 0.21966466307640076 ssl_loss 0.01245325617492199
+training: 6 batch 100 rec_loss: 0.20174528658390045 ssl_loss 0.010974857024848461
+training: 7 batch 100 rec_loss: 0.1817653477191925 ssl_loss 0.009931248612701893
+training: 8 batch 100 rec_loss: 0.14412614703178406 ssl_loss 0.009200935252010822
+training: 9 batch 100 rec_loss: 0.13615359365940094 ssl_loss 0.008389052003622055
+training: 10 batch 100 rec_loss: 0.12926633656024933 ssl_loss 0.007990974001586437
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 10, Hit Ratio: 0.24185, Precision: 0.11398, Recall: 0.30423, NDCG: 0.26605
+*Best Performance*
+Epoch: 10, Hit Ratio: 0.24185, Precision: 0.11398, Recall: 0.30423, NDCG: 0.26605
+--------------------------------------------------------------------------------
+training: 11 batch 100 rec_loss: 0.11546210944652557 ssl_loss 0.007393452804535627
+training: 12 batch 100 rec_loss: 0.11652088165283203 ssl_loss 0.007072759792208672
+training: 13 batch 100 rec_loss: 0.11584901064634323 ssl_loss 0.006710524205118418
+training: 14 batch 100 rec_loss: 0.10658888518810272 ssl_loss 0.006462815683335066
+training: 15 batch 100 rec_loss: 0.09085284173488617 ssl_loss 0.006198732182383537
+training: 16 batch 100 rec_loss: 0.09939694404602051 ssl_loss 0.005880651064217091
+training: 17 batch 100 rec_loss: 0.08330008387565613 ssl_loss 0.00589665025472641
+training: 18 batch 100 rec_loss: 0.08862268179655075 ssl_loss 0.005591859575361013
+training: 19 batch 100 rec_loss: 0.08197708427906036 ssl_loss 0.0053339870646595955
+training: 20 batch 100 rec_loss: 0.08130781352519989 ssl_loss 0.005190424621105194
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 20, Hit Ratio: 0.27239, Precision: 0.12838, Recall: 0.34216, NDCG: 0.30281
+*Best Performance*
+Epoch: 20, Hit Ratio: 0.27239, Precision: 0.12838, Recall: 0.34216, NDCG: 0.30281
+--------------------------------------------------------------------------------
+training: 21 batch 100 rec_loss: 0.08031835407018661 ssl_loss 0.005083231721073389 proto_loss 0.0015301179373636842
+training: 22 batch 100 rec_loss: 0.06777225434780121 ssl_loss 0.004835230298340321 proto_loss 0.0015291852178052068
+training: 23 batch 100 rec_loss: 0.06772519648075104 ssl_loss 0.004715112503618002 proto_loss 0.0015177280874922872
+training: 24 batch 100 rec_loss: 0.06782598048448563 ssl_loss 0.004584227688610554 proto_loss 0.0015288636786863208
+training: 25 batch 100 rec_loss: 0.05206906795501709 ssl_loss 0.004278835840523243 proto_loss 0.0015287356218323112
+training: 26 batch 100 rec_loss: 0.06373873353004456 ssl_loss 0.004381908103823662 proto_loss 0.0015370576875284314
+training: 27 batch 100 rec_loss: 0.05572716146707535 ssl_loss 0.004213948268443346 proto_loss 0.0015205882955342531
+training: 28 batch 100 rec_loss: 0.06640227884054184 ssl_loss 0.004252554848790169 proto_loss 0.0015294334152713418
+training: 29 batch 100 rec_loss: 0.04971855878829956 ssl_loss 0.004129649605602026 proto_loss 0.0015231503639370203
+training: 30 batch 100 rec_loss: 0.05426223948597908 ssl_loss 0.0037809042260050774 proto_loss 0.0015105344355106354
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 30, Hit Ratio: 0.2865, Precision: 0.13503, Recall: 0.35955, NDCG: 0.32035
+*Best Performance*
+Epoch: 30, Hit Ratio: 0.2865, Precision: 0.13503, Recall: 0.35955, NDCG: 0.32035
+--------------------------------------------------------------------------------
+training: 31 batch 100 rec_loss: 0.04572366178035736 ssl_loss 0.003872849978506565 proto_loss 0.0015154082793742418
+training: 32 batch 100 rec_loss: 0.04864899069070816 ssl_loss 0.00373933301307261 proto_loss 0.0015264272224158049
+training: 33 batch 100 rec_loss: 0.04832746088504791 ssl_loss 0.0035756146535277367 proto_loss 0.0015296238707378507
+training: 34 batch 100 rec_loss: 0.05782397836446762 ssl_loss 0.003611369524151087 proto_loss 0.0015373195055872202
+training: 35 batch 100 rec_loss: 0.04847932606935501 ssl_loss 0.0033780199009925127 proto_loss 0.0015329043380916119
+training: 36 batch 100 rec_loss: 0.04068760573863983 ssl_loss 0.0033222357742488384 proto_loss 0.001525097875855863
+training: 37 batch 100 rec_loss: 0.052004843950271606 ssl_loss 0.0032641098368912935 proto_loss 0.0015334857162088156
+training: 38 batch 100 rec_loss: 0.05357474833726883 ssl_loss 0.00326918950304389 proto_loss 0.0015208369586616755
+training: 39 batch 100 rec_loss: 0.054003890603780746 ssl_loss 0.003208939218893647 proto_loss 0.0015148862730711699
+training: 40 batch 100 rec_loss: 0.0460100919008255 ssl_loss 0.0031884750351309776 proto_loss 0.0015205079689621925
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 40, Hit Ratio: 0.29746, Precision: 0.14019, Recall: 0.37446, NDCG: 0.33398
+*Best Performance*
+Epoch: 40, Hit Ratio: 0.29746, Precision: 0.14019, Recall: 0.37446, NDCG: 0.33398
+--------------------------------------------------------------------------------
+training: 41 batch 100 rec_loss: 0.056756846606731415 ssl_loss 0.0030918174888938665 proto_loss 0.0015209941193461418
+training: 42 batch 100 rec_loss: 0.04698788374662399 ssl_loss 0.0029848560225218534 proto_loss 0.0015234771417453885
+training: 43 batch 100 rec_loss: 0.048311036080121994 ssl_loss 0.003006403334438801 proto_loss 0.001517611206509173
+training: 44 batch 100 rec_loss: 0.03850194811820984 ssl_loss 0.0028019691817462444 proto_loss 0.0015114955604076385
+training: 45 batch 100 rec_loss: 0.04769172519445419 ssl_loss 0.0028895719442516565 proto_loss 0.0015156430890783668
+training: 46 batch 100 rec_loss: 0.03922033682465553 ssl_loss 0.00278299069032073 proto_loss 0.0015346184372901917
+training: 47 batch 100 rec_loss: 0.04329637810587883 ssl_loss 0.002800930989906192 proto_loss 0.0015244295354932547
+training: 48 batch 100 rec_loss: 0.03449276089668274 ssl_loss 0.0026668349746614695 proto_loss 0.0015214515151455998
+training: 49 batch 100 rec_loss: 0.03324168920516968 ssl_loss 0.0025794345419853926 proto_loss 0.0015219934284687042
+training: 50 batch 100 rec_loss: 0.03552113100886345 ssl_loss 0.0026643844321370125 proto_loss 0.0015324808191508055
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 50, Hit Ratio: 0.30679, Precision: 0.14459, Recall: 0.38735, NDCG: 0.34457
+*Best Performance*
+Epoch: 50, Hit Ratio: 0.30679, Precision: 0.14459, Recall: 0.38735, NDCG: 0.34457
+--------------------------------------------------------------------------------
+training: 51 batch 100 rec_loss: 0.028821827843785286 ssl_loss 0.0026033164467662573 proto_loss 0.0015329380985349417
+training: 52 batch 100 rec_loss: 0.037509240210056305 ssl_loss 0.0025693310890346766 proto_loss 0.0015298340003937483
+training: 53 batch 100 rec_loss: 0.029577171429991722 ssl_loss 0.002496604109182954 proto_loss 0.001529802568256855
+training: 54 batch 100 rec_loss: 0.03585999459028244 ssl_loss 0.0024152419064193964 proto_loss 0.0015450160717591643
+training: 55 batch 100 rec_loss: 0.024755604565143585 ssl_loss 0.00249539059586823 proto_loss 0.0015416615642607212
+training: 56 batch 100 rec_loss: 0.030130324885249138 ssl_loss 0.0024132253602147102 proto_loss 0.001531745190732181
+training: 57 batch 100 rec_loss: 0.02831774763762951 ssl_loss 0.0023368417751044035 proto_loss 0.0015459334244951606
+training: 58 batch 100 rec_loss: 0.03342825174331665 ssl_loss 0.0023445668630301952 proto_loss 0.0015383970458060503
+training: 59 batch 100 rec_loss: 0.030273664742708206 ssl_loss 0.0023223066236823797 proto_loss 0.001552914036437869
+training: 60 batch 100 rec_loss: 0.03479345142841339 ssl_loss 0.0021874879021197557 proto_loss 0.0015483052702620625
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 60, Hit Ratio: 0.31525, Precision: 0.14857, Recall: 0.39789, NDCG: 0.35373
+*Best Performance*
+Epoch: 60, Hit Ratio: 0.31525, Precision: 0.14857, Recall: 0.39789, NDCG: 0.35373
+--------------------------------------------------------------------------------
+training: 61 batch 100 rec_loss: 0.028001505881547928 ssl_loss 0.002235660096630454 proto_loss 0.001533528440631926
+training: 62 batch 100 rec_loss: 0.02597152255475521 ssl_loss 0.0021544848568737507 proto_loss 0.0015454476233571768
+training: 63 batch 100 rec_loss: 0.034994956105947495 ssl_loss 0.0022247203160077333 proto_loss 0.001543728169053793
+training: 64 batch 100 rec_loss: 0.031064879149198532 ssl_loss 0.002148858504369855 proto_loss 0.0015461519360542297
+training: 65 batch 100 rec_loss: 0.03426133468747139 ssl_loss 0.0020741107873618603 proto_loss 0.0015490457881242037
+training: 66 batch 100 rec_loss: 0.021855808794498444 ssl_loss 0.0020364460069686174 proto_loss 0.0015560941537842155
+training: 67 batch 100 rec_loss: 0.02543017454445362 ssl_loss 0.002061275765299797 proto_loss 0.0015612900024279952
+training: 68 batch 100 rec_loss: 0.02855280041694641 ssl_loss 0.002022415166720748 proto_loss 0.0015495920088142157
+training: 69 batch 100 rec_loss: 0.02802780084311962 ssl_loss 0.001980464905500412 proto_loss 0.001550994929857552
+training: 70 batch 100 rec_loss: 0.024511199444532394 ssl_loss 0.0019373961258679628 proto_loss 0.0015583256026729941
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 70, Hit Ratio: 0.32147, Precision: 0.15151, Recall: 0.40596, NDCG: 0.36065
+*Best Performance*
+Epoch: 70, Hit Ratio: 0.32147, Precision: 0.15151, Recall: 0.40596, NDCG: 0.36065
+--------------------------------------------------------------------------------
+training: 71 batch 100 rec_loss: 0.03307139873504639 ssl_loss 0.002010673051699996 proto_loss 0.0015681817894801497
+training: 72 batch 100 rec_loss: 0.031567446887493134 ssl_loss 0.0019018278690055013 proto_loss 0.0015440908027812839
+training: 73 batch 100 rec_loss: 0.024446219205856323 ssl_loss 0.0018840316915884614 proto_loss 0.0015525870257988572
+training: 74 batch 100 rec_loss: 0.021769819781184196 ssl_loss 0.0018659245688468218 proto_loss 0.0015740167582407594
+training: 75 batch 100 rec_loss: 0.030588671565055847 ssl_loss 0.0018026140751317143 proto_loss 0.0015686771366745234
+training: 76 batch 100 rec_loss: 0.034735579043626785 ssl_loss 0.0018446826143190265 proto_loss 0.0015603391220793128
+training: 77 batch 100 rec_loss: 0.022960670292377472 ssl_loss 0.0018446731846779585 proto_loss 0.0015684316167607903
+training: 78 batch 100 rec_loss: 0.02069345861673355 ssl_loss 0.0017827851697802544 proto_loss 0.0015707210404798388
+training: 79 batch 100 rec_loss: 0.018720580264925957 ssl_loss 0.0017231565434485674 proto_loss 0.0015763258561491966
+training: 80 batch 100 rec_loss: 0.019246120005846024 ssl_loss 0.001851389417424798 proto_loss 0.0015711390879005194
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 80, Hit Ratio: 0.32844, Precision: 0.15479, Recall: 0.41353, NDCG: 0.36711
+*Best Performance*
+Epoch: 80, Hit Ratio: 0.32844, Precision: 0.15479, Recall: 0.41353, NDCG: 0.36711
+--------------------------------------------------------------------------------
+training: 81 batch 100 rec_loss: 0.026312321424484253 ssl_loss 0.0018426727037876844 proto_loss 0.0015738768270239234
+training: 82 batch 100 rec_loss: 0.0225457064807415 ssl_loss 0.0016897143796086311 proto_loss 0.0015723537653684616
+training: 83 batch 100 rec_loss: 0.016445903107523918 ssl_loss 0.0016658224631100893 proto_loss 0.0015894039534032345
+training: 84 batch 100 rec_loss: 0.02462950348854065 ssl_loss 0.00169377401471138 proto_loss 0.0015780694084241986
+training: 85 batch 100 rec_loss: 0.01966705732047558 ssl_loss 0.0016498611075803638 proto_loss 0.0015925669576972723
+training: 86 batch 100 rec_loss: 0.019627973437309265 ssl_loss 0.0016571501037105918 proto_loss 0.0015767166623845696
+training: 87 batch 100 rec_loss: 0.019118307158350945 ssl_loss 0.0016831753309816122 proto_loss 0.0015905980253592134
+training: 88 batch 100 rec_loss: 0.016749856993556023 ssl_loss 0.0016154805198311806 proto_loss 0.001593669643625617
+training: 89 batch 100 rec_loss: 0.018576838076114655 ssl_loss 0.0016780809964984655 proto_loss 0.0015921056037768722
+training: 90 batch 100 rec_loss: 0.015851976349949837 ssl_loss 0.0015725257107988 proto_loss 0.001598741626366973
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 90, Hit Ratio: 0.33265, Precision: 0.15677, Recall: 0.4172, NDCG: 0.37185
+*Best Performance*
+Epoch: 90, Hit Ratio: 0.33265, Precision: 0.15677, Recall: 0.4172, NDCG: 0.37185
+--------------------------------------------------------------------------------
+training: 91 batch 100 rec_loss: 0.024643130600452423 ssl_loss 0.0015896012773737311 proto_loss 0.0016015341971069574
+training: 92 batch 100 rec_loss: 0.01613323576748371 ssl_loss 0.0016277877148240805 proto_loss 0.0015923688188195229
+training: 93 batch 100 rec_loss: 0.019176926463842392 ssl_loss 0.0015795002691447735 proto_loss 0.0016029532998800278
+training: 94 batch 100 rec_loss: 0.01799612306058407 ssl_loss 0.001496169134043157 proto_loss 0.0015770167810842395
+training: 95 batch 100 rec_loss: 0.02198147587478161 ssl_loss 0.0014864548575133085 proto_loss 0.0016053610015660524
+training: 96 batch 100 rec_loss: 0.019511353224515915 ssl_loss 0.0015556499129161239 proto_loss 0.0016025385120883584
+training: 97 batch 100 rec_loss: 0.0163585115224123 ssl_loss 0.001581365242600441 proto_loss 0.0016032002167776227
+training: 98 batch 100 rec_loss: 0.018150271847844124 ssl_loss 0.0015198371838778257 proto_loss 0.001600419171154499
+training: 99 batch 100 rec_loss: 0.021024588495492935 ssl_loss 0.0014690858079120517 proto_loss 0.0015797498635947704
+training: 100 batch 100 rec_loss: 0.0161520354449749 ssl_loss 0.001428459770977497 proto_loss 0.001596062327735126
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 100, Hit Ratio: 0.33738, Precision: 0.159, Recall: 0.42194, NDCG: 0.37578
+*Best Performance*
+Epoch: 100, Hit Ratio: 0.33738, Precision: 0.159, Recall: 0.42194, NDCG: 0.37578
+--------------------------------------------------------------------------------
+[DEBUG] self.quantile_bpr_loss parameters: Parameter containing:
+tensor([1.], device='cuda:0', requires_grad=True) Parameter containing:
+tensor([1.], device='cuda:0', requires_grad=True) Parameter containing:
+tensor([0.], device='cuda:0', requires_grad=True) Parameter containing:
+tensor([1.], device='cuda:0', requires_grad=True)
+Testing...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+Evaluating...
+The result of NCL:
+Top 3
+Hit Ratio:0.17432
+Precision:0.27385
+Recall:0.25754
+NDCG:0.35138
+Top 5
+Hit Ratio:0.23501
+Precision:0.22152
+Recall:0.3246
+NDCG:0.35493
+Top 10
+Hit Ratio:0.33738
+Precision:0.159
+Recall:0.42194
+NDCG:0.37578
+Top 20
+Hit Ratio:0.33738
+Precision:0.0795
+Recall:0.42194
+NDCG:0.36648
+
+
+
+
+
+
+
+
+
+[DEBUG] self.loss_func: 3
+Model: NCL
+Loss Function: 3
+Training Set: /mnt/workspace/SELFRec/dataset/campus_data/campus_10_train.txt
+Test Set: /mnt/workspace/SELFRec/dataset/campus_data/campus_10_test.txt
+Embedding Dimension: 64
+Maximum Epoch: 100
+Learning Rate: 0.001
+Batch Size: 2048
+Regularization Parameter: 0.0001
+Specific parameters: n_layer:3  ssl_reg:1e-6  proto_reg:1e-7  tau:0.05  hyper_layers:1  alpha:1.5  num_clusters:100
+Training Set Size: (user number: 11767, item number: 2266, interaction number: 386207)
+Test Set Size: (user number: 4842, item number: 1714, interaction number: 32560)
+================================================================================
+Initializing and building model...
+Training Model...
+training: 1 batch 100 rec_loss: 0.6928682327270508 ssl_loss 0.0003168042458128184
+training: 2 batch 100 rec_loss: 0.6873478889465332 ssl_loss 0.0006574004073627293
+training: 3 batch 100 rec_loss: 0.5663480162620544 ssl_loss 0.008474706672132015
+training: 4 batch 100 rec_loss: 0.3425852656364441 ssl_loss 0.013097689487040043
+training: 5 batch 100 rec_loss: 0.26614364981651306 ssl_loss 0.011402315460145473
+training: 6 batch 100 rec_loss: 0.23429249227046967 ssl_loss 0.0099070705473423
+training: 7 batch 100 rec_loss: 0.1918136030435562 ssl_loss 0.00908516813069582
+training: 8 batch 100 rec_loss: 0.1737341582775116 ssl_loss 0.008052492514252663
+training: 9 batch 100 rec_loss: 0.15221501886844635 ssl_loss 0.007863951846957207
+training: 10 batch 100 rec_loss: 0.1611131727695465 ssl_loss 0.007405200507491827
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 10, Hit Ratio: 0.24132, Precision: 0.11373, Recall: 0.30346, NDCG: 0.26808
+*Best Performance*
+Epoch: 10, Hit Ratio: 0.24132, Precision: 0.11373, Recall: 0.30346, NDCG: 0.26808
+--------------------------------------------------------------------------------
+training: 11 batch 100 rec_loss: 0.12422159314155579 ssl_loss 0.0068013607524335384
+training: 12 batch 100 rec_loss: 0.14196111261844635 ssl_loss 0.006566920317709446
+training: 13 batch 100 rec_loss: 0.13043895363807678 ssl_loss 0.006249007768929005
+training: 14 batch 100 rec_loss: 0.11560658365488052 ssl_loss 0.0060552991926670074
+training: 15 batch 100 rec_loss: 0.11281553655862808 ssl_loss 0.005842073354870081
+training: 16 batch 100 rec_loss: 0.10207657516002655 ssl_loss 0.005485543981194496
+training: 17 batch 100 rec_loss: 0.10274294018745422 ssl_loss 0.00524810841307044
+training: 18 batch 100 rec_loss: 0.08915497362613678 ssl_loss 0.0050661093555390835
+training: 19 batch 100 rec_loss: 0.10052632540464401 ssl_loss 0.004833252169191837
+training: 20 batch 100 rec_loss: 0.08346651494503021 ssl_loss 0.004735523369163275
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 20, Hit Ratio: 0.27187, Precision: 0.12813, Recall: 0.34243, NDCG: 0.30415
+*Best Performance*
+Epoch: 20, Hit Ratio: 0.27187, Precision: 0.12813, Recall: 0.34243, NDCG: 0.30415
+--------------------------------------------------------------------------------
+training: 21 batch 100 rec_loss: 0.08446244150400162 ssl_loss 0.004423351492732763 proto_loss 0.0015207177493721247
+training: 22 batch 100 rec_loss: 0.07065621018409729 ssl_loss 0.004541217815130949 proto_loss 0.001503195147961378
+training: 23 batch 100 rec_loss: 0.07332082837820053 ssl_loss 0.004365484230220318 proto_loss 0.0015209837583824992
+training: 24 batch 100 rec_loss: 0.06554915010929108 ssl_loss 0.004333039280027151 proto_loss 0.0015303142135962844
+training: 25 batch 100 rec_loss: 0.084083192050457 ssl_loss 0.003953477367758751 proto_loss 0.0015090957749634981
+training: 26 batch 100 rec_loss: 0.064994215965271 ssl_loss 0.00400978559628129 proto_loss 0.0015205162344500422
+training: 27 batch 100 rec_loss: 0.054719313979148865 ssl_loss 0.00393717410042882 proto_loss 0.001517176628112793
+training: 28 batch 100 rec_loss: 0.06630000472068787 ssl_loss 0.0038261208683252335 proto_loss 0.0015193675644695759
+training: 29 batch 100 rec_loss: 0.06044004485011101 ssl_loss 0.003736777463927865 proto_loss 0.0015229121781885624
+training: 30 batch 100 rec_loss: 0.053927987813949585 ssl_loss 0.003584796329960227 proto_loss 0.0015286818379536271
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 30, Hit Ratio: 0.28764, Precision: 0.13556, Recall: 0.36307, NDCG: 0.32414
+*Best Performance*
+Epoch: 30, Hit Ratio: 0.28764, Precision: 0.13556, Recall: 0.36307, NDCG: 0.32414
+--------------------------------------------------------------------------------
+training: 31 batch 100 rec_loss: 0.06517807394266129 ssl_loss 0.0034787794575095177 proto_loss 0.0015172110870480537
+training: 32 batch 100 rec_loss: 0.06432078033685684 ssl_loss 0.0033925287425518036 proto_loss 0.0015199556946754456
+training: 33 batch 100 rec_loss: 0.05871894210577011 ssl_loss 0.0034183587413281202 proto_loss 0.0015204141382128
+training: 34 batch 100 rec_loss: 0.04828096553683281 ssl_loss 0.003239482408389449 proto_loss 0.0015146933728829026
+training: 35 batch 100 rec_loss: 0.052111439406871796 ssl_loss 0.003215487813577056 proto_loss 0.0015196544118225574
+training: 36 batch 100 rec_loss: 0.04196842387318611 ssl_loss 0.0031209795270115137 proto_loss 0.0015209225239232183
+training: 37 batch 100 rec_loss: 0.052577368915081024 ssl_loss 0.0031694502104073763 proto_loss 0.001528891851194203
+training: 38 batch 100 rec_loss: 0.055286306887865067 ssl_loss 0.003075659740716219 proto_loss 0.0015271838055923581
+training: 39 batch 100 rec_loss: 0.0576728917658329 ssl_loss 0.0029037916101515293 proto_loss 0.0015169637044891715
+training: 40 batch 100 rec_loss: 0.05226977914571762 ssl_loss 0.0028724304866045713 proto_loss 0.0015224490780383348
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 40, Hit Ratio: 0.29917, Precision: 0.141, Recall: 0.37641, NDCG: 0.33647
+*Best Performance*
+Epoch: 40, Hit Ratio: 0.29917, Precision: 0.141, Recall: 0.37641, NDCG: 0.33647
+--------------------------------------------------------------------------------
+training: 41 batch 100 rec_loss: 0.037135351449251175 ssl_loss 0.002816468942910433 proto_loss 0.0015243340749293566
+training: 42 batch 100 rec_loss: 0.050680626183748245 ssl_loss 0.002677470212802291 proto_loss 0.0015216486062854528
+training: 43 batch 100 rec_loss: 0.043560776859521866 ssl_loss 0.002737488131970167 proto_loss 0.0015205001691356301
+training: 44 batch 100 rec_loss: 0.04086632281541824 ssl_loss 0.0026588505133986473 proto_loss 0.0015253289602696896
+training: 45 batch 100 rec_loss: 0.04245425760746002 ssl_loss 0.0025913852732628584 proto_loss 0.0015307347057387233
+training: 46 batch 100 rec_loss: 0.040028784424066544 ssl_loss 0.002604767680168152 proto_loss 0.0015243777306750417
+training: 47 batch 100 rec_loss: 0.044927116483449936 ssl_loss 0.0025863698683679104 proto_loss 0.0015235545579344034
+training: 48 batch 100 rec_loss: 0.03956451639533043 ssl_loss 0.0025408200453966856 proto_loss 0.0015321732498705387
+training: 49 batch 100 rec_loss: 0.0367598831653595 ssl_loss 0.0024926213081926107 proto_loss 0.0015213334700092673
+training: 50 batch 100 rec_loss: 0.04510229080915451 ssl_loss 0.002351850736886263 proto_loss 0.001518872450105846
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 50, Hit Ratio: 0.31017, Precision: 0.14618, Recall: 0.38998, NDCG: 0.34773
+*Best Performance*
+Epoch: 50, Hit Ratio: 0.31017, Precision: 0.14618, Recall: 0.38998, NDCG: 0.34773
+--------------------------------------------------------------------------------
+training: 51 batch 100 rec_loss: 0.030213141813874245 ssl_loss 0.002400163095444441 proto_loss 0.001527681713923812
+training: 52 batch 100 rec_loss: 0.03587295860052109 ssl_loss 0.002245710464194417 proto_loss 0.0015264041721820831
+training: 53 batch 100 rec_loss: 0.02819879725575447 ssl_loss 0.00226608500815928 proto_loss 0.0015330595197156072
+training: 54 batch 100 rec_loss: 0.03653475642204285 ssl_loss 0.0022497132886201143 proto_loss 0.0015417489921674132
+training: 55 batch 100 rec_loss: 0.04163728654384613 ssl_loss 0.002308253198862076 proto_loss 0.001522423466667533
+training: 56 batch 100 rec_loss: 0.03597944229841232 ssl_loss 0.00220653903670609 proto_loss 0.0015394556103274226
+training: 57 batch 100 rec_loss: 0.03169702738523483 ssl_loss 0.0021977482829242945 proto_loss 0.0015294572804123163
+training: 58 batch 100 rec_loss: 0.02810901217162609 ssl_loss 0.0021128705702722073 proto_loss 0.00153320690151304
+training: 59 batch 100 rec_loss: 0.033695828169584274 ssl_loss 0.0020305102225393057 proto_loss 0.0015308541478589177
+training: 60 batch 100 rec_loss: 0.03769761323928833 ssl_loss 0.002072310307994485 proto_loss 0.0015266845002770424
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 60, Hit Ratio: 0.31713, Precision: 0.14946, Recall: 0.40116, NDCG: 0.35645
+*Best Performance*
+Epoch: 60, Hit Ratio: 0.31713, Precision: 0.14946, Recall: 0.40116, NDCG: 0.35645
+--------------------------------------------------------------------------------
+training: 61 batch 100 rec_loss: 0.0357019305229187 ssl_loss 0.00201031262986362 proto_loss 0.00153492228128016
+training: 62 batch 100 rec_loss: 0.026348263025283813 ssl_loss 0.002056535566225648 proto_loss 0.0015416905516758561
+training: 63 batch 100 rec_loss: 0.03064333088696003 ssl_loss 0.0020207564812153578 proto_loss 0.001535732881166041
+training: 64 batch 100 rec_loss: 0.029041742905974388 ssl_loss 0.0019278720719739795 proto_loss 0.0015415761154145002
+training: 65 batch 100 rec_loss: 0.02681984007358551 ssl_loss 0.001912416541017592 proto_loss 0.0015448223566636443
+training: 66 batch 100 rec_loss: 0.031098876148462296 ssl_loss 0.0019639756064862013 proto_loss 0.0015274204779416323
+training: 67 batch 100 rec_loss: 0.03963448852300644 ssl_loss 0.0018836003728210926 proto_loss 0.0015435382956638932
+training: 68 batch 100 rec_loss: 0.022790636867284775 ssl_loss 0.0018428541952744126 proto_loss 0.0015571267576888204
+training: 69 batch 100 rec_loss: 0.029759665951132774 ssl_loss 0.0019038486061617732 proto_loss 0.0015439577400684357
+training: 70 batch 100 rec_loss: 0.027327045798301697 ssl_loss 0.0018415105296298862 proto_loss 0.0015521157765761018
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 70, Hit Ratio: 0.32393, Precision: 0.15266, Recall: 0.41021, NDCG: 0.36406
+*Best Performance*
+Epoch: 70, Hit Ratio: 0.32393, Precision: 0.15266, Recall: 0.41021, NDCG: 0.36406
+--------------------------------------------------------------------------------
+training: 71 batch 100 rec_loss: 0.020247384905815125 ssl_loss 0.0018163190688937902 proto_loss 0.0015560497995465994
+training: 72 batch 100 rec_loss: 0.021393705159425735 ssl_loss 0.00179445487447083 proto_loss 0.001554445712827146
+training: 73 batch 100 rec_loss: 0.023833278566598892 ssl_loss 0.0017899328377097845 proto_loss 0.001552830683067441
+training: 74 batch 100 rec_loss: 0.027663152664899826 ssl_loss 0.001758857979439199 proto_loss 0.001553009613417089
+training: 75 batch 100 rec_loss: 0.026256395503878593 ssl_loss 0.001774568110704422 proto_loss 0.0015492228558287024
+training: 76 batch 100 rec_loss: 0.027241762727499008 ssl_loss 0.0016342435264959931 proto_loss 0.0015547344228252769
+training: 77 batch 100 rec_loss: 0.026055477559566498 ssl_loss 0.0016780511941760778 proto_loss 0.0015471954829990864
+training: 78 batch 100 rec_loss: 0.020252250134944916 ssl_loss 0.001696280436590314 proto_loss 0.001545178471133113
+training: 79 batch 100 rec_loss: 0.03122740611433983 ssl_loss 0.0016281396383419633 proto_loss 0.0015392206842079759
+training: 80 batch 100 rec_loss: 0.023983383551239967 ssl_loss 0.0016387810464948416 proto_loss 0.0015488805947825313
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 80, Hit Ratio: 0.32888, Precision: 0.155, Recall: 0.41616, NDCG: 0.36929
+*Best Performance*
+Epoch: 80, Hit Ratio: 0.32888, Precision: 0.155, Recall: 0.41616, NDCG: 0.36929
+--------------------------------------------------------------------------------
+training: 81 batch 100 rec_loss: 0.02350926585495472 ssl_loss 0.0016657059313729405 proto_loss 0.001553730689920485
+training: 82 batch 100 rec_loss: 0.023920048028230667 ssl_loss 0.0016584743279963732 proto_loss 0.001566658029332757
+training: 83 batch 100 rec_loss: 0.023881718516349792 ssl_loss 0.0015478470595553517 proto_loss 0.0015400453703477979
+training: 84 batch 100 rec_loss: 0.02254459820687771 ssl_loss 0.0015533699188381433 proto_loss 0.0015584980137646198
+training: 85 batch 100 rec_loss: 0.02939877100288868 ssl_loss 0.0015659081982448697 proto_loss 0.0015546369832009077
+training: 86 batch 100 rec_loss: 0.019282426685094833 ssl_loss 0.001535372924990952 proto_loss 0.0015475444961339235
+training: 87 batch 100 rec_loss: 0.020117241889238358 ssl_loss 0.0015603982610628009 proto_loss 0.001567609841004014
+training: 88 batch 100 rec_loss: 0.020752809941768646 ssl_loss 0.001483724801801145 proto_loss 0.0015485133044421673
+training: 89 batch 100 rec_loss: 0.020173678174614906 ssl_loss 0.001524094259366393 proto_loss 0.0015634925803169608
+training: 90 batch 100 rec_loss: 0.028543826192617416 ssl_loss 0.0014837062917649746 proto_loss 0.0015546445501968265
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+WARNING clustering 2266 points to 100 centroids: please provide at least 3900 training points
+
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 90, Hit Ratio: 0.33282, Precision: 0.15686, Recall: 0.42014, NDCG: 0.37292
+*Best Performance*
+Epoch: 90, Hit Ratio: 0.33282, Precision: 0.15686, Recall: 0.42014, NDCG: 0.37292
+--------------------------------------------------------------------------------
+training: 91 batch 100 rec_loss: 0.025786925107240677 ssl_loss 0.0015065117040649056 proto_loss 0.0015579677419736981
+training: 92 batch 100 rec_loss: 0.01990695483982563 ssl_loss 0.001473709475249052 proto_loss 0.0015560961328446865
+training: 93 batch 100 rec_loss: 0.021461881697177887 ssl_loss 0.0014984534354880452 proto_loss 0.001576901413500309
+training: 94 batch 100 rec_loss: 0.019024889916181564 ssl_loss 0.0014482168480753899 proto_loss 0.0015765412244945765
+training: 95 batch 100 rec_loss: 0.015642497688531876 ssl_loss 0.0014285063371062279 proto_loss 0.0015598899917677045
+training: 96 batch 100 rec_loss: 0.025896724313497543 ssl_loss 0.001379293855279684 proto_loss 0.0015811240300536156
+training: 97 batch 100 rec_loss: 0.018332436680793762 ssl_loss 0.0014501257101073861 proto_loss 0.00157000997569412
+training: 98 batch 100 rec_loss: 0.021050775423645973 ssl_loss 0.0013905412051826715 proto_loss 0.0015772738261148334
+training: 99 batch 100 rec_loss: 0.021709751337766647 ssl_loss 0.0014164880849421024 proto_loss 0.001575634116306901
+training: 100 batch 100 rec_loss: 0.027490366250276566 ssl_loss 0.0013858022866770625 proto_loss 0.001580818323418498
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+--------------------------------------------------------------------------------
+Real-Time Ranking Performance (Top-10 Item Recommendation)
+*Current Performance*
+Epoch: 100, Hit Ratio: 0.33769, Precision: 0.15915, Recall: 0.42564, NDCG: 0.37797
+*Best Performance*
+Epoch: 100, Hit Ratio: 0.33769, Precision: 0.15915, Recall: 0.42564, NDCG: 0.37797
+--------------------------------------------------------------------------------
+[DEBUG] self.quantile_bpr_loss parameters: Parameter containing:
+tensor([1.], device='cuda:0', requires_grad=True) Parameter containing:
+tensor([1.], device='cuda:0', requires_grad=True) Parameter containing:
+tensor([0.], device='cuda:0', requires_grad=True) Parameter containing:
+tensor([1.], device='cuda:0', requires_grad=True)
+Testing...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%
+Evaluating...
+The result of NCL:
+Top 3
+Hit Ratio:0.17498
+Precision:0.27489
+Recall:0.25985
+NDCG:0.35207
+Top 5
+Hit Ratio:0.23611
+Precision:0.22255
+Recall:0.32703
+NDCG:0.35647
+Top 10
+Hit Ratio:0.33769
+Precision:0.15915
+Recall:0.42564
+NDCG:0.37797
+Top 20
+Hit Ratio:0.33769
+Precision:0.07957
+Recall:0.42564
+NDCG:0.36889
+
+
+
+
+
+
+
+
+
+Running time: 1726.63 s
+================================================================================
+Repetition 3: Running NCL on campus 10...
+Reading data and preprocessing...
+[DEBUG] self.loss_func: 0
+Model: NCL
+Loss Function: 0
+Training Set: /mnt/workspace/SELFRec/dataset/campus_data/campus_10_train.txt
+Test Set: /mnt/workspace/SELFRec/dataset/campus_data/campus_10_test.txt
+Embedding Dimension: 64
+Maximum Epoch: 100
+Learning Rate: 0.001
+Batch Size: 2048
+Regularization Parameter: 0.0001
+Specific parameters: n_layer:3  ssl_reg:1e-6  proto_reg:1e-7  tau:0.05  hyper_layers:1  alpha:1.5  num_clusters:100
+Training Set Size: (user number: 11767, item number: 2266, interaction number: 386207)
+Test Set Size: (user number: 4842, item number: 1714, interaction number: 32560)
+================================================================================
+Initializing and building model...
+Training Model...
+training: 1 batch 100 rec_loss: 0.6925909519195557 ssl_loss 0.0004753254761453718
+training: 2 batch 100 rec_loss: 0.6669493317604065 ssl_loss 0.0026209508068859577
+training: 3 batch 100 rec_loss: 0.4119732677936554 ssl_loss 0.014719144441187382
+training: 4 batch 100 rec_loss: 0.2649158239364624 ssl_loss 0.014255593530833721
+training: 5 batch 100 rec_loss: 0.23400872945785522 ssl_loss 0.012180388905107975
+training: 6 batch 100 rec_loss: 0.20034146308898926 ssl_loss 0.010812392458319664
+training: 7 batch 100 rec_loss: 0.16107094287872314 ssl_loss 0.009860777296125889
+training: 8 batch 100 rec_loss: 0.17412425577640533 ssl_loss 0.009200716391205788
+training: 9 batch 100 rec_loss: 0.13916213810443878 ssl_loss 0.008395060896873474
+training: 10 batch 100 rec_loss: 0.12648551166057587 ssl_loss 0.007744989823549986
+Evaluating the model...
+Progress: [                                                  ]0%Progress: [++++++++++                                        ]20%Progress: [++++++++++++++++++++                              ]40%Progress: [++++++++++++++++++++++++++++++                    ]60%Progress: [+++++++++++++++++++++++++++++++++++++++++         ]82%Progress: [++++++++++++++++++++++++++++++++++++++++++++++++++]100%

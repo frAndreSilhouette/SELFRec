@@ -32,9 +32,15 @@ def next_batch_pairwise(data,batch_size,n_negs=1):
                 neg_item = choice(item_list)
                 while neg_item in data.training_set_u[user]: # 检查neg_item是否在data.training_set_u[user]这个字典的键中（即是否购买过）
                     neg_item = choice(item_list)
-                neg_idx.append(data.item[neg_item])
-                neg_scales.append(data.weibull_params[neg_item]["scale"])
-                neg_shapes.append(data.weibull_params[neg_item]["shape"])
+                temp_neg_idx = data.item[neg_item]
+                # neg_idx.append(data.item[neg_item])
+                # neg_scales.append(data.weibull_params[neg_item]["scale"])
+                # neg_shapes.append(data.weibull_params[neg_item]["shape"])
+                
+                # weibull_params拆成了两个numpy array
+                neg_idx.append(temp_neg_idx)
+                neg_scales.append(data.weibull_scale[temp_neg_idx])
+                neg_shapes.append(data.weibull_shape[temp_neg_idx])
 
         yield user_idx, pos_idx, neg_idx, itts, pos_scales, pos_shapes, neg_scales, neg_shapes
         # 返回的user_idx和pos_idx实际上就是training_data的batch_size那么多行，neg_idx是抽的别的没买过的负样本

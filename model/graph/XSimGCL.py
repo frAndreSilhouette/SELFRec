@@ -75,28 +75,45 @@ class XSimGCL(GraphRecommender):
         u_str = u
         u_int = self.data.get_user_id(u_str)  # 将字符串的u转化为数字的u
 
-        # 用户购买过的物品
-        pos_item_strs = list(self.data.training_set_u[u_str].keys())
-        pos_item_ints = [self.data.item[i] for i in pos_item_strs]  # 内部item id list
+        # 考虑所有的item，并非仅考虑用户购买的物品
+        all_item_ints = list(range(self.data.item_num))
+        current_itts = self.data.current_itt[u_int,:]
+        scales = self.data.weibull_scale
+        shapes = self.data.weibull_shape
 
-        # 获取对应的时间和Weibull参数
-        current_itts = [self.data.current_itt[u_str][i_str] for i_str in pos_item_strs]
-        scales = [self.data.weibull_params[i_str]["scale"] for i_str in pos_item_strs]
-        shapes = [self.data.weibull_params[i_str]["shape"] for i_str in pos_item_strs]
-
-        # 计算购买过物品的权重
-        pos_weights = self.quantile_bpr_loss.calculate_pos_weights(pos_item_ints, current_itts, scales, shapes)
-
-        # 生成全0 weights，然后把 pos_weights 按 idx 填入
-        weights = torch.zeros(self.data.item_num).to(self.quantile_bpr_loss.device)          # 默认全0
-        # val = 1e-6  # 人为指定一个很小的值
-        # weights = torch.full((self.data.item_num,), val, device=self.quantile_bpr_loss.device)
-        for idx, w in zip(pos_item_ints, pos_weights):
-            weights[idx] = w                              # 对应物品赋值
+        # 计算物品的权重
+        weights = self.quantile_bpr_loss.calculate_pos_weights(all_item_ints, current_itts, scales, shapes)
 
         # 计算得分
         score = torch.matmul(self.user_emb[u_int], self.item_emb.transpose(0, 1)) * weights
         return score.detach().cpu().numpy()
+
+    # def predict(self, u):
+    #     u_str = u
+    #     u_int = self.data.get_user_id(u_str)  # 将字符串的u转化为数字的u
+
+    #     # 用户购买过的物品
+    #     pos_item_strs = list(self.data.training_set_u[u_str].keys())
+    #     pos_item_ints = [self.data.item[i] for i in pos_item_strs]  # 内部item id list
+
+    #     # 获取对应的时间和Weibull参数
+    #     current_itts = [self.data.current_itt[u_str][i_str] for i_str in pos_item_strs]
+    #     scales = [self.data.weibull_params[i_str]["scale"] for i_str in pos_item_strs]
+    #     shapes = [self.data.weibull_params[i_str]["shape"] for i_str in pos_item_strs]
+
+    #     # 计算购买过物品的权重
+    #     pos_weights = self.quantile_bpr_loss.calculate_pos_weights(pos_item_ints, current_itts, scales, shapes)
+
+    #     # 生成全0 weights，然后把 pos_weights 按 idx 填入
+    #     weights = torch.zeros(self.data.item_num).to(self.quantile_bpr_loss.device)          # 默认全0
+    #     # val = 1e-6  # 人为指定一个很小的值
+    #     # weights = torch.full((self.data.item_num,), val, device=self.quantile_bpr_loss.device)
+    #     for idx, w in zip(pos_item_ints, pos_weights):
+    #         weights[idx] = w                              # 对应物品赋值
+
+    #     # 计算得分
+    #     score = torch.matmul(self.user_emb[u_int], self.item_emb.transpose(0, 1)) * weights
+    #     return score.detach().cpu().numpy()
     
     # def predict(self, u):
     #     u = self.data.get_user_id(u)

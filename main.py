@@ -38,17 +38,17 @@ if __name__ == '__main__':
 
     # model = input('Please enter the model you want to run:')
     modified_models = ['NCL', 'SGL', 'SimGCL', 'XSimGCL']
-    # campus_ids = [10, 15, 34, 102, 143]
+    campus_ids = [10, 15, 34, 102, 143]
     # modified_models = ['XSimGCL']
-    campus_ids = [143]
+    # campus_ids = [34]
 
     rep = 5
-    for _ in range(rep):
-        print(f"Repetition {_}")
-        for campus_id in campus_ids:
-            for model in modified_models:
+
+    for campus_id in campus_ids:
+        for model in modified_models:
+            for _ in range(rep):
                 print('=' * 80)
-                print(f"Running {model} on campus {campus_id}...") 
+                print(f"Repetition {_}: Running {model} on campus {campus_id}...") 
                 
                 yaml_path = f'./conf/{model}_{campus_id}.yaml'
 

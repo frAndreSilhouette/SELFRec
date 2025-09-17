@@ -98,6 +98,15 @@ class GraphRecommender(Recommender):
             self.bestPerformance = [epoch + 1, performance]
             self.save()
 
+        # # 评价标准：Top 10 Recall
+        # if self.bestPerformance:
+        #     if performance["Recall"] > self.bestPerformance[1]["Recall"]:
+        #         self.bestPerformance = [epoch + 1, performance]
+        #         self.save()
+        # else:
+        #     self.bestPerformance = [epoch + 1, performance]
+        #     self.save()
+
         print('-' * 80)
         print(f'Real-Time Ranking Performance (Top-{self.max_N} Item Recommendation)')
         measure_str = ', '.join([f'{k}: {v}' for k, v in performance.items()])

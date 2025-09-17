@@ -19,14 +19,19 @@ class Interaction(Data, Graph):
         self.test_set = defaultdict(dict)
         self.test_set_item = set()
 
-        self.current_itt = defaultdict(dict)
-        # 用于保存每个用户-商品最近一次购买至今的日期差，直接从txt文件读取，用于预测时embedding加权
-        # 格式：{"u1": {"i1": 45}}"}
+        # self.current_itt = defaultdict(dict)
+        # # 用于保存每个用户-商品最近一次购买至今的日期差，直接从txt文件读取，用于预测时embedding加权
+        # # 格式：{"u1": {"i1": 45}}"}
 
-        self.weibull_params = defaultdict(dict)
-        # 用于保存每个用户-商品对应的 weibull 参数，直接从txt文件读取，用于预测时embedding加权
-        # 格式：{"i1":{"scale": 1.0, "shape": 1.0}}
-        
+        # self.weibull_params = defaultdict(dict)
+        # # 用于保存每个用户-商品对应的 weibull 参数，直接从txt文件读取，用于预测时embedding加权
+        # # 格式：{"i1":{"scale": 1.0, "shape": 1.0}}
+
+        # 用矩阵/数组保存，不再使用dict of dict
+        self.current_itt = None
+        self.weibull_scale = None
+        self.weibull_shape = None
+
         self.__generate_set()
         self.user_num = len(self.training_set_u)
         self.item_num = len(self.training_set_i)
@@ -37,6 +42,15 @@ class Interaction(Data, Graph):
 
 
     def __generate_set(self):
+        # 修改：先统计总用户数和总物品数
+        num_users = len(set([x[0] for x in self.training_data]))
+        num_items = len(set([x[1] for x in self.training_data]))
+        # 修改：初始化weibull数组
+        self.weibull_scale = np.zeros(num_items, dtype=np.float32)  # 【修改】
+        self.weibull_shape = np.zeros(num_items, dtype=np.float32)  # 【修改】
+        # 修改：暂存current_itt
+        temp_current_itt = defaultdict(dict)  # 【修改】
+
         for user, item, itt, scale, shape, rating, current_itt in self.training_data: # 【这里修改】training_data现在包含了itt和分布信息
             if user not in self.user:
                 user_id = len(self.user)
@@ -46,22 +60,44 @@ class Interaction(Data, Graph):
                 item_id = len(self.item)
                 self.item[item] = item_id
                 self.id2item[item_id] = item # item是原来的字符串，item_id是对应的从0开始数字id
-                self.weibull_params[item]["scale"] = scale
-                self.weibull_params[item]["shape"] = shape
+
+                # self.weibull_params[item]["scale"] = scale
+                # self.weibull_params[item]["shape"] = shape
+                # 修改：存入weibull数组
+                self.weibull_scale[item_id] = scale  # 【修改】
+                self.weibull_shape[item_id] = shape  # 【修改】
             
             self.training_set_u[user][item] = 1
             self.training_set_i[item][user] = 1
-            
-            self.current_itt[user][item] = current_itt
-
-
             # 样例：
             # self.training_set_u = {
             #     "u1": {"i1": 1},
             #     "u2": {"i1": 1, "i2": 1}
             # }
-            # 哪怕training_data中有重复的user-item对，也只会存储一次，key对应的value为1        
+            # 哪怕training_data中有重复的user-item对，也只会存储一次，key对应的value为1             
+            # self.current_itt[user][item] = current_itt
+            # 修改：先存入临时dict
+            temp_current_itt[user][item] = current_itt  # 【修改】
 
+        # 修改：将current_itt转为numpy矩阵
+        self.current_itt = np.zeros((len(self.user), len(self.item)), dtype=np.float32)  # 【修改】
+        for user, items in temp_current_itt.items():  # 【修改】
+            user_id = self.user[user]
+            for item, itt in items.items():
+                item_id = self.item[item]
+                self.current_itt[user_id, item_id] = itt  # 【修改】
+
+        # current_itt的空缺值用该item的均值填充
+        for item_id in range(len(self.item)):
+            # 找到该列非零值
+            col_values = self.current_itt[:, item_id]
+            non_zero_mask = col_values != 0
+            if np.any(non_zero_mask):
+                mean_val = col_values[non_zero_mask].mean()
+                # 将0值替换为均值
+                col_values[~non_zero_mask] = mean_val
+                self.current_itt[:, item_id] = col_values
+      
         for user, item, itt, scale, shape, rating, current_itt in self.test_data: # 【这里修改】training_data现在包含了itt和分布信息
             if user in self.user and item in self.item:
                 self.test_set[user][item] = 1
