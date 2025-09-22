@@ -1,7 +1,7 @@
 import os.path
 from os import remove
 from re import split
-
+from scipy.stats import weibull_min
 
 class FileIO(object):
     def __init__(self):
@@ -45,7 +45,11 @@ class FileIO(object):
                     shape = float(items[4])
                     weight = float(items[5])
                     current_itt = int(items[6]) # 最后一次购买到 time_threshold 的天数差
-                    data.append([user_id, item_id, itt, scale, shape, weight, current_itt])
+                    if current_itt >= 0:
+                        current_itt_cdf = weibull_min.cdf(current_itt, c=shape, scale=scale) # current_itt对应的cdf值
+                    else:
+                        current_itt_cdf = -1
+                    data.append([user_id, item_id, itt, scale, shape, weight, current_itt, current_itt_cdf])
                     # ===========================
 
         if rec_type == 'sequential':

@@ -51,7 +51,10 @@ class Interaction(Data, Graph):
         # 修改：暂存current_itt
         temp_current_itt = defaultdict(dict)  # 【修改】
 
-        for user, item, itt, scale, shape, rating, current_itt in self.training_data: # 【这里修改】training_data现在包含了itt和分布信息
+        # 构造current_itt_cdf对应的numpy矩阵（缺失值填充-1，不需要计算均值，所以没有current_itt矩阵那么复杂）
+        self.current_itt_cdf = -1 * np.ones((num_users, num_items), dtype=np.float32)
+
+        for user, item, itt, scale, shape, rating, current_itt, current_itt_cdf in self.training_data: # 【这里修改】training_data现在包含了itt和分布信息
             if user not in self.user:
                 user_id = len(self.user)
                 self.user[user] = user_id
@@ -69,6 +72,9 @@ class Interaction(Data, Graph):
             
             self.training_set_u[user][item] = 1
             self.training_set_i[item][user] = 1
+
+            self.current_itt_cdf[user_id, item_id] = current_itt_cdf
+
             # 样例：
             # self.training_set_u = {
             #     "u1": {"i1": 1},
@@ -76,6 +82,7 @@ class Interaction(Data, Graph):
             # }
             # 哪怕training_data中有重复的user-item对，也只会存储一次，key对应的value为1             
             # self.current_itt[user][item] = current_itt
+
             # 修改：先存入临时dict
             temp_current_itt[user][item] = current_itt  # 【修改】
 
@@ -98,7 +105,7 @@ class Interaction(Data, Graph):
                 col_values[~non_zero_mask] = mean_val
                 self.current_itt[:, item_id] = col_values
       
-        for user, item, itt, scale, shape, rating, current_itt in self.test_data: # 【这里修改】training_data现在包含了itt和分布信息
+        for user, item, itt, scale, shape, rating, current_itt, current_itt_cdf in self.test_data: # 【这里修改】training_data现在包含了itt和分布信息
             if user in self.user and item in self.item:
                 self.test_set[user][item] = 1
                 self.test_set_item.add(item)
