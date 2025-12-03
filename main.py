@@ -37,12 +37,12 @@ if __name__ == '__main__':
     print_models("Available Models", models)
 
     # model = input('Please enter the model you want to run:')
-    modified_models = ['NCL', 'SGL', 'SimGCL', 'XSimGCL']
+    # modified_models = ['NCL', 'SGL', 'SimGCL', 'XSimGCL']
     campus_ids = [10, 15, 34, 102, 143]
-    # modified_models = ['XSimGCL']
+    modified_models = ['XSimGCL']
     # campus_ids = [34]
 
-    rep = 5
+    rep = 1
 
     for campus_id in campus_ids:
         for model in modified_models:
