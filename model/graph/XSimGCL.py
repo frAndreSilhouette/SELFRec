@@ -5,16 +5,12 @@ from base.graph_recommender import GraphRecommender
 from util.sampler import next_batch_pairwise
 from base.torch_interface import TorchGraphInterface
 from util.loss_torch import bpr_loss, l2_reg_loss, InfoNCE
-from util.loss_torch import QuantileBPRLoss
-from tqdm import tqdm
-import copy
-
 
 # Paper: XSimGCL - Towards Extremely Simple Graph Contrastive Learning for Recommendation
 
 
 class XSimGCL(GraphRecommender):
-    def __init__(self, conf, training_set, test_set, loss_func=0): # 【这里修改】loss_func作为init的参数，而非train的参数
+    def __init__(self, conf, training_set, test_set, loss_func=0):
         super(XSimGCL, self).__init__(conf, training_set, test_set)
         config = self.config['XSimGCL']
         self.cl_rate = float(config['lambda'])
@@ -23,25 +19,16 @@ class XSimGCL(GraphRecommender):
         self.n_layers = int(config['n_layer'])
         self.layer_cl = int(config['l_star'])
         self.model = XSimGCL_Encoder(self.data, self.emb_size, self.eps, self.n_layers,self.layer_cl)
-        # self.data是从父类GraphRecommender继承的，又是从Interaction来的
 
-        self.quantile_bpr_loss = QuantileBPRLoss(self.data.item_num, loss_func) # 【这里修改】quantile_bpr_loss在init时定义
-
-    def train(self): # 【这里修改】train方法不再需要loss_func参数，换到init里面去了
+    def train(self):
         model = self.model.cuda()
-        quantile_bpr_loss = self.quantile_bpr_loss.cuda()
-        optimizer = torch.optim.Adam(list(model.parameters()) + list(quantile_bpr_loss.parameters()), lr=self.lRate) # 【这里修改】增加可学习参数
-        
+        optimizer = torch.optim.Adam(model.parameters(), lr=self.lRate)
         for epoch in range(self.maxEpoch):
             for n, batch in enumerate(next_batch_pairwise(self.data, self.batch_size)):
-                user_idx, pos_idx, neg_idx, itts, pos_scales, pos_shapes, neg_scales, neg_shapes = batch # 【这里修改】batch返回值多了itts, scales, shapes
-                # 这六个东西全是list
-
+                user_idx, pos_idx, neg_idx, _1, _2, _3, _4, _5 = batch
                 rec_user_emb, rec_item_emb, cl_user_emb, cl_item_emb  = model(True)
                 user_emb, pos_item_emb, neg_item_emb = rec_user_emb[user_idx], rec_item_emb[pos_idx], rec_item_emb[neg_idx]
-                # rec_loss = bpr_loss(user_emb, pos_item_emb, neg_item_emb)    
-                rec_loss = quantile_bpr_loss(user_emb, pos_item_emb, neg_item_emb, pos_idx, neg_idx, itts, pos_scales, pos_shapes, neg_scales, neg_shapes)
-
+                rec_loss = bpr_loss(user_emb, pos_item_emb, neg_item_emb)
                 cl_loss = self.cl_rate * self.cal_cl_loss([user_idx,pos_idx],rec_user_emb,cl_user_emb,rec_item_emb,cl_item_emb)
                 batch_loss =  rec_loss + l2_reg_loss(self.reg, user_emb, pos_item_emb) + cl_loss
                 # Backward and optimize
@@ -52,12 +39,9 @@ class XSimGCL(GraphRecommender):
                     print('training:', epoch + 1, 'batch', n, 'rec_loss:', rec_loss.item(), 'cl_loss', cl_loss.item())
             with torch.no_grad():
                 self.user_emb, self.item_emb = self.model()
-            if (epoch+1) % 10 == 0: # 【这里修改】隔10个epoch保存一次模型
-                self.fast_evaluation(epoch)
-            # print(f"[DEBUG] epoch {epoch+1} self.quantile_bpr_loss parameters:", self.quantile_bpr_loss.w1, self.quantile_bpr_loss.w2, self.quantile_bpr_loss.bias)
-        self.user_emb, self.item_emb = self.best_user_emb, self.best_item_emb # 保存的已经是最佳模型的embedding
-        self.quantile_bpr_loss.load_state_dict(self.best_quantile_bpr_loss) # 【这里修改】恢复最优的quantile_bpr_loss参数
-        print(f"[DEBUG] self.quantile_bpr_loss parameters:", self.quantile_bpr_loss.w1, self.quantile_bpr_loss.w2, self.quantile_bpr_loss.bias, self.quantile_bpr_loss.hetero_weight)
+            self.fast_evaluation(epoch)
+        self.user_emb, self.item_emb = self.best_user_emb, self.best_item_emb
+
     def cal_cl_loss(self, idx, user_view1,user_view2,item_view1,item_view2):
         u_idx = torch.unique(torch.Tensor(idx[0]).type(torch.long)).cuda()
         i_idx = torch.unique(torch.Tensor(idx[1]).type(torch.long)).cuda()
@@ -66,59 +50,15 @@ class XSimGCL(GraphRecommender):
         return user_cl_loss + item_cl_loss
 
 
-    def save(self): 
+    def save(self):
         with torch.no_grad():
             self.best_user_emb, self.best_item_emb = self.model.forward()
-            self.best_quantile_bpr_loss = copy.deepcopy(self.quantile_bpr_loss.state_dict()) # 【这里修改】保存quantile_bpr_loss的最优参数
 
     def predict(self, u):
-        u_str = u
-        u_int = self.data.get_user_id(u_str)  # 将字符串的u转化为数字的u
+        u = self.data.get_user_id(u)
+        score = torch.matmul(self.user_emb[u], self.item_emb.transpose(0, 1))
+        return score.cpu().numpy()
 
-        # 考虑所有的item，并非仅考虑用户购买的物品
-        all_item_ints = list(range(self.data.item_num))
-        current_itts = self.data.current_itt[u_int,:]
-        scales = self.data.weibull_scale
-        shapes = self.data.weibull_shape
-
-        # 计算物品的权重
-        weights = self.quantile_bpr_loss.calculate_pos_weights(all_item_ints, current_itts, scales, shapes)
-
-        # 计算得分
-        score = torch.matmul(self.user_emb[u_int], self.item_emb.transpose(0, 1)) * weights
-        return score.detach().cpu().numpy()
-
-    # def predict(self, u):
-    #     u_str = u
-    #     u_int = self.data.get_user_id(u_str)  # 将字符串的u转化为数字的u
-
-    #     # 用户购买过的物品
-    #     pos_item_strs = list(self.data.training_set_u[u_str].keys())
-    #     pos_item_ints = [self.data.item[i] for i in pos_item_strs]  # 内部item id list
-
-    #     # 获取对应的时间和Weibull参数
-    #     current_itts = [self.data.current_itt[u_str][i_str] for i_str in pos_item_strs]
-    #     scales = [self.data.weibull_params[i_str]["scale"] for i_str in pos_item_strs]
-    #     shapes = [self.data.weibull_params[i_str]["shape"] for i_str in pos_item_strs]
-
-    #     # 计算购买过物品的权重
-    #     pos_weights = self.quantile_bpr_loss.calculate_pos_weights(pos_item_ints, current_itts, scales, shapes)
-
-    #     # 生成全0 weights，然后把 pos_weights 按 idx 填入
-    #     weights = torch.zeros(self.data.item_num).to(self.quantile_bpr_loss.device)          # 默认全0
-    #     # val = 1e-6  # 人为指定一个很小的值
-    #     # weights = torch.full((self.data.item_num,), val, device=self.quantile_bpr_loss.device)
-    #     for idx, w in zip(pos_item_ints, pos_weights):
-    #         weights[idx] = w                              # 对应物品赋值
-
-    #     # 计算得分
-    #     score = torch.matmul(self.user_emb[u_int], self.item_emb.transpose(0, 1)) * weights
-    #     return score.detach().cpu().numpy()
-    
-    # def predict(self, u):
-    #     u = self.data.get_user_id(u)
-    #     score = torch.matmul(self.user_emb[u], self.item_emb.transpose(0, 1))
-    #     return score.cpu().numpy()
 
 class XSimGCL_Encoder(nn.Module):
     def __init__(self, data, emb_size, eps, n_layers, layer_cl):

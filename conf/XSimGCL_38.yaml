@@ -1,6 +1,6 @@
-training.set: ./dataset/campus_data/campus_34_train.txt
+training.set: ./dataset/campus_data/campus_38_train.txt
 
-test.set: ./dataset/campus_data/campus_34_test.txt
+test.set: ./dataset/campus_data/campus_38_test.txt
 
 model:
   name: XSimGCL

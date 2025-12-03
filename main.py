@@ -38,10 +38,8 @@ if __name__ == '__main__':
 
     # model = input('Please enter the model you want to run:')
     # modified_models = ['NCL', 'SGL', 'SimGCL', 'XSimGCL']
-    campus_ids = [10, 15, 34, 102, 143]
+    campus_ids = [13, 18, 38, 107, 151]
     modified_models = ['XSimGCL']
-    # campus_ids = [34]
-
     rep = 1
 
     for campus_id in campus_ids:
